@@ -1,0 +1,49 @@
+{
+  "translationKey": "about",
+  "slug": "tentang-kami",
+  "template": "about",
+  "navLabel": "Tentang Kami",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Tentang Kami — Pusat Pelatihan Akses Tali | RAC",
+    "description": "Profil Rope Access Center: sejarah, nilai, tim instruktur bersertifikat IRATA Level 3, dan pendekatan kami terhadap keselamatan kerja di ketinggian."
+  },
+  "hero": {
+    "eyebrow": "Tentang Kami",
+    "title": "Sepuluh Tahun di Tali, Satu Standar yang Tidak Berubah",
+    "body": "Kami didirikan oleh teknisi lapangan, untuk teknisi lapangan — dan untuk perusahaan yang menolak berkompromi soal keselamatan.",
+    "ctas": [
+      {
+        "label": "Program pelatihan",
+        "href": "training",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Bagaimana kami bermula\n\nRAC lahir pada 2014 dari keluhan yang berulang. Pendiri kami, saat itu supervisor akses tali di sebuah kilang, terus menerima teknisi baru yang memegang sertifikat tetapi tidak siap bekerja. Sertifikatnya sah; pelatihannya tergesa-gesa.\n\nKami memulai dengan satu menara latih dan tiga instruktur, dengan aturan yang sejak hari pertama tidak pernah dilonggarkan: kami tidak meluluskan orang yang belum siap, meskipun ia sudah membayar.\n\n## Apa yang kami yakini\n\n### Keselamatan bukan slogan, melainkan keputusan berulang\n\nKeselamatan tidak diputuskan sekali dalam rapat kebijakan. Keselamatan diputuskan setiap pagi ketika seseorang memilih memeriksa harness dengan teliti meskipun sedang terburu-buru. Kami melatih keputusan itu, bukan sekadar mengajarkan prosedurnya.\n\n### Kompetensi harus dapat dibuktikan\n\nKami memilih skema asesmen independen — IRATA dan BNSP — justru karena kami tidak menilai peserta kami sendiri. Penilaian dari pihak ketiga membuat sertifikat kami berarti di hadapan klien mana pun.\n\n### Standar yang sama untuk pelatihan dan pekerjaan\n\nTim jasa kami bekerja pada standar yang kami ajarkan di kelas. Jika kami mengajarkan pemeriksaan alat harian, tim proyek kami melakukannya — termasuk pada hari yang sibuk dan proyek yang tertinggal jadwal.\n\n## Angka yang kami jaga\n\nLebih dari 1.200 teknisi telah kami latih. Tingkat kelulusan asesmen pertama kami berada di kisaran 98 persen — angka yang kami capai dengan menolak meluluskan peserta yang belum siap menghadapi asesor, bukan dengan mempermudah pelatihan.\n\nLebih dari 250 proyek telah kami selesaikan, dari inspeksi flare stack hingga perawatan fasad gedung bertingkat.\n\n## Ke mana kami menuju\n\nIndustri akses tali Indonesia tumbuh lebih cepat daripada pasokan teknisi kompetennya. Fokus kami untuk lima tahun ke depan adalah memperluas kapasitas pelatihan ke luar Jawa — mendekatkan sertifikasi ke tempat pekerjaan itu berada, bukan sebaliknya."
+    },
+    {
+      "type": "team",
+      "eyebrow": "Tim",
+      "title": "Orang-orang di balik standar kami"
+    },
+    {
+      "type": "accreditations",
+      "eyebrow": "Standar",
+      "title": "Kami bekerja pada standar global"
+    },
+    {
+      "type": "cta",
+      "title": "Bicara langsung dengan instruktur kami",
+      "text": "Pertanyaan tentang program, prasyarat, atau kebutuhan proyek Anda — kami jawab pada hari kerja yang sama.",
+      "button": {
+        "label": "Konsultasi via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

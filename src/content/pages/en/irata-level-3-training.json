@@ -1,0 +1,107 @@
+{
+  "translationKey": "course-irata-l3",
+  "slug": "irata-level-3-training",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "IRATA Level 3 — Rope Access Supervisor | Rope Access Center",
+    "description": "The top of the IRATA scheme. You carry full responsibility for the worksite, the rescue plan, and every person on rope."
+  },
+  "hero": {
+    "eyebrow": "IRATA · Level 3",
+    "title": "IRATA Level 3 — Rope Access Supervisor",
+    "body": "The top of the IRATA scheme. You carry full responsibility for the worksite, the rescue plan, and every person on rope.",
+    "ctas": [
+      {
+        "label": "Enrol via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "See course dates",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "graduation-cap",
+    "summary": "The top of the IRATA scheme. You carry full responsibility for the worksite, the rescue plan, and every person on rope."
+  },
+  "course": {
+    "code": "IRATA-L3",
+    "scheme": "IRATA",
+    "level": "Level 3",
+    "order": 3,
+    "featured": true,
+    "summary": "The top of the IRATA scheme. You carry full responsibility for the worksite, the rescue plan, and every person on rope.",
+    "duration": "5 training days + 1 assessment day",
+    "durationDays": 6,
+    "price": "Contact us for pricing",
+    "prerequisites": [
+      "Hold a valid IRATA Level 2 certificate",
+      "Minimum 1,000 logged working hours and at least 12 months since Level 2 certification",
+      "A current first aid certificate"
+    ],
+    "outcomes": [
+      "Author and lead the site work plan and rescue plan",
+      "Rig complex systems including highlines and heavy hauling arrangements",
+      "Supervise and appraise the competence of Level 1 and 2 technicians on site",
+      "Carry out detailed PPE inspections and maintain their records",
+      "Discharge the legal and administrative duties set out in the IRATA ICOP"
+    ],
+    "syllabus": [
+      {
+        "title": "Day 1 — Supervisor Responsibilities",
+        "detail": "The IRATA ICOP in depth, statutory HSE duties, and writing risk assessments and method statements (RAMS)."
+      },
+      {
+        "title": "Day 2 — Complex Rigging",
+        "detail": "Highlines, tyroleans, high-tension systems, resultant force calculations, and system proving."
+      },
+      {
+        "title": "Day 3 — Advanced Rescue",
+        "detail": "Rescues from highlines and aid climbs, two-casualty rescues, and stretcher handling in confined spaces."
+      },
+      {
+        "title": "Day 4 — Management & Inspection",
+        "detail": "Detailed PPE inspection, record systems, worksite auditing, and team competence appraisal."
+      },
+      {
+        "title": "Day 5 — Consolidation",
+        "detail": "Full supervision simulation: leading a team, managing an incident, and defending technical decisions."
+      },
+      {
+        "title": "Day 6 — IRATA Assessment",
+        "detail": "Independent assessment covering supervision, complex rigging, advanced rescue, and written theory."
+      }
+    ],
+    "certificate": "IRATA Level 3 card and certificate, valid for 3 years, registered in the IRATA International database."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## At Level 3, other people’s safety sits with you\n\nAs a Level 3 you are the person who signs the rescue plan and the first person called when something goes wrong. This course asks for more than technical skill — you must make decisions under pressure and be able to defend them.\n\n## After you qualify\n\nMany of our Level 3 graduates move on to the instructor pathway or become HSE leads on oil, gas, and renewable energy projects. We offer career mentoring to alumni taking that route."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Dates",
+      "title": "Next open courses",
+      "course": "course-irata-l3",
+      "cta": {
+        "label": "See all course dates",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Secure your seat on the next cohort",
+      "text": "Send your name, the number of participants, and the month you are aiming for. We confirm seat availability and paperwork the same working day.",
+      "button": {
+        "label": "Ask on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "translationKey": "service-maintenance",
+  "slug": "jasa-perawatan-perbaikan-ketinggian",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Perawatan & Perbaikan di Ketinggian | Rope Access Center",
+    "description": "Pengecatan, blasting, pengelasan, penggantian komponen, dan perbaikan struktur — dikerjakan pada posisi menggantung dengan kendali mutu penuh."
+  },
+  "hero": {
+    "eyebrow": "Layanan Industri",
+    "title": "Perawatan & Perbaikan di Ketinggian",
+    "body": "Pengecatan, blasting, pengelasan, penggantian komponen, dan perbaikan struktur — dikerjakan pada posisi menggantung dengan kendali mutu penuh.",
+    "ctas": [
+      {
+        "label": "Minta penawaran",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Semua layanan",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "wrench",
+    "summary": "Pengecatan, blasting, pengelasan, penggantian komponen, dan perbaikan struktur — dikerjakan pada posisi menggantung dengan kendali mutu penuh."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Mutu tidak berkurang karena posisi\n\nKekhawatiran paling umum terhadap pekerjaan akses tali adalah mutu. Jawaban kami sederhana: prosedur kendali mutu yang sama berlaku, apakah teknisi berdiri di perancah atau tergantung di tali. DFT diukur, adhesi diuji, kondisi lingkungan dicatat.\n\n## Pengendalian tumpahan dan sisa material\n\nKami memasang sistem penampung untuk blasting dan pengecatan sehingga limbah tidak jatuh ke area produksi, laut, atau lingkungan sekitar — persyaratan yang semakin ketat pada proyek dengan standar lingkungan internasional."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Rincian layanan",
+      "title": "Apa yang kami kerjakan",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Lingkup pekerjaan",
+          "items": [
+            "Persiapan permukaan dan pengecatan ulang struktur baja",
+            "Blasting terkendali dan aplikasi pelapis pelindung",
+            "Pengelasan dan perbaikan struktural bersertifikat",
+            "Penggantian anoda, klem, dan komponen mekanis",
+            "Perbaikan beton, penambalan retak, dan injeksi"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industri yang kami layani",
+          "items": ["Minyak & Gas Lepas Pantai", "Industri Berat", "Jembatan & Infrastruktur", "Telekomunikasi"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "Yang Anda terima",
+          "items": [
+            "Laporan harian pekerjaan dengan bukti foto sebelum dan sesudah",
+            "Catatan kendali mutu pelapisan (DFT, adhesi, kondisi lingkungan)",
+            "Sertifikat material dan prosedur pengelasan",
+            "Serah terima pekerjaan lengkap dengan daftar simak"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ceritakan pekerjaan Anda",
+      "text": "Kirim lokasi, jenis aset, dan target waktu. Kami siapkan penilaian risiko awal dan penawaran tertulis, umumnya pada hari kerja yang sama.",
+      "button": {
+        "label": "Diskusikan via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

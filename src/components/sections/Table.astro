@@ -1,0 +1,41 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import type { Section } from '@/content.config';
+type Props = Extract<Section, { type: 'table' }>;
+const { eyebrow, title, intro, columns, rows, note } = Astro.props;
+---
+
+<section class="py-20 sm:py-24">
+  <div class="container-site max-w-5xl">
+    <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />
+    <div class="mt-10 overflow-x-auto rounded-card bg-card shadow-card ring-1 ring-line">
+      <table class="w-full min-w-[34rem] text-left text-sm sm:text-base">
+        <thead class="bg-brand-gradient text-white">
+          <tr>
+            {columns.map((c) => (
+              <th scope="col" class="px-5 py-4 font-semibold">
+                {c}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-black/5">
+          {rows.map((r) => (
+            <tr class="even:bg-surface-alt">
+              {r.map((cell, i) =>
+                i === 0 ? (
+                  <th scope="row" class="px-5 py-4 font-semibold text-heading">
+                    {cell}
+                  </th>
+                ) : (
+                  <td class="px-5 py-4 text-ink">{cell}</td>
+                ),
+              )}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    {note && <p class="mt-4 text-sm text-muted">{note}</p>}
+  </div>
+</section>

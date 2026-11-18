@@ -1,0 +1,156 @@
+---
+/** Tampilan halaman (konten dari src/content/pages). */
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import CourseDetail from '@/components/CourseDetail.astro';
+import PostCard from '@/components/PostCard.astro';
+import RelatedLinks from '@/components/RelatedLinks.astro';
+import Sections from '@/components/sections/Sections.astro';
+import { alternatesFor, getRoutes, hrefFor, type Route } from '@/lib/routes';
+import { parentKeyOf, relatedForPage, siblingPages } from '@/lib/related';
+import { ogPath } from '@/lib/og';
+import { absoluteUrl, breadcrumbSchema, courseSchema, educationEventSchema, faqSchema, ORG_ID, serviceSchema } from '@/lib/seo';
+import { faqs as faqItems, upcomingClasses } from '@/lib/data';
+import { t } from '@/i18n/ui';
+
+type PageRoute = Extract<Route, { kind: 'page' }>;
+interface Props {
+  route: PageRoute;
+}
+const { route } = Astro.props;
+const { locale } = route;
+const data = route.entry.data;
+
+const alternates = await alternatesFor(route.translationKey);
+const homePath = await hrefFor('home', locale);
+const all = await getRoutes();
+
+// Breadcrumb berjenjang: Beranda › Layanan Kami › (induk) › halaman ini.
+const pageByKey = (key: string) => all.find((r): r is PageRoute => r.kind === 'page' && r.locale === locale && r.translationKey === key);
+const ancestors: PageRoute[] = [];
+for (let key = parentKeyOf(route), guard = 0; key && guard < 4; guard++) {
+  const p = pageByKey(key);
+  if (!p || p.path === route.path || ancestors.includes(p)) break;
+  ancestors.unshift(p);
+  key = parentKeyOf(p);
+}
+const crumbs = [
+  { name: t(locale, 'breadcrumb.home'), path: homePath },
+  ...ancestors.map((p) => ({ name: p.entry.data.navLabel ?? p.entry.data.hero.title, path: p.path })),
+  { name: data.navLabel ?? data.hero.title, path: route.path },
+];
+
+// Interlinking: artikel & layanan terkait, disisipkan sebelum CTA penutup.
+const showRelated = data.template === 'service' || data.template === 'course';
+const relatedPosts = showRelated ? relatedForPage(route, all) : [];
+const relatedPages = showRelated ? siblingPages(route, all) : [];
+const ctaAt = data.sections.findLastIndex((s) => s.type === 'cta');
+const [before, after] = ctaAt >= 0 ? [data.sections.slice(0, ctaAt), data.sections.slice(ctaAt)] : [data.sections, []];
+
+// Template "articles": daftar artikel bahasa aktif (fallback ID bila belum ada terjemahan).
+let posts: Extract<Route, { kind: 'post' }>[] = [];
+if (data.template === 'articles') {
+  const pick = (l: typeof locale) =>
+    all
+      .filter((r): r is Extract<Route, { kind: 'post' }> => r.kind === 'post' && r.locale === l)
+      .sort((a, b) => b.entry.data.publishedAt.getTime() - a.entry.data.publishedAt.getTime());
+  posts = pick(locale).length ? pick(locale) : pick('id');
+}
+
+// FAQ di halaman: section "faq" (ditulis di halaman) + "faq-group" (dari data FAQ) → satu FAQPage.
+const groupFaqs = await Promise.all(
+  data.sections.flatMap((s) => (s.type === 'faq-group' ? [faqItems(s.groups).then((f) => f.slice(0, s.limit ?? 99))] : [])),
+);
+const faqs = [
+  ...data.sections.flatMap((s) => (s.type === 'faq' ? s.items : [])),
+  ...groupFaqs.flat().map((f) => ({ q: f.data.question[locale], a: f.data.answer[locale] })),
+];
+const classes =
+  data.template === 'course' || data.template === 'schedule'
+    ? await upcomingClasses(data.template === 'course' ? route.translationKey : undefined)
+    : [];
+const courseTitle = (key: string) => all.find((r) => r.kind === 'page' && r.locale === locale && r.translationKey === key);
+const jsonLd: object[] = [
+  {
+    '@type':
+      data.template === 'contact'
+        ? 'ContactPage'
+        : data.template === 'about'
+          ? 'AboutPage'
+          : data.template === 'faq'
+            ? 'FAQPage'
+            : data.template === 'articles' || data.template === 'training' || data.template === 'services'
+              ? 'CollectionPage'
+              : 'WebPage',
+    '@id': `${absoluteUrl(route.path)}#webpage`,
+    url: absoluteUrl(route.path),
+    name: data.seo.title,
+    description: data.seo.description,
+    inLanguage: locale === 'id' ? 'id-ID' : 'en',
+    isPartOf: { '@id': `${absoluteUrl('/')}#website` },
+    about: { '@id': ORG_ID },
+  },
+  ...(route.slug ? [breadcrumbSchema(crumbs)] : []),
+  ...(faqs.length && data.template !== 'faq' ? [faqSchema(faqs)] : []),
+  ...(data.template === 'service'
+    ? [serviceSchema({ name: data.hero.title, description: data.seo.description, path: route.path, locale })]
+    : []),
+  ...(data.template === 'course' && data.course
+    ? [courseSchema({ name: data.hero.title, course: data.course, path: route.path, locale, classes })]
+    : []),
+  ...(data.template === 'schedule'
+    ? classes
+        .filter((c) => c.status !== 'request')
+        .map((c) => {
+          const page = courseTitle(c.course);
+          return educationEventSchema({
+            item: c,
+            name: page && page.kind === 'page' ? page.entry.data.hero.title : c.course,
+            coursePath: page?.path,
+            locale,
+          });
+        })
+    : []),
+];
+// Halaman FAQ: WebPage bertipe FAQPage langsung berisi mainEntity.
+if (data.template === 'faq' && faqs.length) Object.assign(jsonLd[0]!, { mainEntity: faqSchema(faqs).mainEntity });
+---
+
+<BaseLayout
+  locale={locale}
+  title={data.seo.title}
+  description={data.seo.description}
+  path={route.path}
+  alternates={alternates}
+  ogImageUrl={ogPath(route.path)}
+  noindex={data.seo.noindex}
+  jsonLd={jsonLd}
+>
+  <PageHero locale={locale} {...data.hero} crumbs={route.slug ? crumbs : undefined} />
+  {data.template === 'course' && data.course && <CourseDetail course={data.course} locale={locale} />}
+  {data.template === 'articles' ? (
+    <section class="container-site py-16">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((p) => (
+          <PostCard
+            locale={locale}
+            href={p.path}
+            title={p.entry.data.title}
+            excerpt={p.entry.data.excerpt}
+            image={p.entry.data.image}
+            imageAlt={p.entry.data.imageAlt}
+            category={p.entry.data.category}
+            date={p.entry.data.publishedAt}
+            headingLevel={2}
+          />
+        ))}
+      </div>
+    </section>
+  ) : (
+    <>
+      <Sections sections={before} locale={locale} currentPath={route.path} />
+      <RelatedLinks locale={locale} posts={relatedPosts} pages={relatedPages} />
+      <Sections sections={after} locale={locale} currentPath={route.path} offset={before.length} />
+    </>
+  )}
+</BaseLayout>

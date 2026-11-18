@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import onLight from '@/assets/brand/logo-onLight-720.webp';
+import onDark from '@/assets/brand/logo-onDark-720.webp';
+
+/**
+ * Logo resmi RAC (brand guideline): versi latar terang & latar gelap.
+ * variant "auto" menukar logo otomatis di mode gelap (CSS, tanpa JavaScript).
+ */
+interface Props {
+  class?: string;
+  /** Tinggi tampilan dalam px (dipakai untuk menghitung srcset densitas). */
+  height?: number;
+  priority?: boolean;
+  variant?: 'auto' | 'light' | 'dark';
+}
+const { class: className = '', height = 48, priority = false, variant = 'auto' } = Astro.props;
+const alt = 'Rope Access Center — Training, Certification & Corporate Services';
+const common = { height, densities: [1, 2, 3], loading: priority ? ('eager' as const) : ('lazy' as const) };
+---
+
+{variant !== 'dark' && (
+  <Image
+    src={onLight}
+    alt={alt}
+    {...common}
+    fetchpriority={priority ? 'high' : 'auto'}
+    class:list={[className, variant === 'auto' && 'dark:hidden']}
+  />
+)}
+{variant !== 'light' && <Image src={onDark} alt={alt} {...common} class:list={[className, variant === 'auto' && 'hidden dark:block']} />}

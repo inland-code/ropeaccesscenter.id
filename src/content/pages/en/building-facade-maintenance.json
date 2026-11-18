@@ -1,0 +1,80 @@
+{
+  "translationKey": "service-facade",
+  "slug": "building-facade-maintenance",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Building & Façade Services | Rope Access Center",
+    "description": "Glass cleaning, façade maintenance, sealant replacement, and building envelope inspection for high-rise property."
+  },
+  "hero": {
+    "eyebrow": "Industrial Services",
+    "title": "Building & Façade Services",
+    "body": "Glass cleaning, façade maintenance, sealant replacement, and building envelope inspection for high-rise property.",
+    "ctas": [
+      {
+        "label": "Request a quotation",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "All services",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "building",
+    "summary": "Glass cleaning, façade maintenance, sealant replacement, and building envelope inspection for high-rise property."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## For building managers\n\nA gondola needs servicing, certification, and trained operators. When the gondola is out of service — or the building geometry puts areas beyond its reach — rope access is the far more agile and economical answer.\n\n## Compliance, complete\n\nWe hand over a full HSE document pack before mobilisation: work plan, risk assessment, rescue plan, personnel competency certificates, and proof of insurance. Your building management simply files it."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Service details",
+      "title": "What we deliver",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Scope of work",
+          "items": [
+            "Scheduled glass and façade panel cleaning",
+            "Sealant replacement and curtain wall joint repair",
+            "Building envelope inspection and leak detection",
+            "Installation and maintenance of high-level signage",
+            "Cleaning and recoating of exposed concrete surfaces"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industries we serve",
+          "items": ["Commercial Property", "Hotels & Hospitality", "Hospitals", "Apartments & Condominiums"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "What you receive",
+          "items": [
+            "An annual maintenance schedule you can budget against",
+            "A façade condition report with defects marked up by location",
+            "Insurance certificates and HSE documentation for building management",
+            "Schedule coordination that keeps disruption to tenants minimal"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Tell us about the job",
+      "text": "Send the location, the type of asset, and your target dates. We prepare an initial risk assessment and a written quotation, usually the same working day.",
+      "button": {
+        "label": "Discuss on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

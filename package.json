@@ -1,0 +1,45 @@
+{
+  "name": "ropeaccesscenter-id",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/content-cache.mjs && astro dev",
+    "build": "node scripts/content-cache.mjs && astro build && node scripts/postbuild.mjs && node scripts/verify-urls.mjs && node scripts/seo-audit.mjs",
+    "preview": "wrangler dev --port 8788",
+    "check": "astro check && tsc -p worker",
+    "verify:urls": "node scripts/verify-urls.mjs",
+    "deploy": "wrangler deploy",
+    "build:production": "PUBLIC_SITE_ENV=production npm run build",
+    "db:migrate:local": "wrangler d1 migrations apply rac-db --local",
+    "db:migrate": "wrangler d1 migrations apply rac-db --remote",
+    "test": "vitest run",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@astrojs/preact": "^6.1.6",
+    "@tailwindcss/vite": "^4.3.5",
+    "astro": "^7.4.12",
+    "marked": "^18.2.1",
+    "preact": "^11.2.0",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.5",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@cloudflare/workers-types": "^5.20261118.1",
+    "@fontsource/archivo": "^5.2.0",
+    "@fontsource/montserrat": "^5.2.0",
+    "prettier": "^3.10.1",
+    "prettier-plugin-astro": "^1.1.2",
+    "satori": "^0.63.2",
+    "typescript": "^6.0.3",
+    "vitest": "^5.1.0",
+    "wrangler": "^4.164.0"
+  }
+}

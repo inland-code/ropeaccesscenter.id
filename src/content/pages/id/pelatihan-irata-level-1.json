@@ -1,0 +1,108 @@
+{
+  "translationKey": "course-irata-l1",
+  "slug": "pelatihan-irata-level-1",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "IRATA Level 1 — Teknisi Akses Tali | Rope Access Center",
+    "description": "Pintu masuk resmi ke industri akses tali. Enam hari membangun fondasi manuver tali, pemeriksaan alat, dan penyelamatan dasar — diakhiri asesmen independen IRATA."
+  },
+  "hero": {
+    "eyebrow": "IRATA · Level 1",
+    "title": "IRATA Level 1 — Teknisi Akses Tali",
+    "body": "Pintu masuk resmi ke industri akses tali. Enam hari membangun fondasi manuver tali, pemeriksaan alat, dan penyelamatan dasar — diakhiri asesmen independen IRATA.",
+    "ctas": [
+      {
+        "label": "Daftar via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Lihat jadwal kelas",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "graduation-cap",
+    "summary": "Pintu masuk resmi ke industri akses tali. Enam hari membangun fondasi manuver tali, pemeriksaan alat, dan penyelamatan dasar — diakhiri asesmen independen IRATA."
+  },
+  "course": {
+    "code": "IRATA-L1",
+    "scheme": "IRATA",
+    "level": "Level 1",
+    "order": 1,
+    "featured": true,
+    "summary": "Pintu masuk resmi ke industri akses tali. Enam hari membangun fondasi manuver tali, pemeriksaan alat, dan penyelamatan dasar — diakhiri asesmen independen IRATA.",
+    "duration": "5 hari pelatihan + 1 hari asesmen",
+    "durationDays": 6,
+    "price": "Hubungi kami untuk penawaran",
+    "prerequisites": [
+      "Usia minimum 18 tahun",
+      "Sehat jasmani, dibuktikan surat keterangan sehat untuk bekerja di ketinggian",
+      "Tidak memiliki riwayat vertigo, epilepsi, atau gangguan jantung yang tidak terkontrol",
+      "Tidak diperlukan pengalaman akses tali sebelumnya"
+    ],
+    "outcomes": [
+      "Naik, turun, dan berpindah tali dengan dua titik pengaman independen",
+      "Melewati deviasi, sambungan tali, simpul, dan halangan tepi (edge transition)",
+      "Memeriksa dan mendokumentasikan kelayakan APD serta perangkat keras",
+      "Melakukan penyelamatan korban sederhana dari posisi menuruni tali",
+      "Memahami hierarki pengendalian risiko dan sistem kerja aman IRATA ICOP"
+    ],
+    "syllabus": [
+      {
+        "title": "Hari 1 — Fondasi & Perangkat",
+        "detail": "Kerangka regulasi, IRATA ICOP, anatomi sistem dua tali, pengenalan dan pemeriksaan prapakai seluruh APD, simpul kerja dasar."
+      },
+      {
+        "title": "Hari 2 — Manuver Inti",
+        "detail": "Naik-turun terkontrol, perpindahan naik ke turun, deviasi kecil, dan manajemen tali kerja di bawah beban."
+      },
+      {
+        "title": "Hari 3 — Manuver Lanjutan",
+        "detail": "Perpindahan antar tali, melewati simpul di tengah bentang, transisi tepi, penggunaan tali tambat ulang (re-anchor)."
+      },
+      {
+        "title": "Hari 4 — Penyelamatan",
+        "detail": "Penyelamatan menuruni tali, penyelamatan dari posisi menaiki tali, penggunaan perangkat penyelamat, dan simulasi skenario nyata."
+      },
+      {
+        "title": "Hari 5 — Konsolidasi",
+        "detail": "Latihan terpadu berbasis skenario, peninjauan dokumentasi logbook, dan uji coba internal sebelum asesmen."
+      },
+      {
+        "title": "Hari 6 — Asesmen IRATA",
+        "detail": "Asesmen oleh IRATA Assessor independen: teori tertulis, pemeriksaan alat, manuver, dan penyelamatan."
+      }
+    ],
+    "certificate": "Kartu dan sertifikat IRATA Level 1, berlaku 3 tahun, terdaftar di basis data IRATA International."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Untuk siapa kursus ini\n\nLevel 1 ditujukan bagi teknisi yang belum pernah bekerja dengan sistem akses tali, atau bagi personel darat — welder, inspektur, teknisi mekanik, fotografer industri — yang perlu menjangkau area kerja yang tidak dapat dicapai perancah.\n\nSetelah lulus, Anda dapat bekerja di bawah pengawasan langsung seorang IRATA Level 3 di lokasi kerja mana pun yang menerapkan skema IRATA.\n\n## Cara kami mengajar\n\nRasio instruktur terhadap peserta kami jaga maksimum 1:6, jauh di bawah batas IRATA. Artinya setiap manuver Anda diamati, dikoreksi, dan diulang sampai benar — bukan sekadar dicontohkan sekali di depan kelas.\n\nSeluruh APD disediakan RAC dan diperiksa ulang setiap pagi. Peserta hanya perlu membawa sepatu keselamatan dan pakaian kerja."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Jadwal",
+      "title": "Kelas terbuka berikutnya",
+      "course": "course-irata-l1",
+      "cta": {
+        "label": "Lihat semua jadwal",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Amankan kursi Anda di angkatan berikutnya",
+      "text": "Kirim nama, jumlah peserta, dan bulan yang Anda incar. Kami konfirmasi ketersediaan kursi dan persyaratan dokumen pada hari kerja yang sama.",
+      "button": {
+        "label": "Tanya via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

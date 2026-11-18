@@ -1,0 +1,98 @@
+{
+  "translationKey": "course-in-house",
+  "slug": "pelatihan-in-house",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Pelatihan In-House & Korporat | Rope Access Center",
+    "description": "Kami membawa menara latih, instruktur, dan seluruh APD ke fasilitas Anda — silabus disusun mengikuti risiko nyata di lokasi kerja Anda."
+  },
+  "hero": {
+    "eyebrow": "Pelatihan In-House · Custom",
+    "title": "Pelatihan In-House & Korporat",
+    "body": "Kami membawa menara latih, instruktur, dan seluruh APD ke fasilitas Anda — silabus disusun mengikuti risiko nyata di lokasi kerja Anda.",
+    "ctas": [
+      {
+        "label": "Daftar via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Lihat jadwal kelas",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "building",
+    "summary": "Kami membawa menara latih, instruktur, dan seluruh APD ke fasilitas Anda — silabus disusun mengikuti risiko nyata di lokasi kerja Anda."
+  },
+  "course": {
+    "code": "INH-01",
+    "scheme": "IN-HOUSE",
+    "level": "Custom",
+    "order": 6,
+    "featured": false,
+    "summary": "Kami membawa menara latih, instruktur, dan seluruh APD ke fasilitas Anda — silabus disusun mengikuti risiko nyata di lokasi kerja Anda.",
+    "duration": "Fleksibel, 1–10 hari",
+    "durationDays": 5,
+    "price": "Penawaran khusus per program",
+    "prerequisites": [
+      "Minimum 6 peserta per angkatan",
+      "Area latih dengan struktur tambat yang memadai, atau kami sediakan menara portabel",
+      "Surat keterangan sehat untuk setiap peserta"
+    ],
+    "outcomes": [
+      "Kompetensi yang langsung relevan dengan aset dan prosedur perusahaan Anda",
+      "Rencana penyelamatan spesifik lokasi yang teruji di lapangan",
+      "Matriks kompetensi tim dan rekomendasi jenjang pelatihan lanjutan",
+      "Dokumentasi lengkap untuk keperluan audit klien dan regulator"
+    ],
+    "syllabus": [
+      {
+        "title": "Tahap 1 — Kunjungan & Analisis",
+        "detail": "Instruktur senior meninjau lokasi, memetakan bahaya, dan menyepakati sasaran pembelajaran bersama tim HSE Anda."
+      },
+      {
+        "title": "Tahap 2 — Penyusunan Silabus",
+        "detail": "Silabus, skenario penyelamatan, dan bahan ajar disusun mengacu pada aset dan SOP Anda."
+      },
+      {
+        "title": "Tahap 3 — Pelaksanaan",
+        "detail": "Pelatihan di lokasi Anda, termasuk seluruh APD, struktur latih, dan dokumentasi foto-video."
+      },
+      {
+        "title": "Tahap 4 — Laporan & Tindak Lanjut",
+        "detail": "Laporan kompetensi per individu, rekomendasi perbaikan sistem kerja, dan kunjungan tinjauan 6 bulan."
+      }
+    ],
+    "certificate": "Sertifikat RAC, dan sertifikat IRATA atau BNSP apabila program disertai skema asesmen resmi."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Pelatihan yang tidak generik\n\nPelatihan kelas terbuka mengajarkan prinsip. Pelatihan in-house mengajarkan prinsip itu pada struktur yang benar-benar dipanjat tim Anda setiap hari — di menara pendingin Anda, di tangki Anda, di dermaga Anda.\n\n## Nilai tambah bagi HSE\n\nSetiap program in-house menghasilkan rencana penyelamatan spesifik lokasi yang sudah diuji, bukan dokumen templat. Dokumen ini kerap menjadi bukti kuat saat audit klien maupun inspeksi Disnaker."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Jadwal",
+      "title": "Kelas terbuka berikutnya",
+      "course": "course-in-house",
+      "cta": {
+        "label": "Lihat semua jadwal",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Amankan kursi Anda di angkatan berikutnya",
+      "text": "Kirim nama, jumlah peserta, dan bulan yang Anda incar. Kami konfirmasi ketersediaan kursi dan persyaratan dokumen pada hari kerja yang sama.",
+      "button": {
+        "label": "Tanya via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

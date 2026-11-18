@@ -1,0 +1,23 @@
+---
+/**
+ * Satu route dinamis untuk SEMUA halaman & artikel, kedua bahasa.
+ * Path diambil dari konten (slug + locale), sehingga URL WordPress lama dipertahankan persis
+ * dan dashboard cukup menulis file konten tanpa menyentuh kode.
+ */
+import type { GetStaticPaths } from 'astro';
+import PageView from '@/views/PageView.astro';
+import PostView from '@/views/PostView.astro';
+import { getRoutes, type Route } from '@/lib/routes';
+
+export const getStaticPaths = (async () => {
+  const routes = await getRoutes();
+  return routes.map((route) => ({
+    params: { slug: route.path.replace(/^\/|\/$/g, '') || undefined },
+    props: { route },
+  }));
+}) satisfies GetStaticPaths;
+
+const { route } = Astro.props as { route: Route };
+---
+
+{route.kind === 'page' ? <PageView route={route} /> : <PostView route={route} />}

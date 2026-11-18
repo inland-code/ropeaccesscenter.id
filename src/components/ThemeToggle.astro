@@ -1,0 +1,21 @@
+---
+import Icon from './icons/Icon.astro';
+import type { Locale } from '@/i18n/config';
+import { t } from '@/i18n/ui';
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+---
+
+<!-- Tombol mode terang/gelap. Pilihan disimpan di localStorage; tanpa pilihan, mengikuti pengaturan perangkat. -->
+<button
+  type="button"
+  data-theme-toggle
+  class="inline-flex size-10 items-center justify-center rounded-full text-ink ring-1 ring-line transition hover:bg-brand-50 hover:text-accent"
+  aria-label={t(locale, 'theme.toggle')}
+  title={t(locale, 'theme.toggle')}
+>
+  <Icon name="moon" class="size-5 dark:hidden" />
+  <Icon name="sun" class="hidden size-5 dark:block" />
+</button>

@@ -1,0 +1,80 @@
+{
+  "translationKey": "service-audit",
+  "slug": "hse-audit-consulting",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Work-at-Height HSE Consulting & Audit | Rope Access Center",
+    "description": "An independent review of your work-at-height system — from anchor point adequacy to readiness for a client audit."
+  },
+  "hero": {
+    "eyebrow": "Industrial Services",
+    "title": "Work-at-Height HSE Consulting & Audit",
+    "body": "An independent review of your work-at-height system — from anchor point adequacy to readiness for a client audit.",
+    "ctas": [
+      {
+        "label": "Request a quotation",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "All services",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "clipboard",
+    "summary": "An independent review of your work-at-height system — from anchor point adequacy to readiness for a client audit."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Findings before the incident, not after\n\nA good audit is uncomfortable. We do not write reports to reassure management — we write them so that nobody falls.\n\n## What we find most often\n\nThree findings recur across many facilities: anchor points in use that were never load-assessed, rescue plans copied from someone else’s template, and PPE recorded as inspected with no supporting history. All three are quick to correct once they are identified."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Service details",
+      "title": "What we deliver",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Scope of work",
+          "items": [
+            "Audit of the safe system of work and work-at-height documentation",
+            "Survey and certification of permanent anchor points",
+            "Review and rewriting of rescue plans",
+            "Personnel competency assessment and training needs mapping",
+            "Support through client audits or Ministry of Manpower inspections"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industries we serve",
+          "items": ["Manufacturing", "Property", "Energy", "Logistics & Warehousing"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "What you receive",
+          "items": [
+            "An audit report with prioritised findings and remediation deadlines",
+            "A register of certified anchor points with safe working loads",
+            "A ready-to-use rescue plan",
+            "A competency matrix and a 12-month training roadmap"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Tell us about the job",
+      "text": "Send the location, the type of asset, and your target dates. We prepare an initial risk assessment and a written quotation, usually the same working day.",
+      "button": {
+        "label": "Discuss on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

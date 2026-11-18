@@ -1,0 +1,50 @@
+{
+  "translationKey": "certification",
+  "slug": "certification",
+  "template": "certification",
+  "navLabel": "Certification",
+  "contentStatus": "review",
+  "seo": {
+    "title": "IRATA & BNSP Rope Access Certification · Rope Access Center",
+    "description": "How rope access certification works: IRATA Levels 1–3, BNSP TKPK, validity periods, logged-hour requirements, and the revalidation process."
+  },
+  "hero": {
+    "eyebrow": "Certification",
+    "title": "Certificates That Read the Same Way Everywhere",
+    "body": "We do not assess our own trainees. Assessment is independent — and that is what makes these certificates mean something.",
+    "ctas": [
+      {
+        "label": "Training programmes",
+        "href": "training",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Why independent assessment matters\n\nA training provider that assesses its own trainees faces an obvious conflict of interest: a high pass rate is good marketing. The IRATA and BNSP schemes break that conflict by placing an assessor who took no part in the training.\n\nFor you as a candidate, that means a certificate a client cannot reasonably question. For us, it means the only way to raise our pass rate is to teach better.\n\n## The IRATA International scheme\n\nIRATA administers three competence grades. **Level 1** works under supervision. **Level 2** rigs anchor systems and performs complex rescues. **Level 3** carries full responsibility for the worksite, including the rescue plan and team supervision.\n\nEach step up requires a minimum of 1,000 logged working hours and at least twelve months since the previous certification. Certificates are valid for three years.\n\n## The BNSP scheme\n\nIndonesia’s National Professional Certification Agency issues competency certificates through licensed certification bodies. For work at height, the relevant scheme is TKPK — Tenaga Kerja pada Ketinggian — aligned with Ministry of Manpower Regulation 9/2016.\n\nBNSP certificates are valid for three years and are recognised nationally, including by labour inspectors.\n\n## Verifying a certificate\n\nEvery certificate issued through RAC is registered in the issuing body’s database and can be verified directly by a prospective employer. We encourage every client to carry out that verification — on our certificates and on any provider’s."
+    },
+    {
+      "type": "accreditations",
+      "eyebrow": "Bodies & standards",
+      "title": "The schemes we follow"
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Certification questions",
+      "groups": ["certification"]
+    },
+    {
+      "type": "cta",
+      "title": "Unsure which scheme you need?",
+      "text": "Send us your tender or contract requirements — we will tell you which certification is actually required.",
+      "button": {
+        "label": "Talk to us on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

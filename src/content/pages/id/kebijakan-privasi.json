@@ -1,0 +1,23 @@
+{
+  "translationKey": "privacy",
+  "slug": "kebijakan-privasi",
+  "template": "legal",
+  "navLabel": "Kebijakan Privasi",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Kebijakan Privasi · Rope Access Center",
+    "description": "Bagaimana Rope Access Center mengumpulkan, menggunakan, dan melindungi data pribadi pengunjung situs, peserta pelatihan, dan klien."
+  },
+  "hero": {
+    "eyebrow": "Legal",
+    "title": "Kebijakan Privasi",
+    "body": "Bagaimana Rope Access Center mengumpulkan, menggunakan, dan melindungi data pribadi pengunjung situs, peserta pelatihan, dan klien.",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "*Terakhir diperbarui: 1 Agustus 2026*\n\n## Data yang kami kumpulkan\n\nKami mengumpulkan data yang Anda kirimkan secara sukarela melalui formulir kontak: nama, alamat e-mail, nomor telepon, nama perusahaan, dan isi pesan. Kami juga mencatat data teknis terbatas berupa alamat IP dan jenis peramban untuk keperluan keamanan dan pencegahan penyalahgunaan.\n\nSitus ini tidak menggunakan cookie pelacakan pihak ketiga dan tidak menjalankan skrip periklanan.\n\n## Bagaimana kami menggunakannya\n\nData Anda digunakan semata-mata untuk menjawab pertanyaan, menyusun penawaran, mengelola pendaftaran pelatihan, dan memenuhi kewajiban administratif terkait sertifikasi. Kami tidak menjual, menyewakan, atau membagikan data Anda kepada pihak ketiga untuk tujuan pemasaran.\n\n## Data peserta pelatihan\n\nUntuk keperluan sertifikasi, kami wajib membagikan sebagian data peserta — nama, tanggal lahir, dan nomor identitas — kepada lembaga sertifikasi terkait seperti IRATA International atau lembaga sertifikasi profesi berlisensi BNSP. Pembagian ini merupakan syarat penerbitan sertifikat.\n\n## Berapa lama kami menyimpannya\n\nData pertanyaan umum disimpan maksimum 24 bulan. Data peserta pelatihan dan sertifikasi disimpan selama masa berlaku sertifikat ditambah lima tahun, sesuai persyaratan audit lembaga sertifikasi.\n\n## Keamanan\n\nSitus ini dilayani sepenuhnya melalui koneksi terenkripsi. Akses ke data yang masuk dibatasi pada personel yang membutuhkannya, dilindungi autentikasi, dan dicatat aktivitasnya.\n\n## Hak Anda\n\nAnda berhak meminta salinan data pribadi Anda, meminta koreksi atas data yang tidak akurat, dan meminta penghapusan data yang tidak lagi kami perlukan secara hukum. Kirim permintaan tersebut ke alamat e-mail kami dan kami tanggapi dalam 14 hari kerja.\n\n## Perubahan kebijakan\n\nPerubahan atas kebijakan ini akan diumumkan pada halaman ini beserta tanggal pembaruannya."
+    }
+  ]
+}

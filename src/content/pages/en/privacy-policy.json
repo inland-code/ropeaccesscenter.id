@@ -1,0 +1,23 @@
+{
+  "translationKey": "privacy",
+  "slug": "privacy-policy",
+  "template": "legal",
+  "navLabel": "Privacy Policy",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Privacy Policy · Rope Access Center",
+    "description": "How Rope Access Center collects, uses, and protects the personal data of site visitors, trainees, and clients."
+  },
+  "hero": {
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "body": "How Rope Access Center collects, uses, and protects the personal data of site visitors, trainees, and clients.",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "*Last updated: 1 August 2026*\n\n## Data we collect\n\nWe collect the data you submit voluntarily through our contact forms: name, e-mail address, telephone number, company name, and the content of your message. We also record limited technical data — IP address and browser type — for security and abuse prevention.\n\nThis site uses no third-party tracking cookies and runs no advertising scripts.\n\n## How we use it\n\nYour data is used solely to answer enquiries, prepare quotations, administer training registrations, and meet the administrative obligations attached to certification. We do not sell, rent, or share your data with third parties for marketing purposes.\n\n## Trainee data\n\nFor certification purposes we are required to share certain trainee data — name, date of birth, and identity number — with the relevant certification bodies such as IRATA International or a BNSP-licensed certification body. This sharing is a condition of certificate issuance.\n\n## How long we keep it\n\nGeneral enquiry data is retained for a maximum of 24 months. Trainee and certification data is retained for the validity period of the certificate plus five years, in line with certification body audit requirements.\n\n## Security\n\nThis site is served entirely over encrypted connections. Access to submitted data is restricted to personnel who need it, protected by authentication, and logged.\n\n## Your rights\n\nYou may request a copy of your personal data, request correction of inaccurate data, and request deletion of data we no longer have a legal need to hold. Send such requests to our e-mail address and we will respond within 14 working days.\n\n## Changes to this policy\n\nAny changes to this policy will be published on this page together with the revision date."
+    }
+  ]
+}

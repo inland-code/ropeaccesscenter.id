@@ -1,0 +1,18 @@
+{
+  "translationKey": "articles",
+  "slug": "insights",
+  "template": "articles",
+  "navLabel": "Insights",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Rope Access Insights: Safety, Certification & Careers · RAC",
+    "description": "Articles and practical guides on industrial rope access: choosing a certification, PPE inspection, rescue planning, and technician career paths."
+  },
+  "hero": {
+    "eyebrow": "Insights",
+    "title": "Notes from the Field",
+    "body": "Practical writing on safety, certification, equipment, and careers in rope access — written by our own instructors and technicians.",
+    "ctas": []
+  },
+  "sections": []
+}

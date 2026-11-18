@@ -1,0 +1,54 @@
+{
+  "translationKey": "services",
+  "slug": "services",
+  "template": "services",
+  "navLabel": "Services",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Industrial Rope Access Services: Inspection & Rescue | RAC",
+    "description": "RAC industrial rope access services: NDT inspection, maintenance and repair at height, façade services, standby rescue teams, HSE audits, and technician supply."
+  },
+  "hero": {
+    "eyebrow": "Services",
+    "title": "Work at Height, Done Properly",
+    "body": "Inspection, maintenance, repair, and rescue — without scaffolding, without stopping production, with documentation that survives an audit.",
+    "ctas": [
+      {
+        "label": "Request a quotation",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "page-cards",
+      "eyebrow": "Services",
+      "title": "Industrial rope access services",
+      "intro": "Every deployment begins with a written risk assessment and a rescue plan signed by an IRATA Level 3 supervisor — before anyone touches a rope.",
+      "of": "service"
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "Client Voices",
+      "title": "Trusted by professionals",
+      "limit": 3
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Service questions",
+      "groups": ["services"]
+    },
+    {
+      "type": "cta",
+      "title": "Request a written quotation",
+      "text": "Send the location, asset type, and target dates. We usually send an initial risk assessment and quotation the same working day.",
+      "button": {
+        "label": "Talk to us on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

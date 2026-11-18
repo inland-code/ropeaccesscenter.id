@@ -1,0 +1,48 @@
+---
+import Icon from '@/components/icons/Icon.astro';
+import PostCard from '@/components/PostCard.astro';
+import SectionHeading from './SectionHeading.astro';
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+import { getRoutes, type Route } from '@/lib/routes';
+import { resolveHref } from '@/lib/links';
+type Props = Extract<Section, { type: 'latest-posts' }> & { locale: Locale };
+const { eyebrow, title, intro, limit, cta, locale } = Astro.props;
+const routes = await getRoutes();
+// Artikel bahasa aktif; bila belum ada terjemahan, tampilkan artikel ID.
+const pick = (l: Locale) =>
+  routes
+    .filter((r): r is Extract<Route, { kind: 'post' }> => r.kind === 'post' && r.locale === l)
+    .sort((a, b) => b.entry.data.publishedAt.getTime() - a.entry.data.publishedAt.getTime());
+const posts = (pick(locale).length ? pick(locale) : pick('id')).slice(0, limit);
+const ctaUrl = cta ? await resolveHref(cta.href, locale) : undefined;
+---
+
+{posts.length > 0 && (
+  <section class="py-20 sm:py-24">
+    <div class="container-site">
+      <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+        <SectionHeading eyebrow={eyebrow} title={title} intro={intro} align="left" />
+        {cta && ctaUrl && (
+          <a href={ctaUrl} class="btn-dark shrink-0">
+            {cta.label} <Icon name="arrow" class="size-4" />
+          </a>
+        )}
+      </div>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((p) => (
+          <PostCard
+            locale={locale}
+            href={p.path}
+            title={p.entry.data.title}
+            excerpt={p.entry.data.excerpt}
+            image={p.entry.data.image}
+            imageAlt={p.entry.data.imageAlt}
+            category={p.entry.data.category}
+            date={p.entry.data.publishedAt}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+)}

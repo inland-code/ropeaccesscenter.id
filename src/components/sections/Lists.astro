@@ -1,0 +1,38 @@
+---
+import Icon from '@/components/icons/Icon.astro';
+import SectionHeading from './SectionHeading.astro';
+import type { Section } from '@/content.config';
+type Props = Extract<Section, { type: 'lists' }>;
+const { eyebrow, title, intro, columns } = Astro.props;
+const H = title ? 'h3' : 'h2';
+---
+
+<section class="bg-surface-alt py-20 sm:py-24">
+  <div class="container-site">
+    {title && <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />}
+    <div
+      class:list={['grid gap-6', columns.length === 3 ? 'lg:grid-cols-3' : columns.length === 2 ? 'md:grid-cols-2' : '', title && 'mt-12']}
+    >
+      {columns.map((c) => (
+        <div class="rounded-card bg-card p-7 shadow-card ring-1 ring-line">
+          <div class="flex items-center gap-3">
+            {c.icon && (
+              <span class="inline-flex size-10 items-center justify-center rounded-lg bg-brand-50 text-accent">
+                <Icon name={c.icon} class="size-5" />
+              </span>
+            )}
+            <H class="text-lg font-bold text-heading">{c.title}</H>
+          </div>
+          <ul class="mt-5 space-y-3">
+            {c.items.map((it) => (
+              <li class="flex gap-3 text-[0.95rem] leading-relaxed text-ink">
+                <Icon name="check" class="mt-1 size-4 shrink-0 text-accent" />
+                <span>{it}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

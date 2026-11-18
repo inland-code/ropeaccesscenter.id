@@ -1,0 +1,77 @@
+---
+import { Picture } from 'astro:assets';
+import Breadcrumbs from './Breadcrumbs.astro';
+import BrandGraphic from './BrandGraphic.astro';
+import WhatsAppIcon from './icons/WhatsAppIcon.astro';
+import type { Locale } from '@/i18n/config';
+import { imageFor } from '@/lib/media';
+import { resolveHref } from '@/lib/links';
+
+interface Props {
+  locale: Locale;
+  eyebrow?: string;
+  title: string;
+  tagline?: string;
+  body: string;
+  image?: string;
+  imageAlt?: string;
+  ctas?: { label: string; href: string; variant: 'light' | 'dark' | 'whatsapp' | 'outline' }[];
+  crumbs?: { name: string; path: string }[];
+}
+const { locale, eyebrow, title, tagline, body, image, imageAlt, ctas = [], crumbs } = Astro.props;
+const resolved = await Promise.all(
+  ctas.map(async (c) => ({ ...c, url: await resolveHref(c.href, locale), external: c.href === '#whatsapp' })),
+);
+const cls = { light: 'btn-light', dark: 'btn-dark', whatsapp: 'btn-dark', outline: 'btn-outline' } as const;
+---
+
+<section class="relative grid overflow-hidden bg-brand-gradient lg:min-h-[min(72vh,44rem)] lg:grid-cols-12">
+  <div class="relative flex items-center lg:col-span-7">
+    <div class="w-full px-5 py-12 sm:px-10 lg:px-14 lg:py-20 xl:pl-[max(3.5rem,calc((100vw-76rem)/2+1.5rem))]">
+      {crumbs && (
+        <div class="mb-5 [&_*]:text-white/80 [&_a:hover]:text-white">
+          <Breadcrumbs items={crumbs} />
+        </div>
+      )}
+      {eyebrow && (
+        <p class="mb-4 flex items-center gap-3 font-display text-sm font-bold tracking-[0.16em] text-brand-400 uppercase">
+          <span class="h-0.5 w-8 bg-brand-600" aria-hidden="true" />
+          {eyebrow}
+        </p>
+      )}
+      <h1 class="text-3xl leading-[1.08] font-extrabold text-balance text-white sm:text-4xl xl:text-5xl">{title}</h1>
+      {tagline && <p class="mt-4 text-lg font-semibold text-white/95 italic">{tagline}</p>}
+      <p class="mt-5 max-w-2xl text-base leading-relaxed text-pretty text-white/85 sm:text-lg">{body}</p>
+      {resolved.length > 0 && (
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          {resolved.map((c) => (
+            <a href={c.url} class:list={[cls[c.variant], 'sm:min-w-52']} {...(c.external ? { target: '_blank', rel: 'noopener' } : {})}>
+              {c.external && <WhatsAppIcon />}
+              {c.label}
+              {!c.external && <span aria-hidden="true">→</span>}
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+  <div class:list={['relative lg:col-span-5', image ? 'order-first aspect-[16/9] lg:order-none lg:aspect-auto' : 'hidden lg:block']}>
+    {image ? (
+      <>
+        <!-- Gambar LCP: priority = loading eager + fetchpriority high. -->
+        <Picture
+          formats={['avif', 'webp']}
+          src={imageFor(image)}
+          alt={imageAlt ?? ''}
+          priority
+          layout="full-width"
+          sizes="(min-width: 1024px) 42vw, 100vw"
+          class="absolute inset-0 size-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-navy-900/60 to-transparent" aria-hidden="true" />
+      </>
+    ) : (
+      <BrandGraphic class="absolute inset-0" priority />
+    )}
+  </div>
+</section>

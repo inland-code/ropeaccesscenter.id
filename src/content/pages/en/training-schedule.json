@@ -1,0 +1,48 @@
+{
+  "translationKey": "schedule",
+  "slug": "training-schedule",
+  "template": "schedule",
+  "navLabel": "Training Schedule",
+  "contentStatus": "review",
+  "seo": {
+    "title": "IRATA & BNSP Rope Access Training Schedule · RAC",
+    "description": "Open course dates for IRATA Level 1, 2, and 3 rope access training and BNSP TKPK certification, with locations and remaining seats."
+  },
+  "hero": {
+    "eyebrow": "Training Schedule",
+    "title": "Next Open Courses",
+    "body": "Open courses run monthly. For six participants or more, we can open a dedicated cohort on dates you choose.",
+    "ctas": [
+      {
+        "label": "Enrol via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      }
+    ]
+  },
+  "parent": "training",
+  "sections": [
+    {
+      "type": "schedule",
+      "eyebrow": "Calendar",
+      "title": "All open courses",
+      "intro": "Courses that have finished are hidden automatically. Remaining seats are updated by our team."
+    },
+    {
+      "type": "page-cards",
+      "eyebrow": "Programmes",
+      "title": "Programme details",
+      "of": "course"
+    },
+    {
+      "type": "cta",
+      "title": "Not seeing the dates you need?",
+      "text": "Open courses run monthly. For six participants or more, we can open a dedicated cohort on dates you choose.",
+      "button": {
+        "label": "Talk to us on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

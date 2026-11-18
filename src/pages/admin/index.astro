@@ -1,0 +1,23 @@
+---
+import '@/styles/global.css';
+import { Font } from 'astro:assets';
+import App from '@/admin/App';
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Dashboard - Rope Access Center</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <Font cssVariable="--font-archivo" />
+    <Font cssVariable="--font-montserrat" />
+  </head>
+  <body>
+    <!-- Hanya pemilik (login GitHub). Data diambil dari /api/admin/*. -->
+    <App client:only="preact" />
+    <noscript>Dashboard membutuhkan JavaScript.</noscript>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "translationKey": "articles",
+  "slug": "artikel",
+  "template": "articles",
+  "navLabel": "Artikel",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Artikel Akses Tali: Keselamatan, Sertifikasi & Karier · RAC",
+    "description": "Artikel dan panduan praktis seputar akses tali industri: pemilihan sertifikasi, inspeksi APD, rencana penyelamatan, dan jalur karier teknisi."
+  },
+  "hero": {
+    "eyebrow": "Artikel",
+    "title": "Catatan dari Lapangan",
+    "body": "Tulisan praktis tentang keselamatan, sertifikasi, peralatan, dan karier di industri akses tali — ditulis oleh instruktur dan teknisi kami sendiri.",
+    "ctas": []
+  },
+  "sections": []
+}

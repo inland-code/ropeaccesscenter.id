@@ -1,0 +1,63 @@
+{
+  "translationKey": "training",
+  "slug": "pelatihan",
+  "template": "training",
+  "navLabel": "Pelatihan",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Pelatihan Akses Tali IRATA & BNSP di Indonesia · RAC",
+    "description": "Program pelatihan akses tali RAC: IRATA Level 1, 2, dan 3, sertifikasi BNSP TKPK, refresher, dan pelatihan in-house di lokasi perusahaan Anda."
+  },
+  "hero": {
+    "eyebrow": "Pelatihan",
+    "title": "Pelatihan yang Menyiapkan Anda untuk Hari Kerja, Bukan Hanya Ujian",
+    "body": "Rasio instruktur maksimum 1:6, seluruh APD disediakan, dan asesmen oleh pihak independen. Dari nol pengalaman hingga supervisor.",
+    "ctas": [
+      {
+        "label": "Lihat jadwal kelas",
+        "href": "schedule",
+        "variant": "dark"
+      },
+      {
+        "label": "Tanya via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "outline"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "page-cards",
+      "eyebrow": "Program",
+      "title": "Pilih program pelatihan",
+      "intro": "Setiap program di bawah ini mencakup instruktur, seluruh alat pelindung diri, penggunaan fasilitas latih, bahan ajar, dan biaya asesmen. Anda cukup membawa sepatu keselamatan.",
+      "of": "course"
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Jadwal",
+      "title": "Kelas terbuka berikutnya",
+      "limit": 6,
+      "cta": {
+        "label": "Lihat semua jadwal",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan seputar pelatihan",
+      "groups": ["training", "certification"]
+    },
+    {
+      "type": "cta",
+      "title": "Butuh angkatan khusus untuk tim Anda?",
+      "text": "Untuk enam peserta atau lebih, kami dapat membuka kelas pada tanggal yang Anda tentukan — di pusat pelatihan kami atau di lokasi Anda.",
+      "button": {
+        "label": "Konsultasi via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

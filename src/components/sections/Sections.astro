@@ -1,0 +1,77 @@
+---
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+import Trust from './Trust.astro';
+import Stats from './Stats.astro';
+import ServiceCards from './ServiceCards.astro';
+import PageCards from './PageCards.astro';
+import Prose from './Prose.astro';
+import Lists from './Lists.astro';
+import Schedule from './Schedule.astro';
+import Accreditations from './Accreditations.astro';
+import Team from './Team.astro';
+import Testimonials from './Testimonials.astro';
+import LatestPosts from './LatestPosts.astro';
+import Cta from './Cta.astro';
+import ValueCards from './ValueCards.astro';
+import Banner from './Banner.astro';
+import Gallery from './Gallery.astro';
+import Contact from './Contact.astro';
+import Faq from './Faq.astro';
+import FaqGroup from './FaqGroup.astro';
+import Table from './Table.astro';
+
+interface Props {
+  sections: Section[];
+  locale: Locale;
+  /** Path halaman aktif (kartu otomatis tidak menautkan halaman itu sendiri). */
+  currentPath?: string;
+  /** Offset indeks agar nama grup <details> tetap unik bila Sections dipakai dua kali di satu halaman. */
+  offset?: number;
+}
+const { sections, locale, currentPath, offset = 0 } = Astro.props;
+---
+
+{sections.map((s, n) => {
+  const i = n + offset;
+  switch (s.type) {
+    case 'trust':
+      return <Trust {...s} />;
+    case 'stats':
+      return <Stats {...s} locale={locale} />;
+    case 'service-cards':
+      return <ServiceCards {...s} locale={locale} />;
+    case 'page-cards':
+      return <PageCards {...s} locale={locale} currentPath={currentPath} />;
+    case 'prose':
+      return <Prose {...s} />;
+    case 'lists':
+      return <Lists {...s} />;
+    case 'schedule':
+      return <Schedule {...s} locale={locale} />;
+    case 'accreditations':
+      return <Accreditations {...s} locale={locale} />;
+    case 'team':
+      return <Team {...s} locale={locale} />;
+    case 'testimonials':
+      return <Testimonials {...s} locale={locale} />;
+    case 'latest-posts':
+      return <LatestPosts {...s} locale={locale} />;
+    case 'cta':
+      return <Cta {...s} locale={locale} />;
+    case 'value-cards':
+      return <ValueCards {...s} />;
+    case 'banner':
+      return <Banner {...s} locale={locale} />;
+    case 'gallery':
+      return <Gallery {...s} />;
+    case 'contact':
+      return <Contact {...s} locale={locale} />;
+    case 'faq':
+      return <Faq {...s} index={i} />;
+    case 'faq-group':
+      return <FaqGroup {...s} locale={locale} index={i} />;
+    case 'table':
+      return <Table {...s} />;
+  }
+})}

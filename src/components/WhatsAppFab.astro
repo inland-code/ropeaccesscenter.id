@@ -1,0 +1,20 @@
+---
+import WhatsAppIcon from './icons/WhatsAppIcon.astro';
+import type { Locale } from '@/i18n/config';
+import { t } from '@/i18n/ui';
+import { whatsappUrl } from '@/lib/links';
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+---
+
+<a
+  href={whatsappUrl(locale)}
+  target="_blank"
+  rel="noopener"
+  class="fixed right-4 bottom-4 z-30 inline-flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg ring-4 ring-white/70 transition hover:scale-105 sm:right-6 sm:bottom-6"
+  aria-label={`WhatsApp — ${t(locale, 'cta.whatsapp')}`}
+>
+  <WhatsAppIcon class="size-7" />
+</a>

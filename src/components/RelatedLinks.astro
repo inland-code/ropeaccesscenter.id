@@ -1,0 +1,59 @@
+---
+/** Blok interlinking di halaman: artikel panduan terkait + layanan terkait. */
+import Icon from '@/components/icons/Icon.astro';
+import PostCard from '@/components/PostCard.astro';
+import type { Locale } from '@/i18n/config';
+import type { Route } from '@/lib/routes';
+import { t } from '@/i18n/ui';
+
+interface Props {
+  locale: Locale;
+  posts: Extract<Route, { kind: 'post' }>[];
+  pages: Extract<Route, { kind: 'page' }>[];
+}
+const { locale, posts, pages } = Astro.props;
+---
+
+{(posts.length > 0 || pages.length > 0) && (
+  <section class="py-16 sm:py-20" aria-labelledby="related-links-heading">
+    <div class="container-site">
+      <h2 id="related-links-heading" class="text-2xl font-bold text-heading sm:text-3xl">
+        {t(locale, posts.length ? 'page.relatedGuides' : 'page.relatedServices')}
+      </h2>
+      {posts.length > 0 && (
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((p) => (
+            <PostCard
+              locale={locale}
+              href={p.path}
+              title={p.entry.data.title}
+              excerpt={p.entry.data.excerpt}
+              image={p.entry.data.image}
+              imageAlt={p.entry.data.imageAlt}
+              category={p.entry.data.category}
+              date={p.entry.data.publishedAt}
+            />
+          ))}
+        </div>
+      )}
+      {pages.length > 0 && (
+        <nav aria-label={t(locale, 'page.relatedServices')} class:list={[posts.length > 0 && 'mt-10']}>
+          {posts.length > 0 && <h3 class="text-lg font-semibold text-heading">{t(locale, 'page.relatedServices')}</h3>}
+          <ul class="mt-4 flex flex-wrap gap-3">
+            {pages.map((p) => (
+              <li>
+                <a
+                  href={p.path}
+                  class="inline-flex items-center gap-2 rounded-full bg-card px-4 py-2 text-sm font-medium text-ink ring-1 ring-line transition hover:text-accent-strong hover:ring-brand-300"
+                >
+                  {p.entry.data.hero.title}
+                  <Icon name="arrow" class="size-3.5" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
+    </div>
+  </section>
+)}

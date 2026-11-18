@@ -1,0 +1,100 @@
+{
+  "translationKey": "course-bnsp-tkpk",
+  "slug": "bnsp-tkpk-certification",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "BNSP Certification — Working at Height (TKPK) Levels 1 & 2",
+    "description": "The Indonesian national competency certification for work at height, aligned with Ministry of Manpower Regulation 9/2016 — a mandatory requirement on many domestic…"
+  },
+  "hero": {
+    "eyebrow": "BNSP · TKPK 1 & 2",
+    "title": "BNSP Certification — Working at Height (TKPK) Levels 1 & 2",
+    "body": "The Indonesian national competency certification for work at height, aligned with Ministry of Manpower Regulation 9/2016 — a mandatory requirement on many domestic projects.",
+    "ctas": [
+      {
+        "label": "Enrol via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "See course dates",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "certificate",
+    "summary": "The Indonesian national competency certification for work at height, aligned with Ministry of Manpower Regulation 9/2016 — a mandatory requirement on many domestic projects."
+  },
+  "course": {
+    "code": "BNSP-TKPK",
+    "scheme": "BNSP",
+    "level": "TKPK 1 & 2",
+    "order": 4,
+    "featured": true,
+    "summary": "The Indonesian national competency certification for work at height, aligned with Ministry of Manpower Regulation 9/2016 — a mandatory requirement on many domestic projects.",
+    "duration": "4 days including the competency assessment",
+    "durationDays": 4,
+    "price": "Contact us for pricing",
+    "prerequisites": [
+      "Minimum age 18 and medically fit",
+      "Senior high school education or equivalent",
+      "For Level 2: at least one year of documented work-at-height experience",
+      "National ID and a recent photograph"
+    ],
+    "outcomes": [
+      "Apply Indonesian work-at-height HSE regulations",
+      "Select, inspect, and correctly use fall-protection PPE",
+      "Install work restraint and fall arrest systems",
+      "Deliver rescue and evacuation of a casualty at height",
+      "Prepare work permits for work-at-height activities"
+    ],
+    "syllabus": [
+      {
+        "title": "Day 1 — Regulation & Hazard Identification",
+        "detail": "Regulation 9/2016, Act 1/1970, hazard identification, risk assessment, and the hierarchy of control."
+      },
+      {
+        "title": "Day 2 — PPE & Fall Protection Systems",
+        "detail": "Full body harnesses, energy-absorbing lanyards, anchorage, restraint systems, and fall clearance calculation."
+      },
+      {
+        "title": "Day 3 — Practical & Rescue",
+        "detail": "Vertical ladder practice, platform work, rescue of a suspended casualty, and managing suspension trauma."
+      },
+      {
+        "title": "Day 4 — BNSP Competency Assessment",
+        "detail": "Written, oral, and practical assessment by a BNSP-licensed assessor at a verified assessment venue."
+      }
+    ],
+    "certificate": "BNSP Certificate of Competency and competency card, valid for 3 years, nationally registered."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## IRATA or BNSP — which one do you need?\n\nBoth are legitimate, but they answer different needs. BNSP is the national competency certification recognised by Indonesian regulators and is frequently an administrative requirement on government projects and for local contractors. IRATA is an international industry scheme that travels across borders and is typically demanded by multinational oil and gas operators.\n\nMany of our technicians hold both. If you are unsure, send us your project details on WhatsApp and we will map the right certification with you."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Dates",
+      "title": "Next open courses",
+      "course": "course-bnsp-tkpk",
+      "cta": {
+        "label": "See all course dates",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Secure your seat on the next cohort",
+      "text": "Send your name, the number of participants, and the month you are aiming for. We confirm seat availability and paperwork the same working day.",
+      "button": {
+        "label": "Ask on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

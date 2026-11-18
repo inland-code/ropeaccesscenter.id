@@ -1,0 +1,40 @@
+---
+import Icon from '@/components/icons/Icon.astro';
+import SectionHeading from './SectionHeading.astro';
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+import { testimonials } from '@/lib/data';
+type Props = Extract<Section, { type: 'testimonials' }> & { locale: Locale };
+const { eyebrow, title, intro, limit, locale } = Astro.props;
+const items = (await testimonials()).slice(0, limit);
+---
+
+{items.length > 0 && (
+  <section class="bg-surface-alt py-20 sm:py-24">
+    <div class="container-site">
+      <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />
+      <div class:list={['mx-auto mt-12 grid gap-6', items.length >= 3 ? 'lg:grid-cols-3' : 'max-w-5xl md:grid-cols-2']}>
+        {items.map(({ data: t }) => (
+          <figure class="relative flex flex-col rounded-card bg-card p-8 shadow-card ring-1 ring-line">
+            <Icon name="quote" class="size-9 text-brand-600" />
+            <blockquote class="mt-4 flex-1 leading-relaxed text-ink">“{t.quote[locale]}”</blockquote>
+            <figcaption class="mt-6 flex items-center gap-3 border-t border-line pt-5">
+              <span
+                class="inline-flex size-11 items-center justify-center rounded-full bg-navy-900 font-bold text-white"
+                aria-hidden="true"
+              >
+                {t.name.charAt(0)}
+              </span>
+              <span>
+                <span class="block font-semibold text-heading">{t.name}</span>
+                <span class="block text-sm text-muted">
+                  {t.role[locale]}, {t.company}
+                </span>
+              </span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

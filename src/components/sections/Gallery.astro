@@ -1,0 +1,66 @@
+---
+import { Image } from 'astro:assets';
+import type { Section } from '@/content.config';
+import { imageFor } from '@/lib/media';
+type Props = Extract<Section, { type: 'gallery' }>;
+const { groups } = Astro.props;
+---
+
+<section class="py-16 sm:py-20">
+  <div class="container-site space-y-16">
+    {groups.map((g, gi) => (
+      <div>
+        <h2 class="text-center text-3xl font-bold tracking-tight text-accent">{g.title}</h2>
+        <ul class="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
+          {g.images.map((img, i) => {
+            const id = `lb-${gi}-${i}`;
+            return (
+              <li>
+                {/* Lightbox memakai Popover API bawaan browser — tanpa JavaScript. */}
+                <button
+                  type="button"
+                  popovertarget={id}
+                  class="group relative block aspect-[4/3] w-full overflow-hidden rounded-card focus-visible:outline-brand-500"
+                >
+                  <Image
+                    src={imageFor(img.image)}
+                    alt={img.alt}
+                    width={560}
+                    sizes="(min-width: 768px) 33vw, 50vw"
+                    class="size-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  {img.caption && (
+                    <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3 pt-8 text-left text-sm font-medium text-white">
+                      {img.caption}
+                    </span>
+                  )}
+                </button>
+                <div id={id} popover class="m-auto max-h-[92dvh] max-w-[min(92vw,80rem)] bg-transparent p-0 backdrop:bg-black/85">
+                  <button
+                    type="button"
+                    popovertarget={id}
+                    popovertargetaction="hide"
+                    class="absolute top-2 right-2 z-10 inline-flex size-11 items-center justify-center rounded-full bg-black/60 text-white"
+                    aria-label="Tutup"
+                  >
+                    <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M6 6l12 12M18 6 6 18" stroke-linecap="round" />
+                    </svg>
+                  </button>
+                  <Image
+                    src={imageFor(img.image)}
+                    alt={img.alt}
+                    width={1600}
+                    sizes="92vw"
+                    loading="lazy"
+                    class="max-h-[92dvh] w-auto rounded-lg object-contain"
+                  />
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>

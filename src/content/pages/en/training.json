@@ -1,0 +1,63 @@
+{
+  "translationKey": "training",
+  "slug": "training",
+  "template": "training",
+  "navLabel": "Training",
+  "contentStatus": "review",
+  "seo": {
+    "title": "IRATA & BNSP Rope Access Training in Indonesia · RAC",
+    "description": "RAC rope access training programmes: IRATA Levels 1, 2, and 3, BNSP TKPK certification, refreshers, and in-house training at your own site."
+  },
+  "hero": {
+    "eyebrow": "Training",
+    "title": "Training That Prepares You for the Job, Not Just the Exam",
+    "body": "A maximum 1:6 instructor ratio, all PPE supplied, and assessment by an independent body. From zero experience to supervisor.",
+    "ctas": [
+      {
+        "label": "See course dates",
+        "href": "schedule",
+        "variant": "dark"
+      },
+      {
+        "label": "Ask on WhatsApp",
+        "href": "#whatsapp",
+        "variant": "outline"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "page-cards",
+      "eyebrow": "Programmes",
+      "title": "Choose a training programme",
+      "intro": "Every programme below includes instructors, all personal protective equipment, use of the training facility, course materials, and assessment fees. You need only bring safety boots.",
+      "of": "course"
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Dates",
+      "title": "Next open courses",
+      "limit": 6,
+      "cta": {
+        "label": "See all course dates",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Training questions",
+      "groups": ["training", "certification"]
+    },
+    {
+      "type": "cta",
+      "title": "Need a dedicated cohort for your team?",
+      "text": "For six participants or more, we can open a course on dates you choose — at our training centre or at your site.",
+      "button": {
+        "label": "Talk to us on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

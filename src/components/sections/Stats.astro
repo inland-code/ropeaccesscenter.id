@@ -1,0 +1,28 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+type Props = Extract<Section, { type: 'stats' }> & { locale: Locale };
+const { eyebrow, title, intro, items, locale } = Astro.props;
+const nf = new Intl.NumberFormat(locale === 'id' ? 'id-ID' : 'en-US');
+---
+
+<section class="relative overflow-hidden bg-navy-900 py-20 text-white sm:py-24">
+  <div class="pointer-events-none absolute -top-32 -left-32 size-96 rounded-full bg-brand-500/20 blur-3xl" aria-hidden="true"></div>
+  <div class="pointer-events-none absolute -right-24 -bottom-40 size-96 rounded-full bg-brand-800/30 blur-3xl" aria-hidden="true"></div>
+  <div class="container-site relative">
+    {title && <SectionHeading eyebrow={eyebrow} title={title} intro={intro} tone="light" />}
+    <dl class:list={['grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4', title && 'mt-14']}>
+      {items.map((s) => (
+        <div class="flex flex-col border-l-2 border-brand-500/70 pl-5">
+          <dt class="order-2 mt-2 text-sm font-medium text-white/75 sm:text-base">{s.label}</dt>
+          <dd class="text-4xl font-bold tracking-tight text-brand-400 sm:text-5xl">
+            {nf.format(s.value)}
+            <span class="text-brand-300">{s.suffix}</span>
+          </dd>
+          {s.note && <dd class="order-3 mt-1 text-xs text-white/50">{s.note}</dd>}
+        </div>
+      ))}
+    </dl>
+  </div>
+</section>

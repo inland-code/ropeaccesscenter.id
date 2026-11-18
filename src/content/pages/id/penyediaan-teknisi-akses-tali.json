@@ -1,0 +1,79 @@
+{
+  "translationKey": "service-manpower",
+  "slug": "penyediaan-teknisi-akses-tali",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Penyediaan Teknisi Akses Tali | Rope Access Center",
+    "description": "Tambahkan kapasitas tanpa menambah beban rekrutmen. Teknisi bersertifikat, terverifikasi, dan siap mobilisasi dalam hitungan hari."
+  },
+  "hero": {
+    "eyebrow": "Layanan Industri",
+    "title": "Penyediaan Teknisi Akses Tali",
+    "body": "Tambahkan kapasitas tanpa menambah beban rekrutmen. Teknisi bersertifikat, terverifikasi, dan siap mobilisasi dalam hitungan hari.",
+    "ctas": [
+      {
+        "label": "Minta penawaran",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Semua layanan",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "users",
+    "summary": "Tambahkan kapasitas tanpa menambah beban rekrutmen. Teknisi bersertifikat, terverifikasi, dan siap mobilisasi dalam hitungan hari."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Kami tahu siapa yang kami kirim\n\nSebagian besar teknisi yang kami tempatkan adalah alumni pelatihan kami sendiri. Kami pernah melihat mereka bekerja di bawah tekanan, dan kami tahu kebiasaan kerja masing-masing — bukan sekadar membaca berkas lamaran.\n\n## Verifikasi yang tidak bisa dinegosiasikan\n\nSetiap sertifikat diverifikasi langsung ke basis data penerbitnya. Sertifikat kedaluwarsa atau tidak terdaftar berarti personel tidak berangkat, tanpa pengecualian."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Rincian layanan",
+      "title": "Apa yang kami kerjakan",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Lingkup pekerjaan",
+          "items": [
+            "Teknisi IRATA Level 1, 2, dan 3 untuk penugasan jangka pendek maupun panjang",
+            "Teknisi dengan kompetensi ganda: NDT, welding, coating, mekanikal, elektrikal",
+            "Supervisor akses tali untuk memimpin tim internal Anda",
+            "Verifikasi sertifikat, riwayat medis, dan rekam jejak keselamatan"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industri yang kami layani",
+          "items": ["Kontraktor EPC", "Operator Migas", "Kontraktor Perawatan", "Energi Terbarukan"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "Yang Anda terima",
+          "items": [
+            "Berkas kompetensi lengkap setiap personel sebelum mobilisasi",
+            "Penggantian personel dalam 72 jam apabila terjadi kendala",
+            "Laporan jam kerja dan kinerja keselamatan berkala",
+            "Kontrak fleksibel harian, mingguan, atau berbasis proyek"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ceritakan pekerjaan Anda",
+      "text": "Kirim lokasi, jenis aset, dan target waktu. Kami siapkan penilaian risiko awal dan penawaran tertulis, umumnya pada hari kerja yang sama.",
+      "button": {
+        "label": "Diskusikan via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+---
+import Icon from '@/components/icons/Icon.astro';
+import SectionHeading from './SectionHeading.astro';
+import type { Section } from '@/content.config';
+type Props = Extract<Section, { type: 'value-cards' }>;
+const { eyebrow, title, intro, items } = Astro.props;
+// Tanpa judul section, judul kartu menjadi H2 agar urutan heading tetap benar.
+const H = title ? 'h3' : 'h2';
+---
+
+<section class="py-20 sm:py-24">
+  <div class="container-site">
+    {title && <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />}
+    <div class:list={['grid gap-6 md:grid-cols-3', title && 'mt-12']}>
+      {items.map((c) => (
+        <article class="relative flex flex-col overflow-hidden rounded-card bg-brand-gradient p-8 text-white shadow-card">
+          <div class="pointer-events-none absolute -top-14 -right-14 size-40 rounded-full bg-white/10" aria-hidden="true"></div>
+          {c.icon && (
+            <span class="relative mb-5 inline-flex size-12 items-center justify-center rounded-xl bg-brand-600 text-white">
+              <Icon name={c.icon} class="size-6" />
+            </span>
+          )}
+          <H class="relative text-2xl font-bold">{c.title}</H>
+          {c.text && <p class="relative mt-4 leading-relaxed text-white/90">{c.text}</p>}
+          {c.bullets.length > 0 && (
+            <ul class="relative mt-5 space-y-4">
+              {c.bullets.map((b) => (
+                <li class="flex gap-3">
+                  <span class="mt-1 inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-white/20" aria-hidden="true">
+                    <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                  </span>
+                  <span>
+                    <span class="block font-semibold">{b.title}</span>
+                    <span class="block text-sm leading-relaxed text-white/85">{b.text}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

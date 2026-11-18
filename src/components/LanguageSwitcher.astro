@@ -1,0 +1,31 @@
+---
+import { localeMeta, locales, type Locale } from '@/i18n/config';
+import { t } from '@/i18n/ui';
+import { localePath } from '@/lib/routes';
+
+interface Props {
+  locale: Locale;
+  alternates: { locale: Locale; path: string }[];
+}
+const { locale, alternates } = Astro.props;
+// Jika halaman belum punya terjemahan, arahkan ke beranda bahasa tersebut.
+const links = locales.map((l) => ({
+  locale: l,
+  href: alternates.find((a) => a.locale === l)?.path ?? localePath(l, ''),
+}));
+---
+
+<nav aria-label={t(locale, 'lang.switch')} class="flex items-center rounded-full border border-line p-0.5 text-xs font-semibold">
+  {links.map((l) => (
+    <a
+      href={l.href}
+      hreflang={l.locale}
+      lang={l.locale}
+      aria-current={l.locale === locale ? 'true' : undefined}
+      title={localeMeta[l.locale].label}
+      class:list={['rounded-full px-2.5 py-1 transition', l.locale === locale ? 'bg-navy-900 text-white' : 'text-muted hover:text-ink']}
+    >
+      {localeMeta[l.locale].short}
+    </a>
+  ))}
+</nav>

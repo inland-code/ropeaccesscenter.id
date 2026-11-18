@@ -1,0 +1,107 @@
+{
+  "translationKey": "course-irata-l3",
+  "slug": "pelatihan-irata-level-3",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "IRATA Level 3 — Supervisor Akses Tali | Rope Access Center",
+    "description": "Tingkat tertinggi skema IRATA. Anda bertanggung jawab penuh atas lokasi kerja, rencana penyelamatan, dan setiap orang yang tergantung di tali."
+  },
+  "hero": {
+    "eyebrow": "IRATA · Level 3",
+    "title": "IRATA Level 3 — Supervisor Akses Tali",
+    "body": "Tingkat tertinggi skema IRATA. Anda bertanggung jawab penuh atas lokasi kerja, rencana penyelamatan, dan setiap orang yang tergantung di tali.",
+    "ctas": [
+      {
+        "label": "Daftar via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Lihat jadwal kelas",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "graduation-cap",
+    "summary": "Tingkat tertinggi skema IRATA. Anda bertanggung jawab penuh atas lokasi kerja, rencana penyelamatan, dan setiap orang yang tergantung di tali."
+  },
+  "course": {
+    "code": "IRATA-L3",
+    "scheme": "IRATA",
+    "level": "Level 3",
+    "order": 3,
+    "featured": true,
+    "summary": "Tingkat tertinggi skema IRATA. Anda bertanggung jawab penuh atas lokasi kerja, rencana penyelamatan, dan setiap orang yang tergantung di tali.",
+    "duration": "5 hari pelatihan + 1 hari asesmen",
+    "durationDays": 6,
+    "price": "Hubungi kami untuk penawaran",
+    "prerequisites": [
+      "Memegang sertifikat IRATA Level 2 yang masih berlaku",
+      "Minimum 1.000 jam kerja terdokumentasi dan minimum 12 bulan sejak sertifikasi Level 2",
+      "Sertifikat P3K yang masih berlaku"
+    ],
+    "outcomes": [
+      "Menyusun dan memimpin rencana kerja serta rencana penyelamatan lokasi",
+      "Memasang sistem rigging kompleks termasuk highline dan sistem pengangkatan berat",
+      "Mengawasi dan menilai kompetensi teknisi Level 1 dan 2 di lapangan",
+      "Menyelenggarakan pemeriksaan APD terperinci dan mencatat riwayatnya",
+      "Menjalankan tanggung jawab hukum dan administratif sesuai IRATA ICOP"
+    ],
+    "syllabus": [
+      {
+        "title": "Hari 1 — Tanggung Jawab Supervisor",
+        "detail": "IRATA ICOP secara menyeluruh, kewajiban hukum K3, penyusunan risk assessment dan method statement (RAMS)."
+      },
+      {
+        "title": "Hari 2 — Rigging Kompleks",
+        "detail": "Highline, tyrolean, sistem tegangan tinggi, perhitungan gaya resultan, dan pengujian sistem."
+      },
+      {
+        "title": "Hari 3 — Penyelamatan Tingkat Lanjut",
+        "detail": "Penyelamatan dari highline dan aid climbing, penyelamatan ganda, penanganan korban dengan tandu di ruang terbatas."
+      },
+      {
+        "title": "Hari 4 — Manajemen & Inspeksi",
+        "detail": "Inspeksi terperinci APD, sistem pencatatan, audit lokasi kerja, dan penilaian kompetensi tim."
+      },
+      {
+        "title": "Hari 5 — Konsolidasi",
+        "detail": "Simulasi supervisi penuh: memimpin tim, mengelola insiden, dan mempertahankan keputusan teknis."
+      },
+      {
+        "title": "Hari 6 — Asesmen IRATA",
+        "detail": "Asesmen independen mencakup supervisi, rigging kompleks, penyelamatan lanjutan, dan teori tertulis."
+      }
+    ],
+    "certificate": "Kartu dan sertifikat IRATA Level 3, berlaku 3 tahun, terdaftar di basis data IRATA International."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Di Level 3, keselamatan orang lain ada di tangan Anda\n\nSebagai Level 3, Anda adalah orang yang menandatangani rencana penyelamatan dan yang dicari lebih dulu ketika terjadi insiden. Kursus ini menuntut lebih dari sekadar kemampuan teknis — Anda harus mampu mengambil keputusan di bawah tekanan dan mempertanggungjawabkannya.\n\n## Setelah lulus\n\nBanyak lulusan Level 3 kami melanjutkan ke jalur instruktur atau menjadi HSE lead di proyek migas dan energi terbarukan. Kami membuka jalur pendampingan karier bagi alumni yang menempuh arah tersebut."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Jadwal",
+      "title": "Kelas terbuka berikutnya",
+      "course": "course-irata-l3",
+      "cta": {
+        "label": "Lihat semua jadwal",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Amankan kursi Anda di angkatan berikutnya",
+      "text": "Kirim nama, jumlah peserta, dan bulan yang Anda incar. Kami konfirmasi ketersediaan kursi dan persyaratan dokumen pada hari kerja yang sama.",
+      "button": {
+        "label": "Tanya via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

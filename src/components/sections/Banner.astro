@@ -1,0 +1,25 @@
+---
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon.astro';
+import Icon from '@/components/icons/Icon.astro';
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+import { resolveHref } from '@/lib/links';
+type Props = Extract<Section, { type: 'banner' }> & { locale: Locale };
+const { title, text, button, locale } = Astro.props;
+const url = button ? await resolveHref(button.href, locale) : undefined;
+const wa = button?.href === '#whatsapp';
+---
+
+<section class="bg-brand-gradient py-20 text-center text-white sm:py-24">
+  <div class="container-site max-w-3xl">
+    <h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">{title}</h2>
+    <p class="mt-5 text-lg leading-relaxed text-white/90">{text}</p>
+    {button && url && (
+      <a href={url} class="btn-dark mt-8 px-7 py-4 text-base" {...(wa ? { target: '_blank', rel: 'noopener' } : {})}>
+        {wa && <WhatsAppIcon class="size-5" />}
+        {button.label}
+        {!wa && <Icon name="arrow" class="size-4" />}
+      </a>
+    )}
+  </div>
+</section>

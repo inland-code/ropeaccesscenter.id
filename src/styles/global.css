@@ -1,0 +1,224 @@
+@import 'tailwindcss';
+
+/* Mode gelap: aktif bila <html> punya class .dark (diatur skrip tema di BaseLayout). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Palet RAC — dari brand guideline resmi (docs/brand-guidelines.webp):
+ *   NAVY     #0D1B2A  (navy-900, warna utama)
+ *   RED      #E30613  (brand-600, aksen)
+ *   CHARCOAL #222529  (charcoal)
+ *   Abu netral #4B4F56 · #6B7177 · #9CA3AF · #D1D5DB · #F2F4F7
+ * Merah #E30613 di atas putih = 4,9:1 (lolos AA). Di atas navy dipakai brand-400 (#FA3844, 4,7:1).
+ */
+@theme {
+  --font-sans: var(--font-montserrat), system-ui, 'Segoe UI', Arial, sans-serif;
+  --font-display: var(--font-archivo), 'Arial Black', 'Segoe UI', system-ui, sans-serif;
+
+  --color-brand-50: #fef2f3;
+  --color-brand-100: #fde3e5;
+  --color-brand-200: #fbccd0;
+  --color-brand-300: #f7a3aa;
+  --color-brand-400: #fa3844;
+  --color-brand-500: #e63c4c;
+  --color-brand-600: #e30613;
+  --color-brand-700: #bf0510;
+  --color-brand-800: #9d0812;
+  --color-brand-900: #820d15;
+  --color-brand-950: #4a050a;
+
+  --color-navy-50: #eef2f7;
+  --color-navy-100: #d6dfeb;
+  --color-navy-300: #7b95b8;
+  --color-navy-500: #2a4467;
+  --color-navy-700: #12233b;
+  --color-navy-900: #0d1b2a;
+  --color-navy-950: #070f18;
+
+  --color-charcoal: #222529;
+  --color-steel-50: #f2f4f7;
+  --color-steel-200: #d1d5db;
+  --color-steel-300: #9ca3af;
+  --color-steel-400: #6b7177;
+  --color-steel-500: #4b4f56;
+
+  /* Token semantik — berubah nilai di mode gelap (lihat .dark di bawah). */
+  --color-ink: #222529;
+  --color-muted: #4b4f56;
+  --color-heading: #0d1b2a;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f2f4f7;
+  --color-card: #ffffff;
+  --color-line: rgb(13 27 42 / 0.1);
+  --color-accent: #e30613;
+  --color-accent-strong: #bf0510;
+  --color-sand: #e6e9ef;
+
+  --radius-card: 0.75rem;
+  --shadow-card: 0 1px 2px rgb(13 27 42 / 0.06), 0 14px 34px -16px rgb(13 27 42 / 0.4);
+
+  --container-site: 76rem;
+}
+
+/*
+ * Mode gelap: hanya token permukaan/teks yang berubah. Hero navy, tombol merah, dan logo
+ * tetap sama sehingga identitas brand terjaga.
+ */
+.dark {
+  color-scheme: dark;
+  --color-ink: #e6edf5;
+  --color-muted: #b6c6d8;
+  --color-heading: #f5f8fb;
+  --color-surface: #080d14;
+  --color-surface-alt: #0d1b2a;
+  --color-card: #101c2e;
+  --color-line: rgb(255 255 255 / 0.1);
+  --color-accent: #fa3844;
+  --color-accent-strong: #ff6b75;
+  --color-sand: #1d2f45;
+  --color-brand-50: #2a0d12;
+  --color-brand-100: #3d1118;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.4), 0 14px 34px -14px rgb(0 0 0 / 0.7);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-surface font-sans text-ink antialiased;
+  }
+  /* Judul memakai Archivo lebar — pengganti web untuk "Square 721 Extended" di brand guideline. */
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+    font-stretch: 112%;
+    letter-spacing: -0.005em;
+  }
+  img,
+  svg,
+  video {
+    max-width: 100%;
+  }
+  img {
+    height: auto;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-500;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+/* Latar hero RAC: navy pekat dengan garis diagonal merah tipis (motif OG & brand guideline). */
+@utility bg-brand-gradient {
+  background-color: var(--color-navy-900);
+  background-image:
+    linear-gradient(112deg, transparent 0 78%, rgb(227 6 19 / 0.9) 78% 79.2%, transparent 79.2%),
+    linear-gradient(160deg, var(--color-navy-700) 0%, var(--color-navy-900) 55%, var(--color-navy-950) 100%);
+}
+/* Teks bergradien untuk angka statistik. */
+@utility text-brand-gradient {
+  background-image: linear-gradient(180deg, var(--color-brand-500) 0%, var(--color-brand-800) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility container-site {
+  margin-inline: auto;
+  width: 100%;
+  max-width: var(--container-site);
+  padding-inline: 1rem;
+  @media (width >= 40rem) {
+    padding-inline: 1.5rem;
+  }
+}
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  transition:
+    background-color 150ms,
+    color 150ms,
+    transform 150ms;
+}
+@utility btn-light {
+  @apply btn bg-white text-navy-900 shadow-sm hover:bg-steel-50;
+}
+@utility btn-dark {
+  @apply btn bg-brand-600 text-white shadow-sm hover:bg-brand-700;
+}
+@utility btn-outline {
+  @apply btn border border-white/70 text-white hover:bg-white/10;
+}
+
+/* Tipografi isi panjang (Markdown): artikel, halaman Tentang/Sertifikasi/legal, layanan & pelatihan. */
+@layer components {
+  .prose-rac {
+    @apply space-y-5 leading-relaxed text-ink;
+  }
+  .prose-rac :where(h2) {
+    @apply mt-12 text-2xl font-bold text-heading sm:text-3xl;
+  }
+  .prose-rac :where(h3) {
+    @apply mt-8 text-xl font-bold text-heading;
+  }
+  .prose-rac :where(h2 + *, h3 + *) {
+    @apply mt-3;
+  }
+  .prose-rac :where(a) {
+    @apply font-medium text-accent-strong underline decoration-brand-600/40 underline-offset-2 hover:decoration-brand-600;
+  }
+  .prose-rac :where(strong) {
+    @apply font-semibold text-heading;
+  }
+  .prose-rac :where(ul) {
+    @apply list-disc space-y-1.5 pl-6 marker:text-brand-600;
+  }
+  .prose-rac :where(ol) {
+    @apply list-decimal space-y-1.5 pl-6 marker:font-semibold marker:text-brand-600;
+  }
+  .prose-rac :where(blockquote) {
+    @apply border-l-4 border-brand-600 bg-surface-alt px-5 py-3;
+  }
+  .prose-rac :where(table) {
+    @apply block w-full overflow-x-auto rounded-xl text-base ring-1 ring-line;
+  }
+  .prose-rac :where(th) {
+    @apply bg-surface-alt px-4 py-3 text-left text-heading;
+  }
+  .prose-rac :where(td) {
+    @apply border-t border-line px-4 py-3;
+  }
+}
+
+/* Penanda visual link keluar di isi artikel (↗), tidak dibacakan pembaca layar. */
+@layer components {
+  article a[rel~='external']::after {
+    content: '\2197' / '';
+    margin-left: 0.15em;
+    font-size: 0.8em;
+  }
+}

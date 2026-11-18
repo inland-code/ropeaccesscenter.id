@@ -1,0 +1,79 @@
+{
+  "translationKey": "service-manpower",
+  "slug": "rope-access-technician-supply",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Rope Access Technician Supply | Rope Access Center",
+    "description": "Add capacity without adding a recruitment burden. Certified, vetted technicians ready to mobilise within days."
+  },
+  "hero": {
+    "eyebrow": "Industrial Services",
+    "title": "Rope Access Technician Supply",
+    "body": "Add capacity without adding a recruitment burden. Certified, vetted technicians ready to mobilise within days.",
+    "ctas": [
+      {
+        "label": "Request a quotation",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "All services",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "users",
+    "summary": "Add capacity without adding a recruitment burden. Certified, vetted technicians ready to mobilise within days."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## We know who we send\n\nMost technicians we place are graduates of our own training. We have watched them work under pressure and we know their habits — rather than reading a CV.\n\n## Verification is non-negotiable\n\nEvery certificate is verified directly against the issuing body’s database. An expired or unregistered certificate means the technician does not mobilise, with no exceptions."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Service details",
+      "title": "What we deliver",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Scope of work",
+          "items": [
+            "IRATA Level 1, 2, and 3 technicians for short- and long-term assignments",
+            "Dual-skilled technicians: NDT, welding, coating, mechanical, electrical",
+            "Rope access supervisors to lead your in-house team",
+            "Verification of certificates, medical history, and safety record"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industries we serve",
+          "items": ["EPC Contractors", "Oil & Gas Operators", "Maintenance Contractors", "Renewable Energy"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "What you receive",
+          "items": [
+            "A complete competency file for every technician before mobilisation",
+            "Replacement personnel within 72 hours if an issue arises",
+            "Regular timesheet and safety performance reporting",
+            "Flexible daily, weekly, or project-based contracting"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Tell us about the job",
+      "text": "Send the location, the type of asset, and your target dates. We prepare an initial risk assessment and a written quotation, usually the same working day.",
+      "button": {
+        "label": "Discuss on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

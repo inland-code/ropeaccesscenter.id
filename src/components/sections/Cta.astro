@@ -1,0 +1,36 @@
+---
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon.astro';
+import Icon from '@/components/icons/Icon.astro';
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+import { resolveHref } from '@/lib/links';
+type Props = Extract<Section, { type: 'cta' }> & { locale: Locale };
+const { eyebrow, title, text, button, tone, locale } = Astro.props;
+const url = await resolveHref(button.href, locale);
+const wa = button.href === '#whatsapp';
+---
+
+<section class="px-4 py-16 sm:py-20">
+  <div
+    class:list={[
+      'container-site relative overflow-hidden rounded-[1.75rem] px-6 py-12 sm:px-12 lg:flex lg:items-center lg:justify-between lg:gap-12 lg:py-16',
+      tone === 'brand' ? 'bg-brand-gradient text-white' : 'bg-surface-alt text-heading ring-1 ring-line',
+    ]}
+  >
+    <div class="pointer-events-none absolute -top-24 -right-24 size-72 rounded-full bg-brand-600/20 blur-2xl" aria-hidden="true"></div>
+    <div class="relative max-w-2xl">
+      {eyebrow && <p class="mb-3 text-sm font-semibold tracking-[0.14em] text-brand-400 uppercase">{eyebrow}</p>}
+      <h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">{title}</h2>
+      <p class:list={['mt-4 text-lg', tone === 'brand' ? 'text-white/85' : 'text-muted']}>{text}</p>
+    </div>
+    <a
+      href={url}
+      class="btn-light relative mt-8 shrink-0 px-7 py-4 text-base lg:mt-0"
+      {...(wa ? { target: '_blank', rel: 'noopener' } : {})}
+    >
+      {wa ? <WhatsAppIcon class="size-5 text-[#25D366]" /> : null}
+      {button.label}
+      {!wa && <Icon name="arrow" class="size-4" />}
+    </a>
+  </div>
+</section>

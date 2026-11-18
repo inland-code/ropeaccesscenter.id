@@ -1,0 +1,31 @@
+---
+/**
+ * Grafis merek RAC (pengganti foto bila konten belum punya gambar): latar navy, diagonal merah,
+ * dan siluet pemanjat tali dari logo — sama dengan motif gambar OG & brand guideline.
+ */
+import { Image } from 'astro:assets';
+import climber from '@/assets/brand/climber-420.webp';
+
+interface Props {
+  class?: string;
+  /** Ukuran siluet relatif tinggi kotak. */
+  size?: 'md' | 'lg';
+  priority?: boolean;
+}
+const { class: className = '', size = 'lg', priority = false } = Astro.props;
+---
+
+<div class:list={[!/\babsolute\b/.test(className) && 'relative', 'overflow-hidden bg-navy-900', className]} aria-hidden="true">
+  <div class="absolute inset-0 bg-[linear-gradient(160deg,var(--color-navy-700),var(--color-navy-950))]"></div>
+  <div class="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(rgb(255_255_255)_1px,transparent_1px),linear-gradient(90deg,rgb(255_255_255)_1px,transparent_1px)] [background-size:44px_44px]"></div>
+  <div class="absolute inset-y-[-10%] right-[18%] w-[7%] skew-x-[-14deg] bg-brand-600"></div>
+  <Image
+    src={climber}
+    alt=""
+    data-decorative
+    width={size === 'lg' ? 260 : 140}
+    densities={[1, 2]}
+    loading={priority ? 'eager' : 'lazy'}
+    class:list={['absolute right-[8%] bottom-[6%] w-auto', size === 'lg' ? 'h-[82%]' : 'h-[70%]']}
+  />
+</div>

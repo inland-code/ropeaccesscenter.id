@@ -1,0 +1,32 @@
+# Aset ber-hash dari Astro: aman di-cache selamanya.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML: browser selalu revalidasi, edge Cloudflare melayani dari cache.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+/*.xml
+  Cache-Control: public, max-age=3600
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+  X-Robots-Tag: noindex
+
+# Dashboard: jangan diindeks/di-cache publik (akses dibatasi login GitHub).
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store

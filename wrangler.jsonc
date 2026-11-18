@@ -1,0 +1,30 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "ropeaccesscenter-id",
+  "compatibility_date": "2026-11-01",
+  "main": "./worker/index.ts",
+  // Situs statis dilayani dari edge Cloudflare; Worker hanya berjalan untuk /api/*.
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "force-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"],
+  },
+  // Jangan hapus variable yang diatur lewat dashboard Cloudflare saat deploy otomatis.
+  "keep_vars": true,
+  "vars": {
+    "WHATSAPP_NUMBER": "6281234567890",
+    // Dashboard menyimpan perubahan dengan commit ke repo & branch ini (CI lalu build + deploy).
+    "GITHUB_REPO": "inland-code/ropeaccesscenter.id",
+    "GITHUB_BRANCH": "main",
+    // Akun GitHub yang boleh masuk dashboard (dipisah koma).
+    "ADMIN_GITHUB_USERS": "inland-code",
+    // Diisi di Cloudflare → Settings → Variables and Secrets (lihat docs/DASHBOARD.md):
+    //   GITHUB_OAUTH_CLIENT_ID (text), GITHUB_OAUTH_CLIENT_SECRET, SESSION_SECRET, GITHUB_TOKEN, ADMIN_EMAIL (secret)
+  },
+  // Pesan formulir kontak (riwayat di dashboard) disimpan di D1 "rac-db" (binding DB).
+  // Binding ditambahkan setelah database dibuat di Cloudflare (Fase 7, lihat docs/DASHBOARD.md);
+  // sebelum itu formulir tetap berfungsi (langsung ke WhatsApp), hanya tidak tercatat.
+  "observability": { "enabled": true },
+}
