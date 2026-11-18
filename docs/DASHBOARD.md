@@ -37,7 +37,7 @@ Worker /api/admin/*  ── verifikasi cookie sesi bertanda tangan + akun GitHub
 
 ### 1. Database D1 — ✅ sudah dibuat (`rac-db`, APAC), migrasi `0001_contact_messages.sql` sudah dijalankan, terhubung di `wrangler.jsonc`.
 
-### 2. Token GitHub untuk menyimpan perubahan
+### 2. Token GitHub untuk menyimpan perubahan — ✅ "RAC dashboard", berlaku s.d. 19/11/2027
 
 GitHub → Settings → Developer settings → **Fine-grained personal access tokens** → Generate new token
 
@@ -45,13 +45,13 @@ GitHub → Settings → Developer settings → **Fine-grained personal access to
 - Permissions: **Contents: Read and write**, **Actions: Read-only**
 - Expiration: maks. 1 tahun — catat tanggalnya untuk diperpanjang.
 
-### 3. OAuth App GitHub untuk login dashboard (gratis, tanpa kartu kredit)
+### 3. OAuth App GitHub untuk login dashboard (gratis, tanpa kartu kredit) — ✅ "RAC Dashboard"
 
 GitHub → Settings → Developer settings → **OAuth Apps** → **New OAuth App**
 
 - Application name: `RAC Dashboard`
-- Homepage URL: `https://ropeaccesscenter-id.<subdomain-akun>.workers.dev`
-- Authorization callback URL: `https://ropeaccesscenter-id.<subdomain-akun>.workers.dev/api/auth/callback`
+- Homepage URL: `https://ropeaccesscenter-id.inlandgrup.workers.dev`
+- Authorization callback URL: `https://ropeaccesscenter-id.inlandgrup.workers.dev/api/auth/callback`
 - Simpan **Client ID**, lalu **Generate a new client secret** dan simpan.
 
 Setelah domain `ropeaccesscenter.id` tersambung, ganti kedua URL di atas ke domain itu.
