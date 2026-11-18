@@ -50,6 +50,8 @@ Work at height is governed by Ministry of Manpower Regulation 9/2016, which requ
 
 Rope access workers prove their competence with a Kemnaker certificate and K3 licence under the **TKPK** scheme, which has three grades — from [TKPK Level 1](/en/tkpk-level-1-training/) for beginners to [TKPK Level 3](/en/tkpk-level-3-training/) for supervisors. For climbing structures such as towers and steel frames, the scheme is **TKBT**. See our [certification](/en/certification/) page for details.
 
+For building examples — glass cleaning, sealant, and façade care — see our group article [what is rope access](https://inland.co.id/en/what-is-rope-access/) on the Inland site.
+
 ## Safety is more than equipment
 
 Good equipment is only half the answer. Every rope access job needs a risk assessment, a competent supervisor on site, and a [rescue plan that has been tested](/en/tested-rescue-plan/). Without them, even the best two-rope system cannot guarantee that everyone goes home safely.

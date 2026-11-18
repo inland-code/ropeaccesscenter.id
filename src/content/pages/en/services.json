@@ -46,6 +46,16 @@
     },
     {
       "type": "cta",
+      "tone": "light",
+      "title": "Renovation, design, or construction?",
+      "text": "Talk to Inland, the architecture, construction, and building maintenance company in the same group as RAC.",
+      "button": {
+        "label": "Visit Inland",
+        "href": "https://inland.co.id/en/services/"
+      }
+    },
+    {
+      "type": "cta",
       "title": "Request a written quotation",
       "text": "Send the location, asset type, and target dates. We usually send an initial risk assessment and quotation the same working day.",
       "button": {
