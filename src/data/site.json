@@ -1,7 +1,7 @@
 {
   "name": "Rope Access Center",
   "shortName": "RAC",
-  "legalName": "PT Rope Access Center Indonesia",
+  "legalName": "Rope Access Center",
   "url": "https://ropeaccesscenter.id",
   "tagline": {
     "id": "Pelatihan, Sertifikasi & Layanan Korporat Akses Tali",
@@ -11,29 +11,36 @@
     "id": "Rope Access Center (RAC) adalah pusat pelatihan dan penyedia jasa akses tali untuk industri berisiko tinggi di Indonesia — dari sertifikasi IRATA dan BNSP hingga inspeksi, perawatan, dan penyelamatan di ketinggian.",
     "en": "Rope Access Center (RAC) is a rope access training centre and industrial service provider for high-risk sectors in Indonesia — from IRATA and BNSP certification to inspection, maintenance, and rescue at height."
   },
-  "foundingDate": "2014",
-  "email": "info@ropeaccesscenter.id",
-  "phoneDisplay": "+62 812 3456 7890",
-  "phoneE164": "+6281234567890",
-  "whatsapp": "6281234567890",
+  "parentOrganization": {
+    "name": "Inland",
+    "url": "https://inland.co.id"
+  },
+  "email": "info@inland.co.id",
+  "phoneDisplay": "+62 856 770 0883",
+  "phoneE164": "+628567700883",
+  "whatsapp": "628567700883",
   "whatsappMessage": {
     "id": "Halo RAC, saya ingin bertanya tentang pelatihan/layanan akses tali.",
     "en": "Hello RAC, I would like to ask about rope access training/services."
   },
   "address": {
-    "street": "Jl. Industri Raya No. 10, Kawasan Industri",
-    "locality": "Jakarta Utara",
-    "region": "DKI Jakarta",
-    "postalCode": "14130",
+    "street": "Jl. Kelor II No 31, Pd. Cabe Ilir",
+    "locality": "Pamulang",
+    "region": "Tangerang Selatan, Banten",
+    "postalCode": "15418",
     "country": "ID"
   },
-  "geo": { "latitude": -6.1214, "longitude": 106.894 },
   "areaServed": ["Indonesia"],
   "openingHours": [
     {
       "days": ["Mo", "Tu", "We", "Th", "Fr"],
       "opens": "08:00",
       "closes": "17:00"
+    },
+    {
+      "days": ["Sa"],
+      "opens": "08:00",
+      "closes": "13:00"
     }
   ],
   "social": {

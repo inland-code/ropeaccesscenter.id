@@ -139,15 +139,17 @@ Setiap fase: `npm run format` → `npm run check` → `npm test` → `npm run bu
 - Ganti data contoh lewat dashboard (Data Bisnis, Tim, Testimoni, Jadwal) — wajib sebelum mode produksi.
 - Sambungkan `ropeaccesscenter.id` ke Worker, redirect `www` → root, tambah trailing slash, ubah build variable `PUBLIC_SITE_ENV` → `production`, tambah callback OAuth domain baru, Search Console + sitemap.
 
-## Data yang perlu dikonfirmasi pemilik (⏳ sebelum peluncuran)
+## Data pemilik
 
-Data di source code lama tampak sebagai **contoh/placeholder** dan tidak boleh tayang di situs live tanpa konfirmasi:
+RAC adalah brand dari grup Inland, jadi kontak memakai data Inland (2026-11-19):
 
-- ⏳ Nomor WhatsApp/telepon (`+62 812 3456 7890`) dan alamat (`Jl. Industri Raya No. 10, Jakarta`), koordinat peta.
-- ⏳ Akun media sosial (facebook/instagram/linkedin/youtube `ropeaccesscenter`).
-- ⏳ Nama legal (`PT Rope Access Center Indonesia`), tahun berdiri (2014), angka statistik (1.200+ teknisi, 98%, 250+ proyek).
-- ⏳ Nama & profil tim instruktur, testimoni klien (nama orang & perusahaan), status akreditasi (IRATA member company?
-  LSP BNSP? ISO 45001?). Testimoni & tim ditandai `sample: true` dan **otomatis disembunyikan di build produksi**
-  sampai pemilik mengonfirmasi.
-- ⏳ Jadwal kelas 2026–2027 yang sebenarnya, harga (saat ini "Hubungi kami").
+- ✅ WhatsApp/telepon `+62 856 770 0883`, email `info@inland.co.id`, alamat Jl. Kelor II No 31, Pd. Cabe Ilir, Pamulang,
+  Tangerang Selatan 15418, jam buka Senin–Jumat 08–17, Sabtu 08–13. JSON-LD `parentOrganization`: Inland; footer "Bagian dari grup Inland".
+- ✅ Tahun berdiri & koordinat peta dikosongkan (opsional) sampai ada data pasti.
+- ✅ Jadwal kelas contoh disembunyikan (`published: false`); hanya "Pelatihan in-house — sesuai permintaan" yang tampil.
+  Tambahkan tanggal kelas asli lewat dashboard → Jadwal Kelas.
+- ⏳ Klaim di teks lama yang perlu dicek pemilik: "sejak 2014", 1.200+ teknisi, 98% lulus, 250+ proyek, 10+ tahun
+  (Beranda → section Statistik, halaman Tentang Kami).
+- ⏳ Tim & testimoni masih data contoh (`sample: true`) → otomatis tersembunyi di produksi sampai diganti data asli.
+- ⏳ Media sosial RAC belum ada (ikon otomatis tersembunyi). Email `@ropeaccesscenter.id` belum aktif (tanpa MX).
 - ⏳ Foto asli (pelatihan, menara latih, proyek) — bisa diunggah kapan saja lewat dashboard.

@@ -14,7 +14,7 @@
   // Jangan hapus variable yang diatur lewat dashboard Cloudflare saat deploy otomatis.
   "keep_vars": true,
   "vars": {
-    "WHATSAPP_NUMBER": "6281234567890",
+    "WHATSAPP_NUMBER": "628567700883",
     // Dashboard menyimpan perubahan dengan commit ke repo & branch ini (CI lalu build + deploy).
     "GITHUB_REPO": "inland-code/ropeaccesscenter.id",
     "GITHUB_BRANCH": "main",

@@ -48,6 +48,18 @@ const cols = [
     <div>
       <Logo class="h-16 w-auto" height={64} variant="dark" />
       <p class="mt-5 text-sm leading-relaxed">{site.description[locale]}</p>
+      {site.parentOrganization && (
+        <p class="mt-3 text-sm">
+          {t(locale, 'footer.partOf')}{' '}
+          <a
+            class="font-semibold text-white underline decoration-brand-600 underline-offset-2 hover:text-brand-400"
+            href={site.parentOrganization.url}
+          >
+            {site.parentOrganization.name}
+          </a>
+          {locale === 'en' ? ' group' : ''}
+        </p>
+      )}
       <div class="mt-5">
         <SocialLinks />
       </div>

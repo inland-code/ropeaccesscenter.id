@@ -115,8 +115,8 @@ async function sectionToMd(s: Section, locale: Locale): Promise<string> {
 function contactBlock(locale: Locale): string {
   const a = site.address;
   return locale === 'id'
-    ? `---\n\n**${site.name}** (${site.shortName}) — ${site.tagline.id}\n\n- Alamat: ${a.street}, ${a.locality}, ${a.region} ${a.postalCode}\n- WhatsApp/Telepon: ${site.phoneDisplay}\n- Email: ${site.email}\n- Area layanan: ${site.areaServed.join(', ')}\n- Jam operasional: Senin–Jumat 08:00–17:00 WIB`
-    : `---\n\n**${site.name}** (${site.shortName}) — ${site.tagline.en}\n\n- Address: ${a.street}, ${a.locality}, ${a.region} ${a.postalCode}, Indonesia\n- WhatsApp/Phone: ${site.phoneDisplay}\n- Email: ${site.email}\n- Service area: ${site.areaServed.join(', ')}\n- Hours: Mon–Fri 08:00–17:00 (WIB)`;
+    ? `---\n\n**${site.name}** (${site.shortName}) — ${site.tagline.id}${site.parentOrganization ? ` · bagian dari grup ${site.parentOrganization.name} (${site.parentOrganization.url})` : ''}\n\n- Alamat: ${a.street}, ${a.locality}, ${a.region} ${a.postalCode}\n- WhatsApp/Telepon: ${site.phoneDisplay}\n- Email: ${site.email}\n- Area layanan: ${site.areaServed.join(', ')}\n- Jam operasional: Senin–Jumat 08:00–17:00, Sabtu 08:00–13:00 WIB`
+    : `---\n\n**${site.name}** (${site.shortName}) — ${site.tagline.en}${site.parentOrganization ? ` · part of the ${site.parentOrganization.name} group (${site.parentOrganization.url})` : ''}\n\n- Address: ${a.street}, ${a.locality}, ${a.region} ${a.postalCode}, Indonesia\n- WhatsApp/Phone: ${site.phoneDisplay}\n- Email: ${site.email}\n- Service area: ${site.areaServed.join(', ')}\n- Hours: Mon–Fri 08:00–17:00, Sat 08:00–13:00 (WIB)`;
 }
 
 function courseToMd(c: Course, locale: Locale): string {

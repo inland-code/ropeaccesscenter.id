@@ -511,7 +511,11 @@ export const siteSchema = z.object({
   url: s('URL situs'),
   tagline: z.object({ id: s('Tagline (ID)'), en: s('Tagline (EN)') }).meta({ title: 'Tagline' }),
   description: z.object({ id: text('Deskripsi (ID)'), en: text('Deskripsi (EN)') }).meta({ title: 'Deskripsi singkat perusahaan' }),
-  foundingDate: s('Tahun berdiri'),
+  foundingDate: s('Tahun berdiri (opsional)').optional(),
+  parentOrganization: z
+    .object({ name: s('Nama induk usaha'), url: s('Situs induk usaha') })
+    .meta({ title: 'Induk usaha / grup (opsional)' })
+    .optional(),
   email: s('Email'),
   phoneDisplay: s('Telepon (tampilan)'),
   phoneE164: s('Telepon (format +62…)'),
@@ -528,7 +532,8 @@ export const siteSchema = z.object({
     .meta({ title: 'Alamat' }),
   geo: z
     .object({ latitude: z.number().meta({ title: 'Lintang' }), longitude: z.number().meta({ title: 'Bujur' }) })
-    .meta({ title: 'Koordinat peta' }),
+    .meta({ title: 'Koordinat peta (opsional)' })
+    .optional(),
   areaServed: z.array(s('Wilayah')).meta({ title: 'Area layanan' }),
   openingHours: z.array(hours).meta({ title: 'Jam operasional' }),
   social: z
