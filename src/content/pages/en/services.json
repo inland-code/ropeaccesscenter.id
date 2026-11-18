@@ -6,12 +6,12 @@
   "contentStatus": "review",
   "seo": {
     "title": "Industrial Rope Access Services: Inspection & Rescue | RAC",
-    "description": "RAC industrial rope access services: NDT inspection, maintenance and repair at height, façade services, standby rescue teams, HSE audits, and technician supply."
+    "description": "RAC rope access services: glass cleaning & façades, maintenance and repair at height, inspection & NDT, standby rescue, and Kemnaker-certified technicians."
   },
   "hero": {
     "eyebrow": "Services",
     "title": "Work at Height, Done Properly",
-    "body": "Inspection, maintenance, repair, and rescue — without scaffolding, without stopping production, with documentation that survives an audit.",
+    "body": "Glass cleaning, façade care, repairs, inspection, and rescue at height — no scaffolding, no gondola, delivered by Kemnaker-certified technicians.",
     "ctas": [
       {
         "label": "Request a quotation",
@@ -25,7 +25,7 @@
       "type": "page-cards",
       "eyebrow": "Services",
       "title": "Industrial rope access services",
-      "intro": "Every deployment begins with a written risk assessment and a rescue plan signed by an IRATA Level 3 supervisor — before anyone touches a rope.",
+      "intro": "Every job begins with a written risk assessment and a rescue plan approved by the supervisor — before anyone touches a rope.",
       "of": "service"
     },
     {

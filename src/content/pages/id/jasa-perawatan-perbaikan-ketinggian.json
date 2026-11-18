@@ -4,13 +4,13 @@
   "template": "service",
   "contentStatus": "review",
   "seo": {
-    "title": "Perawatan & Perbaikan di Ketinggian | Rope Access Center",
-    "description": "Pengecatan, blasting, pengelasan, penggantian komponen, dan perbaikan struktur — dikerjakan pada posisi menggantung dengan kendali mutu penuh."
+    "title": "Jasa Perawatan & Perbaikan di Ketinggian (Rope Access) | RAC",
+    "description": "Pengecatan, perbaikan atap, pemasangan, dan perawatan menara, tangki, cerobong, serta struktur tinggi dengan rope access — tanpa perancah, operasional tetap jalan."
   },
   "hero": {
     "eyebrow": "Layanan Industri",
-    "title": "Perawatan & Perbaikan di Ketinggian",
-    "body": "Pengecatan, blasting, pengelasan, penggantian komponen, dan perbaikan struktur — dikerjakan pada posisi menggantung dengan kendali mutu penuh.",
+    "title": "Jasa Perawatan & Perbaikan di Ketinggian",
+    "body": "Pengecatan, perbaikan, pemasangan, dan pembongkaran pada menara, tangki, cerobong, atap, dan struktur tinggi lain — tanpa perancah dan tanpa menghentikan operasional lebih lama dari perlu.",
     "ctas": [
       {
         "label": "Minta penawaran",
@@ -26,12 +26,12 @@
   },
   "card": {
     "icon": "wrench",
-    "summary": "Pengecatan, blasting, pengelasan, penggantian komponen, dan perbaikan struktur — dikerjakan pada posisi menggantung dengan kendali mutu penuh."
+    "summary": "Pengecatan, perbaikan, pemasangan, dan pembongkaran pada menara, tangki, cerobong, atap, dan struktur tinggi lain — tanpa perancah dan tanpa menghentikan operasional lebih lama dari perlu."
   },
   "sections": [
     {
       "type": "prose",
-      "body": "## Mutu tidak berkurang karena posisi\n\nKekhawatiran paling umum terhadap pekerjaan akses tali adalah mutu. Jawaban kami sederhana: prosedur kendali mutu yang sama berlaku, apakah teknisi berdiri di perancah atau tergantung di tali. DFT diukur, adhesi diuji, kondisi lingkungan dicatat.\n\n## Pengendalian tumpahan dan sisa material\n\nKami memasang sistem penampung untuk blasting dan pengecatan sehingga limbah tidak jatuh ke area produksi, laut, atau lingkungan sekitar — persyaratan yang semakin ketat pada proyek dengan standar lingkungan internasional."
+      "body": "## Mengapa tanpa perancah\n\nPerancah pada struktur tinggi bisa memakan waktu berhari-hari untuk dipasang dan dibongkar, memakan ruang, dan menambah paparan risiko bagi pekerja lain. Untuk pekerjaan perbaikan setempat, pengecatan, atau pemasangan ringan, tim akses tali memasang sistem dalam hitungan jam dan langsung bekerja. Hitungan biayanya kami bahas di artikel [akses tali versus perancah](/inspeksi-tanpa-perancah/).\n\n## Kapan perancah tetap lebih tepat\n\nKami akan menyampaikannya dengan jujur: pekerjaan yang membutuhkan platform luas untuk material berat atau waktu kerja sangat lama di satu titik biasanya lebih cocok dengan perancah. Survei awal kami akan menentukan metode yang paling efisien.\n\n## Pekerjaan di area beroperasi\n\nDi pabrik, gudang, atau gedung yang tetap beroperasi, pekerjaan diatur bersama pengelola lokasi: izin kerja, isolasi energi bila diperlukan, dan pengamanan area di bawah titik kerja."
     },
     {
       "type": "lists",
@@ -42,34 +42,87 @@
           "icon": "clipboard",
           "title": "Lingkup pekerjaan",
           "items": [
-            "Persiapan permukaan dan pengecatan ulang struktur baja",
-            "Blasting terkendali dan aplikasi pelapis pelindung",
-            "Pengelasan dan perbaikan struktural bersertifikat",
-            "Penggantian anoda, klem, dan komponen mekanis",
-            "Perbaikan beton, penambalan retak, dan injeksi"
+            "Pengecatan menara, tangki, cerobong, dan struktur baja",
+            "Perbaikan atap, talang, dan penutup dinding",
+            "Pemasangan dan pembongkaran signage, kabel, jaring, dan penangkal petir",
+            "Perbaikan beton dan korosi setempat",
+            "Sealant dan waterproofing pada dinding tinggi",
+            "Pembersihan struktur dan saluran di ketinggian"
           ]
         },
         {
           "icon": "building",
-          "title": "Industri yang kami layani",
-          "items": ["Minyak & Gas Lepas Pantai", "Industri Berat", "Jembatan & Infrastruktur", "Telekomunikasi"]
+          "title": "Aset & sektor",
+          "items": [
+            "Menara telekomunikasi dan cerobong",
+            "Tangki, silo, dan struktur industri",
+            "Atap pabrik dan gudang",
+            "Jembatan dan struktur baja",
+            "Papan reklame dan signage gedung"
+          ]
         },
         {
           "icon": "check-circle",
           "title": "Yang Anda terima",
           "items": [
-            "Laporan harian pekerjaan dengan bukti foto sebelum dan sesudah",
-            "Catatan kendali mutu pelapisan (DFT, adhesi, kondisi lingkungan)",
-            "Sertifikat material dan prosedur pengelasan",
-            "Serah terima pekerjaan lengkap dengan daftar simak"
+            "Penawaran dan metode kerja tertulis",
+            "Penilaian risiko dan rencana penyelamatan",
+            "Dokumentasi foto progres dan hasil",
+            "Laporan pekerjaan dan rekomendasi"
           ]
+        }
+      ]
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "Cara kerja",
+      "title": "Empat langkah dari survei sampai laporan",
+      "items": [
+        {
+          "title": "1. Survei & penawaran",
+          "text": "Kami meninjau lokasi atau foto/gambar kerja, lalu mengirim lingkup, metode, jadwal, dan penawaran tertulis.",
+          "bullets": []
+        },
+        {
+          "title": "2. Rencana kerja & izin",
+          "text": "Penilaian risiko, metode kerja, dan rencana penyelamatan disusun sebelum pekerjaan; izin kerja diurus bersama pengelola lokasi.",
+          "bullets": []
+        },
+        {
+          "title": "3. Pelaksanaan",
+          "text": "Tim teknisi bersertifikat Kemnaker bekerja dengan pengawas di lokasi; area di bawah titik kerja diamankan.",
+          "bullets": []
+        },
+        {
+          "title": "4. Laporan & serah terima",
+          "text": "Dokumentasi foto sebelum–sesudah dan laporan pekerjaan diserahkan bersama rekomendasi perawatan berikutnya.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang sering diajukan",
+      "items": [
+        {
+          "q": "Pekerjaan apa yang cocok dengan rope access?",
+          "a": "Pekerjaan setempat yang tersebar di banyak titik — pengecatan ulang, perbaikan, pemasangan ringan, pembersihan — biasanya paling efisien dengan rope access. Pekerjaan dengan material berat atau durasi sangat panjang di satu titik bisa lebih cocok dengan perancah."
+        },
+        {
+          "q": "Apakah operasional pabrik harus berhenti?",
+          "a": "Biasanya tidak. Pekerjaan dijadwalkan bersama pengelola lokasi, dengan pengamanan area kerja dan isolasi energi hanya pada bagian yang diperlukan."
+        },
+        {
+          "q": "Siapa yang menyediakan material?",
+          "a": "Bisa disepakati: material dari pemilik gedung, atau kami pengadaan sesuai spesifikasi yang disetujui. Semua tercantum di penawaran."
         }
       ]
     },
     {
       "type": "cta",
       "title": "Ceritakan pekerjaan Anda",
-      "text": "Kirim lokasi, jenis aset, dan target waktu. Kami siapkan penilaian risiko awal dan penawaran tertulis, umumnya pada hari kerja yang sama.",
+      "text": "Kirim lokasi, jenis bangunan atau aset, dan target waktu. Kami balas dengan penawaran tertulis, umumnya pada hari kerja yang sama.",
       "button": {
         "label": "Diskusikan via WhatsApp",
         "href": "#whatsapp"

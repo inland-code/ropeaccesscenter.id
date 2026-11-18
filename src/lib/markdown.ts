@@ -122,7 +122,7 @@ function contactBlock(locale: Locale): string {
 function courseToMd(c: Course, locale: Locale): string {
   const L = (id: string, en: string) => (locale === 'id' ? id : en);
   return [
-    `- ${L('Kode', 'Code')}: ${c.code}\n- ${L('Skema', 'Scheme')}: ${c.scheme} · ${c.level}\n- ${L('Durasi', 'Duration')}: ${c.duration}\n- ${L('Biaya', 'Fee')}: ${c.price}`,
+    `- ${L('Kode', 'Code')}: ${c.code}\n- ${L('Sertifikasi', 'Certification')}: Kemnaker RI · ${c.level}\n- ${L('Durasi', 'Duration')}: ${c.duration ?? L('dikonfirmasi saat pendaftaran', 'confirmed on enrolment')}\n- ${L('Biaya', 'Fee')}: ${c.price}`,
     `## ${L('Prasyarat peserta', 'Entry requirements')}\n\n${c.prerequisites.map((p) => `- ${p}`).join('\n')}`,
     `## ${L('Kompetensi yang dicapai', 'Learning outcomes')}\n\n${c.outcomes.map((p) => `- ${p}`).join('\n')}`,
     c.syllabus.length ? `## ${L('Silabus', 'Syllabus')}\n\n${c.syllabus.map((x) => `### ${x.title}\n\n${x.detail}`).join('\n\n')}` : '',

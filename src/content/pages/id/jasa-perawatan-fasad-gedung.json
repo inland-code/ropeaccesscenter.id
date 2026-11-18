@@ -4,13 +4,13 @@
   "template": "service",
   "contentStatus": "review",
   "seo": {
-    "title": "Perawatan Gedung & Fasad | Rope Access Center",
-    "description": "Pembersihan kaca, perawatan fasad, penggantian sealant, dan inspeksi selubung bangunan untuk gedung bertingkat tinggi."
+    "title": "Jasa Rope Access Pembersihan Kaca & Fasad Gedung | RAC",
+    "description": "Pembersihan kaca, sealant, dan perawatan fasad gedung tinggi dengan rope access: tanpa gondola, cepat dipasang, dikerjakan teknisi bersertifikat Kemnaker."
   },
   "hero": {
     "eyebrow": "Layanan Industri",
-    "title": "Perawatan Gedung & Fasad",
-    "body": "Pembersihan kaca, perawatan fasad, penggantian sealant, dan inspeksi selubung bangunan untuk gedung bertingkat tinggi.",
+    "title": "Jasa Pembersihan Kaca & Perawatan Fasad Gedung",
+    "body": "Pembersihan kaca, penggantian sealant, perbaikan, dan pengecatan fasad gedung bertingkat dengan metode rope access — menjangkau area yang sulit dicapai gondola, tanpa instalasi permanen.",
     "ctas": [
       {
         "label": "Minta penawaran",
@@ -26,12 +26,12 @@
   },
   "card": {
     "icon": "building",
-    "summary": "Pembersihan kaca, perawatan fasad, penggantian sealant, dan inspeksi selubung bangunan untuk gedung bertingkat tinggi."
+    "summary": "Pembersihan kaca, penggantian sealant, perbaikan, dan pengecatan fasad gedung bertingkat dengan metode rope access — menjangkau area yang sulit dicapai gondola, tanpa instalasi permanen."
   },
   "sections": [
     {
       "type": "prose",
-      "body": "## Untuk pengelola gedung\n\nGondola membutuhkan perawatan, sertifikasi, dan operator terlatih. Ketika gondola sedang tidak laik atau jangkauannya terbatas oleh bentuk bangunan, akses tali menjadi solusi yang jauh lebih lincah dan hemat.\n\n## Kepatuhan yang lengkap\n\nKami menyerahkan paket dokumen K3 lengkap sebelum mobilisasi: rencana kerja, penilaian risiko, rencana penyelamatan, sertifikat kompetensi personel, dan bukti asuransi. Manajemen gedung Anda cukup mengarsipkannya."
+      "body": "## Mengapa rope access untuk fasad\n\nGondola membutuhkan rel dan instalasi tetap di atap, dan sering tidak menjangkau lekukan fasad, kanopi, atau sisi gedung yang sempit. Rope access hanya membutuhkan titik tambat yang layak: sistem dipasang dalam hitungan jam, berpindah antar sisi gedung dengan cepat, dan tidak mengganggu aktivitas penghuni lebih lama dari yang diperlukan.\n\n## Keselamatan penghuni dan pejalan kaki\n\nArea di bawah titik kerja diberi pembatas dan rambu, peralatan diikat agar tidak jatuh, dan setiap tim bekerja dengan pengawas serta rencana penyelamatan. Untuk gedung yang beroperasi penuh, pekerjaan dapat dijadwalkan di luar jam sibuk.\n\n## Perawatan rutin\n\nKaca yang dibersihkan teratur dan sealant yang diganti tepat waktu mencegah noda permanen, rembesan air, dan kerusakan bingkai. Kami dapat menyusun jadwal perawatan berkala — bulanan, triwulanan, atau tahunan — sesuai kondisi gedung."
     },
     {
       "type": "lists",
@@ -42,34 +42,91 @@
           "icon": "clipboard",
           "title": "Lingkup pekerjaan",
           "items": [
-            "Pembersihan kaca dan panel fasad berkala",
-            "Penggantian sealant dan perbaikan sambungan curtain wall",
-            "Inspeksi selubung bangunan dan deteksi kebocoran",
-            "Pemasangan dan perawatan signage ketinggian",
-            "Pembersihan dan pengecatan ulang permukaan beton ekspos"
+            "Pembersihan kaca dan panel ACP/komposit",
+            "Penggantian dan pemasangan ulang sealant kaca serta sambungan fasad",
+            "Perbaikan dan pengecatan ulang fasad",
+            "Penanganan rembesan dan waterproofing dinding luar",
+            "Pembersihan talang, kanopi, dan skylight",
+            "Inspeksi visual fasad dengan dokumentasi foto"
           ]
         },
         {
           "icon": "building",
-          "title": "Industri yang kami layani",
-          "items": ["Properti Komersial", "Hotel & Perhotelan", "Rumah Sakit", "Apartemen & Kondominium"]
+          "title": "Aset & sektor",
+          "items": [
+            "Gedung perkantoran",
+            "Apartemen dan hotel",
+            "Mal, ruko, dan gedung komersial",
+            "Rumah sakit dan kampus",
+            "Pabrik dan gudang bertingkat"
+          ]
         },
         {
           "icon": "check-circle",
           "title": "Yang Anda terima",
           "items": [
-            "Jadwal perawatan tahunan yang dapat diprediksi anggarannya",
-            "Laporan kondisi fasad dengan penandaan titik kerusakan",
-            "Sertifikat asuransi dan dokumen K3 untuk manajemen gedung",
-            "Koordinasi jadwal agar tidak mengganggu penghuni"
+            "Penawaran dan jadwal tertulis",
+            "Penilaian risiko dan metode kerja",
+            "Dokumentasi foto sebelum dan sesudah",
+            "Rekomendasi jadwal perawatan berkala"
           ]
+        }
+      ]
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "Cara kerja",
+      "title": "Empat langkah dari survei sampai laporan",
+      "items": [
+        {
+          "title": "1. Survei & penawaran",
+          "text": "Kami meninjau lokasi atau foto/gambar kerja, lalu mengirim lingkup, metode, jadwal, dan penawaran tertulis.",
+          "bullets": []
+        },
+        {
+          "title": "2. Rencana kerja & izin",
+          "text": "Penilaian risiko, metode kerja, dan rencana penyelamatan disusun sebelum pekerjaan; izin kerja diurus bersama pengelola lokasi.",
+          "bullets": []
+        },
+        {
+          "title": "3. Pelaksanaan",
+          "text": "Tim teknisi bersertifikat Kemnaker bekerja dengan pengawas di lokasi; area di bawah titik kerja diamankan.",
+          "bullets": []
+        },
+        {
+          "title": "4. Laporan & serah terima",
+          "text": "Dokumentasi foto sebelum–sesudah dan laporan pekerjaan diserahkan bersama rekomendasi perawatan berikutnya.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang sering diajukan",
+      "items": [
+        {
+          "q": "Seberapa sering kaca gedung perlu dibersihkan?",
+          "a": "Umumnya setiap 3–6 bulan, tergantung lokasi, polusi, dan jenis kaca. Gedung di dekat jalan raya atau kawasan industri biasanya perlu lebih sering. Kami bisa merekomendasikan jadwal setelah melihat kondisi gedung."
+        },
+        {
+          "q": "Apakah rope access seaman gondola?",
+          "a": "Rope access memakai dua sistem tali independen — tali kerja dan tali pengaman — sehingga kegagalan satu sistem tidak menyebabkan jatuh. Dengan teknisi bersertifikat, rencana penyelamatan, dan peralatan yang diperiksa setiap hari, metode ini sangat aman untuk pekerjaan fasad."
+        },
+        {
+          "q": "Apakah area di bawah harus ditutup?",
+          "a": "Area tepat di bawah titik kerja diberi pembatas selama pekerjaan berlangsung. Pembatas bergeser mengikuti posisi tim, sehingga akses gedung tetap berjalan."
+        },
+        {
+          "q": "Bisa bekerja di luar jam kantor?",
+          "a": "Bisa. Untuk gedung yang ramai, pekerjaan dapat dijadwalkan pagi hari, akhir pekan, atau di luar jam operasional, selama kondisi cuaca dan pencahayaan aman."
         }
       ]
     },
     {
       "type": "cta",
       "title": "Ceritakan pekerjaan Anda",
-      "text": "Kirim lokasi, jenis aset, dan target waktu. Kami siapkan penilaian risiko awal dan penawaran tertulis, umumnya pada hari kerja yang sama.",
+      "text": "Kirim lokasi, jenis bangunan atau aset, dan target waktu. Kami balas dengan penawaran tertulis, umumnya pada hari kerja yang sama.",
       "button": {
         "label": "Diskusikan via WhatsApp",
         "href": "#whatsapp"

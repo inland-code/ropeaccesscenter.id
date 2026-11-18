@@ -1,50 +1,63 @@
 ---
 translationKey: post-choosing-certification
 slug: memilih-sertifikasi-akses-tali
-title: "IRATA, BNSP, atau SPRAT: Memilih Sertifikasi Akses Tali yang Tepat"
+title: "TKPK atau TKBT? Memilih Sertifikasi Kemnaker untuk Kerja di Ketinggian"
 seo:
-  title: "IRATA, BNSP, atau SPRAT? Memilih Sertifikasi Akses Tali"
-  description: "Perbandingan IRATA, BNSP TKPK, dan SPRAT: pengakuan, biaya, masa berlaku, dan skema mana yang diminta operator di Indonesia."
-excerpt: "Tiga skema, tiga tujuan berbeda. Panduan praktis untuk teknisi dan manajer HSE yang harus memutuskan sertifikasi mana yang benar-benar dibutuhkan proyek."
+  title: "TKPK atau TKBT? Memilih Sertifikasi Kerja di Ketinggian"
+  description: "Perbedaan sertifikasi Kemnaker TKPK (akses tali) dan TKBT (bangunan tinggi): jenis pekerjaan, tingkat, prasyarat, dan cara memilih untuk teknisi maupun perusahaan."
+excerpt: "Dua skema Kemnaker untuk kerja di ketinggian, dua cara kerja yang berbeda. Panduan praktis untuk teknisi dan manajer HSE yang harus memilih sertifikasi yang benar-benar dibutuhkan."
 category: sertifikasi
 publishedAt: 2026-08-04
-author: Tim Rope Access Center
+updatedAt: 2026-11-19
+author: "Tim Rope Access Center"
 sources:
-  - title: "What is Rope Access"
-    publisher: "IRATA International"
-    url: https://irata.org/page/what-is-rope-access
-  - title: "SPRAT Certification"
-    publisher: "Society of Professional Rope Access Technicians"
-    url: https://sprat.org/certification/
-  - title: "Badan Nasional Sertifikasi Profesi"
-    publisher: "BNSP"
-    url: https://bnsp.go.id/
   - title: "Permenaker No. 9 Tahun 2016 tentang K3 dalam Pekerjaan pada Ketinggian"
     publisher: "JDIH Kementerian Ketenagakerjaan"
     url: https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016
+  - title: "Permenaker No. 9 Tahun 2016 (teks lengkap)"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+  - title: "What is Rope Access"
+    publisher: "IRATA International"
+    url: https://irata.org/page/what-is-rope-access
+faq:
+  - q: "Apakah TKPK dan TKBT bisa saling menggantikan?"
+    a: "Tidak. TKPK untuk pekerjaan menggantung pada tali, TKBT untuk pekerjaan memanjat struktur dengan penahan jatuh. Pekerja yang melakukan keduanya sebaiknya memegang kedua sertifikat."
+  - q: "Apakah perlu pengalaman untuk ikut TKPK atau TKBT Tingkat 1?"
+    a: "Tidak. Tingkat 1 untuk pemula; syarat utamanya usia minimal 18 tahun dan sehat untuk bekerja di ketinggian."
 ---
-Pertanyaan ini datang hampir setiap minggu ke meja kami, dari dua arah sekaligus: teknisi yang ingin memulai [karier](/karier-akses-tali-indonesia/), dan manajer HSE yang harus memenuhi persyaratan tender. Jawabannya berbeda untuk keduanya.
 
-## Apa yang sebenarnya dibeli setiap skema
+Pertanyaan ini datang hampir setiap minggu ke meja kami, dari dua arah sekaligus: pekerja yang ingin memulai karier di ketinggian, dan manajer HSE yang harus memenuhi persyaratan kontrak. Keduanya biasanya sampai pada pertanyaan yang sama: TKPK atau TKBT?
 
-**IRATA International** menjual pengakuan lintas negara. Kartu IRATA dibaca dengan cara yang sama di Jakarta, Aberdeen, dan Perth. Operator migas multinasional hampir selalu mensyaratkannya, dan skema tiga levelnya memberi jalur karier yang jelas dengan persyaratan jam kerja yang tegas.
+## Dua skema, satu regulasi
 
-**BNSP** menjual legitimasi nasional. Untuk proyek pemerintah, BUMN, dan banyak kontraktor lokal, sertifikat kompetensi BNSP adalah dokumen yang diperiksa auditor. Skema [TKPK](/sertifikasi-bnsp-tkpk/) mengacu langsung pada Permenaker No. 9 Tahun 2016, sehingga posisinya kuat di hadapan pengawas ketenagakerjaan.
+Keduanya adalah sertifikasi K3 kerja di ketinggian dari Kementerian Ketenagakerjaan RI yang mengacu pada Permenaker No. 9 Tahun 2016. Perbedaannya terletak pada **cara** pekerja mencapai dan bertahan di titik kerja.
 
-**SPRAT** adalah padanan IRATA di Amerika Utara. Di Indonesia, permintaannya terbatas — biasanya muncul ketika klien akhirnya adalah perusahaan Amerika atau ketika teknisi berencana bekerja di sana.
+**TKPK (Tenaga Kerja pada Ketinggian)** adalah skema untuk metode akses tali: pekerja menggantung pada dua sistem tali — tali kerja dan tali pengaman — dan bergerak naik, turun, atau menyamping di sepanjang tali. TKPK memiliki tiga tingkat, dari [teknisi Tingkat 1](/pelatihan-tkpk-tingkat-1/) hingga [supervisor Tingkat 3](/pelatihan-tkpk-tingkat-3/).
+
+**TKBT (Tenaga Kerja Bangunan Tinggi)** adalah skema untuk pekerjaan memanjat struktur — menara, rangka baja, perancah, tiang — dengan sistem penahan jatuh seperti lanyard ganda. TKBT memiliki dua tingkat: [Tingkat 1](/pelatihan-tkbt-tingkat-1/) dan [Tingkat 2](/pelatihan-tkbt-tingkat-2/).
+
+## Cara cepat memilih
+
+Tanyakan satu hal: **apakah pekerja menggantung pada tali, atau berdiri dan memanjat pada struktur?**
+
+- Membersihkan kaca dan memperbaiki [fasad gedung](/jasa-perawatan-fasad-gedung/), mengecat dinding tangki, menginspeksi sisi cerobong — pekerja menggantung pada tali. Itu wilayah **TKPK**.
+- Memanjat menara telekomunikasi, bekerja di rangka baja, memasang perancah — pekerja memanjat struktur dan berpindah titik tambat. Itu wilayah **TKBT**.
+
+Banyak pekerjaan di lapangan mencampur keduanya. Teknisi yang memanjat menara lalu turun dengan tali untuk mencapai antena, misalnya, sebaiknya memegang kedua sertifikat.
 
 ## Untuk teknisi: mulai dari mana
 
-Jika Anda memulai karier dan ingin peluang seluas mungkin, mulailah dari [IRATA Level 1](/pelatihan-irata-level-1/). Alasannya sederhana: pasar kerja akses tali dengan bayaran terbaik di Indonesia adalah migas lepas pantai, dan mereka meminta IRATA.
+Jika Anda baru memulai, pilih skema yang sesuai dengan pekerjaan yang paling mungkin Anda dapatkan. Pasar kerja perawatan gedung bertingkat dan industri banyak membutuhkan TKPK; sektor telekomunikasi dan konstruksi baja banyak membutuhkan TKBT.
 
-Tetapi jangan berhenti di situ. Tambahkan BNSP TKPK ketika Anda mulai mengambil pekerjaan darat. Biayanya relatif kecil dibandingkan dengan nilai proyek yang menjadi terbuka bagi Anda.
+Setelah bekerja dan mengumpulkan jam kerja yang terdokumentasi, naik ke tingkat berikutnya. Catat setiap pekerjaan sejak hari pertama — pengalaman yang tidak tercatat sulit dibuktikan saat mendaftar tingkat lanjutan. Kami membahas jenjangnya di [peta karier teknisi akses tali](/karier-akses-tali-indonesia/).
 
 ## Untuk manajer HSE: baca kontrak, bukan brosur
 
-Kesalahan paling mahal yang kami lihat adalah menyertifikasi seluruh tim pada skema yang ternyata tidak diminta klien. Sebelum memesan [pelatihan](/pelatihan/), periksa tiga hal: klausul kompetensi dalam kontrak, persyaratan induksi lokasi milik operator, dan standar yang dirujuk dalam dokumen tender.
+Kesalahan paling mahal yang kami lihat adalah menyertifikasi seluruh tim pada skema yang tidak sesuai dengan pekerjaannya. Sebelum mendaftarkan [pelatihan](/pelatihan/), periksa tiga hal: metode kerja yang akan dipakai di lokasi, persyaratan kompetensi dalam kontrak atau izin kerja, dan susunan tim — siapa yang bekerja, siapa yang mengawasi.
 
-Jika ketiganya menyebut IRATA, BNSP tidak akan menggantikannya — dan sebaliknya.
+Untuk tim akses tali, pastikan ada pengawas yang kompeten di setiap lokasi. Untuk pekerjaan berisiko tinggi, rencanakan juga [kemampuan penyelamatan di lokasi](/jasa-standby-rescue/).
 
-## Yang tidak berubah, apa pun skemanya
+## Sertifikat bukan akhir
 
-[Sertifikat](/sertifikasi/) mana pun hanya menyatakan bahwa seseorang memenuhi standar pada hari asesmen. Yang menjaga orang tetap hidup adalah kebiasaan kerja harian: pemeriksaan alat sebelum dipakai, [rencana penyelamatan](/jasa-standby-rescue/) yang benar-benar diuji, dan budaya yang membolehkan siapa pun menghentikan pekerjaan.
+[Sertifikat](/sertifikasi/) apa pun hanya menyatakan bahwa seseorang memenuhi standar pada hari uji. Yang menjaga orang tetap selamat adalah kebiasaan kerja harian: pemeriksaan alat sebelum dipakai, rencana penyelamatan yang benar-benar diuji, dan budaya yang membolehkan siapa pun menghentikan pekerjaan.

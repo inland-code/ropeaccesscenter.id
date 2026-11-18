@@ -5,13 +5,13 @@
   "navLabel": "Certification",
   "contentStatus": "review",
   "seo": {
-    "title": "IRATA & BNSP Rope Access Certification · Rope Access Center",
-    "description": "How rope access certification works: IRATA Levels 1–3, BNSP TKPK, validity periods, logged-hour requirements, and the revalidation process."
+    "title": "Kemnaker Work-at-Height Certification: TKPK & TKBT | RAC",
+    "description": "How Kemnaker work-at-height certification works: TKPK Levels 1–3 (rope access), TKBT Levels 1–2 (high structures), prerequisites, and verification."
   },
   "hero": {
     "eyebrow": "Certification",
-    "title": "Certificates That Read the Same Way Everywhere",
-    "body": "We do not assess our own trainees. Assessment is independent — and that is what makes these certificates mean something.",
+    "title": "Official Certificates from Kemnaker RI",
+    "body": "Every RAC programme uses the Ministry of Manpower’s work-at-height certification scheme, under Regulation 9/2016.",
     "ctas": [
       {
         "label": "Training programmes",
@@ -23,12 +23,31 @@
   "sections": [
     {
       "type": "prose",
-      "body": "## Why independent assessment matters\n\nA training provider that assesses its own trainees faces an obvious conflict of interest: a high pass rate is good marketing. The IRATA and BNSP schemes break that conflict by placing an assessor who took no part in the training.\n\nFor you as a candidate, that means a certificate a client cannot reasonably question. For us, it means the only way to raise our pass rate is to teach better.\n\n## The IRATA International scheme\n\nIRATA administers three competence grades. **Level 1** works under supervision. **Level 2** rigs anchor systems and performs complex rescues. **Level 3** carries full responsibility for the worksite, including the rescue plan and team supervision.\n\nEach step up requires a minimum of 1,000 logged working hours and at least twelve months since the previous certification. Certificates are valid for three years.\n\n## The BNSP scheme\n\nIndonesia’s National Professional Certification Agency issues competency certificates through licensed certification bodies. For work at height, the relevant scheme is TKPK — Tenaga Kerja pada Ketinggian — aligned with Ministry of Manpower Regulation 9/2016.\n\nBNSP certificates are valid for three years and are recognised nationally, including by labour inspectors.\n\n## Verifying a certificate\n\nEvery certificate issued through RAC is registered in the issuing body’s database and can be verified directly by a prospective employer. We encourage every client to carry out that verification — on our certificates and on any provider’s.\n\nWant to know how we prepare candidates? Read [our profile and values](/en/about-us/), or [contact us](/en/contact/) to verify a certificate."
+      "body": "## One scheme: Kemnaker RI\n\n[Ministry of Manpower Regulation 9/2016](https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016) on safety in work at height requires such work to be carried out by competent workers. Every RAC programme closes with a competency test under Kemnaker rules, and successful candidates receive a competency certificate and K3 licence for their grade.\n\n## TKPK: work at height (rope access)\n\nTKPK is the scheme for rope access work, in three grades:\n\n- **[Level 1](/en/tkpk-level-1-training/)** — technicians working under supervision.\n- **[Level 2](/en/tkpk-level-2-training/)** — rig anchor systems, perform advanced rescues, and supervise Level 1.\n- **[Level 3](/en/tkpk-level-3-training/)** — supervisors who plan the work, write rescue plans, and lead the team.\n\n## TKBT: high-structure work\n\nTKBT is the scheme for work done by climbing structures — towers, steel frames, scaffolds — using fall arrest. [Level 1](/en/tkbt-level-1-training/) is for workers under supervision, [Level 2](/en/tkbt-level-2-training/) for independent workers and supervisors.\n\n## Choosing between TKPK and TKBT\n\nIf your work hangs on a rope — façades, tank walls, chimney sides — you need TKPK. If you climb and move on a structure with lanyards — towers, frames, scaffolds — you need TKBT. We go into detail in [TKPK or TKBT?](/en/choosing-rope-access-certification/).\n\n## Validity and verification\n\nValidity, renewal, and verification follow current Kemnaker rules. We help trainees prepare enrolment and renewal paperwork, and we encourage every employer to verify certificates directly with the issuer.\n\nWant to know how we prepare candidates? Read [our profile and values](/en/about-us/), or [contact us](/en/contact/) about requirements."
+    },
+    {
+      "type": "table",
+      "eyebrow": "Comparison",
+      "title": "Kemnaker certification grades for work at height",
+      "intro": "A summary of each grade’s role and main prerequisites. Final requirements follow current Kemnaker rules.",
+      "columns": ["Programme", "Role on site", "Main prerequisites"],
+      "rows": [
+        ["TKPK Level 1", "Rope access technician working under supervision", "Age 18+, medically fit, no experience needed"],
+        ["TKPK Level 2", "Rigs anchor systems, advanced rescue, supervises Level 1", "TKPK 1 + experience (typically 500+ hours)"],
+        [
+          "TKPK Level 3",
+          "Supervisor: work plans, rescue plans, team leadership",
+          "TKPK 1 & 2, senior secondary education, age 22+, experience (typically 1,000+ hours), first aid"
+        ],
+        ["TKBT Level 1", "Climbs and works on structures using fall arrest", "Age 18+, medically fit, no experience needed"],
+        ["TKBT Level 2", "Works independently and supervises teams on high structures", "TKBT 1 + experience of work at height"]
+      ],
+      "note": "TKPK = Tenaga Kerja pada Ketinggian (rope access). TKBT = Tenaga Kerja Bangunan Tinggi (climbing structures with fall arrest)."
     },
     {
       "type": "accreditations",
-      "eyebrow": "Bodies & standards",
-      "title": "The schemes we follow"
+      "eyebrow": "Regulation",
+      "title": "The basis of our certification"
     },
     {
       "type": "faq-group",
@@ -42,8 +61,8 @@
     },
     {
       "type": "cta",
-      "title": "Unsure which scheme you need?",
-      "text": "Send us your tender or contract requirements — we will tell you which certification is actually required.",
+      "title": "Unsure which programme you need?",
+      "text": "Tell us about your work or your contract requirements — we will help you pick the right certification.",
       "button": {
         "label": "Talk to us on WhatsApp",
         "href": "#whatsapp"

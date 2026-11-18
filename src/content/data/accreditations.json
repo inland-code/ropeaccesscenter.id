@@ -1,47 +1,22 @@
 [
   {
-    "id": "irata",
-    "name": "IRATA International",
-    "note": {
-      "id": "Skema pelatihan dan sertifikasi akses tali industri berskala global.",
-      "en": "The global industrial rope access training and certification scheme."
-    },
-    "order": 1
-  },
-  {
-    "id": "bnsp",
-    "name": "BNSP",
-    "note": {
-      "id": "Badan Nasional Sertifikasi Profesi — sertifikasi kompetensi nasional Indonesia.",
-      "en": "Indonesia’s National Professional Certification Agency."
-    },
-    "order": 2
-  },
-  {
     "id": "kemnaker",
     "name": "Kemnaker RI",
     "note": {
-      "id": "Sesuai Permenaker No. 9 Tahun 2016 tentang K3 dalam pekerjaan pada ketinggian.",
-      "en": "Aligned with Ministry of Manpower Regulation 9/2016 on work at height."
+      "id": "Sertifikat kompetensi dan lisensi K3 diterbitkan Kementerian Ketenagakerjaan Republik Indonesia.",
+      "en": "Competency certificates and K3 licences are issued by Indonesia’s Ministry of Manpower."
     },
-    "order": 3
+    "url": "https://kemnaker.go.id/",
+    "order": 1
   },
   {
-    "id": "sprat",
-    "name": "SPRAT",
+    "id": "permenaker-9-2016",
+    "name": "Permenaker No. 9/2016",
     "note": {
-      "id": "Society of Professional Rope Access Technicians — skema sertifikasi Amerika Utara.",
-      "en": "Society of Professional Rope Access Technicians — the North American scheme."
+      "id": "Peraturan tentang K3 dalam pekerjaan pada ketinggian — acuan seluruh program dan pekerjaan kami.",
+      "en": "The regulation on safety in work at height — the basis of all our programmes and work."
     },
-    "order": 4
-  },
-  {
-    "id": "iso",
-    "name": "ISO 45001",
-    "note": {
-      "id": "Kerangka sistem manajemen keselamatan dan kesehatan kerja.",
-      "en": "The occupational health and safety management system framework."
-    },
-    "order": 5
+    "url": "https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016",
+    "order": 2
   }
 ]

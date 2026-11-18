@@ -6,12 +6,12 @@
   "contentStatus": "review",
   "seo": {
     "title": "About Rope Access Center | Rope Access Training Indonesia",
-    "description": "The Rope Access Center profile: our history, values, IRATA Level 3 certified instructor team, and our approach to safety at height."
+    "description": "About Rope Access Center (RAC): the rope access training and services brand of the Inland group, running Kemnaker-certified height safety training since 2024."
   },
   "hero": {
     "eyebrow": "About Us",
-    "title": "Ten Years on Rope, One Standard That Has Not Moved",
-    "body": "Built by field technicians, for field technicians — and for companies that refuse to compromise on safety.",
+    "title": "Part of the Inland Group, Focused on Work at Height",
+    "body": "We train technicians to the same standard we apply on site — for companies that refuse to compromise on safety.",
     "ctas": [
       {
         "label": "Training programmes",
@@ -23,7 +23,7 @@
   "sections": [
     {
       "type": "prose",
-      "body": "## How we began\n\nRAC was founded in 2014 out of a recurring frustration. Our founder, then a rope access supervisor at a refinery, kept receiving new technicians who held certificates but were not ready to work. The certificates were genuine; the training had been rushed.\n\nWe started with one training tower and three instructors, under a rule that has never been relaxed since day one: we do not pass someone who is not ready, no matter that they have already paid.\n\n## What we believe\n\n### Safety is not a slogan — it is a repeated decision\n\nSafety is not settled once in a policy meeting. It is decided every morning when someone chooses to check a harness thoroughly despite being in a hurry. We train that decision, not merely the procedure around it.\n\n### Competence must be provable\n\nWe chose independent assessment schemes — IRATA and BNSP — precisely because we do not assess our own trainees. Third-party judgement is what makes our certificates mean something to any client.\n\n### One standard for training and for work\n\nOur services teams work to the standard we teach in the classroom. If we teach daily equipment checks, our project teams perform them — including on busy days and on projects running behind schedule.\n\n## The numbers we hold ourselves to\n\nWe have trained more than 1,200 technicians. Our first-attempt assessment pass rate sits around 98 per cent — a figure we reach by refusing to send unready candidates to an assessor, not by making the training easier.\n\nWe have delivered more than 250 projects, from flare stack inspections to high-rise façade maintenance.\n\n## Where we are heading\n\nIndonesia’s rope access industry is growing faster than its supply of competent technicians. Our focus for the next five years is expanding training capacity beyond Java — bringing certification closer to where the work is, rather than the other way around.\n\nLearn more about the [IRATA and BNSP certification schemes](/en/certification/) we follow."
+      "body": "## Who we are\n\nRope Access Center (RAC) is the rope access training and services brand of the [Inland](https://inland.co.id) group — an architecture, construction, and building maintenance company based in South Tangerang. At Inland, work at height is everyday work: glass cleaning, façade maintenance, and repairs on multi-storey buildings. RAC brings that expertise together under one roof, both to train workers and to deliver projects.\n\n## Training since 2024\n\nSince 2024 RAC has run work-at-height safety training certified by Indonesia’s Ministry of Manpower: [TKPK Levels 1–3](/en/tkpk-level-1-training/) for rope access and [TKBT Levels 1–2](/en/tkbt-level-1-training/) for high structures. Our aim is simple: trainees leave with competence they can really use on site, not just a pass on the exam.\n\n## What we believe\n\n### Safety is not a slogan — it is a repeated decision\n\nSafety is not settled once in a policy meeting. It is decided every morning when someone chooses to check a harness thoroughly despite being in a hurry. We train that decision, not merely the procedure around it.\n\n### Competence must be provable\n\nThe Kemnaker certificate and K3 licence are nationally recognised proof of competence, checked by labour inspectors, contractors, and building managers. That is why every programme we run follows that official scheme.\n\n### One standard for training and for work\n\nOur services teams work to the standard we teach in the classroom. If we teach daily equipment checks, our project teams perform them — including on busy days and on projects running behind schedule.\n\n## Our services\n\nAlongside training, RAC teams deliver [glass cleaning and façade maintenance](/en/building-facade-maintenance/), [maintenance and repair at height](/en/maintenance-repair-at-height/), [visual inspection and NDT](/en/ndt-inspection-services/), [standby rescue](/en/standby-rescue-services/), and [certified technician supply](/en/rope-access-technician-supply/).\n\nLearn more about the [TKPK and TKBT certification schemes](/en/certification/) we follow."
     },
     {
       "type": "team",
@@ -33,12 +33,12 @@
     {
       "type": "accreditations",
       "eyebrow": "Standards",
-      "title": "We work to global standards"
+      "title": "Built on official regulation"
     },
     {
       "type": "cta",
-      "title": "Talk directly to our instructors",
-      "text": "Questions about programmes, prerequisites, or your project needs — we answer the same working day.",
+      "title": "Talk directly to our team",
+      "text": "Questions about programmes, requirements, or your project — we answer the same working day.",
       "button": {
         "label": "Talk to us on WhatsApp",
         "href": "#whatsapp"

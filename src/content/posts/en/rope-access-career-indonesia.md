@@ -1,47 +1,47 @@
 ---
 translationKey: post-career-map
 slug: rope-access-career-indonesia
-title: "The Rope Access Career Map in Indonesia"
+title: "The Rope Access Career Ladder in Indonesia: From TKPK 1 to TKPK 3"
 seo:
-  title: "The Rope Access Career Map in Indonesia"
-  description: "A guide to the rope access career path in Indonesia: IRATA logged-hour requirements, high-value additional skills, and specialisation choices."
-excerpt: "From Level 1 to supervisor and instructor: how long each stage takes, which skills the market genuinely rewards, and where the path forks."
+  title: "Rope Access Career Ladder in Indonesia: TKPK 1 to 3"
+  description: "A career map for rope access technicians in Indonesia: Kemnaker TKPK certification levels, the hours to log, roles on site, and the extra skills employers look for."
+excerpt: "From beginner to supervisor: certification levels, the experience to build up, and the extra skills that make a rope access technician in demand."
 category: karier
 publishedAt: 2026-05-21
-author: Tim Rope Access Center
+updatedAt: 2026-11-19
+author: "Tim Rope Access Center"
 sources:
-  - title: "What is Rope Access"
-    publisher: "IRATA International"
-    url: https://irata.org/page/what-is-rope-access
-  - title: "SPRAT Certification"
-    publisher: "Society of Professional Rope Access Technicians"
-    url: https://sprat.org/certification/
-  - title: "Badan Nasional Sertifikasi Profesi"
-    publisher: "BNSP"
-    url: https://bnsp.go.id/
+  - title: "Ministry of Manpower Regulation 9/2016 on Work at Height Safety"
+    publisher: "JDIH Kementerian Ketenagakerjaan"
+    url: https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016
+  - title: "Ministry of Manpower Regulation 9/2016 (full text)"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+faq:
+  - q: "How long does it take from TKPK 1 to TKPK 3?"
+    a: "It depends on how quickly you build documented working experience. Commonly used requirements are around 500 hours for TKPK 2 and 1,000 hours for TKPK 3, so the ladder usually takes several years of active work."
 ---
-Rope access is one of the few fields where progression is objective: logged hours, independent assessment, and no shortcuts. That structure is its strength.
 
-## Year one: Level 1
+Demand for rope access technicians in Indonesia keeps growing — more high-rise buildings, industry wanting inspection without scaffolding, and stronger enforcement of work-at-height safety rules. For anyone wanting a career in the field, the path is fairly clear.
 
-You work under direct supervision. Your job is not to be fast — it is to be consistent. Accumulate hours, fill the logbook honestly, and have a [Level 3](/en/irata-level-3-training/) countersign it regularly rather than all at once before assessment.
+## Level 1: getting into the industry
 
-To move up to [Level 2](/en/irata-level-2-training/) you need a minimum of 1,000 logged working hours and at least twelve months since certification.
+[TKPK Level 1](/en/tkpk-level-1-training/) is the way in. No previous experience is needed; the main requirements are being at least 18 and medically fit for work at height. Level 1 holders work under the supervision of a Level 2 or 3 technician.
 
-## Years two to four: Level 2
+First jobs are usually in [façade maintenance and glass cleaning](/en/building-facade-maintenance/), painting, or supporting inspection teams. Focus on one thing in your first year: work neatly and log every hour.
 
-This is where earnings begin to rise meaningfully, because you can now rig. But the biggest income step at this stage does not come from the rope grade — it comes from a second competence.
+## Level 2: rigging and looking after teammates
 
-What the Indonesian market wants most right now: [NDT](/en/ndt-inspection-services/) Level II, certified welding, coating application with NACE or equivalent qualification, and structural inspection. A technician holding IRATA Level 2 alongside NDT Level II is almost never out of work.
+[TKPK Level 2](/en/tkpk-level-2-training/) requires a Level 1 certificate and documented working experience — typically at least 500 hours. At this level you rig your own anchor systems, handle loads with pulley systems, carry out more complex rescues, and supervise Level 1 technicians.
 
-## Year five onward: Level 3 and the fork
+## Level 3: supervisor
 
-Level 3 demands the next 1,000 hours and a different kind of responsibility, not merely a greater amount of it. You sign the [rescue plan](/en/standby-rescue-services/); your name is on that document.
+[TKPK Level 3](/en/tkpk-level-3-training/) requires Levels 1 and 2, senior secondary education, a minimum age of 22, working experience typically of at least 1,000 hours, and a first aid certificate. Supervisors plan the work, write rescue plans, and carry responsibility for the whole team’s safety.
 
-From here the path forks three ways. **The field route**: supervisor on major projects, then operations manager. **The [training](/en/training/) route**: becoming an instructor, which asks for a patience quite separate from technical skill. **The HSE route**: many Level 3s move into HSE leadership because they understand height risk more deeply than a general safety graduate.
+## Log your hours from day one
 
-## What ends careers
+Experience that is not recorded is hard to prove. Keep a simple record of every job: date, location, type of work, hours on rope, and the name of a supervisor who can confirm it. That record is your evidence when you apply for the next level.
 
-Two things, and both are preventable. First, a logbook filled in carelessly and therefore rejected by an assessor. Second, letting a certificate lapse beyond six months and having to requalify from the level below.
+## Extra skills that make you sought after
 
-Both are administrative losses rather than failures of ability — which is precisely why they sting so much more.
+Rope access technicians are most in demand when they bring a second skill: façade painting and repair, sealant, electrical work, welding, or inspection. For towers and steel frames, a [TKBT](/en/tkbt-level-1-training/) certificate complements TKPK. Companies can rely on technicians like this for more than one kind of job — which is why we also place them through our [technician supply](/en/rope-access-technician-supply/) service.

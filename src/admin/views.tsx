@@ -665,7 +665,7 @@ export function Redirects() {
 /* ---------------- Koleksi data (jadwal, tim, testimoni, akreditasi, FAQ) ---------------- */
 const DATA_HELP: Record<DataCollection, string> = {
   schedule:
-    'Satu baris = satu kelas. Kelas yang tanggal selesainya sudah lewat otomatis disembunyikan dari situs. "Program" diisi kunci terjemahan halaman pelatihan, mis. course-irata-l1.',
+    'Satu baris = satu kelas. Kelas yang tanggal selesainya sudah lewat otomatis disembunyikan dari situs. "Program" diisi kunci terjemahan halaman pelatihan, mis. course-tkpk-1.',
   accreditations: 'Lembaga & standar yang ditampilkan di Beranda, Tentang Kami, dan Sertifikasi.',
   team: 'Profil instruktur & staf. Centang "Data contoh" hanya untuk data sementara — data contoh tidak tampil di situs live.',
   testimonials: 'Testimoni klien. Pastikan sudah ada izin dari yang bersangkutan. Data contoh tidak tampil di situs live.',

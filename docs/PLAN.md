@@ -49,32 +49,30 @@ source code RAC lama yang diarsipkan apa adanya di branch [`rac-original`](../..
 
 ## Daftar URL (ID ↔ EN)
 
-| Halaman                    | ID                                      | EN                                   |
-| -------------------------- | --------------------------------------- | ------------------------------------ |
-| Beranda                    | `/`                                     | `/en/`                               |
-| Tentang Kami               | `/tentang-kami/`                        | `/en/about-us/`                      |
-| Pelatihan (hub)            | `/pelatihan/`                           | `/en/training/`                      |
-| — IRATA Level 1            | `/pelatihan-irata-level-1/`             | `/en/irata-level-1-training/`        |
-| — IRATA Level 2            | `/pelatihan-irata-level-2/`             | `/en/irata-level-2-training/`        |
-| — IRATA Level 3            | `/pelatihan-irata-level-3/`             | `/en/irata-level-3-training/`        |
-| — BNSP TKPK                | `/sertifikasi-bnsp-tkpk/`               | `/en/bnsp-tkpk-certification/`       |
-| — Refresher & revalidasi   | `/refresher-revalidasi-irata/`          | `/en/irata-refresher-revalidation/`  |
-| — Pelatihan in-house       | `/pelatihan-in-house/`                  | `/en/in-house-training/`             |
-| Jadwal Pelatihan           | `/jadwal-pelatihan/`                    | `/en/training-schedule/`             |
-| Sertifikasi                | `/sertifikasi/`                         | `/en/certification/`                 |
-| Layanan (hub)              | `/layanan/`                             | `/en/services/`                      |
-| — Inspeksi & NDT           | `/jasa-inspeksi-ndt/`                   | `/en/ndt-inspection-services/`       |
-| — Perawatan & perbaikan    | `/jasa-perawatan-perbaikan-ketinggian/` | `/en/maintenance-repair-at-height/`  |
-| — Perawatan gedung & fasad | `/jasa-perawatan-fasad-gedung/`         | `/en/building-facade-maintenance/`   |
-| — Standby rescue           | `/jasa-standby-rescue/`                 | `/en/standby-rescue-services/`       |
-| — Konsultasi & audit K3    | `/konsultasi-audit-k3/`                 | `/en/hse-audit-consulting/`          |
-| — Penyediaan teknisi       | `/penyediaan-teknisi-akses-tali/`       | `/en/rope-access-technician-supply/` |
-| Artikel (daftar)           | `/artikel/`                             | `/en/insights/`                      |
-| — 6 artikel                | `/<slug-artikel>/`                      | `/en/<slug-terjemahan>/`             |
-| FAQ                        | `/faq/`                                 | `/en/faq/`                           |
-| Kontak                     | `/kontak/`                              | `/en/contact/`                       |
-| Kebijakan Privasi          | `/kebijakan-privasi/`                   | `/en/privacy-policy/`                |
-| Syarat & Ketentuan         | `/syarat-ketentuan/`                    | `/en/terms-conditions/`              |
+| Halaman                 | ID                                      | EN                                   |
+| ----------------------- | --------------------------------------- | ------------------------------------ |
+| Beranda                 | `/`                                     | `/en/`                               |
+| Tentang Kami            | `/tentang-kami/`                        | `/en/about-us/`                      |
+| Pelatihan (hub)         | `/pelatihan/`                           | `/en/training/`                      |
+| — TKPK Tingkat 1        | `/pelatihan-tkpk-tingkat-1/`            | `/en/tkpk-level-1-training/`         |
+| — TKPK Tingkat 2        | `/pelatihan-tkpk-tingkat-2/`            | `/en/tkpk-level-2-training/`         |
+| — TKPK Tingkat 3        | `/pelatihan-tkpk-tingkat-3/`            | `/en/tkpk-level-3-training/`         |
+| — TKBT Tingkat 1        | `/pelatihan-tkbt-tingkat-1/`            | `/en/tkbt-level-1-training/`         |
+| — TKBT Tingkat 2        | `/pelatihan-tkbt-tingkat-2/`            | `/en/tkbt-level-2-training/`         |
+| Jadwal Pelatihan        | `/jadwal-pelatihan/`                    | `/en/training-schedule/`             |
+| Sertifikasi             | `/sertifikasi/`                         | `/en/certification/`                 |
+| Layanan (hub)           | `/layanan/`                             | `/en/services/`                      |
+| — Inspeksi visual & NDT | `/jasa-inspeksi-ndt/`                   | `/en/ndt-inspection-services/`       |
+| — Perawatan & perbaikan | `/jasa-perawatan-perbaikan-ketinggian/` | `/en/maintenance-repair-at-height/`  |
+| — Kaca & fasad gedung   | `/jasa-perawatan-fasad-gedung/`         | `/en/building-facade-maintenance/`   |
+| — Standby rescue        | `/jasa-standby-rescue/`                 | `/en/standby-rescue-services/`       |
+| — Penyediaan teknisi    | `/penyediaan-teknisi-akses-tali/`       | `/en/rope-access-technician-supply/` |
+| Artikel (daftar)        | `/artikel/`                             | `/en/insights/`                      |
+| — 6 artikel             | `/<slug-artikel>/`                      | `/en/<slug-terjemahan>/`             |
+| FAQ                     | `/faq/`                                 | `/en/faq/`                           |
+| Kontak                  | `/kontak/`                              | `/en/contact/`                       |
+| Kebijakan Privasi       | `/kebijakan-privasi/`                   | `/en/privacy-policy/`                |
+| Syarat & Ketentuan      | `/syarat-ketentuan/`                    | `/en/terms-conditions/`              |
 
 Berkas pendukung (sama dengan Inland): `/sitemap_index.xml` → `/page-sitemap.xml` + `/post-sitemap.xml`, `/feed.xml`
 (ID) + `/en/feed.xml`, `/robots.txt`, `/llms.txt`, `/llms-full.txt`, versi Markdown tiap halaman (`/tentang-kami.md`),
@@ -139,6 +137,17 @@ Setiap fase: `npm run format` → `npm run check` → `npm test` → `npm run bu
 - Ganti data contoh lewat dashboard (Data Bisnis, Tim, Testimoni, Jadwal) — wajib sebelum mode produksi.
 - Sambungkan `ropeaccesscenter.id` ke Worker, redirect `www` → root, tambah trailing slash, ubah build variable `PUBLIC_SITE_ENV` → `production`, tambah callback OAuth domain baru, Search Console + sitemap.
 
+## Revisi konten 2026-11-19 (arahan pemilik)
+
+- Sertifikasi **hanya Kemnaker RI**: program IRATA, BNSP, dan refresher dihapus; diganti TKPK Tingkat 1–3 (akses tali)
+  dan TKBT Tingkat 1–2 (bangunan tinggi). Prasyarat mengikuti informasi publik penyedia pelatihan; durasi & biaya
+  "dikonfirmasi saat pendaftaran" — isi lewat dashboard bila sudah pasti.
+- Klaim angka & "sejak 2014" dihapus; pelatihan **sejak 2024**, RAC sebagai brand grup Inland. Section statistik dihapus.
+- Layanan: 5 halaman ditulis ulang & dioptimasi (fasad/kaca, perawatan & perbaikan, inspeksi & NDT, standby rescue,
+  penyediaan teknisi) — lingkup, aset, hasil kerja, 4 langkah kerja, FAQ khusus. Halaman konsultasi/audit K3 digabung ke standby rescue.
+- 2 artikel ditulis ulang (TKPK vs TKBT, jenjang karier); tautan artikel lain diarahkan ke program baru.
+- URL lama di-redirect 301 (`public/_redirects`), dicek `scripts/verify-urls.mjs`.
+
 ## Data pemilik
 
 RAC adalah brand dari grup Inland, jadi kontak memakai data Inland (2026-11-19):
@@ -148,8 +157,7 @@ RAC adalah brand dari grup Inland, jadi kontak memakai data Inland (2026-11-19):
 - ✅ Tahun berdiri & koordinat peta dikosongkan (opsional) sampai ada data pasti.
 - ✅ Jadwal kelas contoh disembunyikan (`published: false`); hanya "Pelatihan in-house — sesuai permintaan" yang tampil.
   Tambahkan tanggal kelas asli lewat dashboard → Jadwal Kelas.
-- ⏳ Klaim di teks lama yang perlu dicek pemilik: "sejak 2014", 1.200+ teknisi, 98% lulus, 250+ proyek, 10+ tahun
-  (Beranda → section Statistik, halaman Tentang Kami).
+- ✅ Klaim angka lama dihapus (lihat revisi konten di atas).
 - ⏳ Tim & testimoni masih data contoh (`sample: true`) → otomatis tersembunyi di produksi sampai diganti data asli.
 - ⏳ Media sosial RAC belum ada (ikon otomatis tersembunyi). Email `@ropeaccesscenter.id` belum aktif (tanpa MX).
 - ⏳ Foto asli (pelatihan, menara latih, proyek) — bisa diunggah kapan saja lewat dashboard.

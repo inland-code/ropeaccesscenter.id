@@ -5,13 +5,13 @@
   "navLabel": "Pelatihan",
   "contentStatus": "review",
   "seo": {
-    "title": "Pelatihan Akses Tali IRATA & BNSP di Indonesia · RAC",
-    "description": "Program pelatihan akses tali RAC: IRATA Level 1, 2, dan 3, sertifikasi BNSP TKPK, refresher, dan pelatihan in-house di lokasi perusahaan Anda."
+    "title": "Pelatihan K3 Ketinggian TKPK & TKBT Kemnaker | RAC",
+    "description": "Program pelatihan RAC bersertifikat Kemnaker RI: TKPK Tingkat 1–3 untuk akses tali dan TKBT Tingkat 1–2 untuk bangunan tinggi. Kelas reguler dan in-house."
   },
   "hero": {
     "eyebrow": "Pelatihan",
     "title": "Pelatihan yang Menyiapkan Anda untuk Hari Kerja, Bukan Hanya Ujian",
-    "body": "Rasio instruktur maksimum 1:6, seluruh APD disediakan, dan asesmen oleh pihak independen. Dari nol pengalaman hingga supervisor.",
+    "body": "Pelatihan K3 kerja di ketinggian bersertifikat Kemnaker RI — dari nol pengalaman hingga supervisor, untuk akses tali (TKPK) maupun bangunan tinggi (TKBT).",
     "ctas": [
       {
         "label": "Lihat jadwal kelas",
@@ -30,8 +30,27 @@
       "type": "page-cards",
       "eyebrow": "Program",
       "title": "Pilih program pelatihan",
-      "intro": "Setiap program di bawah ini mencakup instruktur, seluruh alat pelindung diri, penggunaan fasilitas latih, bahan ajar, dan biaya asesmen. Anda cukup membawa sepatu keselamatan.",
+      "intro": "Setiap program mencakup materi teori, praktik di ketinggian, penggunaan peralatan latihan, dan pendampingan menuju uji kompetensi Kemnaker.",
       "of": "course"
+    },
+    {
+      "type": "table",
+      "eyebrow": "Perbandingan",
+      "title": "Tingkat sertifikasi Kemnaker untuk kerja di ketinggian",
+      "intro": "Ringkasan peran dan prasyarat utama tiap tingkat. Persyaratan final mengikuti ketentuan Kemnaker yang berlaku.",
+      "columns": ["Program", "Peran di lapangan", "Prasyarat utama"],
+      "rows": [
+        ["TKPK Tingkat 1", "Teknisi akses tali, bekerja di bawah pengawasan", "Usia ≥ 18 tahun, sehat, tanpa pengalaman"],
+        ["TKPK Tingkat 2", "Memasang sistem tambat, penyelamatan lanjutan, mengawasi Tingkat 1", "TKPK 1 + pengalaman (umumnya ≥ 500 jam)"],
+        [
+          "TKPK Tingkat 3",
+          "Supervisor: rencana kerja, rencana penyelamatan, memimpin tim",
+          "TKPK 1 & 2, SLTA, usia ≥ 22, pengalaman (umumnya ≥ 1.000 jam), P3K"
+        ],
+        ["TKBT Tingkat 1", "Memanjat dan bekerja di struktur dengan penahan jatuh", "Usia ≥ 18 tahun, sehat, tanpa pengalaman"],
+        ["TKBT Tingkat 2", "Bekerja mandiri dan mengawasi tim di struktur tinggi", "TKBT 1 + pengalaman kerja di ketinggian"]
+      ],
+      "note": "TKPK = Tenaga Kerja pada Ketinggian (metode akses tali). TKBT = Tenaga Kerja Bangunan Tinggi (memanjat struktur dengan penahan jatuh)."
     },
     {
       "type": "schedule",
@@ -55,8 +74,8 @@
     },
     {
       "type": "cta",
-      "title": "Butuh angkatan khusus untuk tim Anda?",
-      "text": "Untuk enam peserta atau lebih, kami dapat membuka kelas pada tanggal yang Anda tentukan — di pusat pelatihan kami atau di lokasi Anda.",
+      "title": "Butuh kelas khusus untuk tim Anda?",
+      "text": "Untuk kelompok peserta dari satu perusahaan, pelatihan dapat diadakan pada tanggal yang Anda tentukan — di tempat pelatihan kami atau di lokasi Anda.",
       "button": {
         "label": "Konsultasi via WhatsApp",
         "href": "#whatsapp"

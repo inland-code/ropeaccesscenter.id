@@ -23,7 +23,7 @@ sources:
     publisher: "ISO"
     url: https://www.iso.org/standard/35155.html
 ---
-[Audit](/konsultasi-audit-k3/) klien jarang gagal karena praktik lapangan yang buruk. Jauh lebih sering, audit gagal karena praktik yang baik tidak dapat dibuktikan dengan dokumen.
+[Audit](/jasa-standby-rescue/) klien jarang gagal karena praktik lapangan yang buruk. Jauh lebih sering, audit gagal karena praktik yang baik tidak dapat dibuktikan dengan dokumen.
 
 ## Sembilan berkas yang perlu siap
 

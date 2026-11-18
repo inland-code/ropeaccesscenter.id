@@ -4,13 +4,13 @@
   "template": "service",
   "contentStatus": "review",
   "seo": {
-    "title": "Standby Rescue Teams | Rope Access Center",
-    "description": "Certified rescue teams on station for the duration of high-risk work — at height, in confined spaces, and through major shutdowns."
+    "title": "Standby Rescue & Rescue Planning at Height | RAC",
+    "description": "Kemnaker-certified standby rescue teams for work at height, writing and proving rescue plans, and on-site work-at-height safety support."
   },
   "hero": {
     "eyebrow": "Industrial Services",
-    "title": "Standby Rescue Teams",
-    "body": "Certified rescue teams on station for the duration of high-risk work — at height, in confined spaces, and through major shutdowns.",
+    "title": "Standby Rescue & Work-at-Height Rescue Planning",
+    "body": "A rescue team on standby during work at height, writing and proving rescue plans, and on-site height safety support — so every job has an answer if something goes wrong.",
     "ctas": [
       {
         "label": "Request a quotation",
@@ -26,12 +26,12 @@
   },
   "card": {
     "icon": "lifebuoy",
-    "summary": "Certified rescue teams on station for the duration of high-risk work — at height, in confined spaces, and through major shutdowns."
+    "summary": "A rescue team on standby during work at height, writing and proving rescue plans, and on-site height safety support — so every job has an answer if something goes wrong."
   },
   "sections": [
     {
       "type": "prose",
-      "body": "## An untested rescue plan is not a plan\n\nMany sites hold a rescue plan document that has never been run. When an incident actually happens, the distance between the document and reality becomes expensive.\n\nEvery RAC standby rescue deployment begins by proving the plan on the real site, with response times measured and recorded.\n\n## Response time is everything\n\nSuspension trauma can turn fatal within tens of minutes. Our teams work to a target of under 15 minutes from alarm to extraction of a suspended casualty — and we demonstrate it in drills rather than promising it in a proposal."
+      "body": "## Why a rescue plan must be proven\n\nA worker hanging unconscious in a harness must be brought down within minutes. Relying on help from off site is almost always too slow. Every job at height therefore needs a rescue plan written for that site and already drilled — we cover this in our article [an untested rescue plan is not a plan](/en/tested-rescue-plan/).\n\n## What we do on site\n\nOur standby team arrives with inspected rescue equipment, joins the daily briefing with your workers, and is ready to act throughout the job. We can also test your existing rescue plan and recommend improvements.\n\n## Work-at-height safety support\n\nFor contractors and site owners, we help prepare work-at-height safety documents — risk assessments, permits to work, and checklists — in line with Ministry of Manpower Regulation 9/2016."
     },
     {
       "type": "lists",
@@ -42,34 +42,87 @@
           "icon": "clipboard",
           "title": "Scope of work",
           "items": [
-            "Rescue at height and confined space rescue",
-            "Writing and proving site-specific rescue plans",
-            "Provision of rescue equipment and evacuation stretchers",
-            "Personnel qualified in first aid and initial casualty care",
-            "Joint drills with the client’s emergency response team"
+            "Standby rescue team during work at height",
+            "Site-specific rescue plans",
+            "Rescue drills with your team",
+            "Rescue equipment supply",
+            "Support with height safety documents and permits",
+            "Daily safety briefings (toolbox talks)"
           ]
         },
         {
           "icon": "building",
-          "title": "Industries we serve",
-          "items": ["Refinery Turnarounds", "Major Construction", "Power Generation", "Mining"]
+          "title": "Assets & sectors",
+          "items": [
+            "High-rise construction projects",
+            "Plant maintenance and shutdowns",
+            "Towers and industrial structures",
+            "Confined spaces with vertical access",
+            "Façade and roof work"
+          ]
         },
         {
           "icon": "check-circle",
           "title": "What you receive",
           "items": [
-            "A written rescue plan proven on site",
-            "A daily team attendance and readiness log",
-            "Drill reports with measured response times",
-            "Recommendations for improved access and permanent anchor points"
+            "A written rescue plan for your site",
+            "Drill records and rescue times",
+            "A Kemnaker-certified standby team",
+            "Daily reports during the assignment"
           ]
+        }
+      ]
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "How we work",
+      "title": "Four steps from survey to report",
+      "items": [
+        {
+          "title": "1. Survey & quotation",
+          "text": "We review the site or your photos and drawings, then send the scope, method, schedule, and a written quotation.",
+          "bullets": []
+        },
+        {
+          "title": "2. Work plan & permits",
+          "text": "A risk assessment, method statement, and rescue plan are prepared before work starts; permits are arranged with the site manager.",
+          "bullets": []
+        },
+        {
+          "title": "3. Delivery",
+          "text": "A team of Kemnaker-certified technicians works with a supervisor on site; the area below the work zone is secured.",
+          "bullets": []
+        },
+        {
+          "title": "4. Report & handover",
+          "text": "Before-and-after photos and a work report are handed over with recommendations for the next maintenance cycle.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "When does a project need standby rescue?",
+          "a": "Every job at height needs on-site rescue capability. Standby rescue is most needed when the working team has no competent rescuer of its own, or for high-risk work such as shutdowns and high-rise construction."
+        },
+        {
+          "q": "Can you test our existing rescue plan?",
+          "a": "Yes. We run it on the actual site with the equipment available, time it, and give written recommendations."
+        },
+        {
+          "q": "How long can the standby team stay?",
+          "a": "Flexibly — daily, weekly, or for the whole project, matched to your schedule."
         }
       ]
     },
     {
       "type": "cta",
       "title": "Tell us about the job",
-      "text": "Send the location, the type of asset, and your target dates. We prepare an initial risk assessment and a written quotation, usually the same working day.",
+      "text": "Send the location, the type of building or asset, and your target dates. We reply with a written quotation, usually the same working day.",
       "button": {
         "label": "Discuss on WhatsApp",
         "href": "#whatsapp"

@@ -1,0 +1,117 @@
+{
+  "translationKey": "course-tkbt-2",
+  "slug": "tkbt-level-2-training",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "TKBT Level 2 High-Structure Supervisor Training | RAC",
+    "description": "For TKBT Level 1 holders who will work independently and supervise teams on high structures: choosing anchors, planning safe work steps, and leading rescues."
+  },
+  "hero": {
+    "eyebrow": "Kemnaker RI · TKBT Level 2",
+    "title": "TKBT Level 2 Training — High-Structure Supervisor",
+    "body": "For TKBT Level 1 holders who will work independently and supervise teams on high structures: choosing anchors, planning safe work steps, and leading rescues.",
+    "ctas": [
+      {
+        "label": "Enrol via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "See course dates",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "building",
+    "summary": "For TKBT Level 1 holders who will work independently and supervise teams on high structures: choosing anchors, planning safe work steps, and leading rescues."
+  },
+  "course": {
+    "code": "TKBT-2",
+    "scheme": "KEMNAKER",
+    "level": "TKBT Level 2",
+    "order": 5,
+    "featured": false,
+    "summary": "For TKBT Level 1 holders who will work independently and supervise teams on high structures: choosing anchors, planning safe work steps, and leading rescues.",
+    "price": "Contact us for a quotation (individuals & companies)",
+    "prerequisites": [
+      "Hold a TKBT Level 1 certificate and K3 licence",
+      "Documented experience of work at height",
+      "Medically fit for work at height, supported by a doctor’s statement",
+      "Final administrative requirements follow current Kemnaker rules — we check them with you on enrolment"
+    ],
+    "outcomes": [
+      "Assess risk and plan safe work steps on high structures",
+      "Select and install anchors and fall arrest systems",
+      "Lead a rescue from a structure",
+      "Supervise TKBT Level 1 workers",
+      "Inspect equipment and keep safety records"
+    ],
+    "syllabus": [
+      {
+        "title": "Regulation & risk management",
+        "detail": "Ministry of Manpower Regulation 9/2016, the hierarchy of control, permits to work, and the responsibilities of each competence level."
+      },
+      {
+        "title": "Risk assessment",
+        "detail": "Structural, weather, and electrical hazards; safe work steps."
+      },
+      {
+        "title": "Fall arrest systems",
+        "detail": "Temporary anchors, horizontal and vertical lifelines, and fall clearance."
+      },
+      {
+        "title": "Rescue from structures",
+        "detail": "Casualty evacuation from towers and frameworks."
+      },
+      {
+        "title": "Supervision & inspection",
+        "detail": "Briefings, permits to work, equipment inspection, and records."
+      },
+      {
+        "title": "Competency test",
+        "detail": "Written and practical examination under Kemnaker RI rules, the basis for issuing the certificate and K3 licence."
+      }
+    ],
+    "certificate": "A TKBT Level 2 competency certificate and K3 licence issued by Indonesia’s Ministry of Manpower, plus an RAC training completion certificate. Validity and renewal follow Kemnaker rules."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Who this programme is for\n\nThis programme is for experienced TKBT Level 1 workers who will lead teams on towers, steel frames, or scaffolds.\n\n## Why a Kemnaker certificate\n\n[Ministry of Manpower Regulation 9/2016](https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016) requires work at height to be carried out by competent workers. The certificate and K3 licence issued by Indonesia’s Ministry of Manpower (Kemnaker RI) are nationally recognised proof of competence, checked by labour inspectors, contractors, and building managers alike. Read more about the [TKPK and TKBT schemes](/en/certification/).\n\n## How we teach\n\nTheory and practice run side by side: every topic is practised at height under instructor supervision and repeated until it is right. Training equipment is provided; trainees only need safety boots and work clothing."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Dates",
+      "title": "Next open courses",
+      "course": "course-tkbt-2",
+      "cta": {
+        "label": "See all course dates",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Training questions",
+      "groups": ["training", "certification"],
+      "limit": 5,
+      "cta": {
+        "label": "See all FAQs",
+        "href": "faq"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Enrol or ask about the next course",
+      "text": "Send your name, the number of participants, and the month you are aiming for. For a group from one company, the course can run at your site.",
+      "button": {
+        "label": "Ask on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

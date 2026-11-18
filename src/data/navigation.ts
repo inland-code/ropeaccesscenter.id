@@ -23,23 +23,21 @@ export const mainNav: NavItem[] = [
     label: 'nav.training',
     children: [
       {
-        icon: 'graduation-cap',
-        group: { id: 'Program IRATA', en: 'IRATA Programmes' },
+        icon: 'helmet',
+        group: { id: 'Akses Tali (TKPK)', en: 'Rope Access (TKPK)' },
         items: [
-          { key: 'course-irata-l1', icon: 'helmet', label: { id: 'IRATA Level 1', en: 'IRATA Level 1' } },
-          { key: 'course-irata-l2', icon: 'helmet', label: { id: 'IRATA Level 2', en: 'IRATA Level 2' } },
-          { key: 'course-irata-l3', icon: 'helmet', label: { id: 'IRATA Level 3', en: 'IRATA Level 3' } },
-          { key: 'course-refresher', icon: 'clock', label: { id: 'Refresher & Revalidasi', en: 'Refresher & Revalidation' } },
+          { key: 'course-tkpk-1', icon: 'helmet', label: { id: 'TKPK Tingkat 1', en: 'TKPK Level 1' } },
+          { key: 'course-tkpk-2', icon: 'helmet', label: { id: 'TKPK Tingkat 2', en: 'TKPK Level 2' } },
+          { key: 'course-tkpk-3', icon: 'shield-check', label: { id: 'TKPK Tingkat 3', en: 'TKPK Level 3' } },
         ],
       },
       {
-        groupKey: 'certification',
-        icon: 'certificate',
-        group: { id: 'Sertifikasi', en: 'Certification' },
+        icon: 'building',
+        group: { id: 'Bangunan Tinggi (TKBT)', en: 'High Structures (TKBT)' },
         items: [
-          { key: 'course-bnsp-tkpk', icon: 'certificate', label: { id: 'Sertifikasi BNSP TKPK', en: 'BNSP TKPK Certification' } },
-          { key: 'course-in-house', icon: 'building', label: { id: 'Pelatihan In-House', en: 'In-House Training' } },
-          { key: 'schedule', icon: 'calendar', label: { id: 'Jadwal Pelatihan', en: 'Training Schedule' } },
+          { key: 'course-tkbt-1', icon: 'building', label: { id: 'TKBT Tingkat 1', en: 'TKBT Level 1' } },
+          { key: 'course-tkbt-2', icon: 'building', label: { id: 'TKBT Tingkat 2', en: 'TKBT Level 2' } },
+          { key: 'certification', icon: 'certificate', label: { id: 'Tentang Sertifikasi Kemnaker', en: 'About Kemnaker Certification' } },
         ],
       },
     ],
@@ -50,12 +48,12 @@ export const mainNav: NavItem[] = [
     label: 'nav.services',
     children: [
       {
-        icon: 'search',
-        group: { id: 'Inspeksi & Perawatan', en: 'Inspection & Maintenance' },
+        icon: 'building',
+        group: { id: 'Gedung & Fasad', en: 'Buildings & Façades' },
         items: [
-          { key: 'service-ndt', icon: 'search', label: { id: 'Inspeksi & NDT', en: 'Inspection & NDT' } },
+          { key: 'service-facade', icon: 'building', label: { id: 'Pembersihan Kaca & Fasad', en: 'Glass Cleaning & Façades' } },
           { key: 'service-maintenance', icon: 'wrench', label: { id: 'Perawatan & Perbaikan', en: 'Maintenance & Repair' } },
-          { key: 'service-facade', icon: 'building', label: { id: 'Perawatan Fasad Gedung', en: 'Façade Maintenance' } },
+          { key: 'service-ndt', icon: 'search', label: { id: 'Inspeksi & NDT', en: 'Inspection & NDT' } },
         ],
       },
       {
@@ -63,7 +61,6 @@ export const mainNav: NavItem[] = [
         group: { id: 'Keselamatan & Tenaga Ahli', en: 'Safety & Manpower' },
         items: [
           { key: 'service-rescue', icon: 'lifebuoy', label: { id: 'Standby Rescue', en: 'Standby Rescue' } },
-          { key: 'service-audit', icon: 'clipboard', label: { id: 'Konsultasi & Audit K3', en: 'HSE Consulting & Audit' } },
           { key: 'service-manpower', icon: 'users', label: { id: 'Penyediaan Teknisi', en: 'Technician Supply' } },
         ],
       },

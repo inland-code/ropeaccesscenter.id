@@ -1,0 +1,118 @@
+{
+  "translationKey": "course-tkpk-1",
+  "slug": "pelatihan-tkpk-tingkat-1",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Pelatihan TKPK Tingkat 1 Akses Tali Kemnaker | RAC",
+    "description": "Pelatihan TKPK Tingkat 1 bersertifikat Kemnaker RI: K3 ketinggian, APD, manuver tali, dan penyelamatan dasar. Tanpa pengalaman sebelumnya. Daftar di RAC."
+  },
+  "hero": {
+    "eyebrow": "Kemnaker RI · TKPK Tingkat 1",
+    "title": "Pelatihan TKPK Tingkat 1 — Teknisi Akses Tali Dasar",
+    "body": "Program awal kerja dengan sistem akses tali sesuai Permenaker No. 9 Tahun 2016: K3 ketinggian, pemeriksaan APD, manuver tali, dan penyelamatan dasar — diakhiri uji kompetensi Kemnaker RI.",
+    "ctas": [
+      {
+        "label": "Daftar via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Lihat jadwal kelas",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "helmet",
+    "summary": "Program awal kerja dengan sistem akses tali sesuai Permenaker No. 9 Tahun 2016: K3 ketinggian, pemeriksaan APD, manuver tali, dan penyelamatan dasar — diakhiri uji kompetensi Kemnaker RI."
+  },
+  "course": {
+    "code": "TKPK-1",
+    "scheme": "KEMNAKER",
+    "level": "TKPK Tingkat 1",
+    "order": 1,
+    "featured": true,
+    "summary": "Program awal kerja dengan sistem akses tali sesuai Permenaker No. 9 Tahun 2016: K3 ketinggian, pemeriksaan APD, manuver tali, dan penyelamatan dasar — diakhiri uji kompetensi Kemnaker RI.",
+    "price": "Hubungi kami untuk penawaran (perorangan & perusahaan)",
+    "prerequisites": [
+      "Usia minimal 18 tahun",
+      "Sehat jasmani dan rohani untuk bekerja di ketinggian, dibuktikan surat keterangan sehat dari dokter",
+      "Tidak memiliki riwayat vertigo, epilepsi, atau gangguan jantung yang tidak terkontrol",
+      "Tidak diperlukan pengalaman akses tali sebelumnya",
+      "Persyaratan administrasi final mengikuti ketentuan Kemnaker yang berlaku — kami bantu memeriksanya saat pendaftaran"
+    ],
+    "outcomes": [
+      "Memahami dasar hukum K3 pekerjaan pada ketinggian (Permenaker No. 9 Tahun 2016)",
+      "Memakai, memeriksa, dan mencatat kelayakan APD serta peralatan akses tali",
+      "Naik, turun, dan berpindah posisi pada sistem dua tali — tali kerja dan tali pengaman",
+      "Bekerja dengan aman di bawah pengawasan teknisi TKPK Tingkat 2 atau 3",
+      "Melakukan penyelamatan rekan secara sederhana dan pertolongan pertama"
+    ],
+    "syllabus": [
+      {
+        "title": "Regulasi & manajemen risiko",
+        "detail": "Permenaker No. 9 Tahun 2016, hierarki pengendalian risiko, izin kerja, dan tanggung jawab setiap tingkat kompetensi."
+      },
+      {
+        "title": "APD & peralatan",
+        "detail": "Harness, tali, konektor, descender, ascender, dan penahan jatuh: cara memakai, memeriksa, dan mencatat."
+      },
+      {
+        "title": "Simpul & tambat dasar",
+        "detail": "Simpul kerja, titik tambat, dan pemasangan sistem dua tali di bawah pengawasan."
+      },
+      {
+        "title": "Manuver tali",
+        "detail": "Naik-turun terkendali, perpindahan arah, melewati simpul, dan transisi tepi."
+      },
+      {
+        "title": "Penyelamatan & P3K",
+        "detail": "Penyelamatan rekan dari posisi turun, penanganan korban tergantung, dan pertolongan pertama."
+      },
+      {
+        "title": "Uji kompetensi",
+        "detail": "Ujian teori dan praktik sesuai ketentuan Kemnaker RI sebagai dasar penerbitan sertifikat dan lisensi K3."
+      }
+    ],
+    "certificate": "Sertifikat kompetensi dan lisensi K3 TKPK Tingkat 1 dari Kementerian Ketenagakerjaan RI, ditambah sertifikat penyelesaian pelatihan dari RAC. Masa berlaku dan perpanjangan mengikuti ketentuan Kemnaker."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Untuk siapa program ini\n\nProgram ini untuk pekerja yang baru akan bekerja dengan akses tali — teknisi gedung, pekerja perawatan fasad, teknisi menara, welder, atau inspektur — yang perlu menjangkau area yang tidak bisa dicapai perancah atau gondola.\n\n## Mengapa sertifikat Kemnaker\n\n[Permenaker No. 9 Tahun 2016](https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016) mewajibkan pekerjaan pada ketinggian dilakukan oleh tenaga kerja yang kompeten. Sertifikat dan lisensi K3 dari Kementerian Ketenagakerjaan RI adalah bukti kompetensi yang diakui secara nasional dan diperiksa oleh pengawas ketenagakerjaan, kontraktor, maupun pengelola gedung. Pelajari [skema TKPK dan TKBT](/sertifikasi/) selengkapnya.\n\n## Cara kami melatih\n\nTeori dan praktik dijalankan berdampingan: setiap materi langsung dipraktikkan di ketinggian dengan pengawasan instruktur, lalu diulang sampai benar. Peralatan latihan disediakan; peserta cukup membawa sepatu keselamatan dan pakaian kerja.\n\n## Setelah lulus\n\nSetelah mengumpulkan pengalaman kerja yang cukup, langkah berikutnya adalah [TKPK Tingkat 2](/pelatihan-tkpk-tingkat-2/)."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Jadwal",
+      "title": "Kelas terbuka berikutnya",
+      "course": "course-tkpk-1",
+      "cta": {
+        "label": "Lihat semua jadwal",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan seputar pelatihan",
+      "groups": ["training", "certification"],
+      "limit": 5,
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Daftar atau tanya jadwal kelas berikutnya",
+      "text": "Kirim nama, jumlah peserta, dan bulan yang Anda incar. Untuk kelompok dari satu perusahaan, kelas dapat diadakan di lokasi Anda.",
+      "button": {
+        "label": "Tanya via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}
