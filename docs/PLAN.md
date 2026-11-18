@@ -1,6 +1,6 @@
 # Rencana Rebuild ropeaccesscenter.id — Astro + Cloudflare (mengikuti template Inland)
 
-Status: **LIVE di https://ropeaccesscenter.id** (mode produksi, 2026-11-19) · tersisa peninjauan Safe Browsing & data pelengkap
+Status: **LIVE di https://ropeaccesscenter.id** (mode produksi, 2026-11-19) · sitemap terkirim ke Search Console · menunggu hasil peninjauan Safe Browsing
 
 Situs Rope Access Center (RAC) dibangun ulang dengan teknologi dan pola yang **sama** dengan
 [inland.co.id](https://inland.co.id) (repo `inland-code/inland.co.id`). Konten dan identitas visual diambil dari
@@ -138,9 +138,11 @@ Setiap fase: `npm run format` → `npm run check` → `npm test` → `npm run bu
 - ✅ Custom domain Worker `ropeaccesscenter.id` + `www`; Redirect Rule 301 `www` → root.
 - ✅ OAuth App callback dipindah ke `https://ropeaccesscenter.id/api/auth/callback`; dashboard di `/admin/`.
 - ✅ Build pratinjau (Previews) dimatikan; `PUBLIC_SITE_ENV=production` + rebuild → `robots.txt` Allow.
-- ⏳ Search Console: properti Domain ditambahkan; Google mencatat "Halaman tidak jujur" (salah deteksi pada login
-  dashboard di domain baru). Halaman login diubah agar tidak menyerupai halaman GitHub, lalu minta peninjauan.
-- ⏳ Kirim `sitemap_index.xml` di Search Console setelah peninjauan.
+- ✅ Google Search Console: properti Domain `ropeaccesscenter.id` terverifikasi; `sitemap_index.xml` dikirim — status **Berhasil**.
+- ⏳ Safe Browsing: Google mencatat "Halaman tidak jujur" (salah deteksi pada `/api/auth/login`, redirect ke OAuth GitHub
+  dari domain baru). Halaman login diubah agar tidak menyerupai halaman GitHub (PR #8); peninjauan diminta di Search Console
+  dan laporan salah deteksi dikirim. Sambil menunggu, login dashboard lewat "Detail → kunjungi situs". Hasil dikirim via email.
+- ⏳ Pantau Search Console 2–4 minggu (Pengindeksan halaman, Masalah keamanan); Bing Webmaster (impor dari GSC) opsional.
 
 Rencana awal fase ini:
 
@@ -171,3 +173,12 @@ RAC adalah brand dari grup Inland, jadi kontak memakai data Inland (2026-11-19):
 - ⏳ Tim & testimoni masih data contoh (`sample: true`) → otomatis tersembunyi di produksi sampai diganti data asli.
 - ⏳ Media sosial RAC belum ada (ikon otomatis tersembunyi). Email `@ropeaccesscenter.id` belum aktif (tanpa MX).
 - ⏳ Foto asli (pelatihan, menara latih, proyek) — bisa diunggah kapan saja lewat dashboard.
+- ⏳ Durasi, biaya, dan tanggal kelas program Kemnaker — isi lewat dashboard (Halaman → program, Jadwal Kelas).
+
+## Pemeliharaan
+
+- Token GitHub "RAC dashboard" (`GITHUB_TOKEN`) berlaku s.d. **19/11/2027** — buat token baru dengan izin yang sama dan
+  ganti secret di Cloudflare sebelum tanggal itu, atau tombol "Simpan" di dashboard berhenti berfungsi.
+- Perubahan `PUBLIC_SITE_ENV` (Cloudflare → Settings → Builds → Variables) baru berlaku setelah build ulang (Retry build).
+- Build pratinjau untuk branch non-`main` dimatikan (tab Previews Base); hanya `main` yang di-build & di-deploy.
+- PR otomatis Dependabot (update paket) dicek dulu sebelum di-merge — versi mayor (mis. TypeScript 7) bisa gagal CI.

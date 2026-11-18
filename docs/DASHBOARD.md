@@ -50,11 +50,11 @@ GitHub → Settings → Developer settings → **Fine-grained personal access to
 GitHub → Settings → Developer settings → **OAuth Apps** → **New OAuth App**
 
 - Application name: `RAC Dashboard`
-- Homepage URL: `https://ropeaccesscenter-id.inlandgrup.workers.dev`
-- Authorization callback URL: `https://ropeaccesscenter-id.inlandgrup.workers.dev/api/auth/callback`
+- Homepage URL: `https://ropeaccesscenter.id`
+- Authorization callback URL: `https://ropeaccesscenter.id/api/auth/callback`
 - Simpan **Client ID**, lalu **Generate a new client secret** dan simpan.
 
-Setelah domain `ropeaccesscenter.id` tersambung, ganti kedua URL di atas ke domain itu.
+(Awalnya memakai alamat `workers.dev`; sudah dipindah ke domain utama pada 2026-11-19.)
 
 ### 4. Secret di Cloudflare
 
@@ -70,11 +70,13 @@ Workers & Pages → `ropeaccesscenter-id` → Settings → Variables and Secrets
 
 Akun yang diizinkan diatur di `wrangler.jsonc` → `ADMIN_GITHUB_USERS` (dipisah koma).
 
-### 5. Deploy
+### 5. Deploy — ✅
 
-Workers & Pages → **Create** → Import a repository → `inland-code/ropeaccesscenter.id`, branch `main`
-(build command `npm run build`, deploy command `npx wrangler deploy`). Setiap push ke `main` otomatis di-build & di-deploy;
-build `main` di Workers Builds otomatis mode produksi (boleh diindeks).
+Worker `ropeaccesscenter-id` terhubung ke repo lewat **Cloudflare Workers Builds** (branch `main`, build `npm run build`,
+deploy `npx wrangler deploy`, build variable `PUBLIC_SITE_ENV=production`). Setiap push/merge ke `main` otomatis di-build &
+di-deploy ke **https://ropeaccesscenter.id** (dan `www`, dialihkan ke root). Build pratinjau branch lain dimatikan.
+
+Dashboard: **https://ropeaccesscenter.id/admin/** (callback OAuth: `https://ropeaccesscenter.id/api/auth/callback`).
 
 ## Pengembangan lokal
 
