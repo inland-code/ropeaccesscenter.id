@@ -1,6 +1,6 @@
 # Rencana Rebuild ropeaccesscenter.id — Astro + Cloudflare (mengikuti template Inland)
 
-Status: **Fase 0–6 selesai (kode); menunggu setup Cloudflare (Fase 7) & data pemilik** · build produksi 0 error, 0 peringatan audit
+Status: **Fase 0–7 selesai — staging live di https://ropeaccesscenter-id.inlandgrup.workers.dev (noindex)**; tersisa data pemilik & domain (Fase 8)
 
 Situs Rope Access Center (RAC) dibangun ulang dengan teknologi dan pola yang **sama** dengan
 [inland.co.id](https://inland.co.id) (repo `inland-code/inland.co.id`). Konten dan identitas visual diambil dari
@@ -126,17 +126,18 @@ Setiap fase: `npm run format` → `npm run check` → `npm test` → `npm run bu
 - ✅ Lighthouse (build produksi, lokal dengan Brotli): desktop **100/100/100/100**; mobile performa 99–100, aksesibilitas/best practices/SEO 100; CLS 0; 0 KB JavaScript di halaman publik.
 - ✅ Font Archivo di-instance ke lebar 112% (90 KB → 25 KB). Berkas variable asli tetap di branch `rac-original`.
 
-### Fase 7 — Setup Cloudflare & GitHub (dipandu langkah demi langkah)
+### Fase 7 — Setup Cloudflare & GitHub ✅ (2026-11-19)
 
-1. Worker baru `ropeaccesscenter-id` dengan **Workers Builds** dari repo ini (branch `main`).
+1. ✅ Worker `ropeaccesscenter-id` + **Workers Builds** dari `main`; build variable `PUBLIC_SITE_ENV=staging` (noindex sampai domain siap).
 2. ✅ D1 baru `rac-db` (region APAC) dibuat + migrasi `migrations/0001_contact_messages.sql` dijalankan.
-3. Fine-grained PAT GitHub khusus repo ini → secret `GITHUB_TOKEN`.
-4. OAuth App GitHub baru "RAC Dashboard" → `GITHUB_OAUTH_CLIENT_ID` + `GITHUB_OAUTH_CLIENT_SECRET`.
-5. Secret `SESSION_SECRET` (teks acak ≥ 32 karakter).
+3. ✅ Fine-grained PAT "RAC dashboard" (berlaku s.d. 19/11/2027 — perpanjang sebelum tanggal itu) → secret `GITHUB_TOKEN`.
+4. ✅ OAuth App GitHub "RAC Dashboard" (callback workers.dev) → `GITHUB_OAUTH_CLIENT_ID` + `GITHUB_OAUTH_CLIENT_SECRET`.
+5. ✅ Secret `SESSION_SECRET`. Login dashboard `/admin` diuji berhasil (akun `inland-code`).
 
 ### Fase 8 — Domain & peluncuran (paling akhir)
 
-- Sambungkan `ropeaccesscenter.id` ke Worker, redirect `www` → root, tambah trailing slash, Search Console + sitemap.
+- Ganti data contoh lewat dashboard (Data Bisnis, Tim, Testimoni, Jadwal) — wajib sebelum mode produksi.
+- Sambungkan `ropeaccesscenter.id` ke Worker, redirect `www` → root, tambah trailing slash, ubah build variable `PUBLIC_SITE_ENV` → `production`, tambah callback OAuth domain baru, Search Console + sitemap.
 
 ## Data yang perlu dikonfirmasi pemilik (⏳ sebelum peluncuran)
 
