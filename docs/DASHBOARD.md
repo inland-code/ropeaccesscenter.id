@@ -35,12 +35,7 @@ Worker /api/admin/*  ── verifikasi cookie sesi bertanda tangan + akun GitHub
 
 ## Setup (sekali saja)
 
-### 1. Database D1 — ⏳ belum dibuat
-
-Cloudflare → Storage & Databases → D1 → **Create** → nama `rac-db`, lokasi **Asia-Pacific**.
-Salin _Database ID_, lalu tambahkan ke `wrangler.jsonc` (binding `DB`) dan jalankan migrasi
-`migrations/0001_contact_messages.sql` (lewat tab **Console** D1 atau `npm run db:migrate`).
-Sebelum D1 terhubung, formulir tetap membuka WhatsApp — hanya riwayatnya yang belum tercatat.
+### 1. Database D1 — ✅ sudah dibuat (`rac-db`, APAC), migrasi `0001_contact_messages.sql` sudah dijalankan, terhubung di `wrangler.jsonc`.
 
 ### 2. Token GitHub untuk menyimpan perubahan
 

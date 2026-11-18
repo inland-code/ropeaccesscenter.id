@@ -23,8 +23,14 @@
     // Diisi di Cloudflare → Settings → Variables and Secrets (lihat docs/DASHBOARD.md):
     //   GITHUB_OAUTH_CLIENT_ID (text), GITHUB_OAUTH_CLIENT_SECRET, SESSION_SECRET, GITHUB_TOKEN, ADMIN_EMAIL (secret)
   },
-  // Pesan formulir kontak (riwayat di dashboard) disimpan di D1 "rac-db" (binding DB).
-  // Binding ditambahkan setelah database dibuat di Cloudflare (Fase 7, lihat docs/DASHBOARD.md);
-  // sebelum itu formulir tetap berfungsi (langsung ke WhatsApp), hanya tidak tercatat.
+  // Pesan formulir kontak (riwayat di dashboard). Migrasi baru: `npm run db:migrate`.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "rac-db",
+      "database_id": "3fbb17c6-d264-40ef-b666-a76533229afa",
+      "migrations_dir": "migrations",
+    },
+  ],
   "observability": { "enabled": true },
 }

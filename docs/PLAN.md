@@ -129,7 +129,7 @@ Setiap fase: `npm run format` → `npm run check` → `npm test` → `npm run bu
 ### Fase 7 — Setup Cloudflare & GitHub (dipandu langkah demi langkah)
 
 1. Worker baru `ropeaccesscenter-id` dengan **Workers Builds** dari repo ini (branch `main`).
-2. D1 baru `rac-db` (region APAC) + migrasi `migrations/0001_contact_messages.sql`.
+2. ✅ D1 baru `rac-db` (region APAC) dibuat + migrasi `migrations/0001_contact_messages.sql` dijalankan.
 3. Fine-grained PAT GitHub khusus repo ini → secret `GITHUB_TOKEN`.
 4. OAuth App GitHub baru "RAC Dashboard" → `GITHUB_OAUTH_CLIENT_ID` + `GITHUB_OAUTH_CLIENT_SECRET`.
 5. Secret `SESSION_SECRET` (teks acak ≥ 32 karakter).
