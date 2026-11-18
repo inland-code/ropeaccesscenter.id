@@ -1,6 +1,6 @@
 # Rencana Rebuild ropeaccesscenter.id — Astro + Cloudflare (mengikuti template Inland)
 
-Status: **Fase 0–7 selesai — staging live di https://ropeaccesscenter-id.inlandgrup.workers.dev (noindex)**; tersisa data pemilik & domain (Fase 8)
+Status: **LIVE di https://ropeaccesscenter.id** (mode produksi, 2026-11-19) · tersisa peninjauan Safe Browsing & data pelengkap
 
 Situs Rope Access Center (RAC) dibangun ulang dengan teknologi dan pola yang **sama** dengan
 [inland.co.id](https://inland.co.id) (repo `inland-code/inland.co.id`). Konten dan identitas visual diambil dari
@@ -132,7 +132,17 @@ Setiap fase: `npm run format` → `npm run check` → `npm test` → `npm run bu
 4. ✅ OAuth App GitHub "RAC Dashboard" (callback workers.dev) → `GITHUB_OAUTH_CLIENT_ID` + `GITHUB_OAUTH_CLIENT_SECRET`.
 5. ✅ Secret `SESSION_SECRET`. Login dashboard `/admin` diuji berhasil (akun `inland-code`).
 
-### Fase 8 — Domain & peluncuran (paling akhir)
+### Fase 8 — Domain & peluncuran ✅ (2026-11-19)
+
+- ✅ Domain di Cloudflare (nameserver Niagahoster → `charles`/`joyce.ns.cloudflare.com`), record parkir lama dihapus.
+- ✅ Custom domain Worker `ropeaccesscenter.id` + `www`; Redirect Rule 301 `www` → root.
+- ✅ OAuth App callback dipindah ke `https://ropeaccesscenter.id/api/auth/callback`; dashboard di `/admin/`.
+- ✅ Build pratinjau (Previews) dimatikan; `PUBLIC_SITE_ENV=production` + rebuild → `robots.txt` Allow.
+- ⏳ Search Console: properti Domain ditambahkan; Google mencatat "Halaman tidak jujur" (salah deteksi pada login
+  dashboard di domain baru). Halaman login diubah agar tidak menyerupai halaman GitHub, lalu minta peninjauan.
+- ⏳ Kirim `sitemap_index.xml` di Search Console setelah peninjauan.
+
+Rencana awal fase ini:
 
 - Ganti data contoh lewat dashboard (Data Bisnis, Tim, Testimoni, Jadwal) — wajib sebelum mode produksi.
 - Sambungkan `ropeaccesscenter.id` ke Worker, redirect `www` → root, tambah trailing slash, ubah build variable `PUBLIC_SITE_ENV` → `production`, tambah callback OAuth domain baru, Search Console + sitemap.
