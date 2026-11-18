@@ -1,0 +1,43 @@
+{
+  "translationKey": "contact",
+  "slug": "contact",
+  "template": "contact",
+  "navLabel": "Contact",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Contact Rope Access Center — Consultation & Quotations",
+    "description": "Contact Rope Access Center by WhatsApp, phone, or form for rope access training advice and quotations for industrial work at height."
+  },
+  "hero": {
+    "eyebrow": "Contact",
+    "title": "Let Us Talk About Your Work",
+    "body": "Tell us what you need — the work, the location, and your target dates. We reply with a detailed quotation, usually the same working day.",
+    "ctas": [
+      {
+        "label": "Talk to us on WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "contact",
+      "infoTitle": "Contact details",
+      "socialTitle": "Follow us",
+      "socialText": "Course news, training photos, and our latest projects.",
+      "formTitle": "Send a message",
+      "formText": "Fill in the form below — we log your message, then WhatsApp opens with it pre-filled."
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Before you get in touch",
+      "groups": ["general"],
+      "cta": {
+        "label": "See all FAQs",
+        "href": "faq"
+      }
+    }
+  ]
+}

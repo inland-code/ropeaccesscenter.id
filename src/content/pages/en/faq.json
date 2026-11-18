@@ -1,0 +1,35 @@
+{
+  "translationKey": "faq",
+  "slug": "faq",
+  "template": "faq",
+  "navLabel": "FAQ",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Rope Access Training & Services FAQ · Rope Access Center",
+    "description": "Answers to common questions about rope access training, the difference between IRATA and BNSP, cost, certificate validity, and RAC industrial services."
+  },
+  "hero": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "body": "Direct answers to the questions that reach our desk most often. Not finding yours? Send a WhatsApp message — we reply the same working day.",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "type": "faq-group",
+      "title": "All questions",
+      "groups": ["general", "training", "certification", "services"],
+      "grouped": true
+    },
+    {
+      "type": "cta",
+      "title": "Question not answered?",
+      "text": "Send a WhatsApp message — we reply the same working day.",
+      "button": {
+        "label": "Contact us",
+        "href": "contact"
+      },
+      "tone": "brand"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+---
+import Icon from '@/components/icons/Icon.astro';
+import WhatsAppIcon from '@/components/icons/WhatsAppIcon.astro';
+import SocialLinks from '@/components/SocialLinks.astro';
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+import { t } from '@/i18n/ui';
+import { whatsappUrl } from '@/lib/links';
+import { hrefFor } from '@/lib/routes';
+import site from '@/data/site.json';
+type Props = Extract<Section, { type: 'contact' }> & { locale: Locale };
+const { infoTitle, socialTitle, socialText, formTitle, formText, locale } = Astro.props;
+
+const services =
+  locale === 'id'
+    ? [
+        'Pelatihan IRATA',
+        'Sertifikasi BNSP TKPK',
+        'Refresher / revalidasi',
+        'Pelatihan in-house',
+        'Inspeksi & NDT',
+        'Perawatan & perbaikan di ketinggian',
+        'Perawatan fasad gedung',
+        'Standby rescue',
+        'Konsultasi / audit K3',
+        'Penyediaan teknisi',
+        'Lainnya',
+      ]
+    : [
+        'IRATA training',
+        'BNSP TKPK certification',
+        'Refresher / revalidation',
+        'In-house training',
+        'Inspection & NDT',
+        'Maintenance & repair at height',
+        'Building façade maintenance',
+        'Standby rescue',
+        'HSE consulting / audit',
+        'Technician supply',
+        'Other',
+      ];
+const days: Record<string, { id: string; en: string }> = {
+  'Mo,Tu,We,Th,Fr': { id: 'Senin – Jumat', en: 'Monday – Friday' },
+  Sa: { id: 'Sabtu', en: 'Saturday' },
+};
+const [privacyHref, termsHref] = await Promise.all([hrefFor('privacy', locale), hrefFor('terms', locale)]);
+const hasSocial = Object.values(site.social).some(Boolean);
+// Cloudflare Turnstile (anti-spam) aktif bila site key diisi saat build.
+const turnstileKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY as string | undefined;
+const field =
+  'mt-2 block w-full rounded-lg border-0 bg-surface-alt px-4 py-3 text-ink ring-1 ring-line transition placeholder:text-muted/70 focus:bg-card focus:ring-2 focus:ring-brand-500';
+---
+
+<section class="py-20 sm:py-24">
+  <div class="container-site grid gap-12 lg:grid-cols-5">
+    <div class="lg:col-span-2">
+      <h2 class="text-3xl font-bold tracking-tight text-heading">{infoTitle}</h2>
+      <ul class="mt-8 space-y-6">
+        <li class="flex gap-4">
+          <span class="inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+            <Icon name="map-pin" />
+          </span>
+          <div>
+            <p class="font-semibold text-heading">{t(locale, 'contact.address')}</p>
+            <p class="mt-1 text-muted">
+              {site.address.street}, {site.address.locality}, {site.address.region} {site.address.postalCode}
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-4">
+          <span class="inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+            <Icon name="whatsapp" />
+          </span>
+          <div>
+            <p class="font-semibold text-heading">{t(locale, 'contact.phone')}</p>
+            <a class="mt-1 block text-muted hover:text-accent" href={whatsappUrl(locale)} target="_blank" rel="noopener">
+              {site.phoneDisplay}
+            </a>
+          </div>
+        </li>
+        <li class="flex gap-4">
+          <span class="inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+            <Icon name="mail" />
+          </span>
+          <div>
+            <p class="font-semibold text-heading">{t(locale, 'contact.email')}</p>
+            <a class="mt-1 block text-muted hover:text-accent" href={`mailto:${site.email}`}>
+              {site.email}
+            </a>
+          </div>
+        </li>
+        <li class="flex gap-4">
+          <span class="inline-flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+            <Icon name="clock" />
+          </span>
+          <div>
+            <p class="font-semibold text-heading">{t(locale, 'contact.hours')}</p>
+            <ul class="mt-1 text-muted">
+              {site.openingHours.map((h) => (
+                <li>
+                  {days[h.days.join(',')]?.[locale]}: {h.opens} – {h.closes} WIB
+                </li>
+              ))}
+              <li>{t(locale, 'contact.sunday')}</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      {hasSocial && (
+        <>
+          <h3 class="mt-12 text-xl font-bold text-heading">{socialTitle}</h3>
+          <p class="mt-2 text-muted">{socialText}</p>
+          <div class="mt-4 inline-block rounded-xl bg-navy-900 p-3">
+            <SocialLinks />
+          </div>
+        </>
+      )}
+    </div>
+
+    <div class="rounded-[1.5rem] bg-card p-6 shadow-card ring-1 ring-line sm:p-10 lg:col-span-3">
+      <h2 class="text-3xl font-bold tracking-tight text-heading">{formTitle}</h2>
+      <p class="mt-3 text-muted">{formText}</p>
+      <!--
+        Tanpa JavaScript: form POST biasa ke Worker /api/contact.
+        Worker menyimpan pesan ke D1 (tampil di dashboard), lalu redirect 303 ke WhatsApp.
+      -->
+      <p id="form-error" hidden role="alert" class="mt-6 rounded-lg bg-red-50 p-3 text-sm text-red-700 ring-1 ring-red-200"></p>
+      <form id="form" action="/api/contact" method="post" class="mt-8 grid gap-5 sm:grid-cols-2">
+        <input type="hidden" name="locale" value={locale} />
+        <input type="hidden" name="page" value={Astro.url.pathname} />
+        <div class="absolute -left-[9999px]" aria-hidden="true">
+          <label>
+            Website <input type="text" name="website" tabindex="-1" autocomplete="off" />
+          </label>
+        </div>
+        <label class="block text-sm font-semibold text-heading">
+          {t(locale, 'form.name')} <span class="text-accent-strong">*</span>
+          <input class={field} type="text" name="name" required maxlength="80" autocomplete="name" />
+        </label>
+        <label class="block text-sm font-semibold text-heading">
+          {t(locale, 'form.whatsapp')}
+          <input class={field} type="tel" name="phone" inputmode="tel" maxlength="20" autocomplete="tel" placeholder="08xx xxxx xxxx" />
+        </label>
+        <label class="block text-sm font-semibold text-heading sm:col-span-2">
+          {t(locale, 'form.service')}
+          <select class={field} name="service">
+            <option value="">{t(locale, 'form.service.none')}</option>
+            {services.map((s) => (
+              <option>{s}</option>
+            ))}
+          </select>
+        </label>
+        <label class="block text-sm font-semibold text-heading sm:col-span-2">
+          {t(locale, 'form.message')} <span class="text-accent-strong">*</span>
+          <textarea class={`${field} min-h-36`} name="message" required maxlength="1000" rows="5"></textarea>
+        </label>
+        {turnstileKey && (
+          <div class="sm:col-span-2">
+            <div class="cf-turnstile" data-sitekey={turnstileKey} data-language={locale} data-theme="light"></div>
+          </div>
+        )}
+        <div class="sm:col-span-2">
+          <button type="submit" class="btn-dark w-full py-4 text-base sm:w-auto sm:px-8">
+            <WhatsAppIcon class="size-5" /> {t(locale, 'form.submit')}
+          </button>
+          <p class="mt-3 text-xs text-muted">
+            {t(locale, 'form.note')} {locale === 'id' ? 'Dengan mengirim, Anda menyetujui ' : 'By sending, you agree to our '}
+            <a href={privacyHref} class="underline hover:text-accent-strong" set:text={t(locale, 'nav.privacy')} />
+            {locale === 'id' ? ' dan ' : ' and '}
+            <a href={termsHref} class="underline hover:text-accent-strong" set:text={t(locale, 'nav.terms')} />.
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+{turnstileKey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}
+<script
+  is:inline
+  define:vars={{
+    msgs:
+      locale === 'id'
+        ? { required: 'Nama dan pesan wajib diisi.', captcha: 'Verifikasi anti-spam gagal. Silakan coba lagi.' }
+        : { required: 'Name and message are required.', captcha: 'Anti-spam check failed. Please try again.' },
+  }}
+>
+  const e = new URLSearchParams(location.search).get('error');
+  const el = document.getElementById('form-error');
+  if (e && el && msgs[e]) {
+    el.textContent = msgs[e];
+    el.hidden = false;
+  }
+</script>

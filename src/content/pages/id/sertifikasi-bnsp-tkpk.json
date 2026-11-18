@@ -1,0 +1,100 @@
+{
+  "translationKey": "course-bnsp-tkpk",
+  "slug": "sertifikasi-bnsp-tkpk",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Sertifikasi BNSP — TKPK Tingkat 1 & 2 | Rope Access Center",
+    "description": "Sertifikasi kompetensi nasional untuk Tenaga Kerja pada Ketinggian, sesuai Permenaker No. 9 Tahun 2016 — syarat wajib banyak proyek di Indonesia."
+  },
+  "hero": {
+    "eyebrow": "BNSP · TKPK 1 & 2",
+    "title": "Sertifikasi BNSP — TKPK Tingkat 1 & 2",
+    "body": "Sertifikasi kompetensi nasional untuk Tenaga Kerja pada Ketinggian, sesuai Permenaker No. 9 Tahun 2016 — syarat wajib banyak proyek di Indonesia.",
+    "ctas": [
+      {
+        "label": "Daftar via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Lihat jadwal kelas",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "certificate",
+    "summary": "Sertifikasi kompetensi nasional untuk Tenaga Kerja pada Ketinggian, sesuai Permenaker No. 9 Tahun 2016 — syarat wajib banyak proyek di Indonesia."
+  },
+  "course": {
+    "code": "BNSP-TKPK",
+    "scheme": "BNSP",
+    "level": "TKPK 1 & 2",
+    "order": 4,
+    "featured": true,
+    "summary": "Sertifikasi kompetensi nasional untuk Tenaga Kerja pada Ketinggian, sesuai Permenaker No. 9 Tahun 2016 — syarat wajib banyak proyek di Indonesia.",
+    "duration": "4 hari termasuk uji kompetensi",
+    "durationDays": 4,
+    "price": "Hubungi kami untuk penawaran",
+    "prerequisites": [
+      "Usia minimum 18 tahun dan sehat jasmani",
+      "Pendidikan minimal SMA/SMK atau sederajat",
+      "Untuk Tingkat 2: pengalaman kerja di ketinggian minimal 1 tahun",
+      "Kartu identitas dan pas foto terbaru"
+    ],
+    "outcomes": [
+      "Menerapkan peraturan K3 ketinggian yang berlaku di Indonesia",
+      "Memilih, memeriksa, dan menggunakan APD pencegah jatuh secara benar",
+      "Memasang sistem pembatas gerak dan sistem penahan jatuh",
+      "Melakukan pertolongan dan evakuasi korban di ketinggian",
+      "Menyusun dokumen izin kerja (work permit) untuk pekerjaan ketinggian"
+    ],
+    "syllabus": [
+      {
+        "title": "Hari 1 — Regulasi & Identifikasi Bahaya",
+        "detail": "Permenaker 9/2016, UU No. 1 Tahun 1970, identifikasi bahaya, penilaian risiko, dan hierarki pengendalian."
+      },
+      {
+        "title": "Hari 2 — APD & Sistem Pencegah Jatuh",
+        "detail": "Full body harness, lanyard penyerap energi, anchorage, sistem pembatas gerak, dan perhitungan jarak jatuh bebas."
+      },
+      {
+        "title": "Hari 3 — Praktik & Penyelamatan",
+        "detail": "Praktik naik-turun tangga vertikal, bekerja di platform, penyelamatan korban tergantung, dan penanganan suspension trauma."
+      },
+      {
+        "title": "Hari 4 — Uji Kompetensi BNSP",
+        "detail": "Uji tulis, uji lisan, dan uji praktik oleh asesor kompetensi berlisensi BNSP di TUK terverifikasi."
+      }
+    ],
+    "certificate": "Sertifikat Kompetensi BNSP dan kartu kompetensi, berlaku 3 tahun, terdaftar nasional."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## IRATA atau BNSP — mana yang Anda butuhkan?\n\nKeduanya sah, tetapi menjawab kebutuhan berbeda. BNSP adalah sertifikasi kompetensi nasional yang diakui regulator Indonesia dan sering menjadi syarat administratif proyek pemerintah dan kontraktor lokal. IRATA adalah skema industri internasional yang berlaku lintas negara dan umumnya diminta operator migas multinasional.\n\nBanyak teknisi kami memegang keduanya. Jika Anda ragu, kirim detail proyek Anda melalui WhatsApp dan kami bantu petakan sertifikasi yang tepat."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Jadwal",
+      "title": "Kelas terbuka berikutnya",
+      "course": "course-bnsp-tkpk",
+      "cta": {
+        "label": "Lihat semua jadwal",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Amankan kursi Anda di angkatan berikutnya",
+      "text": "Kirim nama, jumlah peserta, dan bulan yang Anda incar. Kami konfirmasi ketersediaan kursi dan persyaratan dokumen pada hari kerja yang sama.",
+      "button": {
+        "label": "Tanya via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

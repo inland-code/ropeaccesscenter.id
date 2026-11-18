@@ -1,0 +1,15 @@
+---
+/** Teks panjang (Markdown) — isi halaman Tentang, Sertifikasi, legal, layanan & pelatihan. */
+import { marked } from 'marked';
+import type { Section } from '@/content.config';
+type Props = Extract<Section, { type: 'prose' }>;
+const { title, body } = Astro.props;
+const html = marked.parse(body, { async: false }) as string;
+---
+
+<section class="py-14 sm:py-20">
+  <div class="container-site max-w-3xl">
+    {title && <h2 class="mb-6 text-3xl font-bold tracking-tight text-heading">{title}</h2>}
+    <div class="prose-rac" set:html={html} />
+  </div>
+</section>

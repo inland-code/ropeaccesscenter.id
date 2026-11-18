@@ -1,0 +1,35 @@
+{
+  "translationKey": "faq",
+  "slug": "faq",
+  "template": "faq",
+  "navLabel": "FAQ",
+  "contentStatus": "review",
+  "seo": {
+    "title": "FAQ Pelatihan & Jasa Akses Tali · Rope Access Center",
+    "description": "Jawaban atas pertanyaan umum tentang pelatihan akses tali, perbedaan IRATA dan BNSP, biaya, masa berlaku sertifikat, dan jasa industri RAC."
+  },
+  "hero": {
+    "eyebrow": "FAQ",
+    "title": "Pertanyaan yang Sering Diajukan",
+    "body": "Jawaban langsung atas pertanyaan yang paling sering sampai ke meja kami. Tidak menemukan jawaban Anda? Kirim pesan WhatsApp — kami balas pada hari kerja yang sama.",
+    "ctas": []
+  },
+  "sections": [
+    {
+      "type": "faq-group",
+      "title": "Semua pertanyaan",
+      "groups": ["general", "training", "certification", "services"],
+      "grouped": true
+    },
+    {
+      "type": "cta",
+      "title": "Pertanyaan Anda belum terjawab?",
+      "text": "Kirim pesan WhatsApp — kami balas pada hari kerja yang sama.",
+      "button": {
+        "label": "Hubungi kami",
+        "href": "contact"
+      },
+      "tone": "brand"
+    }
+  ]
+}

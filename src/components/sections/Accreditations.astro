@@ -1,0 +1,35 @@
+---
+import Icon from '@/components/icons/Icon.astro';
+import SectionHeading from './SectionHeading.astro';
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+import { accreditations } from '@/lib/data';
+type Props = Extract<Section, { type: 'accreditations' }> & { locale: Locale };
+const { eyebrow, title, intro, locale } = Astro.props;
+const items = await accreditations();
+---
+
+{items.length > 0 && (
+  <section class="bg-brand-gradient py-20 text-white sm:py-24">
+    <div class="container-site">
+      <SectionHeading eyebrow={eyebrow} title={title} intro={intro} tone="light" />
+      <ul class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        {items.map((a) => (
+          <li class="rounded-card bg-white/5 p-6 ring-1 ring-white/15 backdrop-blur">
+            <Icon name="shield-check" class="size-7 text-brand-400" />
+            <p class="mt-4 font-display text-lg font-bold">
+              {a.data.url ? (
+                <a href={a.data.url} class="hover:underline">
+                  {a.data.name}
+                </a>
+              ) : (
+                a.data.name
+              )}
+            </p>
+            <p class="mt-2 text-sm leading-relaxed text-white/75">{a.data.note[locale]}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}

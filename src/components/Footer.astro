@@ -1,0 +1,110 @@
+---
+import Logo from './Logo.astro';
+import SocialLinks from './SocialLinks.astro';
+import type { Locale } from '@/i18n/config';
+import { t } from '@/i18n/ui';
+import { hrefFor } from '@/lib/routes';
+import { courseRoutes, serviceRoutes } from '@/lib/data';
+import { whatsappUrl } from '@/lib/links';
+import site from '@/data/site.json';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+
+const training = (await courseRoutes(locale)).map((r) => ({ href: r.path, label: r.entry.data.hero.title.split(' — ')[0]! }));
+const services = (await serviceRoutes(locale)).map((r) => ({ href: r.path, label: r.entry.data.hero.title }));
+const companyKeys = [
+  ['about', 'nav.about'],
+  ['certification', 'nav.certification'],
+  ['schedule', 'nav.schedule'],
+  ['articles', 'nav.articles'],
+  ['faq', 'nav.faq'],
+  ['contact', 'nav.contact'],
+] as const;
+const legalKeys = [
+  ['privacy', 'nav.privacy'],
+  ['terms', 'nav.terms'],
+] as const;
+const company = await Promise.all(companyKeys.map(async ([k, l]) => ({ href: await hrefFor(k, locale), label: t(locale, l) })));
+const legal = await Promise.all(legalKeys.map(async ([k, l]) => ({ href: await hrefFor(k, locale), label: t(locale, l) })));
+const year = new Date().getFullYear();
+const dayLabels: Record<string, { id: string; en: string }> = {
+  'Mo,Tu,We,Th,Fr': { id: 'Senin – Jumat', en: 'Monday – Friday' },
+  Sa: { id: 'Sabtu', en: 'Saturday' },
+};
+const address = `${site.address.street}, ${site.address.locality}, ${site.address.region} ${site.address.postalCode}`;
+const cols = [
+  { title: t(locale, 'footer.training'), links: training },
+  { title: t(locale, 'footer.services'), links: services },
+  { title: t(locale, 'footer.company'), links: company },
+];
+---
+
+<footer class="relative overflow-hidden bg-navy-950 text-white/80">
+  <div class="h-1 bg-brand-600" aria-hidden="true"></div>
+  <div class="container-site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1.2fr]">
+    <div>
+      <Logo class="h-16 w-auto" height={64} variant="dark" />
+      <p class="mt-5 text-sm leading-relaxed">{site.description[locale]}</p>
+      <div class="mt-5">
+        <SocialLinks />
+      </div>
+    </div>
+    {cols.map((c) => (
+      <div>
+        <h2 class="font-display text-sm font-bold tracking-[0.12em] text-white uppercase">{c.title}</h2>
+        <ul class="mt-4 space-y-2 text-sm">
+          {c.links.map((s) => (
+            <li>
+              <a class="hover:text-brand-400" href={s.href}>
+                {s.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+    <div>
+      <h2 class="font-display text-sm font-bold tracking-[0.12em] text-white uppercase">{t(locale, 'footer.contact')}</h2>
+      <address class="mt-4 space-y-2 text-sm not-italic">
+        <p>{address}</p>
+        <p>
+          <a class="hover:text-brand-400" href={whatsappUrl(locale)} target="_blank" rel="noopener">
+            {site.phoneDisplay}
+          </a>
+        </p>
+        <p>
+          <a class="hover:text-brand-400" href={`mailto:${site.email}`}>
+            {site.email}
+          </a>
+        </p>
+      </address>
+      <h3 class="mt-5 text-xs font-semibold tracking-wide text-white uppercase">{t(locale, 'footer.hours')}</h3>
+      <ul class="mt-2 space-y-1 text-sm">
+        {site.openingHours.map((h) => (
+          <li>
+            {dayLabels[h.days.join(',')]?.[locale] ?? h.days.join(', ')}: {h.opens} – {h.closes} WIB
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="container-site flex flex-col items-center justify-between gap-3 py-5 text-xs text-white/60 sm:flex-row">
+      <p>
+        {t(locale, 'footer.rights')} © {year} {site.legalName}. {t(locale, 'footer.reserved')}
+      </p>
+      <ul class="flex gap-4">
+        {legal.map((l) => (
+          <li>
+            <a class="hover:text-white" href={l.href}>
+              {l.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</footer>

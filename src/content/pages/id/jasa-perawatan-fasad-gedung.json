@@ -1,0 +1,80 @@
+{
+  "translationKey": "service-facade",
+  "slug": "jasa-perawatan-fasad-gedung",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Perawatan Gedung & Fasad | Rope Access Center",
+    "description": "Pembersihan kaca, perawatan fasad, penggantian sealant, dan inspeksi selubung bangunan untuk gedung bertingkat tinggi."
+  },
+  "hero": {
+    "eyebrow": "Layanan Industri",
+    "title": "Perawatan Gedung & Fasad",
+    "body": "Pembersihan kaca, perawatan fasad, penggantian sealant, dan inspeksi selubung bangunan untuk gedung bertingkat tinggi.",
+    "ctas": [
+      {
+        "label": "Minta penawaran",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Semua layanan",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "building",
+    "summary": "Pembersihan kaca, perawatan fasad, penggantian sealant, dan inspeksi selubung bangunan untuk gedung bertingkat tinggi."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Untuk pengelola gedung\n\nGondola membutuhkan perawatan, sertifikasi, dan operator terlatih. Ketika gondola sedang tidak laik atau jangkauannya terbatas oleh bentuk bangunan, akses tali menjadi solusi yang jauh lebih lincah dan hemat.\n\n## Kepatuhan yang lengkap\n\nKami menyerahkan paket dokumen K3 lengkap sebelum mobilisasi: rencana kerja, penilaian risiko, rencana penyelamatan, sertifikat kompetensi personel, dan bukti asuransi. Manajemen gedung Anda cukup mengarsipkannya."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Rincian layanan",
+      "title": "Apa yang kami kerjakan",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Lingkup pekerjaan",
+          "items": [
+            "Pembersihan kaca dan panel fasad berkala",
+            "Penggantian sealant dan perbaikan sambungan curtain wall",
+            "Inspeksi selubung bangunan dan deteksi kebocoran",
+            "Pemasangan dan perawatan signage ketinggian",
+            "Pembersihan dan pengecatan ulang permukaan beton ekspos"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industri yang kami layani",
+          "items": ["Properti Komersial", "Hotel & Perhotelan", "Rumah Sakit", "Apartemen & Kondominium"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "Yang Anda terima",
+          "items": [
+            "Jadwal perawatan tahunan yang dapat diprediksi anggarannya",
+            "Laporan kondisi fasad dengan penandaan titik kerusakan",
+            "Sertifikat asuransi dan dokumen K3 untuk manajemen gedung",
+            "Koordinasi jadwal agar tidak mengganggu penghuni"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ceritakan pekerjaan Anda",
+      "text": "Kirim lokasi, jenis aset, dan target waktu. Kami siapkan penilaian risiko awal dan penawaran tertulis, umumnya pada hari kerja yang sama.",
+      "button": {
+        "label": "Diskusikan via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

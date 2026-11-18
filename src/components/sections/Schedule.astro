@@ -1,0 +1,95 @@
+---
+/** Jadwal kelas terbuka dari src/content/data/schedule.json (kelas yang sudah selesai otomatis disembunyikan). */
+import Icon from '@/components/icons/Icon.astro';
+import SectionHeading from './SectionHeading.astro';
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+import { courseRoutes, upcomingClasses } from '@/lib/data';
+import { dateRange, scheduleStatusLabel } from '@/lib/labels';
+import { resolveHref, whatsappUrl } from '@/lib/links';
+type Props = Extract<Section, { type: 'schedule' }> & { locale: Locale };
+const { eyebrow, title, intro, course, limit, cta, locale } = Astro.props;
+const courses = await courseRoutes(locale);
+const rows = (await upcomingClasses(course)).slice(0, limit ?? 99).map((c) => {
+  const page = courses.find((r) => r.translationKey === c.course);
+  const range = c.status === 'request' ? (locale === 'id' ? 'Sesuai permintaan' : 'On request') : dateRange(c.startDate, c.endDate, locale);
+  const name = page?.entry.data.hero.title ?? c.course;
+  const msg =
+    locale === 'id'
+      ? `Halo RAC, saya ingin mendaftar ${name} (${range}, ${c.location.id}).`
+      : `Hello RAC, I would like to enrol in ${name} (${range}, ${c.location.en}).`;
+  return { ...c, page, range, name, wa: whatsappUrl(locale, msg) };
+});
+const ctaUrl = cta ? await resolveHref(cta.href, locale) : undefined;
+const L = (id: string, en: string) => (locale === 'id' ? id : en);
+const tone: Record<string, string> = {
+  open: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200',
+  limited: 'bg-amber-100 text-amber-900 dark:bg-amber-900/40 dark:text-amber-200',
+  full: 'bg-steel-200 text-steel-500 dark:bg-white/10 dark:text-white/70',
+  request: 'bg-navy-100 text-navy-900 dark:bg-white/10 dark:text-white/80',
+};
+---
+
+<section class="py-20 sm:py-24">
+  <div class="container-site">
+    <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />
+    {rows.length === 0 ? (
+      <p class="mx-auto mt-10 max-w-xl rounded-card bg-surface-alt p-6 text-center text-muted ring-1 ring-line">
+        {L(
+          'Jadwal kelas berikutnya sedang disusun. Hubungi kami untuk tanggal terdekat atau angkatan khusus.',
+          'The next course dates are being finalised. Contact us for the nearest date or a dedicated cohort.',
+        )}
+      </p>
+    ) : (
+      <ul class="mx-auto mt-12 max-w-5xl divide-y divide-line overflow-hidden rounded-card bg-card shadow-card ring-1 ring-line">
+        {rows.map((r) => (
+          <li class="grid gap-3 p-5 sm:grid-cols-[11rem_1fr_auto] sm:items-center sm:gap-6 sm:p-6">
+            <p class="flex items-center gap-2 font-display font-bold text-heading">
+              <Icon name="calendar" class="size-5 shrink-0 text-accent" />
+              {r.range}
+            </p>
+            <div class="min-w-0">
+              <p class="font-semibold text-heading">
+                {r.page ? (
+                  <a href={r.page.path} class="hover:text-accent-strong">
+                    {r.name}
+                  </a>
+                ) : (
+                  r.name
+                )}
+              </p>
+              <p class="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted">
+                <span class="inline-flex items-center gap-1.5">
+                  <Icon name="map-pin" class="size-4" />
+                  {r.location[locale]}
+                </span>
+                {r.seatsTotal > 0 && r.status !== 'full' && (
+                  <span>
+                    {L('Sisa', 'Seats left')}: {r.seatsLeft}/{r.seatsTotal}
+                  </span>
+                )}
+              </p>
+            </div>
+            <div class="flex items-center gap-3 sm:justify-end">
+              <span class:list={['rounded-full px-3 py-1 text-xs font-semibold', tone[r.status]]}>
+                {scheduleStatusLabel[r.status]?.[locale]}
+              </span>
+              {r.status !== 'full' && (
+                <a href={r.wa} target="_blank" rel="noopener" class="btn-dark px-4 py-2">
+                  {L('Daftar', 'Enrol')}
+                </a>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+    )}
+    {cta && ctaUrl && (
+      <p class="mt-10 text-center">
+        <a href={ctaUrl} class="inline-flex items-center gap-2 font-semibold text-accent-strong hover:underline">
+          {cta.label} <Icon name="arrow" class="size-4" />
+        </a>
+      </p>
+    )}
+  </div>
+</section>

@@ -1,0 +1,80 @@
+{
+  "translationKey": "service-maintenance",
+  "slug": "maintenance-repair-at-height",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Maintenance & Repair at Height | Rope Access Center",
+    "description": "Painting, blasting, welding, component replacement, and structural repair — delivered on rope with full quality control."
+  },
+  "hero": {
+    "eyebrow": "Industrial Services",
+    "title": "Maintenance & Repair at Height",
+    "body": "Painting, blasting, welding, component replacement, and structural repair — delivered on rope with full quality control.",
+    "ctas": [
+      {
+        "label": "Request a quotation",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "All services",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "wrench",
+    "summary": "Painting, blasting, welding, component replacement, and structural repair — delivered on rope with full quality control."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Position does not lower the standard\n\nThe most common concern about rope access work is quality. Our answer is simple: the same QC procedures apply whether a technician is standing on a scaffold or hanging on a rope. DFT is measured, adhesion is tested, ambient conditions are logged.\n\n## Containment and waste control\n\nWe rig containment systems for blasting and coating so that debris does not fall into production areas, into the sea, or onto the surrounding environment — an increasingly firm requirement on projects held to international environmental standards."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Service details",
+      "title": "What we deliver",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Scope of work",
+          "items": [
+            "Surface preparation and recoating of steel structures",
+            "Contained blasting and protective coating application",
+            "Certified welding and structural repair",
+            "Replacement of anodes, clamps, and mechanical components",
+            "Concrete repair, crack stitching, and injection"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industries we serve",
+          "items": ["Offshore Oil & Gas", "Heavy Industry", "Bridges & Infrastructure", "Telecommunications"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "What you receive",
+          "items": [
+            "Daily work reports with before-and-after photographic evidence",
+            "Coating QC records (DFT, adhesion, environmental conditions)",
+            "Material certificates and welding procedure records",
+            "Handover with a completed checklist"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Tell us about the job",
+      "text": "Send the location, the type of asset, and your target dates. We prepare an initial risk assessment and a written quotation, usually the same working day.",
+      "button": {
+        "label": "Discuss on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+---
+/** Tampilan artikel (konten dari src/content/posts). */
+import { Image } from 'astro:assets';
+import { render } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import BrandGraphic from '@/components/BrandGraphic.astro';
+import PostCard from '@/components/PostCard.astro';
+import { alternatesFor, getRoutes, hrefFor, type Route } from '@/lib/routes';
+import { imageFor } from '@/lib/media';
+import { relatedForPost } from '@/lib/related';
+import { categoryLabel } from '@/lib/labels';
+import { ogPath } from '@/lib/og';
+import { absoluteUrl, breadcrumbSchema, faqSchema, ORG_ID } from '@/lib/seo';
+import { t } from '@/i18n/ui';
+
+type PostRoute = Extract<Route, { kind: 'post' }>;
+interface Props {
+  route: PostRoute;
+}
+const { route } = Astro.props;
+const { locale } = route;
+const data = route.entry.data;
+
+const alternates = await alternatesFor(route.translationKey);
+const crumbs = [
+  { name: t(locale, 'breadcrumb.home'), path: await hrefFor('home', locale) },
+  { name: t(locale, 'nav.articles'), path: await hrefFor('articles', locale) },
+  { name: data.title, path: route.path },
+];
+const { Content, headings } = await render(route.entry);
+const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const showToc = toc.filter((h) => h.depth === 2).length >= 3;
+// Artikel terkait: dihitung dari tautan bersama, saling-tautan, lalu kategori (lihat lib/related.ts).
+const related = relatedForPost(route, await getRoutes(), await hrefFor('contact', locale));
+const fmt = new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-US', { dateStyle: 'long' });
+
+const jsonLd: object[] = [
+  {
+    '@type': 'BlogPosting',
+    '@id': `${absoluteUrl(route.path)}#article`,
+    headline: data.title,
+    description: data.seo.description,
+    url: absoluteUrl(route.path),
+    mainEntityOfPage: absoluteUrl(route.path),
+    image: absoluteUrl(ogPath(route.path)),
+    inLanguage: locale === 'id' ? 'id-ID' : 'en',
+    datePublished: data.publishedAt.toISOString(),
+    dateModified: (data.updatedAt ?? data.publishedAt).toISOString(),
+    author: { '@type': 'Organization', name: data.author, url: absoluteUrl('/') },
+    articleSection: categoryLabel[data.category]?.[locale] ?? data.category,
+    publisher: { '@id': ORG_ID },
+    ...(data.sources.length
+      ? {
+          citation: data.sources.map((c) => ({
+            '@type': 'CreativeWork',
+            name: c.title,
+            url: c.url,
+            ...(c.publisher ? { publisher: c.publisher } : {}),
+          })),
+        }
+      : {}),
+  },
+  breadcrumbSchema(crumbs),
+  ...(data.faq.length ? [faqSchema(data.faq)] : []),
+];
+---
+
+<BaseLayout
+  locale={locale}
+  title={data.seo.title}
+  description={data.seo.description}
+  path={route.path}
+  alternates={alternates}
+  ogImageUrl={ogPath(route.path)}
+  ogType="article"
+  noindex={data.seo.noindex}
+  publishedTime={data.publishedAt}
+  modifiedTime={data.updatedAt}
+  jsonLd={jsonLd}
+>
+  <article class="pb-20">
+    <header class="bg-brand-gradient">
+      <div class="container-site grid items-center gap-10 py-12 lg:grid-cols-2 lg:py-16">
+        <div>
+          <div class="[&_*]:text-white/80 [&_a:hover]:text-white">
+            <Breadcrumbs items={crumbs} />
+          </div>
+          <h1 class="mt-5 text-3xl font-bold tracking-tight text-balance text-white sm:text-4xl">{data.title}</h1>
+          <p class="mt-4 text-white/90">{data.excerpt}</p>
+          <p class="mt-5 text-sm text-white/80">
+            {t(locale, 'post.publishedOn')} <time datetime={data.publishedAt.toISOString()}>{fmt.format(data.publishedAt)}</time> ·{' '}
+            {data.author}
+          </p>
+        </div>
+        {data.image ? (
+          <Image
+            src={imageFor(data.image)}
+            alt={data.imageAlt ?? data.title}
+            priority
+            width={720}
+            sizes="(min-width: 1024px) 40vw, 100vw"
+            class="aspect-[4/3] w-full rounded-card object-cover shadow-card"
+          />
+        ) : (
+          <BrandGraphic class="hidden aspect-[4/3] w-full rounded-card shadow-card ring-1 ring-white/10 lg:block" />
+        )}
+      </div>
+    </header>
+    <div class="container-site mt-12 max-w-3xl">
+      {showToc && (
+        <details open class="mb-8 rounded-card bg-surface-alt p-5 ring-1 ring-brand-100">
+          <summary class="cursor-pointer font-semibold text-heading">{t(locale, 'post.toc')}</summary>
+          <ol class="mt-3 space-y-1.5">
+            {toc.map((h) => (
+              <li class:list={[h.depth === 3 && 'ml-5 text-sm']}>
+                <a href={`#${h.slug}`} class="text-muted hover:text-accent-strong">
+                  {h.text}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </details>
+      )}
+      <div class="prose-rac text-lg">
+        <Content />
+      </div>
+      {data.sources.length > 0 && (
+        <aside class="mt-12 rounded-card bg-surface-alt p-6 ring-1 ring-line" aria-labelledby="sources-heading">
+          <h2 id="sources-heading" class="text-xl font-bold text-heading">
+            {t(locale, 'post.sources')}
+          </h2>
+          <p class="mt-2 text-sm text-muted">{t(locale, 'post.sourcesNote')}</p>
+          <ol class="mt-4 list-decimal space-y-2 pl-6 text-base">
+            {data.sources.map((c) => (
+              <li>
+                <a href={c.url} target="_blank" rel="noopener external" class="text-accent-strong underline hover:no-underline">
+                  {c.title}
+                </a>
+                {c.publisher && <span class="text-muted"> — {c.publisher}</span>}
+              </li>
+            ))}
+          </ol>
+        </aside>
+      )}
+    </div>
+    {related.length > 0 && (
+      <section class="container-site mt-20" aria-labelledby="related-heading">
+        <h2 id="related-heading" class="text-2xl font-bold text-heading">
+          {t(locale, 'post.related')}
+        </h2>
+        <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {related.map((p) => (
+            <PostCard
+              locale={locale}
+              href={p.path}
+              title={p.entry.data.title}
+              excerpt={p.entry.data.excerpt}
+              image={p.entry.data.image}
+              imageAlt={p.entry.data.imageAlt}
+              category={p.entry.data.category}
+              date={p.entry.data.publishedAt}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+  </article>
+</BaseLayout>

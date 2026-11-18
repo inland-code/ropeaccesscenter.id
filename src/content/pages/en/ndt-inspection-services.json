@@ -1,0 +1,80 @@
+{
+  "translationKey": "service-ndt",
+  "slug": "ndt-inspection-services",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Inspection & Non-Destructive Testing (NDT) | RAC",
+    "description": "Dual-certified technicians — rope access and NDT — reach inspection points without scaffolding, without cranes, and without stopping production."
+  },
+  "hero": {
+    "eyebrow": "Industrial Services",
+    "title": "Inspection & Non-Destructive Testing (NDT)",
+    "body": "Dual-certified technicians — rope access and NDT — reach inspection points without scaffolding, without cranes, and without stopping production.",
+    "ctas": [
+      {
+        "label": "Request a quotation",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "All services",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "search",
+    "summary": "Dual-certified technicians — rope access and NDT — reach inspection points without scaffolding, without cranes, and without stopping production."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Why rope access for inspection\n\nScaffolding a single flare stack can take two weeks and shut down part of your operation. Our rope access team arrives in the morning, rigs in a matter of hours, and hands over data the same day.\n\nSpeed is not the only difference. Every hour scaffolding stands is another hour of exposure for everyone else working around it.\n\n## Dual competence, not two teams\n\nWe do not send rope technicians to carry an inspector. Our personnel hold IRATA certification alongside NDT Level II qualifications — the person hanging on the rope is the person reading the instrument."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Service details",
+      "title": "What we deliver",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Scope of work",
+          "items": [
+            "Ultrasonic thickness measurement (UT) on pressure vessels, tanks, and pipework",
+            "Close visual inspection (CVI) of steel structures and welded joints",
+            "Magnetic particle inspection (MPI) and dye penetrant testing (PT)",
+            "Corrosion mapping and remaining-life assessment",
+            "High-resolution photo and video documentation at every inspection point"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industries we serve",
+          "items": ["Oil & Gas", "Petrochemical", "Power Generation", "Ports & Maritime", "Mining"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "What you receive",
+          "items": [
+            "An inspection report signed by a certified inspector",
+            "Raw measurement data in an auditable format",
+            "Prioritised remedial action recommendations",
+            "An indexed photo and video record per location"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Tell us about the job",
+      "text": "Send the location, the type of asset, and your target dates. We prepare an initial risk assessment and a written quotation, usually the same working day.",
+      "button": {
+        "label": "Discuss on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

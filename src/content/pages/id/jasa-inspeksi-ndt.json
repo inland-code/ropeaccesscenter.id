@@ -1,0 +1,80 @@
+{
+  "translationKey": "service-ndt",
+  "slug": "jasa-inspeksi-ndt",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Inspeksi & Pengujian Tak Merusak (NDT) | Rope Access Center",
+    "description": "Teknisi bersertifikat ganda — akses tali dan NDT — menjangkau titik inspeksi tanpa perancah, tanpa crane, dan tanpa menghentikan produksi."
+  },
+  "hero": {
+    "eyebrow": "Layanan Industri",
+    "title": "Inspeksi & Pengujian Tak Merusak (NDT)",
+    "body": "Teknisi bersertifikat ganda — akses tali dan NDT — menjangkau titik inspeksi tanpa perancah, tanpa crane, dan tanpa menghentikan produksi.",
+    "ctas": [
+      {
+        "label": "Minta penawaran",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Semua layanan",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "search",
+    "summary": "Teknisi bersertifikat ganda — akses tali dan NDT — menjangkau titik inspeksi tanpa perancah, tanpa crane, dan tanpa menghentikan produksi."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Mengapa akses tali untuk inspeksi\n\nMembangun perancah pada satu flare stack dapat memakan waktu dua minggu dan menghentikan sebagian operasi. Tim akses tali kami tiba pagi hari, memasang sistem dalam hitungan jam, dan menyerahkan data pada hari yang sama.\n\nPerbedaannya bukan hanya kecepatan. Setiap jam perancah berdiri adalah jam paparan risiko tambahan bagi pekerja lain di sekitarnya.\n\n## Kompetensi ganda, bukan dua tim\n\nKami tidak menurunkan teknisi tali untuk menggendong inspektur. Personel kami memegang sertifikat IRATA sekaligus kualifikasi NDT Level II — orang yang menggantung di tali adalah orang yang membaca alat."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Rincian layanan",
+      "title": "Apa yang kami kerjakan",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Lingkup pekerjaan",
+          "items": [
+            "Pengukuran ketebalan ultrasonik (UT) pada bejana tekan, tangki, dan perpipaan",
+            "Inspeksi visual jarak dekat (CVI) struktur baja dan sambungan las",
+            "Magnetic Particle Inspection (MPI) dan Dye Penetrant Testing (PT)",
+            "Pemetaan korosi dan penilaian sisa umur pakai aset",
+            "Dokumentasi foto dan video resolusi tinggi per titik inspeksi"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industri yang kami layani",
+          "items": ["Minyak & Gas", "Petrokimia", "Pembangkit Listrik", "Pelabuhan & Maritim", "Pertambangan"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "Yang Anda terima",
+          "items": [
+            "Laporan inspeksi bertanda tangan inspektur bersertifikat",
+            "Data mentah pengukuran dalam format yang dapat diaudit",
+            "Rekomendasi tindakan perbaikan dengan skala prioritas",
+            "Berkas foto-video terindeks per lokasi"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ceritakan pekerjaan Anda",
+      "text": "Kirim lokasi, jenis aset, dan target waktu. Kami siapkan penilaian risiko awal dan penawaran tertulis, umumnya pada hari kerja yang sama.",
+      "button": {
+        "label": "Diskusikan via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

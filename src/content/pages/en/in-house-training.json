@@ -1,0 +1,98 @@
+{
+  "translationKey": "course-in-house",
+  "slug": "in-house-training",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "In-House & Corporate Training | Rope Access Center",
+    "description": "We bring the training structure, instructors, and all PPE to your facility — with a syllabus built around the real hazards on your site."
+  },
+  "hero": {
+    "eyebrow": "In-House Training · Custom",
+    "title": "In-House & Corporate Training",
+    "body": "We bring the training structure, instructors, and all PPE to your facility — with a syllabus built around the real hazards on your site.",
+    "ctas": [
+      {
+        "label": "Enrol via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "See course dates",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "building",
+    "summary": "We bring the training structure, instructors, and all PPE to your facility — with a syllabus built around the real hazards on your site."
+  },
+  "course": {
+    "code": "INH-01",
+    "scheme": "IN-HOUSE",
+    "level": "Custom",
+    "order": 6,
+    "featured": false,
+    "summary": "We bring the training structure, instructors, and all PPE to your facility — with a syllabus built around the real hazards on your site.",
+    "duration": "Flexible, 1–10 days",
+    "durationDays": 5,
+    "price": "Quoted per programme",
+    "prerequisites": [
+      "Minimum of 6 participants per cohort",
+      "A training area with adequate anchor structure, or we supply a portable tower",
+      "A medical fitness statement for each participant"
+    ],
+    "outcomes": [
+      "Competency that maps directly to your assets and procedures",
+      "A site-specific rescue plan, tested on the ground",
+      "A team competency matrix and a recommended progression path",
+      "Complete documentation for client and regulator audits"
+    ],
+    "syllabus": [
+      {
+        "title": "Stage 1 — Site Visit & Analysis",
+        "detail": "A senior instructor surveys the site, maps the hazards, and agrees learning objectives with your HSE team."
+      },
+      {
+        "title": "Stage 2 — Syllabus Design",
+        "detail": "Syllabus, rescue scenarios, and teaching materials written around your assets and SOPs."
+      },
+      {
+        "title": "Stage 3 — Delivery",
+        "detail": "Training at your location, including all PPE, training structures, and photo-video documentation."
+      },
+      {
+        "title": "Stage 4 — Report & Follow-up",
+        "detail": "Per-individual competency report, recommendations to improve the safe system of work, and a six-month review visit."
+      }
+    ],
+    "certificate": "A RAC certificate, plus IRATA or BNSP certification where the programme includes a formal assessment."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Training that is not generic\n\nAn open course teaches principles. In-house training teaches those principles on the structures your team actually climbs every day — your cooling tower, your tanks, your jetty.\n\n## What HSE gets out of it\n\nEvery in-house programme produces a tested, site-specific rescue plan rather than a template document. That evidence carries real weight in client audits and Ministry of Manpower inspections."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Dates",
+      "title": "Next open courses",
+      "course": "course-in-house",
+      "cta": {
+        "label": "See all course dates",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Secure your seat on the next cohort",
+      "text": "Send your name, the number of participants, and the month you are aiming for. We confirm seat availability and paperwork the same working day.",
+      "button": {
+        "label": "Ask on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

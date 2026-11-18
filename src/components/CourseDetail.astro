@@ -1,0 +1,87 @@
+---
+/** Rincian program pelatihan (template "course"): fakta singkat, prasyarat, kompetensi, silabus, sertifikat. */
+import Icon from '@/components/icons/Icon.astro';
+import type { Course } from '@/content/schema';
+import type { Locale } from '@/i18n/config';
+
+interface Props {
+  course: Course;
+  locale: Locale;
+}
+const { course: c, locale } = Astro.props;
+const L = (id: string, en: string) => (locale === 'id' ? id : en);
+const facts = [
+  { icon: 'certificate', label: L('Skema', 'Scheme'), value: `${c.scheme} · ${c.level}` },
+  { icon: 'clock', label: L('Durasi', 'Duration'), value: c.duration },
+  { icon: 'clipboard', label: L('Kode', 'Code'), value: c.code },
+  { icon: 'briefcase', label: L('Biaya', 'Fee'), value: c.price },
+];
+---
+
+<section class="border-b border-line bg-card">
+  <dl class="container-site grid grid-cols-2 gap-px py-2 lg:grid-cols-4">
+    {facts.map((f) => (
+      <div class="px-2 py-5 sm:px-4">
+        <dt class="flex items-center gap-2 text-xs font-semibold tracking-wider text-muted uppercase">
+          <Icon name={f.icon} class="size-5 shrink-0 text-accent" />
+          {f.label}
+        </dt>
+        <dd class="mt-1 pl-7 font-semibold text-heading">{f.value}</dd>
+      </div>
+    ))}
+  </dl>
+</section>
+
+<section class="py-16 sm:py-20">
+  <div class="container-site grid gap-6 lg:grid-cols-2">
+    <div class="rounded-card bg-surface-alt p-7 ring-1 ring-line">
+      <h2 class="text-xl font-bold text-heading">{L('Prasyarat peserta', 'Entry requirements')}</h2>
+      <ul class="mt-5 space-y-3">
+        {c.prerequisites.map((p) => (
+          <li class="flex gap-3 leading-relaxed text-ink">
+            <Icon name="check" class="mt-1 size-4 shrink-0 text-accent" />
+            <span>{p}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div class="rounded-card bg-navy-900 p-7 text-white">
+      <h2 class="text-xl font-bold">{L('Kompetensi yang Anda capai', 'What you will be able to do')}</h2>
+      <ul class="mt-5 space-y-3">
+        {c.outcomes.map((o) => (
+          <li class="flex gap-3 leading-relaxed text-white/90">
+            <Icon name="check-circle" class="mt-0.5 size-5 shrink-0 text-brand-400" />
+            <span>{o}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  {c.syllabus.length > 0 && (
+    <div class="container-site mt-16 max-w-4xl">
+      <h2 class="text-3xl font-bold tracking-tight text-heading">{L('Silabus', 'Syllabus')}</h2>
+      <ol class="mt-8 space-y-4 border-l-2 border-brand-600 pl-6">
+        {c.syllabus.map((s, i) => (
+          <li class="relative">
+            <span
+              class="absolute top-0.5 -left-[2.15rem] inline-flex size-6 items-center justify-center rounded-full bg-brand-600 text-xs font-bold text-white"
+              aria-hidden="true"
+            >
+              {i + 1}
+            </span>
+            <h3 class="font-bold text-heading">{s.title}</h3>
+            <p class="mt-1 leading-relaxed text-muted">{s.detail}</p>
+          </li>
+        ))}
+      </ol>
+      <div class="mt-10 flex gap-4 rounded-card bg-brand-50 p-6 ring-1 ring-brand-600/20">
+        <Icon name="certificate" class="size-8 shrink-0 text-accent" />
+        <div>
+          <h2 class="font-bold text-heading">{L('Sertifikat', 'Certificate')}</h2>
+          <p class="mt-1 leading-relaxed text-ink">{c.certificate}</p>
+        </div>
+      </div>
+    </div>
+  )}
+</section>

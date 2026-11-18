@@ -1,0 +1,186 @@
+{
+  "translationKey": "home",
+  "slug": "",
+  "template": "home",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Pelatihan Akses Tali & Sertifikasi IRATA | Rope Access Center",
+    "description": "Pusat pelatihan akses tali bersertifikat IRATA & BNSP di Indonesia, sekaligus jasa inspeksi, perawatan, dan penyelamatan di ketinggian untuk industri."
+  },
+  "hero": {
+    "eyebrow": "Akses Aman. Standar Lebih Tinggi.",
+    "title": "Kami Melatih. Kami Menyertifikasi. Kami Mengerjakan.",
+    "body": "Pelatihan akses tali bersertifikat, sertifikasi kompetensi, dan layanan industri di ketinggian — untuk pekerjaan yang tidak memberi ruang bagi kesalahan.",
+    "ctas": [
+      {
+        "label": "Jelajahi pelatihan",
+        "href": "training",
+        "variant": "dark"
+      },
+      {
+        "label": "Layanan industri",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "trust",
+      "items": [
+        {
+          "icon": "shield-check",
+          "title": "Keselamatan Utama",
+          "text": "Setiap orang pulang dalam keadaan utuh."
+        },
+        {
+          "icon": "certificate",
+          "title": "Asesmen Independen",
+          "text": "IRATA & BNSP — kami tidak menilai peserta sendiri."
+        },
+        {
+          "icon": "users",
+          "title": "Rasio 1:6",
+          "text": "Setiap manuver diamati dan dikoreksi."
+        },
+        {
+          "icon": "helmet",
+          "title": "APD Disediakan",
+          "text": "Cukup bawa sepatu keselamatan."
+        }
+      ]
+    },
+    {
+      "type": "page-cards",
+      "eyebrow": "Pelatihan",
+      "title": "Program Pelatihan & Sertifikasi",
+      "intro": "Dari nol pengalaman hingga supervisor — setiap program ditutup asesmen pihak independen.",
+      "of": "course",
+      "featuredOnly": true,
+      "limit": 4,
+      "cta": {
+        "label": "Semua program pelatihan",
+        "href": "training"
+      }
+    },
+    {
+      "type": "stats",
+      "eyebrow": "Rekam Jejak",
+      "title": "Angka yang kami jaga",
+      "items": [
+        {
+          "value": 1200,
+          "suffix": "+",
+          "label": "Teknisi terlatih"
+        },
+        {
+          "value": 98,
+          "suffix": "%",
+          "label": "Kelulusan asesmen pertama"
+        },
+        {
+          "value": 250,
+          "suffix": "+",
+          "label": "Proyek diselesaikan"
+        },
+        {
+          "value": 10,
+          "suffix": "+",
+          "label": "Tahun pengalaman"
+        }
+      ]
+    },
+    {
+      "type": "page-cards",
+      "eyebrow": "Apa yang Kami Kerjakan",
+      "title": "Empat Pilar Layanan Kami",
+      "intro": "Satu disiplin, empat cara kami menerapkannya untuk klien di seluruh Indonesia.",
+      "of": "service",
+      "featuredOnly": true,
+      "limit": 4,
+      "cta": {
+        "label": "Semua layanan industri",
+        "href": "services"
+      }
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "Tentang Kami",
+      "title": "Keselamatan adalah Prioritas, Keunggulan adalah Standar.",
+      "intro": "Rope Access Center adalah pusat pelatihan sekaligus penyedia jasa akses tali untuk industri berisiko tinggi. Sejak 2014 kami membangun kompetensi teknisi Indonesia dan mengerjakan proyek di ketinggian dengan satu prinsip yang tidak pernah kami tawar: setiap orang pulang dalam keadaan utuh.",
+      "items": [
+        {
+          "icon": "shield-check",
+          "title": "Keselamatan Utama",
+          "text": "Setiap keputusan diuji terhadap satu pertanyaan: apakah semua orang pulang utuh?",
+          "bullets": []
+        },
+        {
+          "icon": "target",
+          "title": "Standar Global",
+          "text": "Asesmen independen IRATA dan BNSP — kami tidak menilai peserta kami sendiri.",
+          "bullets": []
+        },
+        {
+          "icon": "users",
+          "title": "Tim Berpengalaman",
+          "text": "Instruktur Level 3 dengan jam kerja lapangan nyata, bukan hanya jam mengajar.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Jadwal",
+      "title": "Kelas terbuka berikutnya",
+      "limit": 4,
+      "cta": {
+        "label": "Lihat semua jadwal",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "accreditations",
+      "eyebrow": "Tersertifikasi & Diakui",
+      "title": "Kami Bekerja pada Standar Global"
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "Kata Mereka",
+      "title": "Dipercaya oleh Para Profesional",
+      "limit": 3
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang sering diajukan",
+      "groups": ["general", "training", "certification"],
+      "limit": 5,
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
+    },
+    {
+      "type": "latest-posts",
+      "eyebrow": "Artikel",
+      "title": "Catatan dari lapangan",
+      "limit": 3,
+      "cta": {
+        "label": "Semua artikel",
+        "href": "articles"
+      }
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Siap membawa tim Anda ke tingkat berikutnya?",
+      "title": "Mari Bangun Masa Depan yang Lebih Aman dan Lebih Kuat.",
+      "text": "Pelatihan bersertifikat untuk tim Anda, atau tim akses tali untuk pekerjaan di ketinggian — kami balas pada hari kerja yang sama.",
+      "button": {
+        "label": "Konsultasi via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

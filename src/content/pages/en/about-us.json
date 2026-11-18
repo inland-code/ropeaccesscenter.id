@@ -1,0 +1,49 @@
+{
+  "translationKey": "about",
+  "slug": "about-us",
+  "template": "about",
+  "navLabel": "About Us",
+  "contentStatus": "review",
+  "seo": {
+    "title": "About Rope Access Center | Rope Access Training Indonesia",
+    "description": "The Rope Access Center profile: our history, values, IRATA Level 3 certified instructor team, and our approach to safety at height."
+  },
+  "hero": {
+    "eyebrow": "About Us",
+    "title": "Ten Years on Rope, One Standard That Has Not Moved",
+    "body": "Built by field technicians, for field technicians — and for companies that refuse to compromise on safety.",
+    "ctas": [
+      {
+        "label": "Training programmes",
+        "href": "training",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## How we began\n\nRAC was founded in 2014 out of a recurring frustration. Our founder, then a rope access supervisor at a refinery, kept receiving new technicians who held certificates but were not ready to work. The certificates were genuine; the training had been rushed.\n\nWe started with one training tower and three instructors, under a rule that has never been relaxed since day one: we do not pass someone who is not ready, no matter that they have already paid.\n\n## What we believe\n\n### Safety is not a slogan — it is a repeated decision\n\nSafety is not settled once in a policy meeting. It is decided every morning when someone chooses to check a harness thoroughly despite being in a hurry. We train that decision, not merely the procedure around it.\n\n### Competence must be provable\n\nWe chose independent assessment schemes — IRATA and BNSP — precisely because we do not assess our own trainees. Third-party judgement is what makes our certificates mean something to any client.\n\n### One standard for training and for work\n\nOur services teams work to the standard we teach in the classroom. If we teach daily equipment checks, our project teams perform them — including on busy days and on projects running behind schedule.\n\n## The numbers we hold ourselves to\n\nWe have trained more than 1,200 technicians. Our first-attempt assessment pass rate sits around 98 per cent — a figure we reach by refusing to send unready candidates to an assessor, not by making the training easier.\n\nWe have delivered more than 250 projects, from flare stack inspections to high-rise façade maintenance.\n\n## Where we are heading\n\nIndonesia’s rope access industry is growing faster than its supply of competent technicians. Our focus for the next five years is expanding training capacity beyond Java — bringing certification closer to where the work is, rather than the other way around.\n\nLearn more about the [IRATA and BNSP certification schemes](/en/certification/) we follow."
+    },
+    {
+      "type": "team",
+      "eyebrow": "Team",
+      "title": "The people behind our standard"
+    },
+    {
+      "type": "accreditations",
+      "eyebrow": "Standards",
+      "title": "We work to global standards"
+    },
+    {
+      "type": "cta",
+      "title": "Talk directly to our instructors",
+      "text": "Questions about programmes, prerequisites, or your project needs — we answer the same working day.",
+      "button": {
+        "label": "Talk to us on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

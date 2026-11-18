@@ -1,0 +1,53 @@
+---
+import { Image } from 'astro:assets';
+import type { Locale } from '@/i18n/config';
+import { imageFor } from '@/lib/media';
+import { categoryLabel } from '@/lib/labels';
+import BrandGraphic from './BrandGraphic.astro';
+
+interface Props {
+  locale: Locale;
+  href: string;
+  title: string;
+  excerpt: string;
+  image?: string;
+  imageAlt?: string;
+  category: string;
+  date: Date;
+  /** Level heading judul kartu (2 jika kartu langsung di bawah H1). */
+  headingLevel?: 2 | 3;
+}
+const { locale, href, title, excerpt, image, imageAlt, category, date, headingLevel = 3 } = Astro.props;
+const Heading = headingLevel === 2 ? 'h2' : 'h3';
+const fmt = new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-US', { dateStyle: 'long' });
+---
+
+<article class="group flex flex-col overflow-hidden rounded-card bg-card shadow-card ring-1 ring-line transition hover:-translate-y-1">
+  <a href={href} class="relative block aspect-[16/10] overflow-hidden" tabindex="-1" aria-hidden="true">
+    {image ? (
+      <Image
+        src={imageFor(image)}
+        alt={imageAlt ?? title}
+        width={640}
+        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+        class="size-full object-cover transition duration-500 group-hover:scale-105"
+      />
+    ) : (
+      <BrandGraphic class="size-full" size="md" />
+    )}
+    <span class="absolute top-3 right-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold tracking-wide text-navy-900 uppercase">
+      {categoryLabel[category]?.[locale] ?? category}
+    </span>
+  </a>
+  <div class="flex flex-1 flex-col p-5">
+    <Heading class="text-lg leading-snug font-semibold text-heading">
+      <a href={href} class="hover:text-accent">
+        {title}
+      </a>
+    </Heading>
+    <p class="mt-2 line-clamp-3 text-sm text-muted">{excerpt}</p>
+    <time datetime={date.toISOString()} class="mt-auto pt-4 text-xs text-muted">
+      {fmt.format(date)}
+    </time>
+  </div>
+</article>

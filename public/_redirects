@@ -1,0 +1,6 @@
+# Redirect 301 (permanen). Format: /url-lama/  /url-baru/  301
+# Situs RAC belum pernah live dengan format URL ini, jadi belum ada URL warisan.
+# Tambahkan di sini (atau lewat dashboard → Redirect) bila slug halaman diganti setelah live.
+/sitemap.xml        /sitemap_index.xml 301
+/rss.xml            /feed.xml          301
+/en/rss.xml         /en/feed.xml       301

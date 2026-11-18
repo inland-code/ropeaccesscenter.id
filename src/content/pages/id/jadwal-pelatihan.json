@@ -1,0 +1,48 @@
+{
+  "translationKey": "schedule",
+  "slug": "jadwal-pelatihan",
+  "template": "schedule",
+  "navLabel": "Jadwal Pelatihan",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Jadwal Pelatihan Akses Tali IRATA & BNSP · RAC",
+    "description": "Jadwal kelas terbuka pelatihan akses tali IRATA Level 1, 2, dan 3, serta sertifikasi BNSP TKPK, lengkap dengan lokasi dan sisa kuota."
+  },
+  "hero": {
+    "eyebrow": "Jadwal Pelatihan",
+    "title": "Kelas Terbuka Berikutnya",
+    "body": "Kelas reguler dibuka setiap bulan. Untuk enam peserta atau lebih, kami dapat membuka angkatan khusus pada tanggal yang Anda tentukan.",
+    "ctas": [
+      {
+        "label": "Daftar via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      }
+    ]
+  },
+  "parent": "training",
+  "sections": [
+    {
+      "type": "schedule",
+      "eyebrow": "Kalender",
+      "title": "Semua kelas terbuka",
+      "intro": "Kelas yang sudah selesai otomatis disembunyikan. Sisa kursi diperbarui oleh tim kami."
+    },
+    {
+      "type": "page-cards",
+      "eyebrow": "Program",
+      "title": "Rincian setiap program",
+      "of": "course"
+    },
+    {
+      "type": "cta",
+      "title": "Tanggal yang Anda butuhkan belum ada?",
+      "text": "Kelas reguler dibuka setiap bulan. Untuk enam peserta atau lebih, kami dapat membuka angkatan khusus pada tanggal yang Anda tentukan.",
+      "button": {
+        "label": "Konsultasi via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

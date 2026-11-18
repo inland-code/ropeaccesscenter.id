@@ -1,0 +1,80 @@
+{
+  "translationKey": "service-rescue",
+  "slug": "standby-rescue-services",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Standby Rescue Teams | Rope Access Center",
+    "description": "Certified rescue teams on station for the duration of high-risk work — at height, in confined spaces, and through major shutdowns."
+  },
+  "hero": {
+    "eyebrow": "Industrial Services",
+    "title": "Standby Rescue Teams",
+    "body": "Certified rescue teams on station for the duration of high-risk work — at height, in confined spaces, and through major shutdowns.",
+    "ctas": [
+      {
+        "label": "Request a quotation",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "All services",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "lifebuoy",
+    "summary": "Certified rescue teams on station for the duration of high-risk work — at height, in confined spaces, and through major shutdowns."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## An untested rescue plan is not a plan\n\nMany sites hold a rescue plan document that has never been run. When an incident actually happens, the distance between the document and reality becomes expensive.\n\nEvery RAC standby rescue deployment begins by proving the plan on the real site, with response times measured and recorded.\n\n## Response time is everything\n\nSuspension trauma can turn fatal within tens of minutes. Our teams work to a target of under 15 minutes from alarm to extraction of a suspended casualty — and we demonstrate it in drills rather than promising it in a proposal."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Service details",
+      "title": "What we deliver",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Scope of work",
+          "items": [
+            "Rescue at height and confined space rescue",
+            "Writing and proving site-specific rescue plans",
+            "Provision of rescue equipment and evacuation stretchers",
+            "Personnel qualified in first aid and initial casualty care",
+            "Joint drills with the client’s emergency response team"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industries we serve",
+          "items": ["Refinery Turnarounds", "Major Construction", "Power Generation", "Mining"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "What you receive",
+          "items": [
+            "A written rescue plan proven on site",
+            "A daily team attendance and readiness log",
+            "Drill reports with measured response times",
+            "Recommendations for improved access and permanent anchor points"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Tell us about the job",
+      "text": "Send the location, the type of asset, and your target dates. We prepare an initial risk assessment and a written quotation, usually the same working day.",
+      "button": {
+        "label": "Discuss on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

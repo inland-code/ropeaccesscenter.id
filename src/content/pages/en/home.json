@@ -1,0 +1,186 @@
+{
+  "translationKey": "home",
+  "slug": "",
+  "template": "home",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Rope Access Training & IRATA Certification | RAC Indonesia",
+    "description": "IRATA and BNSP certified rope access training in Indonesia, plus inspection, maintenance, and rescue services at height for high-risk industry."
+  },
+  "hero": {
+    "eyebrow": "Safe Access. Higher Standard.",
+    "title": "We Train. We Certify. We Deliver.",
+    "body": "Certified rope access training, competency certification, and industrial services at height — for work that leaves no room for error.",
+    "ctas": [
+      {
+        "label": "Explore training",
+        "href": "training",
+        "variant": "dark"
+      },
+      {
+        "label": "Industrial services",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "trust",
+      "items": [
+        {
+          "icon": "shield-check",
+          "title": "Safety First",
+          "text": "Everyone goes home whole."
+        },
+        {
+          "icon": "certificate",
+          "title": "Independent Assessment",
+          "text": "IRATA & BNSP — we never grade our own trainees."
+        },
+        {
+          "icon": "users",
+          "title": "1:6 Ratio",
+          "text": "Every manoeuvre watched and corrected."
+        },
+        {
+          "icon": "helmet",
+          "title": "PPE Supplied",
+          "text": "Just bring your safety boots."
+        }
+      ]
+    },
+    {
+      "type": "page-cards",
+      "eyebrow": "Training",
+      "title": "Training & Certification Programmes",
+      "intro": "From zero experience to supervisor — every programme closes with an independent assessment.",
+      "of": "course",
+      "featuredOnly": true,
+      "limit": 4,
+      "cta": {
+        "label": "All training programmes",
+        "href": "training"
+      }
+    },
+    {
+      "type": "stats",
+      "eyebrow": "Track Record",
+      "title": "The numbers we hold ourselves to",
+      "items": [
+        {
+          "value": 1200,
+          "suffix": "+",
+          "label": "Technicians trained"
+        },
+        {
+          "value": 98,
+          "suffix": "%",
+          "label": "First-attempt pass rate"
+        },
+        {
+          "value": 250,
+          "suffix": "+",
+          "label": "Projects delivered"
+        },
+        {
+          "value": 10,
+          "suffix": "+",
+          "label": "Years of experience"
+        }
+      ]
+    },
+    {
+      "type": "page-cards",
+      "eyebrow": "What We Do",
+      "title": "The Four Pillars of Our Work",
+      "intro": "One discipline, four ways we put it to work for clients across Indonesia.",
+      "of": "service",
+      "featuredOnly": true,
+      "limit": 4,
+      "cta": {
+        "label": "All industrial services",
+        "href": "services"
+      }
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "About Us",
+      "title": "Safety Is the Priority, Excellence Is the Standard.",
+      "intro": "Rope Access Center is both a training centre and a rope access service provider for high-risk industry. Since 2014 we have built the competence of Indonesian technicians and delivered work at height under a principle we have never traded away: everyone goes home whole.",
+      "items": [
+        {
+          "icon": "shield-check",
+          "title": "Safety First",
+          "text": "Every decision is tested against one question: does everyone go home whole?",
+          "bullets": []
+        },
+        {
+          "icon": "target",
+          "title": "Global Standard",
+          "text": "Independent IRATA and BNSP assessment — we do not grade our own trainees.",
+          "bullets": []
+        },
+        {
+          "icon": "users",
+          "title": "Experienced Team",
+          "text": "Level 3 instructors with real field hours behind them, not only teaching hours.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Dates",
+      "title": "Next open courses",
+      "limit": 4,
+      "cta": {
+        "label": "See all course dates",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "accreditations",
+      "eyebrow": "Certified & Recognised",
+      "title": "We Work to Global Standards"
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "What They Say",
+      "title": "Trusted by Professionals",
+      "limit": 3
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "groups": ["general", "training", "certification"],
+      "limit": 5,
+      "cta": {
+        "label": "See all FAQs",
+        "href": "faq"
+      }
+    },
+    {
+      "type": "latest-posts",
+      "eyebrow": "Insights",
+      "title": "Notes from the field",
+      "limit": 3,
+      "cta": {
+        "label": "All articles",
+        "href": "articles"
+      }
+    },
+    {
+      "type": "cta",
+      "eyebrow": "Ready to take your team to the next level?",
+      "title": "Let Us Build a Safer, Stronger Future Together.",
+      "text": "Certified training for your team, or a rope access crew for your work at height — we reply the same working day.",
+      "button": {
+        "label": "Talk to us on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

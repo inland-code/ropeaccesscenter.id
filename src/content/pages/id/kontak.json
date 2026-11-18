@@ -1,0 +1,43 @@
+{
+  "translationKey": "contact",
+  "slug": "kontak",
+  "template": "contact",
+  "navLabel": "Kontak",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Hubungi Rope Access Center — Konsultasi & Penawaran",
+    "description": "Hubungi Rope Access Center melalui WhatsApp, telepon, atau formulir untuk konsultasi pelatihan akses tali dan penawaran jasa industri di ketinggian."
+  },
+  "hero": {
+    "eyebrow": "Kontak",
+    "title": "Mari Bicara Tentang Pekerjaan Anda",
+    "body": "Ceritakan kebutuhan Anda — jenis pekerjaan, lokasi, dan target waktu. Kami balas dengan penawaran terperinci, umumnya pada hari kerja yang sama.",
+    "ctas": [
+      {
+        "label": "Konsultasi via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "contact",
+      "infoTitle": "Informasi kontak",
+      "socialTitle": "Ikuti kami",
+      "socialText": "Kabar kelas terbaru, dokumentasi pelatihan, dan proyek kami.",
+      "formTitle": "Kirim pesan",
+      "formText": "Isi formulir di bawah — pesan Anda kami catat, lalu WhatsApp terbuka dengan pesan yang sudah terisi."
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Sebelum menghubungi kami",
+      "groups": ["general"],
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
+    }
+  ]
+}

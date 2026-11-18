@@ -1,0 +1,80 @@
+{
+  "translationKey": "service-rescue",
+  "slug": "jasa-standby-rescue",
+  "template": "service",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Tim Penyelamat Siaga (Standby Rescue) | Rope Access Center",
+    "description": "Tim penyelamat bersertifikat siaga di lokasi selama pekerjaan berisiko tinggi — ketinggian, ruang terbatas, dan shutdown besar."
+  },
+  "hero": {
+    "eyebrow": "Layanan Industri",
+    "title": "Tim Penyelamat Siaga (Standby Rescue)",
+    "body": "Tim penyelamat bersertifikat siaga di lokasi selama pekerjaan berisiko tinggi — ketinggian, ruang terbatas, dan shutdown besar.",
+    "ctas": [
+      {
+        "label": "Minta penawaran",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Semua layanan",
+        "href": "services",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "lifebuoy",
+    "summary": "Tim penyelamat bersertifikat siaga di lokasi selama pekerjaan berisiko tinggi — ketinggian, ruang terbatas, dan shutdown besar."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Rencana penyelamatan yang belum pernah diuji bukanlah rencana\n\nBanyak lokasi kerja memiliki dokumen rencana penyelamatan yang tidak pernah dijalankan. Ketika insiden benar-benar terjadi, jarak antara dokumen dan kenyataan menjadi mahal.\n\nSetiap penugasan standby rescue RAC dimulai dengan pengujian rencana di lokasi sesungguhnya, dengan waktu respons yang diukur dan dicatat.\n\n## Waktu respons adalah segalanya\n\nSuspension trauma dapat menjadi fatal dalam hitungan belasan menit. Tim kami menetapkan target ekstraksi korban tergantung di bawah 15 menit sejak alarm — dan kami membuktikannya dalam latihan, bukan menjanjikannya dalam proposal."
+    },
+    {
+      "type": "lists",
+      "eyebrow": "Rincian layanan",
+      "title": "Apa yang kami kerjakan",
+      "columns": [
+        {
+          "icon": "clipboard",
+          "title": "Lingkup pekerjaan",
+          "items": [
+            "Penyelamatan ketinggian dan penyelamatan di ruang terbatas",
+            "Penyusunan dan pengujian rencana penyelamatan spesifik lokasi",
+            "Penyediaan peralatan penyelamat dan tandu evakuasi",
+            "Personel dengan kualifikasi P3K dan penanganan awal korban",
+            "Latihan simulasi bersama tim tanggap darurat klien"
+          ]
+        },
+        {
+          "icon": "building",
+          "title": "Industri yang kami layani",
+          "items": ["Turnaround Kilang", "Konstruksi Besar", "Pembangkit Listrik", "Pertambangan"]
+        },
+        {
+          "icon": "check-circle",
+          "title": "Yang Anda terima",
+          "items": [
+            "Rencana penyelamatan tertulis yang telah diuji di lokasi",
+            "Log kehadiran dan kesiapan tim harian",
+            "Laporan latihan simulasi dan waktu respons terukur",
+            "Rekomendasi perbaikan akses dan titik tambat permanen"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ceritakan pekerjaan Anda",
+      "text": "Kirim lokasi, jenis aset, dan target waktu. Kami siapkan penilaian risiko awal dan penawaran tertulis, umumnya pada hari kerja yang sama.",
+      "button": {
+        "label": "Diskusikan via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

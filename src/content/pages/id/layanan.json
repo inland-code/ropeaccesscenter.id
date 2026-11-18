@@ -1,0 +1,58 @@
+{
+  "translationKey": "services",
+  "slug": "layanan",
+  "template": "services",
+  "navLabel": "Layanan",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Jasa Akses Tali Industri: Inspeksi, Perawatan & Rescue · RAC",
+    "description": "Jasa akses tali RAC untuk industri: inspeksi NDT, perawatan & perbaikan di ketinggian, fasad gedung, standby rescue, audit K3, dan penyediaan teknisi."
+  },
+  "hero": {
+    "eyebrow": "Layanan",
+    "title": "Pekerjaan di Ketinggian, Dikerjakan dengan Benar",
+    "body": "Inspeksi, perawatan, perbaikan, dan penyelamatan — tanpa perancah, tanpa menghentikan produksi, dengan dokumentasi yang lolos audit.",
+    "ctas": [
+      {
+        "label": "Minta penawaran",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "page-cards",
+      "eyebrow": "Layanan",
+      "title": "Layanan akses tali industri",
+      "intro": "Setiap penugasan dimulai dengan penilaian risiko tertulis dan rencana penyelamatan yang ditandatangani supervisor IRATA Level 3 — sebelum satu orang pun menyentuh tali.",
+      "of": "service"
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "Kata Klien",
+      "title": "Dipercaya oleh para profesional",
+      "limit": 3
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan seputar layanan",
+      "groups": ["services"],
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Minta penawaran tertulis",
+      "text": "Kirim lokasi, jenis aset, dan target waktu. Penilaian risiko awal dan penawaran umumnya kami kirim pada hari kerja yang sama.",
+      "button": {
+        "label": "Konsultasi via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

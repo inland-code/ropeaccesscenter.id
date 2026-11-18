@@ -1,0 +1,107 @@
+{
+  "translationKey": "course-irata-l2",
+  "slug": "pelatihan-irata-level-2",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Pelatihan IRATA Level 2 — Teknisi Senior | RAC",
+    "description": "Melangkah dari operator menjadi pemasang sistem. Fokus pada rigging, penyelamatan kompleks, dan tanggung jawab terhadap keselamatan rekan satu tim."
+  },
+  "hero": {
+    "eyebrow": "IRATA · Level 2",
+    "title": "IRATA Level 2 — Teknisi Akses Tali Senior",
+    "body": "Melangkah dari operator menjadi pemasang sistem. Fokus pada rigging, penyelamatan kompleks, dan tanggung jawab terhadap keselamatan rekan satu tim.",
+    "ctas": [
+      {
+        "label": "Daftar via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Lihat jadwal kelas",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "graduation-cap",
+    "summary": "Melangkah dari operator menjadi pemasang sistem. Fokus pada rigging, penyelamatan kompleks, dan tanggung jawab terhadap keselamatan rekan satu tim."
+  },
+  "course": {
+    "code": "IRATA-L2",
+    "scheme": "IRATA",
+    "level": "Level 2",
+    "order": 2,
+    "featured": true,
+    "summary": "Melangkah dari operator menjadi pemasang sistem. Fokus pada rigging, penyelamatan kompleks, dan tanggung jawab terhadap keselamatan rekan satu tim.",
+    "duration": "5 hari pelatihan + 1 hari asesmen",
+    "durationDays": 6,
+    "price": "Hubungi kami untuk penawaran",
+    "prerequisites": [
+      "Memegang sertifikat IRATA Level 1 yang masih berlaku",
+      "Minimum 1.000 jam kerja terdokumentasi dan minimum 12 bulan sejak sertifikasi Level 1",
+      "Logbook IRATA yang lengkap dan ditandatangani Level 3"
+    ],
+    "outcomes": [
+      "Memasang dan menguji sistem tambat (anchor) sederhana hingga menengah",
+      "Membangun sistem katrol mekanis untuk mengangkat dan menurunkan beban",
+      "Melakukan penyelamatan dari sistem tambat ulang, deviasi, dan traverse",
+      "Mengevaluasi risiko rigging dan mengomunikasikannya kepada tim",
+      "Mendukung Level 3 dalam pengawasan lokasi kerja"
+    ],
+    "syllabus": [
+      {
+        "title": "Hari 1 — Peninjauan & Teori Rigging",
+        "detail": "Penyegaran manuver Level 1, teori pembebanan, sudut tambat, faktor keamanan, dan pemilihan titik tambat struktural."
+      },
+      {
+        "title": "Hari 2 — Sistem Tambat",
+        "detail": "Y-hang, tambat ulang, deviasi besar, aid climbing horizontal dan vertikal, serta pengujian beban sistem."
+      },
+      {
+        "title": "Hari 3 — Katrol & Pengangkatan",
+        "detail": "Sistem 3:1 dan 5:1, penambat progresif, transfer beban, dan pengangkatan menggunakan tripod atau davit."
+      },
+      {
+        "title": "Hari 4 — Penyelamatan Kompleks",
+        "detail": "Penyelamatan melewati tambat ulang dan deviasi, penyelamatan dari traverse, penggunaan tandu (stretcher)."
+      },
+      {
+        "title": "Hari 5 — Konsolidasi",
+        "detail": "Skenario terpadu dengan tekanan waktu, dokumentasi rencana penyelamatan, dan uji coba internal."
+      },
+      {
+        "title": "Hari 6 — Asesmen IRATA",
+        "detail": "Asesmen independen mencakup rigging, manuver, penyelamatan kompleks, dan teori tertulis."
+      }
+    ],
+    "certificate": "Kartu dan sertifikat IRATA Level 2, berlaku 3 tahun, terdaftar di basis data IRATA International."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Lompatan terbesar dalam karier akses tali\n\nPerbedaan Level 1 dan Level 2 bukan soal jumlah manuver, melainkan soal tanggung jawab. Di Level 2 Anda memasang sistem yang akan menahan orang lain, dan Anda harus mampu menjelaskan mengapa sistem itu aman.\n\n## Persiapan sebelum datang\n\nPastikan logbook Anda sudah lengkap dan ditandatangani sebelum hari pertama — asesor IRATA akan memeriksanya, dan logbook yang tidak memenuhi syarat akan menggugurkan kepesertaan asesmen. Tim kami siap membantu meninjau logbook Anda lebih awal, tanpa biaya."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Jadwal",
+      "title": "Kelas terbuka berikutnya",
+      "course": "course-irata-l2",
+      "cta": {
+        "label": "Lihat semua jadwal",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Amankan kursi Anda di angkatan berikutnya",
+      "text": "Kirim nama, jumlah peserta, dan bulan yang Anda incar. Kami konfirmasi ketersediaan kursi dan persyaratan dokumen pada hari kerja yang sama.",
+      "button": {
+        "label": "Tanya via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

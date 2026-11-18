@@ -1,0 +1,54 @@
+{
+  "translationKey": "certification",
+  "slug": "sertifikasi",
+  "template": "certification",
+  "navLabel": "Sertifikasi",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Sertifikasi IRATA & BNSP Akses Tali | Rope Access Center",
+    "description": "Penjelasan skema sertifikasi akses tali: IRATA Level 1–3, BNSP TKPK, masa berlaku, persyaratan jam kerja, dan proses revalidasi."
+  },
+  "hero": {
+    "eyebrow": "Sertifikasi",
+    "title": "Sertifikat yang Dibaca Sama di Mana Pun",
+    "body": "Kami tidak menilai peserta kami sendiri. Asesmen dilakukan pihak independen — itulah yang membuat sertifikat ini berarti.",
+    "ctas": [
+      {
+        "label": "Program pelatihan",
+        "href": "training",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Mengapa asesmen independen penting\n\nSebuah lembaga pelatihan yang menilai pesertanya sendiri menghadapi konflik kepentingan yang jelas: tingkat kelulusan tinggi baik untuk reputasi pemasaran. Skema IRATA dan BNSP memutus konflik itu dengan menempatkan asesor yang tidak terlibat dalam pelatihan.\n\nBagi Anda sebagai peserta, ini berarti sertifikat yang tidak dapat diragukan klien. Bagi kami, ini berarti satu-satunya cara meningkatkan tingkat kelulusan adalah dengan mengajar lebih baik.\n\n## Skema IRATA International\n\nIRATA mengelola tiga tingkat kompetensi. **Level 1** bekerja di bawah pengawasan. **Level 2** memasang sistem tambat dan melakukan penyelamatan kompleks. **Level 3** memikul tanggung jawab penuh atas lokasi kerja, termasuk rencana penyelamatan dan pengawasan tim.\n\nSetiap kenaikan level menuntut minimum 1.000 jam kerja tercatat dan minimum dua belas bulan sejak sertifikasi sebelumnya. Sertifikat berlaku tiga tahun.\n\n## Skema BNSP\n\nBadan Nasional Sertifikasi Profesi menerbitkan sertifikat kompetensi melalui lembaga sertifikasi profesi berlisensi. Untuk pekerjaan ketinggian, skema yang relevan adalah TKPK — Tenaga Kerja pada Ketinggian — yang mengacu pada Permenaker No. 9 Tahun 2016.\n\nSertifikat BNSP berlaku tiga tahun dan diakui secara nasional, termasuk oleh pengawas ketenagakerjaan.\n\n## Verifikasi sertifikat\n\nSeluruh sertifikat yang diterbitkan melalui RAC terdaftar pada basis data lembaga penerbitnya dan dapat diverifikasi langsung oleh calon pemberi kerja. Kami mendorong setiap klien untuk melakukan verifikasi itu — pada sertifikat kami maupun pada sertifikat penyedia mana pun.\n\nIngin tahu bagaimana kami menyiapkan peserta? Baca [profil dan nilai kami](/tentang-kami/), atau [hubungi kami](/kontak/) untuk memverifikasi sebuah sertifikat."
+    },
+    {
+      "type": "accreditations",
+      "eyebrow": "Lembaga & standar",
+      "title": "Skema yang kami ikuti"
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan seputar sertifikasi",
+      "groups": ["certification"],
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Bingung memilih skema?",
+      "text": "Kirim persyaratan tender atau kontrak Anda — kami bantu menentukan sertifikasi yang benar-benar diminta.",
+      "button": {
+        "label": "Konsultasi via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}
