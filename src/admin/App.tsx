@@ -157,22 +157,27 @@ const LOGIN_ERRORS: Record<string, string> = {
 
 function Login() {
   const err = new URLSearchParams(location.search).get('login');
+  // Sengaja tanpa logo/warna GitHub: halaman ini milik RAC, bukan tiruan halaman login pihak lain.
   return (
     <div class="flex min-h-dvh items-center justify-center bg-navy-950 p-6">
       <div class="w-full max-w-sm rounded-2xl bg-white p-8 text-center shadow-xl">
-        <p class="text-xl font-bold text-navy-900">
-          Rope Access Center <span class="text-brand-600">Dashboard</span>
+        <img src="/logo-rac.png" alt="Rope Access Center" width="180" height="89" class="mx-auto h-auto w-44" />
+        <p class="mt-4 text-lg font-bold text-navy-900">Dashboard pengelola situs</p>
+        <p class="mt-2 text-sm text-muted">
+          Halaman internal untuk pemilik situs ropeaccesscenter.id. Pengunjung umum tidak perlu masuk ke sini.
         </p>
-        <p class="mt-2 text-sm text-muted">Khusus pemilik situs. Masuk dengan akun GitHub yang terdaftar.</p>
         {err && <p class="mt-4 rounded-lg bg-red-50 p-3 text-sm text-red-700">{LOGIN_ERRORS[err] ?? 'Login gagal.'}</p>}
         <a
           href="/api/auth/login"
-          class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#24292f] px-4 py-3 text-sm font-semibold text-white hover:bg-black"
+          class="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-brand-600 px-4 py-3 text-sm font-semibold text-white hover:bg-brand-700"
         >
-          <svg class="size-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" />
-          </svg>
-          Masuk dengan GitHub
+          Masuk sebagai pengelola
+        </a>
+        <p class="mt-4 text-xs leading-relaxed text-muted">
+          Verifikasi akun dilakukan di halaman resmi github.com (OAuth). Situs ini tidak pernah meminta atau menyimpan kata sandi.
+        </p>
+        <a href="/" class="mt-6 inline-block text-sm font-semibold text-brand-700 hover:underline">
+          ← Kembali ke situs
         </a>
       </div>
     </div>
