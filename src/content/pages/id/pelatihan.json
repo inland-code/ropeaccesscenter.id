@@ -53,6 +53,33 @@
       "note": "TKPK = Tenaga Kerja pada Ketinggian (metode akses tali). TKBT = Tenaga Kerja Bangunan Tinggi (memanjat struktur dengan penahan jatuh)."
     },
     {
+      "type": "value-cards",
+      "eyebrow": "Cara mendaftar",
+      "title": "Empat langkah menuju sertifikat Kemnaker",
+      "items": [
+        {
+          "title": "1. Konsultasi",
+          "text": "Ceritakan pekerjaan dan pengalaman Anda; kami bantu memilih program dan tingkat yang tepat.",
+          "bullets": []
+        },
+        {
+          "title": "2. Pendaftaran & berkas",
+          "text": "Kirim data diri, surat keterangan sehat, dan bukti pengalaman (untuk Tingkat 2 dan 3).",
+          "bullets": []
+        },
+        {
+          "title": "3. Pelatihan",
+          "text": "Teori dan praktik di ketinggian dengan pendampingan instruktur hingga siap uji.",
+          "bullets": []
+        },
+        {
+          "title": "4. Uji & sertifikat",
+          "text": "Uji kompetensi sesuai ketentuan Kemnaker; peserta yang lulus menerima sertifikat dan lisensi K3.",
+          "bullets": []
+        }
+      ]
+    },
+    {
       "type": "schedule",
       "eyebrow": "Jadwal",
       "title": "Kelas terbuka berikutnya",
@@ -82,5 +109,6 @@
       },
       "tone": "brand"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-19"
 }

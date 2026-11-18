@@ -74,6 +74,21 @@
       ]
     },
     {
+      "type": "table",
+      "eyebrow": "Method comparison",
+      "title": "Rope access, gondola, or scaffolding?",
+      "intro": "A general guide to choosing an access method. The best method is decided at survey, based on the building and the work.",
+      "columns": ["Aspect", "Rope access", "Gondola", "Scaffolding"],
+      "rows": [
+        ["Set-up time", "Hours", "Fast if permanently installed", "Days"],
+        ["Reaching recesses & canopies", "Very flexible", "Limited to rails", "Flexible but slow"],
+        ["Permanent roof installation", "Not needed, anchors only", "Needed", "Not needed"],
+        ["Disruption below", "Minimal, cordon moves with team", "Moderate", "High, takes up space"],
+        ["Best for", "Planned maintenance & local repairs", "Buildings with a BMU installed", "Heavy, long work at one point"]
+      ],
+      "note": "BMU = building maintenance unit (permanent gondola). Many buildings use a combination of methods."
+    },
+    {
       "type": "value-cards",
       "eyebrow": "How we work",
       "title": "Four steps from survey to report",
@@ -129,5 +144,6 @@
       },
       "tone": "brand"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-19"
 }

@@ -3,7 +3,6 @@ import type { Section } from '@/content.config';
 import type { Locale } from '@/i18n/config';
 import Trust from './Trust.astro';
 import Stats from './Stats.astro';
-import ServiceCards from './ServiceCards.astro';
 import PageCards from './PageCards.astro';
 import Prose from './Prose.astro';
 import Lists from './Lists.astro';
@@ -14,7 +13,6 @@ import Testimonials from './Testimonials.astro';
 import LatestPosts from './LatestPosts.astro';
 import Cta from './Cta.astro';
 import ValueCards from './ValueCards.astro';
-import Banner from './Banner.astro';
 import Gallery from './Gallery.astro';
 import Contact from './Contact.astro';
 import Faq from './Faq.astro';
@@ -39,8 +37,6 @@ const { sections, locale, currentPath, offset = 0 } = Astro.props;
       return <Trust {...s} />;
     case 'stats':
       return <Stats {...s} locale={locale} />;
-    case 'service-cards':
-      return <ServiceCards {...s} locale={locale} />;
     case 'page-cards':
       return <PageCards {...s} locale={locale} currentPath={currentPath} />;
     case 'prose':
@@ -61,8 +57,6 @@ const { sections, locale, currentPath, offset = 0 } = Astro.props;
       return <Cta {...s} locale={locale} />;
     case 'value-cards':
       return <ValueCards {...s} />;
-    case 'banner':
-      return <Banner {...s} locale={locale} />;
     case 'gallery':
       return <Gallery {...s} />;
     case 'contact':

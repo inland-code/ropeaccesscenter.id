@@ -122,25 +122,6 @@ export const sectionSchema = z.discriminatedUnion('type', [
     .meta({ title: 'Statistik bisnis' }),
   z
     .object({
-      type: z.literal('service-cards'),
-      ...heading,
-      items: z
-        .array(
-          z
-            .object({
-              icon: icon.optional(),
-              title: s('Judul'),
-              text: text('Teks'),
-              href: href('Tautan kartu (opsional)').optional(),
-              links: z.array(link).default([]).meta({ title: 'Tautan tambahan' }),
-            })
-            .meta({ title: 'Kartu' }),
-        )
-        .meta({ title: 'Kartu' }),
-    })
-    .meta({ title: 'Kartu manual' }),
-  z
-    .object({
       type: z.literal('page-cards'),
       ...heading,
       of: z.enum(['course', 'service']).meta({ title: 'Jenis halaman', description: 'course = program pelatihan, service = layanan' }),
@@ -194,14 +175,6 @@ export const sectionSchema = z.discriminatedUnion('type', [
         .meta({ title: 'Kolom daftar' }),
     })
     .meta({ title: 'Daftar poin (lingkup, industri, hasil kerja)' }),
-  z
-    .object({
-      type: z.literal('banner'),
-      title: s('Judul'),
-      text: text('Teks'),
-      button: link.optional(),
-    })
-    .meta({ title: 'Banner merah' }),
   z
     .object({
       type: z.literal('gallery'),
