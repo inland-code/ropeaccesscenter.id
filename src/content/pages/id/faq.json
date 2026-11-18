@@ -26,8 +26,8 @@
       "title": "Pertanyaan Anda belum terjawab?",
       "text": "Kirim pesan WhatsApp — kami balas pada hari kerja yang sama.",
       "button": {
-        "label": "Konsultasi via WhatsApp",
-        "href": "#whatsapp"
+        "label": "Hubungi kami",
+        "href": "contact"
       },
       "tone": "brand"
     }

@@ -155,7 +155,11 @@
       "eyebrow": "FAQ",
       "title": "Frequently asked questions",
       "groups": ["general", "training", "certification"],
-      "limit": 5
+      "limit": 5,
+      "cta": {
+        "label": "See all FAQs",
+        "href": "faq"
+      }
     },
     {
       "type": "latest-posts",

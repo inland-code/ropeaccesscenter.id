@@ -6,8 +6,10 @@ import type { Section } from '@/content.config';
 import type { Locale } from '@/i18n/config';
 import { faqs } from '@/lib/data';
 import { faqGroupLabel } from '@/lib/labels';
+import { resolveHref } from '@/lib/links';
 type Props = Extract<Section, { type: 'faq-group' }> & { locale: Locale; index: number };
-const { eyebrow, title, intro, groups, grouped, limit, locale, index } = Astro.props;
+const { eyebrow, title, intro, groups, grouped, limit, cta, locale, index } = Astro.props;
+const ctaUrl = cta ? await resolveHref(cta.href, locale) : undefined;
 const all = (await faqs(groups)).slice(0, limit ?? 99);
 const blocks = grouped ? groups.map((g) => ({ group: g, items: all.filter((f) => f.data.group === g) })) : [{ group: '', items: all }];
 ---
@@ -38,6 +40,13 @@ const blocks = grouped ? groups.map((g) => ({ group: g, items: all.filter((f) =>
             </div>
           </div>
         ))}
+      {cta && ctaUrl && (
+        <p class="mt-8 text-center">
+          <a href={ctaUrl} class="inline-flex items-center gap-2 font-semibold text-accent-strong hover:underline">
+            {cta.label} <Icon name="arrow" class="size-4" />
+          </a>
+        </p>
+      )}
     </div>
   </section>
 )}

@@ -30,7 +30,8 @@ export default defineConfig({
       optimizedFallbacks: true,
       display: 'swap',
       options: {
-        variants: [{ src: ['./src/assets/fonts/archivo-latin-var.woff2'], weight: '400 800', stretch: '100% 125%', style: 'normal' }],
+        // Archivo variable asli RAC (branch rac-original) di-instance ke lebar 112% & berat 600–800: 90 KB → 25 KB.
+        variants: [{ src: ['./src/assets/fonts/archivo-latin-wdth112.woff2'], weight: '600 800', style: 'normal' }],
       },
     },
     {

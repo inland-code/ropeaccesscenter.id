@@ -9,8 +9,18 @@ excerpt: "Suspension trauma can turn fatal within tens of minutes. Yet most resc
 category: keselamatan
 publishedAt: 2026-06-30
 author: Tim Rope Access Center
+sources:
+  - title: "ICOP Annex R: Rescue and Evacuation Planning"
+    publisher: "IRATA International"
+    url: https://irata.org/uploads/documents/TC-102ENG_ICOP_Annex_R__001_03.10.2024_1.pdf
+  - title: "Ministry of Manpower Regulation 9/2016 on Work at Height Safety"
+    publisher: "JDIH Kementerian Ketenagakerjaan"
+    url: https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016
+  - title: "ISO 22846-1: Personal equipment for protection against falls — Rope access systems"
+    publisher: "ISO"
+    url: https://www.iso.org/standard/35155.html
 ---
-In every work-at-height audit we run, we ask one identical question: *When was this rescue plan last executed?* At most facilities, the answer is never.
+In every work-at-height [audit](/en/hse-audit-consulting/) we run, we ask one identical question: *When was this [rescue plan](/en/standby-rescue-services/) last executed?* At most facilities, the answer is never.
 
 ## Why time is decisive
 
@@ -24,7 +34,7 @@ That number sets a hard standard: if your team cannot get a casualty down within
 
 **Second, dependence on outside help.** Some plans name the fire brigade as the primary rescue step. Across Indonesian industrial estates, external unit response times are rarely under thirty minutes — far too slow for suspension trauma.
 
-**Third, a single competent person.** A plan that only one particular supervisor can execute will fail on the day that supervisor is on leave, off sick, or is themselves the casualty.
+**Third, a single competent person.** A plan that only [one particular supervisor](/en/irata-level-3-training/) can execute will fail on the day that supervisor is on leave, off sick, or is themselves the casualty.
 
 ## How to test properly
 
@@ -34,4 +44,4 @@ Record the time. If it exceeds the target, change the plan — not the target.
 
 ## The frequency we recommend
 
-Re-test every six months, and after any of three events: a change to site structure or layout, turnover of key personnel, or a change of rescue equipment. Keep the timing record for every drill — a worsening trend is a valuable early warning.
+Re-test every six months, and after any of three events: a change to site structure or layout, turnover of key personnel, or a change of [rescue equipment](/en/rope-access-ppe-inspection/). Keep the timing record for every drill — a worsening trend is a valuable early warning.

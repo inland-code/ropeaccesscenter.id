@@ -47,7 +47,11 @@
       "type": "faq-group",
       "eyebrow": "FAQ",
       "title": "Pertanyaan seputar pelatihan",
-      "groups": ["training", "certification"]
+      "groups": ["training", "certification"],
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
     },
     {
       "type": "cta",

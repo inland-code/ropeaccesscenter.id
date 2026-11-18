@@ -33,7 +33,11 @@
       "type": "faq-group",
       "eyebrow": "FAQ",
       "title": "Sebelum menghubungi kami",
-      "groups": ["general"]
+      "groups": ["general"],
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
     }
   ]
 }

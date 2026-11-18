@@ -23,7 +23,7 @@
   "sections": [
     {
       "type": "prose",
-      "body": "## Mengapa asesmen independen penting\n\nSebuah lembaga pelatihan yang menilai pesertanya sendiri menghadapi konflik kepentingan yang jelas: tingkat kelulusan tinggi baik untuk reputasi pemasaran. Skema IRATA dan BNSP memutus konflik itu dengan menempatkan asesor yang tidak terlibat dalam pelatihan.\n\nBagi Anda sebagai peserta, ini berarti sertifikat yang tidak dapat diragukan klien. Bagi kami, ini berarti satu-satunya cara meningkatkan tingkat kelulusan adalah dengan mengajar lebih baik.\n\n## Skema IRATA International\n\nIRATA mengelola tiga tingkat kompetensi. **Level 1** bekerja di bawah pengawasan. **Level 2** memasang sistem tambat dan melakukan penyelamatan kompleks. **Level 3** memikul tanggung jawab penuh atas lokasi kerja, termasuk rencana penyelamatan dan pengawasan tim.\n\nSetiap kenaikan level menuntut minimum 1.000 jam kerja tercatat dan minimum dua belas bulan sejak sertifikasi sebelumnya. Sertifikat berlaku tiga tahun.\n\n## Skema BNSP\n\nBadan Nasional Sertifikasi Profesi menerbitkan sertifikat kompetensi melalui lembaga sertifikasi profesi berlisensi. Untuk pekerjaan ketinggian, skema yang relevan adalah TKPK — Tenaga Kerja pada Ketinggian — yang mengacu pada Permenaker No. 9 Tahun 2016.\n\nSertifikat BNSP berlaku tiga tahun dan diakui secara nasional, termasuk oleh pengawas ketenagakerjaan.\n\n## Verifikasi sertifikat\n\nSeluruh sertifikat yang diterbitkan melalui RAC terdaftar pada basis data lembaga penerbitnya dan dapat diverifikasi langsung oleh calon pemberi kerja. Kami mendorong setiap klien untuk melakukan verifikasi itu — pada sertifikat kami maupun pada sertifikat penyedia mana pun."
+      "body": "## Mengapa asesmen independen penting\n\nSebuah lembaga pelatihan yang menilai pesertanya sendiri menghadapi konflik kepentingan yang jelas: tingkat kelulusan tinggi baik untuk reputasi pemasaran. Skema IRATA dan BNSP memutus konflik itu dengan menempatkan asesor yang tidak terlibat dalam pelatihan.\n\nBagi Anda sebagai peserta, ini berarti sertifikat yang tidak dapat diragukan klien. Bagi kami, ini berarti satu-satunya cara meningkatkan tingkat kelulusan adalah dengan mengajar lebih baik.\n\n## Skema IRATA International\n\nIRATA mengelola tiga tingkat kompetensi. **Level 1** bekerja di bawah pengawasan. **Level 2** memasang sistem tambat dan melakukan penyelamatan kompleks. **Level 3** memikul tanggung jawab penuh atas lokasi kerja, termasuk rencana penyelamatan dan pengawasan tim.\n\nSetiap kenaikan level menuntut minimum 1.000 jam kerja tercatat dan minimum dua belas bulan sejak sertifikasi sebelumnya. Sertifikat berlaku tiga tahun.\n\n## Skema BNSP\n\nBadan Nasional Sertifikasi Profesi menerbitkan sertifikat kompetensi melalui lembaga sertifikasi profesi berlisensi. Untuk pekerjaan ketinggian, skema yang relevan adalah TKPK — Tenaga Kerja pada Ketinggian — yang mengacu pada Permenaker No. 9 Tahun 2016.\n\nSertifikat BNSP berlaku tiga tahun dan diakui secara nasional, termasuk oleh pengawas ketenagakerjaan.\n\n## Verifikasi sertifikat\n\nSeluruh sertifikat yang diterbitkan melalui RAC terdaftar pada basis data lembaga penerbitnya dan dapat diverifikasi langsung oleh calon pemberi kerja. Kami mendorong setiap klien untuk melakukan verifikasi itu — pada sertifikat kami maupun pada sertifikat penyedia mana pun.\n\nIngin tahu bagaimana kami menyiapkan peserta? Baca [profil dan nilai kami](/tentang-kami/), atau [hubungi kami](/kontak/) untuk memverifikasi sebuah sertifikat."
     },
     {
       "type": "accreditations",
@@ -34,7 +34,11 @@
       "type": "faq-group",
       "eyebrow": "FAQ",
       "title": "Pertanyaan seputar sertifikasi",
-      "groups": ["certification"]
+      "groups": ["certification"],
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
     },
     {
       "type": "cta",

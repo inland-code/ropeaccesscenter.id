@@ -38,7 +38,11 @@
       "type": "faq-group",
       "eyebrow": "FAQ",
       "title": "Pertanyaan seputar layanan",
-      "groups": ["services"]
+      "groups": ["services"],
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
     },
     {
       "type": "cta",

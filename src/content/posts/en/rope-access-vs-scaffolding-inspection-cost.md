@@ -9,12 +9,25 @@ excerpt: "An honest cost comparison does not stop at the scaffold hire rate. Thr
 category: layanan
 publishedAt: 2026-07-18
 author: Tim Rope Access Center
+sources:
+  - title: "What is Rope Access"
+    publisher: "IRATA International"
+    url: https://irata.org/page/what-is-rope-access
+  - title: "ISO 22846-1: Personal equipment for protection against falls — Rope access systems"
+    publisher: "ISO"
+    url: https://www.iso.org/standard/35155.html
+  - title: "ISO 9712: Qualification and certification of NDT personnel"
+    publisher: "ISO"
+    url: https://www.iso.org/standard/75614.html
+  - title: "The Work at Height Regulations 2005"
+    publisher: "legislation.gov.uk"
+    url: https://www.legislation.gov.uk/uksi/2005/735
 ---
-When we submit a rope access inspection quotation, the first comparison a prospective client makes is almost always the same: our team’s day rate against the scaffold hire rate. That comparison is not wrong, but it is incomplete.
+When we submit a rope access [inspection](/en/ndt-inspection-services/) quotation, the first comparison a prospective client makes is almost always the same: our team’s day rate against the scaffold hire rate. That comparison is not wrong, but it is incomplete.
 
 ## The first line missed: erection time
 
-Scaffolding a 60-metre flare stack takes roughly ten to fourteen days to erect, and nearly as long to dismantle. A rope access team rigs in two to four hours.
+Scaffolding a 60-metre flare stack takes roughly ten to fourteen days to erect, and nearly as long to dismantle. A [rope access team](/en/maintenance-repair-at-height/) rigs in two to four hours.
 
 That gap is not merely a schedule number. On an asset that must be shut down for the duration, every day of difference translates directly into lost production.
 
@@ -32,4 +45,4 @@ Scaffolding consumes floor space, obstructs escape routes, and reshapes traffic 
 
 Honesty demands we say this. Scaffolding wins when the work requires very long dwell time at a single point, when a broad working platform is needed for heavy material, or when equipment loads exceed what a suspended technician can manage.
 
-For inspection, thickness measurement, localised repair, and medium-scale coating work, rope access wins on all three lines above almost every time.
+For inspection, [thickness](/en/ndt-inspection-services/) measurement, localised repair, and medium-scale [coating](/en/building-facade-maintenance/) work, rope access wins on all three lines above almost every time.

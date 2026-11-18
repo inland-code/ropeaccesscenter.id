@@ -276,6 +276,7 @@ export const sectionSchema = z.discriminatedUnion('type', [
         .meta({ title: 'Grup FAQ', description: 'general = umum, training = pelatihan, certification = sertifikasi, services = layanan' }),
       grouped: z.boolean().default(false).meta({ title: 'Tampilkan judul per grup' }),
       limit: z.number().int().min(1).max(50).optional().meta({ title: 'Jumlah maksimum' }),
+      cta: link.optional(),
     })
     .meta({ title: 'FAQ (dari data FAQ)' }),
   z

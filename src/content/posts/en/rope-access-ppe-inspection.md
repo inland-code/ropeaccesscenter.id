@@ -9,8 +9,18 @@ excerpt: "The pre-use check is only half the job. The other half is the history 
 category: peralatan
 publishedAt: 2026-06-09
 author: Tim Rope Access Center
+sources:
+  - title: "ISO 22846-1: Personal equipment for protection against falls — Rope access systems"
+    publisher: "ISO"
+    url: https://www.iso.org/standard/35155.html
+  - title: "What is Rope Access"
+    publisher: "IRATA International"
+    url: https://irata.org/page/what-is-rope-access
+  - title: "Ministry of Manpower Regulation 9/2016 (full text)"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
 ---
-Most technicians check their kit every morning. Far fewer can produce a harness’s full history when an auditor asks for it. Both matter equally.
+Most technicians check their kit every morning. Far fewer can produce a harness’s full history when an [auditor](/en/work-at-height-audit-checklist/) asks for it. Both matter equally.
 
 ## The pre-use check
 
@@ -20,7 +30,7 @@ For descenders and ascenders, check rope groove wear, cam cleanliness, and sprin
 
 ## The six-monthly detailed inspection
 
-This is done by a competent, recorded person — not by the user. Every item is checked against the manufacturer’s criteria, the result is logged, and the item is marked with its status. A simple colour-tape system per period makes status readable at a glance on site.
+This is done by a [competent](/en/irata-level-3-training/), recorded person — not by the user. Every item is checked against the manufacturer’s criteria, the result is logged, and the item is marked with its status. A simple colour-tape system per period makes status readable at a glance on site.
 
 ## When an item must retire
 

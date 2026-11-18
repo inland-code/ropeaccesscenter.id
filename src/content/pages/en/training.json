@@ -47,7 +47,11 @@
       "type": "faq-group",
       "eyebrow": "FAQ",
       "title": "Training questions",
-      "groups": ["training", "certification"]
+      "groups": ["training", "certification"],
+      "cta": {
+        "label": "See all FAQs",
+        "href": "faq"
+      }
     },
     {
       "type": "cta",

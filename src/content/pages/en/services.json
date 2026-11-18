@@ -38,7 +38,11 @@
       "type": "faq-group",
       "eyebrow": "FAQ",
       "title": "Service questions",
-      "groups": ["services"]
+      "groups": ["services"],
+      "cta": {
+        "label": "See all FAQs",
+        "href": "faq"
+      }
     },
     {
       "type": "cta",

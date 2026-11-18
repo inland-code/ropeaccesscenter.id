@@ -155,7 +155,11 @@
       "eyebrow": "FAQ",
       "title": "Pertanyaan yang sering diajukan",
       "groups": ["general", "training", "certification"],
-      "limit": 5
+      "limit": 5,
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
     },
     {
       "type": "latest-posts",

@@ -26,8 +26,8 @@
       "title": "Question not answered?",
       "text": "Send a WhatsApp message — we reply the same working day.",
       "button": {
-        "label": "Talk to us on WhatsApp",
-        "href": "#whatsapp"
+        "label": "Contact us",
+        "href": "contact"
       },
       "tone": "brand"
     }

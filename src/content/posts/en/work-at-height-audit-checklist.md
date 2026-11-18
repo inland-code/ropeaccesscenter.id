@@ -9,6 +9,19 @@ excerpt: "Nine documents that are almost always requested, and the three that ar
 category: kepatuhan
 publishedAt: 2026-04-28
 author: Tim Rope Access Center
+sources:
+  - title: "Ministry of Manpower Regulation 9/2016 on Work at Height Safety"
+    publisher: "JDIH Kementerian Ketenagakerjaan"
+    url: https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016
+  - title: "Ministry of Manpower Regulation 9/2016 (full text)"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+  - title: "ISO 45001: Occupational health and safety management systems"
+    publisher: "ISO"
+    url: https://www.iso.org/standard/63787.html
+  - title: "ISO 22846-1: Personal equipment for protection against falls — Rope access systems"
+    publisher: "ISO"
+    url: https://www.iso.org/standard/35155.html
 ---
 Client audits rarely fail because of poor field practice. Far more often, they fail because good practice cannot be evidenced on paper.
 
@@ -16,9 +29,9 @@ Client audits rarely fail because of poor field practice. Far more often, they f
 
 1.  An HSE policy signed by top management and still in date
 2.  A risk assessment specific to each type of work at height
-3.  A written rescue plan together with records of it being tested
+3.  A written [rescue plan](/en/standby-rescue-services/) together with records of it being tested
 4.  Competency certificates for all personnel, with verified validity dates
-5.  A PPE master register with serial numbers and inspection history
+5.  A [PPE](/en/rope-access-ppe-inspection/) master register with serial numbers and [inspection](/en/ndt-inspection-services/) history
 6.  Six-monthly detailed inspection records signed by a competent person
 7.  An anchor point register with safe working load calculations
 8.  The work-at-height permit procedure and completed sample permits

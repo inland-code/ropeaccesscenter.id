@@ -1,6 +1,6 @@
 # Rencana Rebuild ropeaccesscenter.id — Astro + Cloudflare (mengikuti template Inland)
 
-Status: **Fase 1–2 selesai, Fase 3 sebagian** (konten termigrasi; build 0 error audit) · Terakhir diperbarui: 2026-11-18
+Status: **Fase 0–6 selesai (kode); menunggu setup Cloudflare (Fase 7) & data pemilik** · build produksi 0 error, 0 peringatan audit
 
 Situs Rope Access Center (RAC) dibangun ulang dengan teknologi dan pola yang **sama** dengan
 [inland.co.id](https://inland.co.id) (repo `inland-code/inland.co.id`). Konten dan identitas visual diambil dari
@@ -103,26 +103,28 @@ Setiap fase: `npm run format` → `npm run check` → `npm test` → `npm run bu
 - Section baru: `prose`, `lists`, `course-cards`, `schedule`, `accreditations`, `team`, `faq-group`, `testimonials` (dari koleksi).
 - Koleksi data: `schedule`, `accreditations`, `team`, `testimonials`, `faqs` (JSON, diedit dari dashboard).
 
-### Fase 3 — Migrasi konten (ID + EN) — sebagian
+### Fase 3 — Migrasi konten (ID + EN) ✅
 
 - ✅ 23 halaman × 2 bahasa + 6 artikel × 2 bahasa dari RAC lama; HTML → Markdown; meta SEO disesuaikan panjangnya.
-- ⏳ Interlinking: artikel menautkan halaman pelatihan/layanan terkait (`lib/related.ts`), breadcrumb berjenjang.
+- ✅ Interlinking: artikel menautkan halaman pelatihan/layanan terkait (`lib/related.ts`), breadcrumb berjenjang.
 
-### Fase 4 — SEO / GEO
+### Fase 4 — SEO / GEO ✅
 
 - JSON-LD: `Organization` + `LocalBusiness`/`EducationalOrganization`, `WebSite`, `WebPage`, `Service`, `Course`
   (+ `CourseInstance` dari jadwal), `EducationEvent` di halaman jadwal, `FAQPage`, `BlogPosting`, `BreadcrumbList`.
 - hreflang, sitemap index, RSS, robots.txt (crawler AI diizinkan), llms.txt, llms-full.txt, `.md` per halaman.
-- Referensi sumber kredibel di artikel (IRATA, BNSP, Kemnaker/JDIH, ISO).
+- ✅ Referensi sumber kredibel di setiap artikel (IRATA, SPRAT, BNSP, JDIH Kemnaker, JDIH BPK, ISO 22846/45001/9712, legislation.gov.uk).
 
 ### Fase 5 — Dashboard `/admin` (kode ✅, perlu setup akun di Fase 7)
 
 - Sama dengan Inland (Halaman, Artikel, Media, Pesan Masuk, Data Bisnis, Redirect) + menu **Jadwal**, **Tim**,
   **Testimoni**, **Akreditasi**, **FAQ** (form otomatis dari skema zod).
 
-### Fase 6 — Kualitas & performa
+### Fase 6 — Kualitas & performa ✅
 
-- CSP dengan hash skrip inline, audit SEO (link rusak, halaman yatim, link keluar), Lighthouse 100, uji Worker (Vitest).
+- ✅ CSP dengan hash skrip inline, audit SEO (link rusak, halaman yatim, link keluar), uji Worker (Vitest, 25 test).
+- ✅ Lighthouse (build produksi, lokal dengan Brotli): desktop **100/100/100/100**; mobile performa 99–100, aksesibilitas/best practices/SEO 100; CLS 0; 0 KB JavaScript di halaman publik.
+- ✅ Font Archivo di-instance ke lebar 112% (90 KB → 25 KB). Berkas variable asli tetap di branch `rac-original`.
 
 ### Fase 7 — Setup Cloudflare & GitHub (dipandu langkah demi langkah)
 

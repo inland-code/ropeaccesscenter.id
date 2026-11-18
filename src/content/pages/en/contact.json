@@ -33,7 +33,11 @@
       "type": "faq-group",
       "eyebrow": "FAQ",
       "title": "Before you get in touch",
-      "groups": ["general"]
+      "groups": ["general"],
+      "cta": {
+        "label": "See all FAQs",
+        "href": "faq"
+      }
     }
   ]
 }
