@@ -160,6 +160,20 @@ Rencana awal fase ini:
 - 2 artikel ditulis ulang (TKPK vs TKBT, jenjang karier); tautan artikel lain diarahkan ke program baru.
 - URL lama di-redirect 301 (`public/_redirects`), dicek `scripts/verify-urls.mjs`.
 
+## Optimasi & konten kompetitif (2026-11-19)
+
+- Riset kompetitor: penyedia pelatihan TKPK/TKBT menampilkan halaman per program (harga, syarat) dan artikel pendukung
+  (TKBT 1 vs 2, TKPK 1–3, Kemnaker vs BNSP); jasa fasad bersaing lewat artikel prosedur & perbandingan metode.
+- ✅ Program: section "Yang sudah termasuk" + FAQ khusus tiap program (4 tanya-jawab, FAQPage JSON-LD).
+- ✅ Hub Pelatihan: 4 langkah pendaftaran; layanan fasad & perawatan: tabel rope access vs gondola vs perancah.
+- ✅ 3 artikel baru ID + EN: apa itu rope access, TKBT 1 vs TKBT 2, sertifikat K3 Kemnaker vs BNSP (+ Kepdirjen 45/2008).
+- ✅ JSON-LD `ItemList` di hub Pelatihan, Layanan, Artikel; `updatedAt` semua halaman (lastmod sitemap).
+- ✅ Kode: section sisa Inland (`service-cards`, `banner`) & string UI tak terpakai dihapus; header COOP;
+  GitHub Actions checkout v7, setup-node v7, cache v6 (menggantikan PR Dependabot #2–#4). TypeScript 7 (PR #5) ditunda.
+- ✅ Lighthouse mobile (produksi, Brotli lokal): 100/100/100/100 di program, layanan, dan artikel baru.
+- Catatan: halaman fasad/kaca RAC dan halaman pembersihan kaca Inland menyasar kata kunci serupa — pertimbangkan
+  saling menautkan atau membedakan fokus (Inland: gedung & renovasi; RAC: pekerjaan di ketinggian & industri).
+
 ## Data pemilik
 
 RAC adalah brand dari grup Inland, jadi kontak memakai data Inland (2026-11-19):

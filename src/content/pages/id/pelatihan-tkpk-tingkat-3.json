@@ -84,6 +84,28 @@
       "body": "## Untuk siapa program ini\n\nProgram ini untuk teknisi TKPK Tingkat 2 berpengalaman yang akan memegang tanggung jawab penuh atas lokasi kerja akses tali.\n\n## Mengapa sertifikat Kemnaker\n\n[Permenaker No. 9 Tahun 2016](https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016) mewajibkan pekerjaan pada ketinggian dilakukan oleh tenaga kerja yang kompeten. Sertifikat dan lisensi K3 dari Kementerian Ketenagakerjaan RI adalah bukti kompetensi yang diakui secara nasional dan diperiksa oleh pengawas ketenagakerjaan, kontraktor, maupun pengelola gedung. Pelajari [skema TKPK dan TKBT](/sertifikasi/) selengkapnya.\n\n## Cara kami melatih\n\nTeori dan praktik dijalankan berdampingan: setiap materi langsung dipraktikkan di ketinggian dengan pengawasan instruktur, lalu diulang sampai benar. Peralatan latihan disediakan; peserta cukup membawa sepatu keselamatan dan pakaian kerja."
     },
     {
+      "type": "lists",
+      "eyebrow": "Paket pelatihan",
+      "title": "Yang sudah termasuk",
+      "columns": [
+        {
+          "icon": "graduation-cap",
+          "title": "Pelatihan",
+          "items": ["Materi teori dan modul", "Praktik langsung di ketinggian", "Pendampingan instruktur"]
+        },
+        {
+          "icon": "helmet",
+          "title": "Peralatan",
+          "items": ["Peralatan latihan & APD disediakan", "Peserta membawa sepatu keselamatan", "Pemeriksaan alat setiap hari"]
+        },
+        {
+          "icon": "certificate",
+          "title": "Sertifikasi",
+          "items": ["Pendampingan berkas pendaftaran", "Uji kompetensi sesuai ketentuan Kemnaker", "Sertifikat & lisensi K3 Kemnaker RI"]
+        }
+      ]
+    },
+    {
       "type": "schedule",
       "eyebrow": "Jadwal",
       "title": "Kelas terbuka berikutnya",
@@ -94,11 +116,34 @@
       }
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan seputar TKPK Tingkat 3",
+      "items": [
+        {
+          "q": "Berapa biaya pelatihan TKPK Tingkat 3?",
+          "a": "Biaya TKPK Tingkat 3 tergantung jumlah peserta, lokasi (kelas reguler atau in-house), dan kebutuhan perusahaan. Kirim kebutuhan Anda melalui WhatsApp dan kami balas dengan penawaran tertulis yang merinci apa saja yang sudah termasuk."
+        },
+        {
+          "q": "Berapa lama pelatihan TKPK Tingkat 3?",
+          "a": "Durasi dan jadwal TKPK Tingkat 3 dikonfirmasi saat pendaftaran, mengikuti silabus dan ketentuan uji kompetensi Kemnaker yang berlaku. Kelas khusus perusahaan dapat dijadwalkan pada tanggal yang Anda tentukan."
+        },
+        {
+          "q": "Apa yang diuji untuk TKPK Tingkat 3?",
+          "a": "Uji kompetensi terdiri dari teori dan praktik: pemahaman regulasi K3 ketinggian, pemeriksaan peralatan, teknik kerja sesuai tingkat, dan penyelamatan. Peserta yang lulus menerima sertifikat kompetensi dan lisensi K3 dari Kemnaker RI."
+        },
+        {
+          "q": "Apa tanggung jawab pemegang TKPK Tingkat 3?",
+          "a": "Pemegang TKPK Tingkat 3 merencanakan pekerjaan akses tali, menyusun penilaian risiko dan rencana penyelamatan, memimpin tim Tingkat 1 dan 2, serta melakukan inspeksi internal di lokasi kerja."
+        }
+      ]
+    },
+    {
       "type": "faq-group",
       "eyebrow": "FAQ",
       "title": "Pertanyaan seputar pelatihan",
-      "groups": ["training", "certification"],
-      "limit": 5,
+      "groups": ["certification"],
+      "limit": 3,
       "cta": {
         "label": "Lihat semua FAQ",
         "href": "faq"
@@ -114,5 +159,6 @@
       },
       "tone": "brand"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-19"
 }

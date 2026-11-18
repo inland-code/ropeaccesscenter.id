@@ -84,6 +84,28 @@
       "body": "## Who this programme is for\n\nThis programme is for TKPK Level 1 technicians who already work on rope regularly and are taking on rigging and responsibility for a teammate’s safety.\n\n## Why a Kemnaker certificate\n\n[Ministry of Manpower Regulation 9/2016](https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016) requires work at height to be carried out by competent workers. The certificate and K3 licence issued by Indonesia’s Ministry of Manpower (Kemnaker RI) are nationally recognised proof of competence, checked by labour inspectors, contractors, and building managers alike. Read more about the [TKPK and TKBT schemes](/en/certification/).\n\n## How we teach\n\nTheory and practice run side by side: every topic is practised at height under instructor supervision and repeated until it is right. Training equipment is provided; trainees only need safety boots and work clothing.\n\n## After you qualify\n\nOnce you have built up enough working experience, the next step is [TKPK Level 3](/en/tkpk-level-3-training/)."
     },
     {
+      "type": "lists",
+      "eyebrow": "Course package",
+      "title": "What is included",
+      "columns": [
+        {
+          "icon": "graduation-cap",
+          "title": "Training",
+          "items": ["Theory sessions and handouts", "Hands-on practice at height", "Instructor supervision"]
+        },
+        {
+          "icon": "helmet",
+          "title": "Equipment",
+          "items": ["Training equipment & PPE provided", "Trainees bring safety boots", "Equipment checked every day"]
+        },
+        {
+          "icon": "certificate",
+          "title": "Certification",
+          "items": ["Help with enrolment paperwork", "Competency test under Kemnaker rules", "Kemnaker RI certificate & K3 licence"]
+        }
+      ]
+    },
+    {
       "type": "schedule",
       "eyebrow": "Dates",
       "title": "Next open courses",
@@ -94,11 +116,34 @@
       }
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "TKPK Level 2 questions",
+      "items": [
+        {
+          "q": "How much does TKPK Level 2 training cost?",
+          "a": "The cost of TKPK Level 2 depends on the number of participants, the location (open course or in-house), and your company’s needs. Send us your requirements on WhatsApp and we reply with a written quotation listing everything included."
+        },
+        {
+          "q": "How long is TKPK Level 2 training?",
+          "a": "TKPK Level 2 duration and dates are confirmed on enrolment, following the syllabus and current Kemnaker competency test rules. Company courses can be scheduled on dates you choose."
+        },
+        {
+          "q": "What is tested for TKPK Level 2?",
+          "a": "The competency test covers theory and practice: work-at-height regulation, equipment inspection, technique for the grade, and rescue. Successful candidates receive a competency certificate and K3 licence from Kemnaker RI."
+        },
+        {
+          "q": "How do I prove my hours for TKPK Level 2?",
+          "a": "Use a logbook listing dates, locations, type of work, hours on rope, and supervisor confirmation. We help you check your paperwork before you enrol."
+        }
+      ]
+    },
+    {
       "type": "faq-group",
       "eyebrow": "FAQ",
       "title": "Training questions",
-      "groups": ["training", "certification"],
-      "limit": 5,
+      "groups": ["certification"],
+      "limit": 3,
       "cta": {
         "label": "See all FAQs",
         "href": "faq"
@@ -114,5 +159,6 @@
       },
       "tone": "brand"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-19"
 }

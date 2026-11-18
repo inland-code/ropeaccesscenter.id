@@ -10,7 +10,7 @@ import { alternatesFor, getRoutes, hrefFor, type Route } from '@/lib/routes';
 import { parentKeyOf, relatedForPage, siblingPages } from '@/lib/related';
 import { ogPath } from '@/lib/og';
 import { absoluteUrl, breadcrumbSchema, courseSchema, educationEventSchema, faqSchema, ORG_ID, serviceSchema } from '@/lib/seo';
-import { faqs as faqItems, upcomingClasses } from '@/lib/data';
+import { courseRoutes, faqs as faqItems, serviceRoutes, upcomingClasses } from '@/lib/data';
 import { t } from '@/i18n/ui';
 
 type PageRoute = Extract<Route, { kind: 'page' }>;
@@ -112,6 +112,20 @@ const jsonLd: object[] = [
         })
     : []),
 ];
+// Halaman hub: ItemList program / layanan / artikel (membantu mesin pencari memahami struktur situs).
+const listed =
+  data.template === 'training'
+    ? (await courseRoutes(locale)).map((r) => ({ name: r.entry.data.hero.title, path: r.path }))
+    : data.template === 'services'
+      ? (await serviceRoutes(locale)).map((r) => ({ name: r.entry.data.hero.title, path: r.path }))
+      : data.template === 'articles'
+        ? posts.map((p) => ({ name: p.entry.data.title, path: p.path }))
+        : [];
+if (listed.length)
+  jsonLd.push({
+    '@type': 'ItemList',
+    itemListElement: listed.map((it, i) => ({ '@type': 'ListItem', position: i + 1, name: it.name, url: absoluteUrl(it.path) })),
+  });
 // Halaman FAQ: WebPage bertipe FAQPage langsung berisi mainEntity.
 if (data.template === 'faq' && faqs.length) Object.assign(jsonLd[0]!, { mainEntity: faqSchema(faqs).mainEntity });
 ---

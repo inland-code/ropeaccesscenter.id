@@ -3,7 +3,6 @@ import type { Locale } from './config';
 /** String antarmuka (bukan konten). Konten halaman ada di src/content. */
 export const ui = {
   id: {
-    'nav.home': 'Beranda',
     'nav.about': 'Tentang Kami',
     'nav.services': 'Layanan',
     'nav.training': 'Pelatihan',
@@ -53,7 +52,6 @@ export const ui = {
     'form.note': 'Pesan Anda kami catat, lalu WhatsApp akan terbuka dengan pesan yang sudah terisi.',
   },
   en: {
-    'nav.home': 'Home',
     'nav.about': 'About Us',
     'nav.services': 'Services',
     'nav.training': 'Training',

@@ -74,6 +74,21 @@
       ]
     },
     {
+      "type": "table",
+      "eyebrow": "Perbandingan metode",
+      "title": "Rope access, gondola, atau perancah?",
+      "intro": "Gambaran umum untuk memilih metode akses. Metode terbaik ditentukan saat survei sesuai bentuk gedung dan jenis pekerjaan.",
+      "columns": ["Aspek", "Rope access", "Gondola", "Perancah"],
+      "rows": [
+        ["Waktu pemasangan", "Hitungan jam", "Cepat bila sudah terpasang permanen", "Berhari-hari"],
+        ["Jangkauan lekukan & kanopi", "Sangat fleksibel", "Terbatas pada rel", "Fleksibel, tapi lambat"],
+        ["Instalasi tetap di atap", "Tidak perlu, cukup titik tambat", "Perlu", "Tidak perlu"],
+        ["Gangguan area bawah", "Minimal, pembatas berpindah", "Sedang", "Besar, memakan ruang"],
+        ["Cocok untuk", "Perawatan berkala & perbaikan setempat", "Gedung dengan BMU terpasang", "Pekerjaan berat & lama di satu titik"]
+      ],
+      "note": "BMU = building maintenance unit (gondola permanen). Untuk banyak gedung, kombinasi metode juga memungkinkan."
+    },
+    {
       "type": "value-cards",
       "eyebrow": "Cara kerja",
       "title": "Empat langkah dari survei sampai laporan",
@@ -133,5 +148,6 @@
       },
       "tone": "brand"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-19"
 }

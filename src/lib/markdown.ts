@@ -25,15 +25,6 @@ async function sectionToMd(s: Section, locale: Locale): Promise<string> {
       return s.items.map((i) => `- **${i.title}** — ${i.text}`).join('\n');
     case 'stats':
       return h(s.title) + s.items.map((i) => `- ${i.value}${i.suffix} ${i.label}`).join('\n');
-    case 'service-cards': {
-      const items = await Promise.all(
-        s.items.map(async (i) => {
-          const links = await Promise.all(i.links.map((l) => link(l.label, l.href, locale)));
-          return `### ${i.title}\n\n${i.text}${links.length ? `\n\n${links.map((l) => `- ${l}`).join('\n')}` : ''}`;
-        }),
-      );
-      return h(s.title) + (s.intro ? `${s.intro}\n\n` : '') + items.join('\n\n');
-    }
     case 'value-cards':
       return (
         h(s.title) +
@@ -95,7 +86,6 @@ async function sectionToMd(s: Section, locale: Locale): Promise<string> {
       return h(s.title) + s.items.map((f) => `### ${f.q}\n\n${f.a}`).join('\n\n');
     case 'gallery':
       return s.groups.map((g) => `## ${g.title}\n\n${g.images.map((i) => `- ${i.alt}`).join('\n')}`).join('\n\n');
-    case 'banner':
     case 'cta':
       return `## ${s.title}\n\n${s.text}`;
     case 'table':

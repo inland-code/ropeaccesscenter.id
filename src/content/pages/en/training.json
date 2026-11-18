@@ -53,6 +53,33 @@
       "note": "TKPK = Tenaga Kerja pada Ketinggian (rope access). TKBT = Tenaga Kerja Bangunan Tinggi (climbing structures with fall arrest)."
     },
     {
+      "type": "value-cards",
+      "eyebrow": "How to enrol",
+      "title": "Four steps to a Kemnaker certificate",
+      "items": [
+        {
+          "title": "1. Consultation",
+          "text": "Tell us about your work and experience; we help you choose the right programme and grade.",
+          "bullets": []
+        },
+        {
+          "title": "2. Enrolment & documents",
+          "text": "Send your details, a medical statement, and proof of experience (for Levels 2 and 3).",
+          "bullets": []
+        },
+        {
+          "title": "3. Training",
+          "text": "Theory and practice at height with instructor support until you are test-ready.",
+          "bullets": []
+        },
+        {
+          "title": "4. Test & certificate",
+          "text": "A competency test under Kemnaker rules; successful candidates receive a certificate and K3 licence.",
+          "bullets": []
+        }
+      ]
+    },
+    {
       "type": "schedule",
       "eyebrow": "Dates",
       "title": "Next open courses",
@@ -82,5 +109,6 @@
       },
       "tone": "brand"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-19"
 }
