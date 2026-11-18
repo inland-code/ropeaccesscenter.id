@@ -115,14 +115,14 @@ async function sectionToMd(s: Section, locale: Locale): Promise<string> {
 function contactBlock(locale: Locale): string {
   const a = site.address;
   return locale === 'id'
-    ? `---\n\n**${site.name}** (${site.shortName}) — ${site.tagline.id}\n\n- Alamat: ${a.street}, ${a.locality}, ${a.region} ${a.postalCode}\n- WhatsApp/Telepon: ${site.phoneDisplay}\n- Email: ${site.email}\n- Area layanan: ${site.areaServed.join(', ')}\n- Jam operasional: Senin–Jumat 08:00–17:00 WIB`
-    : `---\n\n**${site.name}** (${site.shortName}) — ${site.tagline.en}\n\n- Address: ${a.street}, ${a.locality}, ${a.region} ${a.postalCode}, Indonesia\n- WhatsApp/Phone: ${site.phoneDisplay}\n- Email: ${site.email}\n- Service area: ${site.areaServed.join(', ')}\n- Hours: Mon–Fri 08:00–17:00 (WIB)`;
+    ? `---\n\n**${site.name}** (${site.shortName}) — ${site.tagline.id}${site.parentOrganization ? ` · bagian dari grup ${site.parentOrganization.name} (${site.parentOrganization.url})` : ''}\n\n- Alamat: ${a.street}, ${a.locality}, ${a.region} ${a.postalCode}\n- WhatsApp/Telepon: ${site.phoneDisplay}\n- Email: ${site.email}\n- Area layanan: ${site.areaServed.join(', ')}\n- Jam operasional: Senin–Jumat 08:00–17:00, Sabtu 08:00–13:00 WIB`
+    : `---\n\n**${site.name}** (${site.shortName}) — ${site.tagline.en}${site.parentOrganization ? ` · part of the ${site.parentOrganization.name} group (${site.parentOrganization.url})` : ''}\n\n- Address: ${a.street}, ${a.locality}, ${a.region} ${a.postalCode}, Indonesia\n- WhatsApp/Phone: ${site.phoneDisplay}\n- Email: ${site.email}\n- Service area: ${site.areaServed.join(', ')}\n- Hours: Mon–Fri 08:00–17:00, Sat 08:00–13:00 (WIB)`;
 }
 
 function courseToMd(c: Course, locale: Locale): string {
   const L = (id: string, en: string) => (locale === 'id' ? id : en);
   return [
-    `- ${L('Kode', 'Code')}: ${c.code}\n- ${L('Skema', 'Scheme')}: ${c.scheme} · ${c.level}\n- ${L('Durasi', 'Duration')}: ${c.duration}\n- ${L('Biaya', 'Fee')}: ${c.price}`,
+    `- ${L('Kode', 'Code')}: ${c.code}\n- ${L('Sertifikasi', 'Certification')}: Kemnaker RI · ${c.level}\n- ${L('Durasi', 'Duration')}: ${c.duration ?? L('dikonfirmasi saat pendaftaran', 'confirmed on enrolment')}\n- ${L('Biaya', 'Fee')}: ${c.price}`,
     `## ${L('Prasyarat peserta', 'Entry requirements')}\n\n${c.prerequisites.map((p) => `- ${p}`).join('\n')}`,
     `## ${L('Kompetensi yang dicapai', 'Learning outcomes')}\n\n${c.outcomes.map((p) => `- ${p}`).join('\n')}`,
     c.syllabus.length ? `## ${L('Silabus', 'Syllabus')}\n\n${c.syllabus.map((x) => `### ${x.title}\n\n${x.detail}`).join('\n\n')}` : '',

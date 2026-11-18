@@ -30,7 +30,7 @@ For descenders and ascenders, check rope groove wear, cam cleanliness, and sprin
 
 ## The six-monthly detailed inspection
 
-This is done by a [competent](/en/irata-level-3-training/), recorded person — not by the user. Every item is checked against the manufacturer’s criteria, the result is logged, and the item is marked with its status. A simple colour-tape system per period makes status readable at a glance on site.
+This is done by a [competent](/en/tkpk-level-3-training/), recorded person — not by the user. Every item is checked against the manufacturer’s criteria, the result is logged, and the item is marked with its status. A simple colour-tape system per period makes status readable at a glance on site.
 
 ## When an item must retire
 

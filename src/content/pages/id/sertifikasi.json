@@ -5,13 +5,13 @@
   "navLabel": "Sertifikasi",
   "contentStatus": "review",
   "seo": {
-    "title": "Sertifikasi IRATA & BNSP Akses Tali | Rope Access Center",
-    "description": "Penjelasan skema sertifikasi akses tali: IRATA Level 1–3, BNSP TKPK, masa berlaku, persyaratan jam kerja, dan proses revalidasi."
+    "title": "Sertifikasi K3 Ketinggian Kemnaker: TKPK & TKBT | RAC",
+    "description": "Penjelasan sertifikasi K3 kerja di ketinggian dari Kemnaker RI: TKPK Tingkat 1–3 (akses tali), TKBT Tingkat 1–2 (bangunan tinggi), prasyarat, dan verifikasi."
   },
   "hero": {
     "eyebrow": "Sertifikasi",
-    "title": "Sertifikat yang Dibaca Sama di Mana Pun",
-    "body": "Kami tidak menilai peserta kami sendiri. Asesmen dilakukan pihak independen — itulah yang membuat sertifikat ini berarti.",
+    "title": "Sertifikat Resmi dari Kemnaker RI",
+    "body": "Seluruh program RAC menggunakan skema sertifikasi K3 kerja di ketinggian dari Kementerian Ketenagakerjaan RI, sesuai Permenaker No. 9 Tahun 2016.",
     "ctas": [
       {
         "label": "Program pelatihan",
@@ -23,12 +23,31 @@
   "sections": [
     {
       "type": "prose",
-      "body": "## Mengapa asesmen independen penting\n\nSebuah lembaga pelatihan yang menilai pesertanya sendiri menghadapi konflik kepentingan yang jelas: tingkat kelulusan tinggi baik untuk reputasi pemasaran. Skema IRATA dan BNSP memutus konflik itu dengan menempatkan asesor yang tidak terlibat dalam pelatihan.\n\nBagi Anda sebagai peserta, ini berarti sertifikat yang tidak dapat diragukan klien. Bagi kami, ini berarti satu-satunya cara meningkatkan tingkat kelulusan adalah dengan mengajar lebih baik.\n\n## Skema IRATA International\n\nIRATA mengelola tiga tingkat kompetensi. **Level 1** bekerja di bawah pengawasan. **Level 2** memasang sistem tambat dan melakukan penyelamatan kompleks. **Level 3** memikul tanggung jawab penuh atas lokasi kerja, termasuk rencana penyelamatan dan pengawasan tim.\n\nSetiap kenaikan level menuntut minimum 1.000 jam kerja tercatat dan minimum dua belas bulan sejak sertifikasi sebelumnya. Sertifikat berlaku tiga tahun.\n\n## Skema BNSP\n\nBadan Nasional Sertifikasi Profesi menerbitkan sertifikat kompetensi melalui lembaga sertifikasi profesi berlisensi. Untuk pekerjaan ketinggian, skema yang relevan adalah TKPK — Tenaga Kerja pada Ketinggian — yang mengacu pada Permenaker No. 9 Tahun 2016.\n\nSertifikat BNSP berlaku tiga tahun dan diakui secara nasional, termasuk oleh pengawas ketenagakerjaan.\n\n## Verifikasi sertifikat\n\nSeluruh sertifikat yang diterbitkan melalui RAC terdaftar pada basis data lembaga penerbitnya dan dapat diverifikasi langsung oleh calon pemberi kerja. Kami mendorong setiap klien untuk melakukan verifikasi itu — pada sertifikat kami maupun pada sertifikat penyedia mana pun.\n\nIngin tahu bagaimana kami menyiapkan peserta? Baca [profil dan nilai kami](/tentang-kami/), atau [hubungi kami](/kontak/) untuk memverifikasi sebuah sertifikat."
+      "body": "## Satu skema: Kemnaker RI\n\n[Permenaker No. 9 Tahun 2016](https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016) tentang K3 dalam Pekerjaan pada Ketinggian mewajibkan pekerjaan di ketinggian dilakukan oleh tenaga kerja yang kompeten. Seluruh program RAC diakhiri uji kompetensi sesuai ketentuan Kemnaker, dan peserta yang lulus menerima sertifikat kompetensi serta lisensi K3 sesuai tingkatnya.\n\n## TKPK: tenaga kerja pada ketinggian (akses tali)\n\nTKPK adalah skema untuk pekerjaan dengan metode akses tali, terdiri dari tiga tingkat:\n\n- **[Tingkat 1](/pelatihan-tkpk-tingkat-1/)** — teknisi yang bekerja di bawah pengawasan.\n- **[Tingkat 2](/pelatihan-tkpk-tingkat-2/)** — memasang sistem tambat, melakukan penyelamatan lanjutan, dan mengawasi Tingkat 1.\n- **[Tingkat 3](/pelatihan-tkpk-tingkat-3/)** — supervisor yang merencanakan pekerjaan, menyusun rencana penyelamatan, dan memimpin tim.\n\n## TKBT: tenaga kerja bangunan tinggi\n\nTKBT adalah skema untuk pekerjaan yang dilakukan dengan memanjat struktur — menara, rangka baja, perancah — memakai sistem penahan jatuh. [Tingkat 1](/pelatihan-tkbt-tingkat-1/) untuk pekerja di bawah pengawasan, [Tingkat 2](/pelatihan-tkbt-tingkat-2/) untuk pekerja mandiri dan pengawas.\n\n## Memilih antara TKPK dan TKBT\n\nJika pekerjaan Anda menggantung pada tali — fasad, dinding tangki, sisi cerobong — Anda membutuhkan TKPK. Jika Anda memanjat dan berpindah di struktur dengan lanyard — menara, rangka, perancah — Anda membutuhkan TKBT. Pembahasan lengkapnya ada di artikel [TKPK atau TKBT?](/memilih-sertifikasi-akses-tali/).\n\n## Masa berlaku dan verifikasi\n\nMasa berlaku, perpanjangan, dan verifikasi sertifikat mengikuti ketentuan Kemnaker yang berlaku. Kami membantu peserta menyiapkan berkas pendaftaran dan perpanjangan, dan kami mendorong setiap pemberi kerja untuk memverifikasi sertifikat langsung kepada penerbitnya.\n\nIngin tahu bagaimana kami menyiapkan peserta? Baca [profil dan nilai kami](/tentang-kami/), atau [hubungi kami](/kontak/) untuk bertanya tentang persyaratan."
+    },
+    {
+      "type": "table",
+      "eyebrow": "Perbandingan",
+      "title": "Tingkat sertifikasi Kemnaker untuk kerja di ketinggian",
+      "intro": "Ringkasan peran dan prasyarat utama tiap tingkat. Persyaratan final mengikuti ketentuan Kemnaker yang berlaku.",
+      "columns": ["Program", "Peran di lapangan", "Prasyarat utama"],
+      "rows": [
+        ["TKPK Tingkat 1", "Teknisi akses tali, bekerja di bawah pengawasan", "Usia ≥ 18 tahun, sehat, tanpa pengalaman"],
+        ["TKPK Tingkat 2", "Memasang sistem tambat, penyelamatan lanjutan, mengawasi Tingkat 1", "TKPK 1 + pengalaman (umumnya ≥ 500 jam)"],
+        [
+          "TKPK Tingkat 3",
+          "Supervisor: rencana kerja, rencana penyelamatan, memimpin tim",
+          "TKPK 1 & 2, SLTA, usia ≥ 22, pengalaman (umumnya ≥ 1.000 jam), P3K"
+        ],
+        ["TKBT Tingkat 1", "Memanjat dan bekerja di struktur dengan penahan jatuh", "Usia ≥ 18 tahun, sehat, tanpa pengalaman"],
+        ["TKBT Tingkat 2", "Bekerja mandiri dan mengawasi tim di struktur tinggi", "TKBT 1 + pengalaman kerja di ketinggian"]
+      ],
+      "note": "TKPK = Tenaga Kerja pada Ketinggian (metode akses tali). TKBT = Tenaga Kerja Bangunan Tinggi (memanjat struktur dengan penahan jatuh)."
     },
     {
       "type": "accreditations",
-      "eyebrow": "Lembaga & standar",
-      "title": "Skema yang kami ikuti"
+      "eyebrow": "Regulasi",
+      "title": "Dasar sertifikasi kami"
     },
     {
       "type": "faq-group",
@@ -42,8 +61,8 @@
     },
     {
       "type": "cta",
-      "title": "Bingung memilih skema?",
-      "text": "Kirim persyaratan tender atau kontrak Anda — kami bantu menentukan sertifikasi yang benar-benar diminta.",
+      "title": "Bingung memilih program?",
+      "text": "Ceritakan jenis pekerjaan Anda atau persyaratan dari kontrak — kami bantu menentukan sertifikasi yang tepat.",
       "button": {
         "label": "Konsultasi via WhatsApp",
         "href": "#whatsapp"

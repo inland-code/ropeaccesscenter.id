@@ -1,4 +1,8 @@
-import site from '@/data/site.json';
+import siteData from '@/data/site.json';
+import { siteSchema } from '@/content/schema';
+
+/** Data bisnis divalidasi skema saat build: isian salah dari dashboard menggagalkan build, bukan merusak situs. */
+const site = siteSchema.parse(siteData);
 import type { Locale } from '@/i18n/config';
 import type { Course } from '@/content/schema';
 import type { ScheduleItem } from './data';
@@ -25,7 +29,10 @@ export function organizationSchema() {
     description: site.description.id,
     email: site.email,
     telephone: site.phoneE164,
-    foundingDate: site.foundingDate,
+    ...(site.foundingDate ? { foundingDate: site.foundingDate } : {}),
+    ...(site.parentOrganization
+      ? { parentOrganization: { '@type': 'Organization', name: site.parentOrganization.name, url: site.parentOrganization.url } }
+      : {}),
     slogan: 'Training, Certification, & Corporate Services',
     address: {
       '@type': 'PostalAddress',
@@ -35,9 +42,17 @@ export function organizationSchema() {
       postalCode: site.address.postalCode,
       addressCountry: site.address.country,
     },
-    geo: { '@type': 'GeoCoordinates', latitude: site.geo.latitude, longitude: site.geo.longitude },
+    ...(site.geo ? { geo: { '@type': 'GeoCoordinates', latitude: site.geo.latitude, longitude: site.geo.longitude } } : {}),
     areaServed: site.areaServed.map((name) => ({ '@type': 'Country', name })),
-    knowsAbout: ['Rope access', 'IRATA', 'BNSP TKPK', 'Work at height', 'Non-destructive testing', 'Rescue at height'],
+    knowsAbout: [
+      'Rope access',
+      'TKPK',
+      'TKBT',
+      'Work at height safety',
+      'Façade maintenance',
+      'Non-destructive testing',
+      'Rescue at height',
+    ],
     openingHoursSpecification: site.openingHours.map((h) => ({
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: h.days.map((d) => `https://schema.org/${dayName(d)}`),
@@ -131,12 +146,12 @@ export function courseSchema(opts: { name: string; course: Course; path: string;
     educationalCredentialAwarded: c.certificate,
     coursePrerequisites: c.prerequisites,
     teaches: c.outcomes,
-    timeRequired: `P${c.durationDays}D`,
+    ...(c.durationDays ? { timeRequired: `P${c.durationDays}D` } : {}),
     offers: { '@type': 'Offer', category: 'Paid', url, availability: 'https://schema.org/InStock' },
     hasCourseInstance: (instances.length ? instances : [undefined]).map((k) => ({
       '@type': 'CourseInstance',
       courseMode: 'Onsite',
-      courseWorkload: `P${c.durationDays}D`,
+      ...(c.durationDays ? { courseWorkload: `P${c.durationDays}D` } : {}),
       inLanguage: lang(opts.locale),
       ...(k
         ? {

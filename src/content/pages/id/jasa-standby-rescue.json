@@ -4,13 +4,13 @@
   "template": "service",
   "contentStatus": "review",
   "seo": {
-    "title": "Tim Penyelamat Siaga (Standby Rescue) | Rope Access Center",
-    "description": "Tim penyelamat bersertifikat siaga di lokasi selama pekerjaan berisiko tinggi — ketinggian, ruang terbatas, dan shutdown besar."
+    "title": "Jasa Standby Rescue & Rencana Penyelamatan Ketinggian | RAC",
+    "description": "Tim standby rescue bersertifikat Kemnaker untuk pekerjaan di ketinggian, penyusunan dan uji rencana penyelamatan, serta pendampingan K3 ketinggian di lokasi Anda."
   },
   "hero": {
     "eyebrow": "Layanan Industri",
-    "title": "Tim Penyelamat Siaga (Standby Rescue)",
-    "body": "Tim penyelamat bersertifikat siaga di lokasi selama pekerjaan berisiko tinggi — ketinggian, ruang terbatas, dan shutdown besar.",
+    "title": "Jasa Standby Rescue & Rencana Penyelamatan Ketinggian",
+    "body": "Tim penyelamat siaga selama pekerjaan di ketinggian, penyusunan dan uji rencana penyelamatan, serta pendampingan K3 ketinggian — agar setiap pekerjaan punya jawaban jika terjadi keadaan darurat.",
     "ctas": [
       {
         "label": "Minta penawaran",
@@ -26,12 +26,12 @@
   },
   "card": {
     "icon": "lifebuoy",
-    "summary": "Tim penyelamat bersertifikat siaga di lokasi selama pekerjaan berisiko tinggi — ketinggian, ruang terbatas, dan shutdown besar."
+    "summary": "Tim penyelamat siaga selama pekerjaan di ketinggian, penyusunan dan uji rencana penyelamatan, serta pendampingan K3 ketinggian — agar setiap pekerjaan punya jawaban jika terjadi keadaan darurat."
   },
   "sections": [
     {
       "type": "prose",
-      "body": "## Rencana penyelamatan yang belum pernah diuji bukanlah rencana\n\nBanyak lokasi kerja memiliki dokumen rencana penyelamatan yang tidak pernah dijalankan. Ketika insiden benar-benar terjadi, jarak antara dokumen dan kenyataan menjadi mahal.\n\nSetiap penugasan standby rescue RAC dimulai dengan pengujian rencana di lokasi sesungguhnya, dengan waktu respons yang diukur dan dicatat.\n\n## Waktu respons adalah segalanya\n\nSuspension trauma dapat menjadi fatal dalam hitungan belasan menit. Tim kami menetapkan target ekstraksi korban tergantung di bawah 15 menit sejak alarm — dan kami membuktikannya dalam latihan, bukan menjanjikannya dalam proposal."
+      "body": "## Mengapa rencana penyelamatan harus teruji\n\nPekerja yang tergantung tidak sadarkan diri pada harness harus diturunkan dalam hitungan menit. Mengandalkan bantuan dari luar lokasi hampir selalu terlalu lambat. Karena itu setiap pekerjaan di ketinggian membutuhkan rencana penyelamatan yang ditulis untuk lokasi itu dan sudah dilatihkan — kami membahasnya di artikel [rencana penyelamatan yang belum diuji bukanlah rencana](/rencana-penyelamatan-yang-teruji/).\n\n## Apa yang kami lakukan di lokasi\n\nTim siaga kami hadir dengan peralatan penyelamatan yang sudah diperiksa, mengikuti briefing harian bersama pekerja Anda, dan siap bertindak selama pekerjaan berlangsung. Kami juga dapat menguji rencana penyelamatan yang sudah Anda miliki dan memberi masukan perbaikan.\n\n## Pendampingan K3 ketinggian\n\nUntuk kontraktor dan pemilik lokasi, kami membantu menyiapkan dokumen K3 pekerjaan pada ketinggian — penilaian risiko, izin kerja, dan daftar periksa — mengacu pada Permenaker No. 9 Tahun 2016."
     },
     {
       "type": "lists",
@@ -42,34 +42,87 @@
           "icon": "clipboard",
           "title": "Lingkup pekerjaan",
           "items": [
-            "Penyelamatan ketinggian dan penyelamatan di ruang terbatas",
-            "Penyusunan dan pengujian rencana penyelamatan spesifik lokasi",
-            "Penyediaan peralatan penyelamat dan tandu evakuasi",
-            "Personel dengan kualifikasi P3K dan penanganan awal korban",
-            "Latihan simulasi bersama tim tanggap darurat klien"
+            "Tim standby rescue selama pekerjaan di ketinggian",
+            "Penyusunan rencana penyelamatan khusus lokasi",
+            "Uji coba dan latihan penyelamatan bersama tim Anda",
+            "Penyediaan peralatan penyelamatan",
+            "Pendampingan dokumen K3 ketinggian dan izin kerja",
+            "Briefing keselamatan harian (toolbox talk)"
           ]
         },
         {
           "icon": "building",
-          "title": "Industri yang kami layani",
-          "items": ["Turnaround Kilang", "Konstruksi Besar", "Pembangkit Listrik", "Pertambangan"]
+          "title": "Aset & sektor",
+          "items": [
+            "Proyek konstruksi gedung tinggi",
+            "Pekerjaan perawatan pabrik dan shutdown",
+            "Menara dan struktur industri",
+            "Ruang terbatas dengan akses vertikal",
+            "Pekerjaan fasad dan atap"
+          ]
         },
         {
           "icon": "check-circle",
           "title": "Yang Anda terima",
           "items": [
-            "Rencana penyelamatan tertulis yang telah diuji di lokasi",
-            "Log kehadiran dan kesiapan tim harian",
-            "Laporan latihan simulasi dan waktu respons terukur",
-            "Rekomendasi perbaikan akses dan titik tambat permanen"
+            "Rencana penyelamatan tertulis untuk lokasi Anda",
+            "Catatan latihan dan waktu penyelamatan",
+            "Tim siaga bersertifikat Kemnaker",
+            "Laporan harian selama penugasan"
           ]
+        }
+      ]
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "Cara kerja",
+      "title": "Empat langkah dari survei sampai laporan",
+      "items": [
+        {
+          "title": "1. Survei & penawaran",
+          "text": "Kami meninjau lokasi atau foto/gambar kerja, lalu mengirim lingkup, metode, jadwal, dan penawaran tertulis.",
+          "bullets": []
+        },
+        {
+          "title": "2. Rencana kerja & izin",
+          "text": "Penilaian risiko, metode kerja, dan rencana penyelamatan disusun sebelum pekerjaan; izin kerja diurus bersama pengelola lokasi.",
+          "bullets": []
+        },
+        {
+          "title": "3. Pelaksanaan",
+          "text": "Tim teknisi bersertifikat Kemnaker bekerja dengan pengawas di lokasi; area di bawah titik kerja diamankan.",
+          "bullets": []
+        },
+        {
+          "title": "4. Laporan & serah terima",
+          "text": "Dokumentasi foto sebelum–sesudah dan laporan pekerjaan diserahkan bersama rekomendasi perawatan berikutnya.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang sering diajukan",
+      "items": [
+        {
+          "q": "Kapan proyek membutuhkan standby rescue?",
+          "a": "Setiap pekerjaan di ketinggian membutuhkan kemampuan penyelamatan di lokasi. Standby rescue terutama diperlukan bila tim pelaksana belum memiliki personel penyelamat yang kompeten, atau saat pekerjaan berisiko tinggi seperti shutdown dan konstruksi gedung tinggi."
+        },
+        {
+          "q": "Bisakah Anda menguji rencana penyelamatan yang sudah ada?",
+          "a": "Bisa. Kami menjalankannya di lokasi sesungguhnya dengan peralatan yang tersedia, mengukur waktunya, lalu memberi rekomendasi perbaikan tertulis."
+        },
+        {
+          "q": "Berapa lama penugasan tim siaga?",
+          "a": "Fleksibel — harian, mingguan, atau selama durasi proyek, disesuaikan dengan jadwal pekerjaan Anda."
         }
       ]
     },
     {
       "type": "cta",
       "title": "Ceritakan pekerjaan Anda",
-      "text": "Kirim lokasi, jenis aset, dan target waktu. Kami siapkan penilaian risiko awal dan penawaran tertulis, umumnya pada hari kerja yang sama.",
+      "text": "Kirim lokasi, jenis bangunan atau aset, dan target waktu. Kami balas dengan penawaran tertulis, umumnya pada hari kerja yang sama.",
       "button": {
         "label": "Diskusikan via WhatsApp",
         "href": "#whatsapp"

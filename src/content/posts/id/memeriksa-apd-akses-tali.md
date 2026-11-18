@@ -26,11 +26,11 @@ Sebagian besar teknisi memeriksa alatnya setiap pagi. Jauh lebih sedikit yang da
 
 Lakukan setiap hari, oleh orang yang akan memakainya. Rabalah seluruh panjang webbing dengan jari — jari menemukan serat putus dan titik keras yang tidak terlihat mata. Periksa jahitan, terutama pada titik beban. Buka dan tutup setiap carabiner untuk memastikan gate kembali penuh dan kunci bekerja.
 
-Untuk perangkat [descender dan ascender](/pelatihan-irata-level-1/), periksa keausan alur tali, kebersihan cam, dan gerakan pegas. Alat yang tersendat sedikit hari ini akan tersendat lebih banyak bulan depan.
+Untuk perangkat [descender dan ascender](/pelatihan-tkpk-tingkat-1/), periksa keausan alur tali, kebersihan cam, dan gerakan pegas. Alat yang tersendat sedikit hari ini akan tersendat lebih banyak bulan depan.
 
 ## Inspeksi terperinci enam bulanan
 
-Ini dilakukan oleh [orang yang kompeten](/pelatihan-irata-level-3/) dan tercatat — bukan oleh pemakainya. Setiap alat diperiksa terhadap kriteria pabrikan, hasilnya dicatat, dan alat diberi tanda status. Sistem penandaan sederhana dengan pita warna per periode membuat status alat terbaca sekilas di lapangan.
+Ini dilakukan oleh [orang yang kompeten](/pelatihan-tkpk-tingkat-3/) dan tercatat — bukan oleh pemakainya. Setiap alat diperiksa terhadap kriteria pabrikan, hasilnya dicatat, dan alat diberi tanda status. Sistem penandaan sederhana dengan pita warna per periode membuat status alat terbaca sekilas di lapangan.
 
 ## Kapan sebuah alat harus pensiun
 

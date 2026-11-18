@@ -11,7 +11,7 @@ const H = title ? 'h3' : 'h2';
 <section class="py-20 sm:py-24">
   <div class="container-site">
     {title && <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />}
-    <div class:list={['grid gap-6 md:grid-cols-3', title && 'mt-12']}>
+    <div class:list={['grid gap-6', items.length === 4 ? 'sm:grid-cols-2 lg:grid-cols-4' : 'md:grid-cols-3', title && 'mt-12']}>
       {items.map((c) => (
         <article class="relative flex flex-col overflow-hidden rounded-card bg-brand-gradient p-8 text-white shadow-card">
           <div class="pointer-events-none absolute -top-14 -right-14 size-40 rounded-full bg-white/10" aria-hidden="true"></div>

@@ -4,13 +4,13 @@
   "template": "service",
   "contentStatus": "review",
   "seo": {
-    "title": "Maintenance & Repair at Height | Rope Access Center",
-    "description": "Painting, blasting, welding, component replacement, and structural repair — delivered on rope with full quality control."
+    "title": "Rope Access Maintenance & Repair at Height | RAC",
+    "description": "Painting, roof repair, installation, and maintenance of towers, tanks, chimneys, and tall structures by rope access — no scaffolding, operations keep running."
   },
   "hero": {
     "eyebrow": "Industrial Services",
     "title": "Maintenance & Repair at Height",
-    "body": "Painting, blasting, welding, component replacement, and structural repair — delivered on rope with full quality control.",
+    "body": "Painting, repair, installation, and removal on towers, tanks, chimneys, roofs, and other tall structures — without scaffolding and without stopping operations longer than needed.",
     "ctas": [
       {
         "label": "Request a quotation",
@@ -26,12 +26,12 @@
   },
   "card": {
     "icon": "wrench",
-    "summary": "Painting, blasting, welding, component replacement, and structural repair — delivered on rope with full quality control."
+    "summary": "Painting, repair, installation, and removal on towers, tanks, chimneys, roofs, and other tall structures — without scaffolding and without stopping operations longer than needed."
   },
   "sections": [
     {
       "type": "prose",
-      "body": "## Position does not lower the standard\n\nThe most common concern about rope access work is quality. Our answer is simple: the same QC procedures apply whether a technician is standing on a scaffold or hanging on a rope. DFT is measured, adhesion is tested, ambient conditions are logged.\n\n## Containment and waste control\n\nWe rig containment systems for blasting and coating so that debris does not fall into production areas, into the sea, or onto the surrounding environment — an increasingly firm requirement on projects held to international environmental standards."
+      "body": "## Why no scaffolding\n\nScaffolding a tall structure can take days to erect and strike, takes up space, and adds exposure for other workers. For local repairs, painting, or light installation, a rope access team rigs within hours and starts work. We break the costs down in our article on [rope access versus scaffolding](/en/rope-access-vs-scaffolding-inspection-cost/).\n\n## When scaffolding is still the right choice\n\nWe will tell you honestly: work that needs a wide platform for heavy materials, or very long stays at one point, usually suits scaffolding better. Our initial survey decides the most efficient method.\n\n## Working in live operations\n\nIn factories, warehouses, or buildings that keep operating, work is arranged with the site manager: permits to work, energy isolation where needed, and protection of the area below the work zone."
     },
     {
       "type": "lists",
@@ -42,34 +42,87 @@
           "icon": "clipboard",
           "title": "Scope of work",
           "items": [
-            "Surface preparation and recoating of steel structures",
-            "Contained blasting and protective coating application",
-            "Certified welding and structural repair",
-            "Replacement of anodes, clamps, and mechanical components",
-            "Concrete repair, crack stitching, and injection"
+            "Painting towers, tanks, chimneys, and steel structures",
+            "Repairing roofs, gutters, and wall cladding",
+            "Installing and removing signage, cables, netting, and lightning protection",
+            "Local concrete and corrosion repair",
+            "Sealant and waterproofing on high walls",
+            "Cleaning structures and ducts at height"
           ]
         },
         {
           "icon": "building",
-          "title": "Industries we serve",
-          "items": ["Offshore Oil & Gas", "Heavy Industry", "Bridges & Infrastructure", "Telecommunications"]
+          "title": "Assets & sectors",
+          "items": [
+            "Telecom towers and chimneys",
+            "Tanks, silos, and industrial structures",
+            "Factory and warehouse roofs",
+            "Bridges and steel structures",
+            "Billboards and building signage"
+          ]
         },
         {
           "icon": "check-circle",
           "title": "What you receive",
           "items": [
-            "Daily work reports with before-and-after photographic evidence",
-            "Coating QC records (DFT, adhesion, environmental conditions)",
-            "Material certificates and welding procedure records",
-            "Handover with a completed checklist"
+            "A written quotation and method statement",
+            "Risk assessment and rescue plan",
+            "Progress and completion photos",
+            "A work report with recommendations"
           ]
+        }
+      ]
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "How we work",
+      "title": "Four steps from survey to report",
+      "items": [
+        {
+          "title": "1. Survey & quotation",
+          "text": "We review the site or your photos and drawings, then send the scope, method, schedule, and a written quotation.",
+          "bullets": []
+        },
+        {
+          "title": "2. Work plan & permits",
+          "text": "A risk assessment, method statement, and rescue plan are prepared before work starts; permits are arranged with the site manager.",
+          "bullets": []
+        },
+        {
+          "title": "3. Delivery",
+          "text": "A team of Kemnaker-certified technicians works with a supervisor on site; the area below the work zone is secured.",
+          "bullets": []
+        },
+        {
+          "title": "4. Report & handover",
+          "text": "Before-and-after photos and a work report are handed over with recommendations for the next maintenance cycle.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What work suits rope access?",
+          "a": "Local work spread over many points — repainting, repairs, light installation, cleaning — is usually most efficient by rope access. Heavy materials or very long stays at one point can suit scaffolding better."
+        },
+        {
+          "q": "Does the plant have to stop?",
+          "a": "Usually not. Work is scheduled with the site manager, with the work area protected and energy isolated only where necessary."
+        },
+        {
+          "q": "Who supplies the materials?",
+          "a": "Either works: materials from the owner, or we procure them to an agreed specification. It is all set out in the quotation."
         }
       ]
     },
     {
       "type": "cta",
       "title": "Tell us about the job",
-      "text": "Send the location, the type of asset, and your target dates. We prepare an initial risk assessment and a written quotation, usually the same working day.",
+      "text": "Send the location, the type of building or asset, and your target dates. We reply with a written quotation, usually the same working day.",
       "button": {
         "label": "Discuss on WhatsApp",
         "href": "#whatsapp"

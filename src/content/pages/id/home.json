@@ -4,13 +4,13 @@
   "template": "home",
   "contentStatus": "review",
   "seo": {
-    "title": "Pelatihan Akses Tali & Sertifikasi IRATA | Rope Access Center",
-    "description": "Pusat pelatihan akses tali bersertifikat IRATA & BNSP di Indonesia, sekaligus jasa inspeksi, perawatan, dan penyelamatan di ketinggian untuk industri."
+    "title": "Pelatihan TKPK & TKBT Kemnaker dan Jasa Rope Access | RAC",
+    "description": "Pelatihan dan sertifikasi K3 kerja di ketinggian dari Kemnaker RI — TKPK (akses tali) dan TKBT (bangunan tinggi) — serta jasa rope access untuk gedung dan industri."
   },
   "hero": {
     "eyebrow": "Akses Aman. Standar Lebih Tinggi.",
-    "title": "Kami Melatih. Kami Menyertifikasi. Kami Mengerjakan.",
-    "body": "Pelatihan akses tali bersertifikat, sertifikasi kompetensi, dan layanan industri di ketinggian — untuk pekerjaan yang tidak memberi ruang bagi kesalahan.",
+    "title": "Kami Melatih. Kami Mengerjakan.",
+    "body": "Pelatihan dan sertifikasi K3 kerja di ketinggian dari Kemnaker RI — TKPK untuk akses tali dan TKBT untuk bangunan tinggi — serta jasa rope access untuk gedung dan industri.",
     "ctas": [
       {
         "label": "Jelajahi pelatihan",
@@ -35,26 +35,26 @@
         },
         {
           "icon": "certificate",
-          "title": "Asesmen Independen",
-          "text": "IRATA & BNSP — kami tidak menilai peserta sendiri."
-        },
-        {
-          "icon": "users",
-          "title": "Rasio 1:6",
-          "text": "Setiap manuver diamati dan dikoreksi."
+          "title": "Sertifikat Kemnaker RI",
+          "text": "Sertifikat & lisensi K3 sesuai Permenaker 9/2016."
         },
         {
           "icon": "helmet",
-          "title": "APD Disediakan",
-          "text": "Cukup bawa sepatu keselamatan."
+          "title": "Teori + Praktik",
+          "text": "Latihan langsung di ketinggian, bukan hanya di kelas."
+        },
+        {
+          "icon": "building",
+          "title": "Grup Inland",
+          "text": "Didukung tim perawatan gedung Inland."
         }
       ]
     },
     {
       "type": "page-cards",
       "eyebrow": "Pelatihan",
-      "title": "Program Pelatihan & Sertifikasi",
-      "intro": "Dari nol pengalaman hingga supervisor — setiap program ditutup asesmen pihak independen.",
+      "title": "Program Sertifikasi Kemnaker RI",
+      "intro": "TKPK Tingkat 1–3 untuk akses tali dan TKBT Tingkat 1–2 untuk bangunan tinggi — dari nol pengalaman hingga supervisor.",
       "of": "course",
       "featuredOnly": true,
       "limit": 4,
@@ -64,50 +64,21 @@
       }
     },
     {
-      "type": "stats",
-      "eyebrow": "Rekam Jejak",
-      "title": "Angka yang kami jaga",
-      "items": [
-        {
-          "value": 1200,
-          "suffix": "+",
-          "label": "Teknisi terlatih"
-        },
-        {
-          "value": 98,
-          "suffix": "%",
-          "label": "Kelulusan asesmen pertama"
-        },
-        {
-          "value": 250,
-          "suffix": "+",
-          "label": "Proyek diselesaikan"
-        },
-        {
-          "value": 10,
-          "suffix": "+",
-          "label": "Tahun pengalaman"
-        }
-      ]
-    },
-    {
       "type": "page-cards",
-      "eyebrow": "Apa yang Kami Kerjakan",
-      "title": "Empat Pilar Layanan Kami",
-      "intro": "Satu disiplin, empat cara kami menerapkannya untuk klien di seluruh Indonesia.",
+      "eyebrow": "Layanan",
+      "title": "Jasa Rope Access untuk Gedung & Industri",
+      "intro": "Dikerjakan teknisi bersertifikat Kemnaker, dengan penilaian risiko dan rencana penyelamatan di setiap pekerjaan.",
       "of": "service",
-      "featuredOnly": true,
-      "limit": 4,
       "cta": {
-        "label": "Semua layanan industri",
+        "label": "Semua layanan",
         "href": "services"
       }
     },
     {
       "type": "value-cards",
       "eyebrow": "Tentang Kami",
-      "title": "Keselamatan adalah Prioritas, Keunggulan adalah Standar.",
-      "intro": "Rope Access Center adalah pusat pelatihan sekaligus penyedia jasa akses tali untuk industri berisiko tinggi. Sejak 2014 kami membangun kompetensi teknisi Indonesia dan mengerjakan proyek di ketinggian dengan satu prinsip yang tidak pernah kami tawar: setiap orang pulang dalam keadaan utuh.",
+      "title": "Keselamatan adalah prioritas, keunggulan adalah standar.",
+      "intro": "Rope Access Center (RAC) adalah brand pelatihan dan jasa akses tali dari grup Inland. Sejak 2024 kami menyelenggarakan pelatihan K3 kerja di ketinggian bersertifikat Kemnaker RI, sekaligus mengerjakan pekerjaan di ketinggian untuk gedung dan industri.",
       "items": [
         {
           "icon": "shield-check",
@@ -116,38 +87,28 @@
           "bullets": []
         },
         {
-          "icon": "target",
-          "title": "Standar Global",
-          "text": "Asesmen independen IRATA dan BNSP — kami tidak menilai peserta kami sendiri.",
+          "icon": "certificate",
+          "title": "Sesuai Regulasi",
+          "text": "Program mengacu pada Permenaker No. 9 Tahun 2016 dan diakhiri uji kompetensi Kemnaker RI.",
           "bullets": []
         },
         {
           "icon": "users",
-          "title": "Tim Berpengalaman",
-          "text": "Instruktur Level 3 dengan jam kerja lapangan nyata, bukan hanya jam mengajar.",
+          "title": "Pengalaman Lapangan",
+          "text": "Tim yang sehari-hari mengerjakan perawatan gedung bersama Inland — yang kami ajarkan adalah yang kami kerjakan.",
           "bullets": []
         }
       ]
     },
     {
-      "type": "schedule",
-      "eyebrow": "Jadwal",
-      "title": "Kelas terbuka berikutnya",
-      "limit": 4,
-      "cta": {
-        "label": "Lihat semua jadwal",
-        "href": "schedule"
-      }
-    },
-    {
       "type": "accreditations",
-      "eyebrow": "Tersertifikasi & Diakui",
-      "title": "Kami Bekerja pada Standar Global"
+      "eyebrow": "Standar",
+      "title": "Mengacu pada regulasi resmi"
     },
     {
       "type": "testimonials",
       "eyebrow": "Kata Mereka",
-      "title": "Dipercaya oleh Para Profesional",
+      "title": "Dipercaya oleh para profesional",
       "limit": 3
     },
     {
@@ -174,8 +135,8 @@
     {
       "type": "cta",
       "eyebrow": "Siap membawa tim Anda ke tingkat berikutnya?",
-      "title": "Mari Bangun Masa Depan yang Lebih Aman dan Lebih Kuat.",
-      "text": "Pelatihan bersertifikat untuk tim Anda, atau tim akses tali untuk pekerjaan di ketinggian — kami balas pada hari kerja yang sama.",
+      "title": "Mari bangun pekerjaan di ketinggian yang lebih aman.",
+      "text": "Pelatihan bersertifikat Kemnaker untuk tim Anda, atau tim rope access untuk pekerjaan di ketinggian — kami balas pada hari kerja yang sama.",
       "button": {
         "label": "Konsultasi via WhatsApp",
         "href": "#whatsapp"

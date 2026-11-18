@@ -5,13 +5,13 @@
   "navLabel": "Jadwal Pelatihan",
   "contentStatus": "review",
   "seo": {
-    "title": "Jadwal Pelatihan Akses Tali IRATA & BNSP · RAC",
-    "description": "Jadwal kelas terbuka pelatihan akses tali IRATA Level 1, 2, dan 3, serta sertifikasi BNSP TKPK, lengkap dengan lokasi dan sisa kuota."
+    "title": "Jadwal Pelatihan TKPK & TKBT Kemnaker | RAC",
+    "description": "Jadwal kelas pelatihan K3 ketinggian bersertifikat Kemnaker RI: TKPK Tingkat 1–3 dan TKBT Tingkat 1–2. Hubungi kami untuk tanggal terdekat atau kelas perusahaan."
   },
   "hero": {
     "eyebrow": "Jadwal Pelatihan",
     "title": "Kelas Terbuka Berikutnya",
-    "body": "Kelas reguler dibuka setiap bulan. Untuk enam peserta atau lebih, kami dapat membuka angkatan khusus pada tanggal yang Anda tentukan.",
+    "body": "Kelas dibuka sesuai kuota peserta. Untuk kelompok dari satu perusahaan, kami dapat membuka kelas khusus pada tanggal yang Anda tentukan.",
     "ctas": [
       {
         "label": "Daftar via WhatsApp",
@@ -37,7 +37,7 @@
     {
       "type": "cta",
       "title": "Tanggal yang Anda butuhkan belum ada?",
-      "text": "Kelas reguler dibuka setiap bulan. Untuk enam peserta atau lebih, kami dapat membuka angkatan khusus pada tanggal yang Anda tentukan.",
+      "text": "Kelas dibuka sesuai kuota peserta. Untuk kelompok dari satu perusahaan, kami dapat membuka kelas khusus pada tanggal yang Anda tentukan.",
       "button": {
         "label": "Konsultasi via WhatsApp",
         "href": "#whatsapp"

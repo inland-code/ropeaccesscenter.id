@@ -4,13 +4,13 @@
   "template": "service",
   "contentStatus": "review",
   "seo": {
-    "title": "Penyediaan Teknisi Akses Tali | Rope Access Center",
-    "description": "Tambahkan kapasitas tanpa menambah beban rekrutmen. Teknisi bersertifikat, terverifikasi, dan siap mobilisasi dalam hitungan hari."
+    "title": "Penyediaan Teknisi Rope Access Bersertifikat Kemnaker | RAC",
+    "description": "Penyediaan teknisi akses tali TKPK dan pekerja TKBT bersertifikat Kemnaker untuk proyek Anda — harian atau per proyek, lengkap dengan dokumen kompetensi."
   },
   "hero": {
     "eyebrow": "Layanan Industri",
-    "title": "Penyediaan Teknisi Akses Tali",
-    "body": "Tambahkan kapasitas tanpa menambah beban rekrutmen. Teknisi bersertifikat, terverifikasi, dan siap mobilisasi dalam hitungan hari.",
+    "title": "Penyediaan Teknisi Akses Tali Bersertifikat Kemnaker",
+    "body": "Teknisi akses tali TKPK dan pekerja bangunan tinggi TKBT bersertifikat Kemnaker untuk memperkuat tim Anda — harian atau per proyek, lengkap dengan dokumen kompetensi.",
     "ctas": [
       {
         "label": "Minta penawaran",
@@ -26,12 +26,12 @@
   },
   "card": {
     "icon": "users",
-    "summary": "Tambahkan kapasitas tanpa menambah beban rekrutmen. Teknisi bersertifikat, terverifikasi, dan siap mobilisasi dalam hitungan hari."
+    "summary": "Teknisi akses tali TKPK dan pekerja bangunan tinggi TKBT bersertifikat Kemnaker untuk memperkuat tim Anda — harian atau per proyek, lengkap dengan dokumen kompetensi."
   },
   "sections": [
     {
       "type": "prose",
-      "body": "## Kami tahu siapa yang kami kirim\n\nSebagian besar teknisi yang kami tempatkan adalah alumni pelatihan kami sendiri. Kami pernah melihat mereka bekerja di bawah tekanan, dan kami tahu kebiasaan kerja masing-masing — bukan sekadar membaca berkas lamaran.\n\n## Verifikasi yang tidak bisa dinegosiasikan\n\nSetiap sertifikat diverifikasi langsung ke basis data penerbitnya. Sertifikat kedaluwarsa atau tidak terdaftar berarti personel tidak berangkat, tanpa pengecualian."
+      "body": "## Tenaga yang siap bekerja\n\nKontraktor sering membutuhkan tambahan teknisi ketinggian untuk periode singkat — shutdown, pekerjaan musiman, atau proyek mendesak. Kami menyediakan teknisi dengan sertifikat dan lisensi K3 dari Kemnaker sesuai tingkat yang dibutuhkan, dari [TKPK Tingkat 1](/pelatihan-tkpk-tingkat-1/) hingga supervisor [TKPK Tingkat 3](/pelatihan-tkpk-tingkat-3/), serta pekerja [TKBT](/pelatihan-tkbt-tingkat-1/) untuk pekerjaan struktur.\n\n## Dokumen lengkap sebelum mobilisasi\n\nSalinan sertifikat dan lisensi, data diri, serta surat keterangan sehat setiap teknisi diserahkan sebelum mobilisasi, sehingga proses induksi di lokasi Anda berjalan cepat.\n\n## Fleksibel sesuai proyek\n\nJumlah teknisi, durasi, dan susunan tim (termasuk supervisor) disesuaikan dengan lingkup pekerjaan. Teknisi dapat bekerja di bawah supervisor Anda atau sebagai tim lengkap dengan supervisor dari RAC."
     },
     {
       "type": "lists",
@@ -42,33 +42,86 @@
           "icon": "clipboard",
           "title": "Lingkup pekerjaan",
           "items": [
-            "Teknisi IRATA Level 1, 2, dan 3 untuk penugasan jangka pendek maupun panjang",
-            "Teknisi dengan kompetensi ganda: NDT, welding, coating, mekanikal, elektrikal",
-            "Supervisor akses tali untuk memimpin tim internal Anda",
-            "Verifikasi sertifikat, riwayat medis, dan rekam jejak keselamatan"
+            "Teknisi akses tali TKPK Tingkat 1 dan 2",
+            "Supervisor akses tali TKPK Tingkat 3",
+            "Pekerja bangunan tinggi TKBT Tingkat 1 dan 2",
+            "Tim lengkap dengan supervisor dan rencana penyelamatan",
+            "Penugasan harian, mingguan, atau per proyek"
           ]
         },
         {
           "icon": "building",
-          "title": "Industri yang kami layani",
-          "items": ["Kontraktor EPC", "Operator Migas", "Kontraktor Perawatan", "Energi Terbarukan"]
+          "title": "Aset & sektor",
+          "items": [
+            "Kontraktor konstruksi dan MEP",
+            "Perusahaan perawatan gedung",
+            "Industri dan pabrik (shutdown)",
+            "Telekomunikasi dan kelistrikan",
+            "Pemilik dan pengelola gedung"
+          ]
         },
         {
           "icon": "check-circle",
           "title": "Yang Anda terima",
           "items": [
-            "Berkas kompetensi lengkap setiap personel sebelum mobilisasi",
-            "Penggantian personel dalam 72 jam apabila terjadi kendala",
-            "Laporan jam kerja dan kinerja keselamatan berkala",
-            "Kontrak fleksibel harian, mingguan, atau berbasis proyek"
+            "Teknisi bersertifikat dan berlisensi Kemnaker",
+            "Salinan dokumen kompetensi dan kesehatan",
+            "Peralatan pribadi yang sudah diperiksa",
+            "Laporan kehadiran dan pekerjaan"
           ]
+        }
+      ]
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "Cara kerja",
+      "title": "Empat langkah dari survei sampai laporan",
+      "items": [
+        {
+          "title": "1. Survei & penawaran",
+          "text": "Kami meninjau lokasi atau foto/gambar kerja, lalu mengirim lingkup, metode, jadwal, dan penawaran tertulis.",
+          "bullets": []
+        },
+        {
+          "title": "2. Rencana kerja & izin",
+          "text": "Penilaian risiko, metode kerja, dan rencana penyelamatan disusun sebelum pekerjaan; izin kerja diurus bersama pengelola lokasi.",
+          "bullets": []
+        },
+        {
+          "title": "3. Pelaksanaan",
+          "text": "Tim teknisi bersertifikat Kemnaker bekerja dengan pengawas di lokasi; area di bawah titik kerja diamankan.",
+          "bullets": []
+        },
+        {
+          "title": "4. Laporan & serah terima",
+          "text": "Dokumentasi foto sebelum–sesudah dan laporan pekerjaan diserahkan bersama rekomendasi perawatan berikutnya.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang sering diajukan",
+      "items": [
+        {
+          "q": "Berapa cepat teknisi bisa dimobilisasi?",
+          "a": "Tergantung jumlah, tingkat sertifikasi, dan lokasi. Untuk wilayah Jabodetabek, mobilisasi umumnya bisa diatur dalam hitungan hari setelah kesepakatan."
+        },
+        {
+          "q": "Apakah teknisi membawa peralatan sendiri?",
+          "a": "Teknisi datang dengan APD dan peralatan pribadi yang sudah diperiksa. Peralatan khusus proyek disepakati di penawaran."
+        },
+        {
+          "q": "Bisakah teknisi dikirim ke luar Jawa?",
+          "a": "Bisa, dengan pengaturan transportasi dan akomodasi yang disepakati bersama."
         }
       ]
     },
     {
       "type": "cta",
       "title": "Ceritakan pekerjaan Anda",
-      "text": "Kirim lokasi, jenis aset, dan target waktu. Kami siapkan penilaian risiko awal dan penawaran tertulis, umumnya pada hari kerja yang sama.",
+      "text": "Kirim lokasi, jenis bangunan atau aset, dan target waktu. Kami balas dengan penawaran tertulis, umumnya pada hari kerja yang sama.",
       "button": {
         "label": "Diskusikan via WhatsApp",
         "href": "#whatsapp"

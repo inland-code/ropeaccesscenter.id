@@ -308,14 +308,17 @@ export type Section = z.infer<typeof sectionSchema>;
 /** Data program pelatihan (wajib untuk template "course"). Dipakai kartu, halaman detail, dan JSON-LD Course. */
 export const courseSchema = z
   .object({
-    code: s('Kode program', 'mis. IRATA-L1'),
-    scheme: z.enum(['IRATA', 'BNSP', 'SPRAT', 'IN-HOUSE']).meta({ title: 'Skema sertifikasi' }),
-    level: s('Level', 'mis. Level 1'),
+    code: s('Kode program', 'mis. TKPK-1'),
+    scheme: z
+      .enum(['KEMNAKER'])
+      .default('KEMNAKER')
+      .meta({ title: 'Skema sertifikasi', description: 'Kemnaker RI (Permenaker No. 9 Tahun 2016)' }),
+    level: s('Tingkat', 'mis. Tingkat 1'),
     order: z.number().int().meta({ title: 'Urutan tampil' }),
     featured: z.boolean().default(false).meta({ title: 'Unggulkan di beranda' }),
     summary: text('Ringkasan (kartu & JSON-LD)'),
-    duration: s('Durasi', 'mis. 5 hari pelatihan + 1 hari asesmen'),
-    durationDays: z.number().int().min(1).max(60).meta({ title: 'Total hari (angka, untuk data terstruktur)' }),
+    duration: s('Durasi (opsional)', 'mis. 5 hari pelatihan + 1 hari uji. Kosong = "dikonfirmasi saat pendaftaran"').optional(),
+    durationDays: z.number().int().min(1).max(60).meta({ title: 'Total hari (opsional, angka untuk data terstruktur)' }).optional(),
     price: s('Harga', 'mis. "Hubungi kami untuk penawaran"'),
     prerequisites: z.array(s('Prasyarat')).min(1).meta({ title: 'Prasyarat peserta' }),
     outcomes: z.array(s('Kompetensi')).min(1).meta({ title: 'Kompetensi yang dicapai' }),
@@ -419,8 +422,8 @@ export const postSchema = z.object({
 
 export const scheduleItemSchema = z
   .object({
-    id: s('ID unik', 'mis. 2026-12-irata-l1').regex(/^[a-z0-9-]+$/),
-    course: s('Program (kunci terjemahan halaman pelatihan)', 'mis. course-irata-l1'),
+    id: s('ID unik', 'mis. 2027-01-tkpk-1').regex(/^[a-z0-9-]+$/),
+    course: s('Program (kunci terjemahan halaman pelatihan)', 'mis. course-tkpk-1'),
     startDate: date('Tanggal mulai'),
     endDate: date('Tanggal selesai'),
     location: i18n('Lokasi'),
@@ -511,7 +514,11 @@ export const siteSchema = z.object({
   url: s('URL situs'),
   tagline: z.object({ id: s('Tagline (ID)'), en: s('Tagline (EN)') }).meta({ title: 'Tagline' }),
   description: z.object({ id: text('Deskripsi (ID)'), en: text('Deskripsi (EN)') }).meta({ title: 'Deskripsi singkat perusahaan' }),
-  foundingDate: s('Tahun berdiri'),
+  foundingDate: s('Tahun berdiri (opsional)').optional(),
+  parentOrganization: z
+    .object({ name: s('Nama induk usaha'), url: s('Situs induk usaha') })
+    .meta({ title: 'Induk usaha / grup (opsional)' })
+    .optional(),
   email: s('Email'),
   phoneDisplay: s('Telepon (tampilan)'),
   phoneE164: s('Telepon (format +62…)'),
@@ -528,7 +535,8 @@ export const siteSchema = z.object({
     .meta({ title: 'Alamat' }),
   geo: z
     .object({ latitude: z.number().meta({ title: 'Lintang' }), longitude: z.number().meta({ title: 'Bujur' }) })
-    .meta({ title: 'Koordinat peta' }),
+    .meta({ title: 'Koordinat peta (opsional)' })
+    .optional(),
   areaServed: z.array(s('Wilayah')).meta({ title: 'Area layanan' }),
   openingHours: z.array(hours).meta({ title: 'Jam operasional' }),
   social: z

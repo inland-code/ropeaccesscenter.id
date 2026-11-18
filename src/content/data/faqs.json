@@ -1,6 +1,6 @@
 [
   {
-    "id": "what-is-rope-access",
+    "id": "apa-itu-rope-access",
     "group": "general",
     "order": 1,
     "question": {
@@ -8,151 +8,151 @@
       "en": "What is rope access, and when is it the right method?"
     },
     "answer": {
-      "id": "Rope access adalah metode kerja di ketinggian menggunakan dua sistem tali independen — satu tali kerja dan satu tali cadangan — sehingga kegagalan pada satu sistem tidak menyebabkan jatuh. Metode ini dipilih ketika area kerja sulit dijangkau perancah atau gondola, ketika waktu pemasangan akses harus singkat, atau ketika pekerjaan berlangsung di area produksi yang tidak boleh terhenti. Statistik keselamatan IRATA International secara konsisten menunjukkan tingkat kecelakaan akses tali yang jauh lebih rendah dibandingkan dengan metode akses ketinggian lain.",
-      "en": "Rope access is a method of working at height using two independent rope systems — a working line and a backup line — so that failure of one system does not result in a fall. It is chosen when the work area is difficult to reach with scaffolding or a gondola, when access must be established quickly, or when work takes place in a production area that cannot be shut down. IRATA International’s safety statistics consistently show a far lower incident rate for rope access than for other work-at-height methods."
+      "id": "Rope access adalah metode kerja di ketinggian menggunakan dua sistem tali independen — tali kerja dan tali pengaman — sehingga kegagalan satu sistem tidak menyebabkan jatuh. Metode ini dipilih ketika area kerja sulit dijangkau perancah atau gondola, ketika akses harus dipasang cepat, atau ketika pekerjaan berlangsung di area yang tidak boleh lama terganggu.",
+      "en": "Rope access is a method of working at height using two independent rope systems — a working line and a safety line — so the failure of one does not result in a fall. It is chosen when the work area is hard to reach with scaffolding or a gondola, when access must be set up quickly, or when work takes place in an area that cannot be disrupted for long."
     }
   },
   {
-    "id": "irata-vs-bnsp",
-    "group": "certification",
+    "id": "siapa-rac",
+    "group": "general",
     "order": 2,
     "question": {
-      "id": "Apa perbedaan sertifikasi IRATA dan BNSP?",
-      "en": "What is the difference between IRATA and BNSP certification?"
+      "id": "Apa hubungan RAC dengan Inland?",
+      "en": "How is RAC related to Inland?"
     },
     "answer": {
-      "id": "IRATA International adalah skema sertifikasi industri berskala global dengan tiga tingkat (Level 1, 2, dan 3), diakui operator multinasional di lebih dari 60 negara, dan berlaku tiga tahun. BNSP adalah sertifikasi kompetensi nasional Indonesia — untuk pekerjaan ketinggian dikenal sebagai TKPK — yang diterbitkan lembaga sertifikasi profesi berlisensi dan sering menjadi syarat administratif proyek pemerintah maupun kontraktor lokal. Keduanya tidak saling menggantikan: banyak teknisi memegang keduanya agar dapat bekerja lintas jenis proyek.",
-      "en": "IRATA International is a global industry certification scheme with three grades (Levels 1, 2, and 3), recognised by multinational operators in more than 60 countries, and valid for three years. BNSP is Indonesia’s national competency certification — known as TKPK for work at height — issued by licensed professional certification bodies, and frequently an administrative requirement on government projects and for local contractors. They do not substitute for each other: many technicians hold both so they can work across project types."
+      "id": "Rope Access Center (RAC) adalah brand pelatihan dan jasa akses tali dari grup Inland, perusahaan jasa arsitek, kontraktor, dan perawatan gedung di Tangerang Selatan. Kontak dan kantor RAC sama dengan Inland.",
+      "en": "Rope Access Center (RAC) is the rope access training and services brand of the Inland group, an architecture, construction, and building maintenance company in South Tangerang. RAC shares Inland’s contact details and office."
     }
   },
   {
-    "id": "no-experience",
-    "group": "training",
+    "id": "area-layanan",
+    "group": "general",
     "order": 3,
     "question": {
-      "id": "Saya belum punya pengalaman sama sekali. Bisakah saya ikut pelatihan?",
-      "en": "I have no experience at all. Can I still take the training?"
+      "id": "Di mana RAC melayani?",
+      "en": "Where does RAC operate?"
     },
     "answer": {
-      "id": "Bisa. IRATA Level 1 dan BNSP TKPK Tingkat 1 dirancang untuk peserta tanpa pengalaman akses tali sebelumnya. Syaratnya adalah usia minimal 18 tahun, kondisi jasmani yang sehat untuk bekerja di ketinggian, dan tidak memiliki kondisi medis seperti vertigo atau epilepsi yang tidak terkontrol. Kami menyediakan seluruh alat pelindung diri; peserta hanya perlu membawa sepatu keselamatan dan pakaian kerja.",
-      "en": "Yes. IRATA Level 1 and BNSP TKPK Level 1 are designed for participants with no prior rope access experience. The requirements are a minimum age of 18, medical fitness for work at height, and no uncontrolled conditions such as vertigo or epilepsy. We supply all personal protective equipment; you need only bring safety boots and work clothing."
+      "id": "Kantor kami di Tangerang Selatan dan kami melayani Jabodetabek. Untuk pelatihan in-house dan proyek di luar Jabodetabek, jadwal dan biaya mobilisasi kami sepakati bersama.",
+      "en": "Our office is in South Tangerang and we serve Greater Jakarta. For in-house training and projects elsewhere in Indonesia, scheduling and mobilisation costs are agreed in advance."
     }
   },
   {
-    "id": "duration",
-    "group": "training",
+    "id": "tkpk-vs-tkbt",
+    "group": "certification",
     "order": 4,
     "question": {
-      "id": "Berapa lama pelatihan berlangsung dan bagaimana jadwalnya?",
-      "en": "How long does training take, and how is it scheduled?"
+      "id": "Apa perbedaan TKPK dan TKBT?",
+      "en": "What is the difference between TKPK and TKBT?"
     },
     "answer": {
-      "id": "Pelatihan IRATA setiap level berlangsung enam hari: lima hari pelatihan dan satu hari asesmen oleh asesor IRATA independen. Sertifikasi BNSP TKPK berlangsung empat hari termasuk uji kompetensi. Kelas reguler dibuka setiap bulan; jadwal terbaru dapat dilihat pada halaman Jadwal Pelatihan. Untuk perusahaan dengan minimal enam peserta, kami dapat membuka angkatan khusus pada tanggal yang Anda tentukan.",
-      "en": "Each IRATA level runs for six days: five training days plus one assessment day with an independent IRATA Assessor. BNSP TKPK certification runs for four days including the competency assessment. Open courses run monthly; current dates are listed on the Training Schedule page. For companies with at least six participants, we can open a dedicated cohort on dates you choose."
+      "id": "Keduanya sertifikasi K3 kerja di ketinggian dari Kemnaker RI. TKPK (Tenaga Kerja pada Ketinggian) untuk pekerjaan dengan metode akses tali dan memiliki tiga tingkat. TKBT (Tenaga Kerja Bangunan Tinggi) untuk pekerjaan memanjat struktur seperti menara, rangka baja, dan perancah dengan sistem penahan jatuh, dan memiliki dua tingkat.",
+      "en": "Both are Kemnaker RI work-at-height certifications. TKPK (Tenaga Kerja pada Ketinggian) covers rope access work and has three levels. TKBT (Tenaga Kerja Bangunan Tinggi) covers climbing structures such as towers, steel frames, and scaffolds with fall arrest, and has two levels."
     }
   },
   {
-    "id": "certificate-validity",
+    "id": "sertifikat-apa",
     "group": "certification",
     "order": 5,
     "question": {
-      "id": "Berapa lama sertifikat berlaku dan bagaimana memperpanjangnya?",
-      "en": "How long is a certificate valid, and how do I renew it?"
+      "id": "Sertifikat apa yang diterima setelah lulus?",
+      "en": "What certificate do I receive when I pass?"
     },
     "answer": {
-      "id": "Sertifikat IRATA dan BNSP sama-sama berlaku tiga tahun. Untuk IRATA, Anda harus mengikuti asesmen ulang sebelum masa berlaku berakhir. Apabila sertifikat telah kedaluwarsa lebih dari enam bulan, Anda wajib mengulang dari level di bawahnya. Kami menyarankan mengikuti program penyegaran dua hingga empat hari sebelum asesmen ulang, terutama jika Anda tidak rutin bekerja di tali. RAC mengirimkan pengingat gratis kepada seluruh alumni 90 hari sebelum sertifikat berakhir.",
-      "en": "IRATA and BNSP certificates are both valid for three years. For IRATA you must be reassessed before the expiry date. If a certificate has been expired for more than six months, you must requalify from the level below. We recommend a two- to four-day refresher before reassessment, particularly if you have not been working on rope regularly. RAC sends every alumnus a free reminder 90 days before expiry."
+      "id": "Peserta yang lulus uji kompetensi menerima sertifikat kompetensi dan lisensi K3 sesuai tingkatnya dari Kementerian Ketenagakerjaan RI, ditambah sertifikat penyelesaian pelatihan dari RAC.",
+      "en": "Candidates who pass the competency test receive a competency certificate and K3 licence for their grade from Indonesia’s Ministry of Manpower, plus an RAC training completion certificate."
     }
   },
   {
-    "id": "cost",
-    "group": "training",
+    "id": "masa-berlaku",
+    "group": "certification",
     "order": 6,
     "question": {
-      "id": "Berapa biaya pelatihan dan apa saja yang termasuk?",
-      "en": "What does training cost, and what is included?"
+      "id": "Berapa lama sertifikat berlaku?",
+      "en": "How long is the certificate valid?"
     },
     "answer": {
-      "id": "Biaya bervariasi menurut level, jumlah peserta, dan lokasi pelaksanaan. Paket pelatihan reguler kami mencakup instruktur, seluruh APD dan peralatan, penggunaan fasilitas latih, bahan ajar, biaya asesmen, dan penerbitan sertifikat. Biaya akomodasi dan transportasi tidak termasuk kecuali dinyatakan lain. Kirimkan kebutuhan Anda melalui WhatsApp dan kami balas dengan penawaran terperinci pada hari kerja yang sama.",
-      "en": "Cost varies with level, group size, and delivery location. Our open-course package covers instructors, all PPE and equipment, use of the training facility, course materials, assessment fees, and certificate issuance. Accommodation and travel are not included unless stated otherwise. Send us your requirements on WhatsApp and we will return a detailed quotation the same working day."
+      "id": "Masa berlaku dan perpanjangan sertifikat serta lisensi K3 mengikuti ketentuan Kemnaker yang berlaku. Kami membantu peserta menyiapkan berkas perpanjangan sebelum masa berlakunya habis.",
+      "en": "Validity and renewal of the certificate and K3 licence follow current Kemnaker rules. We help trainees prepare renewal paperwork before expiry."
     }
   },
   {
-    "id": "onsite-training",
+    "id": "tanpa-pengalaman",
     "group": "training",
     "order": 7,
     "question": {
-      "id": "Bisakah pelatihan dilaksanakan di lokasi perusahaan kami?",
-      "en": "Can training be delivered at our own site?"
+      "id": "Apakah saya bisa ikut tanpa pengalaman?",
+      "en": "Can I join with no experience?"
     },
     "answer": {
-      "id": "Bisa. Program in-house kami mencakup kunjungan awal untuk memetakan bahaya di lokasi Anda, penyusunan silabus yang mengacu pada aset dan prosedur Anda, serta pelaksanaan pelatihan di fasilitas Anda sendiri. Kami membawa seluruh APD dan, apabila diperlukan, struktur latih portabel. Setiap program in-house menghasilkan rencana penyelamatan spesifik lokasi yang telah diuji — dokumen yang bernilai tinggi saat audit klien.",
-      "en": "Yes. Our in-house programme includes an initial visit to map the hazards on your site, a syllabus written around your assets and procedures, and delivery at your own facility. We bring all PPE and, where needed, a portable training structure. Every in-house programme produces a tested site-specific rescue plan — a document that carries real weight in client audits."
+      "id": "Bisa. TKPK Tingkat 1 dan TKBT Tingkat 1 tidak mensyaratkan pengalaman sebelumnya — cukup berusia minimal 18 tahun dan sehat untuk bekerja di ketinggian. Tingkat 2 dan 3 mensyaratkan sertifikat tingkat sebelumnya dan pengalaman kerja yang terdokumentasi.",
+      "en": "Yes. TKPK Level 1 and TKBT Level 1 require no previous experience — you only need to be at least 18 and medically fit for work at height. Levels 2 and 3 require the previous grade and documented working experience."
     }
   },
   {
-    "id": "service-area",
-    "group": "services",
+    "id": "yang-dibawa",
+    "group": "training",
     "order": 8,
     "question": {
-      "id": "Wilayah mana saja yang dilayani RAC?",
-      "en": "Which areas does RAC serve?"
+      "id": "Apa yang perlu saya bawa?",
+      "en": "What do I need to bring?"
     },
     "answer": {
-      "id": "Kami melayani seluruh wilayah Indonesia, dengan konsentrasi pekerjaan di Jawa, Sumatera, Kalimantan, dan Sulawesi — termasuk lokasi lepas pantai dan pulau terpencil. Tim kami terbiasa dengan persyaratan mobilisasi lepas pantai seperti BOSIET, sertifikat medis MIGAS, dan induksi keselamatan operator.",
-      "en": "We work throughout Indonesia, with the greatest concentration of work in Java, Sumatra, Kalimantan, and Sulawesi — including offshore and remote island locations. Our teams are familiar with offshore mobilisation requirements such as BOSIET, MIGAS medical certificates, and operator safety inductions."
+      "id": "Peralatan latihan disediakan. Peserta membawa sepatu keselamatan, pakaian kerja, kartu identitas, pas foto, dan surat keterangan sehat. Daftar berkas lengkap kami kirim saat pendaftaran.",
+      "en": "Training equipment is provided. Bring safety boots, work clothing, ID, passport photos, and a medical statement. We send the full document list on enrolment."
     }
   },
   {
-    "id": "response-time",
-    "group": "services",
+    "id": "in-house",
+    "group": "training",
     "order": 9,
     "question": {
-      "id": "Seberapa cepat tim dapat dimobilisasi untuk pekerjaan mendesak?",
-      "en": "How quickly can a team mobilise for urgent work?"
+      "id": "Bisakah pelatihan diadakan di lokasi perusahaan kami?",
+      "en": "Can training run at our company site?"
     },
     "answer": {
-      "id": "Untuk lokasi di Jabodetabek, tim survei dapat berada di lokasi dalam 24 jam dan tim kerja dalam 48 hingga 72 jam, bergantung pada persyaratan izin kerja klien. Untuk lokasi luar Jawa dan lepas pantai, waktu mobilisasi umumnya 5 hingga 7 hari kerja karena proses induksi dan pengurusan dokumen. Untuk kebutuhan darurat, hubungi kami melalui WhatsApp — nomor kami dipantau di luar jam kerja.",
-      "en": "For sites in Greater Jakarta, a survey team can be on site within 24 hours and a working team within 48 to 72 hours, subject to the client’s permit-to-work requirements. For locations outside Java and offshore, mobilisation is typically 5 to 7 working days because of induction and documentation. For emergencies, reach us on WhatsApp — that number is monitored outside office hours."
+      "id": "Bisa. Untuk kelompok peserta dari satu perusahaan, pelatihan dapat diadakan di lokasi Anda selama tersedia struktur dan titik tambat yang memenuhi syarat untuk latihan, atau di tempat pelatihan kami pada tanggal yang Anda tentukan.",
+      "en": "Yes. For a group from one company, training can run at your site as long as suitable structures and anchors are available for practice, or at our training site on dates you choose."
     }
   },
   {
-    "id": "insurance",
-    "group": "services",
+    "id": "biaya",
+    "group": "training",
     "order": 10,
     "question": {
-      "id": "Apakah pekerjaan RAC diasuransikan?",
-      "en": "Is RAC’s work insured?"
+      "id": "Berapa biaya pelatihan?",
+      "en": "How much does training cost?"
     },
     "answer": {
-      "id": "Ya. Seluruh personel tercakup asuransi kecelakaan kerja dan BPJS Ketenagakerjaan, dan kami memegang polis tanggung gugat publik (public liability) untuk pekerjaan yang kami laksanakan. Salinan sertifikat asuransi diserahkan bersama paket dokumen K3 sebelum mobilisasi, dan nilai pertanggungan dapat disesuaikan apabila kontrak Anda mensyaratkan batas tertentu.",
-      "en": "Yes. All personnel are covered by workplace accident insurance and BPJS Ketenagakerjaan, and we carry public liability cover for the work we perform. Copies of the insurance certificates are provided with the HSE document pack before mobilisation, and cover limits can be adjusted where your contract requires a specific threshold."
+      "id": "Biaya tergantung program, jumlah peserta, dan lokasi pelatihan. Kirim kebutuhan Anda melalui WhatsApp dan kami balas dengan penawaran tertulis pada hari kerja yang sama.",
+      "en": "The cost depends on the programme, number of participants, and location. Send us your needs on WhatsApp and we reply with a written quotation the same working day."
     }
   },
   {
-    "id": "safety-record",
-    "group": "general",
+    "id": "rope-access-vs-gondola",
+    "group": "services",
     "order": 11,
     "question": {
-      "id": "Bagaimana RAC menjaga catatan keselamatannya?",
-      "en": "How does RAC maintain its safety record?"
+      "id": "Lebih baik rope access atau gondola untuk fasad gedung?",
+      "en": "Rope access or a gondola for building façades?"
     },
     "answer": {
-      "id": "Setiap pekerjaan dimulai dengan penilaian risiko dan rencana penyelamatan tertulis yang ditandatangani supervisor Level 3. Seluruh APD diperiksa sebelum digunakan setiap hari dan diinspeksi terperinci setiap enam bulan dengan riwayat tercatat. Kami menerapkan kewenangan menghentikan pekerjaan bagi setiap personel, tanpa memandang jabatan, dan setiap nyaris celaka (near miss) dicatat serta ditinjau — karena pola yang tidak dicatat tidak dapat diperbaiki.",
-      "en": "Every job starts with a written risk assessment and rescue plan signed off by a Level 3 supervisor. All PPE is inspected before use each day and given a detailed six-monthly inspection with a recorded history. Every member of our personnel holds stop-work authority regardless of rank, and every near miss is logged and reviewed — because a pattern you do not record is a pattern you cannot fix."
+      "id": "Gondola cocok untuk gedung yang sudah memiliki instalasi permanen dan pekerjaan rutin di bidang datar. Rope access lebih fleksibel: tidak butuh rel di atap, menjangkau lekukan dan kanopi, serta cepat dipasang. Untuk banyak gedung, rope access juga lebih hemat untuk perawatan berkala.",
+      "en": "A gondola suits buildings with a permanent installation and routine work on flat elevations. Rope access is more flexible: no roof rails needed, it reaches recesses and canopies, and it sets up quickly. For many buildings it is also more economical for planned maintenance."
     }
   },
   {
-    "id": "payment",
-    "group": "general",
+    "id": "dokumen-k3",
+    "group": "services",
     "order": 12,
     "question": {
-      "id": "Bagaimana proses pemesanan dan pembayaran?",
-      "en": "How do booking and payment work?"
+      "id": "Dokumen K3 apa yang disiapkan untuk proyek?",
+      "en": "What safety documents do you prepare for a project?"
     },
     "answer": {
-      "id": "Hubungi kami melalui WhatsApp, formulir kontak, atau telepon dengan menyebutkan kebutuhan Anda. Kami mengirim penawaran terperinci, umumnya pada hari kerja yang sama. Setelah penawaran disetujui, kursi pelatihan dipesan dengan uang muka, dan pelunasan dilakukan sebelum hari pertama. Untuk klien korporat, kami melayani pembayaran termin sesuai kontrak dan menerbitkan faktur pajak sesuai ketentuan yang berlaku.",
-      "en": "Contact us on WhatsApp, through the contact form, or by phone with your requirements. We send a detailed quotation, usually the same working day. Once the quotation is accepted, training seats are secured with a deposit and the balance is settled before day one. For corporate clients we accept staged payment under contract and issue tax invoices in line with prevailing regulations."
+      "id": "Setiap pekerjaan dilengkapi penilaian risiko, metode kerja, rencana penyelamatan, dan salinan sertifikat serta lisensi K3 teknisi. Dokumen ini dapat diserahkan sebelum pekerjaan dimulai untuk keperluan izin kerja dan induksi lokasi.",
+      "en": "Every job comes with a risk assessment, method statement, rescue plan, and copies of technicians’ certificates and K3 licences. These can be handed over before work starts for permits and site induction."
     }
   }
 ]

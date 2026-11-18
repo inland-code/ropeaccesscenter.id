@@ -4,13 +4,13 @@
   "template": "service",
   "contentStatus": "review",
   "seo": {
-    "title": "Inspection & Non-Destructive Testing (NDT) | RAC",
-    "description": "Dual-certified technicians — rope access and NDT — reach inspection points without scaffolding, without cranes, and without stopping production."
+    "title": "Visual Inspection & NDT by Rope Access | RAC",
+    "description": "Close visual inspection and NDT (ultrasonic thickness, weld testing) on structures, tanks, towers, and chimneys by rope access — no scaffolding, audit-ready data."
   },
   "hero": {
     "eyebrow": "Industrial Services",
-    "title": "Inspection & Non-Destructive Testing (NDT)",
-    "body": "Dual-certified technicians — rope access and NDT — reach inspection points without scaffolding, without cranes, and without stopping production.",
+    "title": "Visual Inspection & NDT by Rope Access",
+    "body": "Close visual inspection and non-destructive testing (NDT) of structures, tanks, towers, and chimneys — reaching inspection points without scaffolding, with audit-ready records.",
     "ctas": [
       {
         "label": "Request a quotation",
@@ -26,12 +26,12 @@
   },
   "card": {
     "icon": "search",
-    "summary": "Dual-certified technicians — rope access and NDT — reach inspection points without scaffolding, without cranes, and without stopping production."
+    "summary": "Close visual inspection and non-destructive testing (NDT) of structures, tanks, towers, and chimneys — reaching inspection points without scaffolding, with audit-ready records."
   },
   "sections": [
     {
       "type": "prose",
-      "body": "## Why rope access for inspection\n\nScaffolding a single flare stack can take two weeks and shut down part of your operation. Our rope access team arrives in the morning, rigs in a matter of hours, and hands over data the same day.\n\nSpeed is not the only difference. Every hour scaffolding stands is another hour of exposure for everyone else working around it.\n\n## Dual competence, not two teams\n\nWe do not send rope technicians to carry an inspector. Our personnel hold IRATA certification alongside NDT Level II qualifications — the person hanging on the rope is the person reading the instrument."
+      "body": "## Why rope access for inspection\n\nInspection often needs only a short time at each point, but the points are spread out at height. Scaffolding for that costs time and money out of proportion to the job. A rope access team reaches point after point in a working day and hands over data the same or next day.\n\n## Who does the testing\n\nVisual inspection is carried out by rope access technicians trained to read structural condition. For NDT methods such as ultrasonic thickness (UT), magnetic particle (MPI), or penetrant testing (PT), testing is done by personnel qualified in that method, with the rope access technicians providing access and safety.\n\n## Data you can use\n\nEvery finding is logged with location, photos, and measurements, so the report supports maintenance decisions, audits, and comparison with the next inspection."
     },
     {
       "type": "lists",
@@ -42,34 +42,87 @@
           "icon": "clipboard",
           "title": "Scope of work",
           "items": [
-            "Ultrasonic thickness measurement (UT) on pressure vessels, tanks, and pipework",
-            "Close visual inspection (CVI) of steel structures and welded joints",
-            "Magnetic particle inspection (MPI) and dye penetrant testing (PT)",
-            "Corrosion mapping and remaining-life assessment",
-            "High-resolution photo and video documentation at every inspection point"
+            "Close visual inspection of steel and concrete structures",
+            "Ultrasonic thickness (UT) on tanks, pipes, and chimneys",
+            "Weld inspection by MPI or PT by qualified personnel",
+            "Corrosion and crack mapping",
+            "Façade and building element inspection",
+            "Photo and video records per point"
           ]
         },
         {
           "icon": "building",
-          "title": "Industries we serve",
-          "items": ["Oil & Gas", "Petrochemical", "Power Generation", "Ports & Maritime", "Mining"]
+          "title": "Assets & sectors",
+          "items": [
+            "Storage tanks and vessels",
+            "Chimneys and flare stacks",
+            "Towers and steel structures",
+            "Bridges and jetties",
+            "Building façades and structures"
+          ]
         },
         {
           "icon": "check-circle",
           "title": "What you receive",
           "items": [
-            "An inspection report signed by a certified inspector",
-            "Raw measurement data in an auditable format",
-            "Prioritised remedial action recommendations",
-            "An indexed photo and video record per location"
+            "An inspection report with photos per finding",
+            "Measurement data in an auditable format",
+            "Prioritised recommendations",
+            "An indexed photo and video archive"
           ]
+        }
+      ]
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "How we work",
+      "title": "Four steps from survey to report",
+      "items": [
+        {
+          "title": "1. Survey & quotation",
+          "text": "We review the site or your photos and drawings, then send the scope, method, schedule, and a written quotation.",
+          "bullets": []
+        },
+        {
+          "title": "2. Work plan & permits",
+          "text": "A risk assessment, method statement, and rescue plan are prepared before work starts; permits are arranged with the site manager.",
+          "bullets": []
+        },
+        {
+          "title": "3. Delivery",
+          "text": "A team of Kemnaker-certified technicians works with a supervisor on site; the area below the work zone is secured.",
+          "bullets": []
+        },
+        {
+          "title": "4. Report & handover",
+          "text": "Before-and-after photos and a work report are handed over with recommendations for the next maintenance cycle.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Can the inspection results be used for audits?",
+          "a": "Yes. The report lists location, method, photos, and measurements for every point, so it is traceable and comparable with the next inspection."
+        },
+        {
+          "q": "How long does an inspection take?",
+          "a": "It depends on the number of points and the height. Rigging a rope access system usually takes only a few hours, so most of the time goes into the inspection itself."
+        },
+        {
+          "q": "Is a shutdown needed?",
+          "a": "Visual inspection and most NDT can be done while the asset is operating, provided the permit to work and safety conditions are met."
         }
       ]
     },
     {
       "type": "cta",
       "title": "Tell us about the job",
-      "text": "Send the location, the type of asset, and your target dates. We prepare an initial risk assessment and a written quotation, usually the same working day.",
+      "text": "Send the location, the type of building or asset, and your target dates. We reply with a written quotation, usually the same working day.",
       "button": {
         "label": "Discuss on WhatsApp",
         "href": "#whatsapp"

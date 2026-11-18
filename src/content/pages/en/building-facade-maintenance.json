@@ -4,13 +4,13 @@
   "template": "service",
   "contentStatus": "review",
   "seo": {
-    "title": "Building & Façade Services | Rope Access Center",
-    "description": "Glass cleaning, façade maintenance, sealant replacement, and building envelope inspection for high-rise property."
+    "title": "Rope Access Glass Cleaning & Façade Maintenance | RAC",
+    "description": "Glass cleaning, sealant replacement, and façade maintenance for high-rise buildings by rope access: no gondola, fast set-up, Kemnaker-certified technicians."
   },
   "hero": {
     "eyebrow": "Industrial Services",
-    "title": "Building & Façade Services",
-    "body": "Glass cleaning, façade maintenance, sealant replacement, and building envelope inspection for high-rise property.",
+    "title": "Building Glass Cleaning & Façade Maintenance",
+    "body": "Glass cleaning, sealant replacement, repairs, and repainting for multi-storey façades by rope access — reaching areas a gondola cannot, with no permanent installation.",
     "ctas": [
       {
         "label": "Request a quotation",
@@ -26,12 +26,12 @@
   },
   "card": {
     "icon": "building",
-    "summary": "Glass cleaning, façade maintenance, sealant replacement, and building envelope inspection for high-rise property."
+    "summary": "Glass cleaning, sealant replacement, repairs, and repainting for multi-storey façades by rope access — reaching areas a gondola cannot, with no permanent installation."
   },
   "sections": [
     {
       "type": "prose",
-      "body": "## For building managers\n\nA gondola needs servicing, certification, and trained operators. When the gondola is out of service — or the building geometry puts areas beyond its reach — rope access is the far more agile and economical answer.\n\n## Compliance, complete\n\nWe hand over a full HSE document pack before mobilisation: work plan, risk assessment, rescue plan, personnel competency certificates, and proof of insurance. Your building management simply files it."
+      "body": "## Why rope access for façades\n\nA gondola needs rails and a permanent rooftop installation, and often cannot reach façade recesses, canopies, or narrow elevations. Rope access only needs suitable anchor points: systems are rigged within hours, move quickly between elevations, and disturb occupants no longer than necessary.\n\n## Protecting occupants and pedestrians\n\nThe area below the work zone is cordoned off and signed, tools are tethered against drops, and every team works with a supervisor and a rescue plan. For fully occupied buildings, work can be scheduled outside peak hours.\n\n## Planned maintenance\n\nGlass cleaned regularly and sealant replaced on time prevent permanent staining, water ingress, and frame damage. We can set up a planned maintenance schedule — monthly, quarterly, or yearly — to suit the building."
     },
     {
       "type": "lists",
@@ -42,34 +42,91 @@
           "icon": "clipboard",
           "title": "Scope of work",
           "items": [
-            "Scheduled glass and façade panel cleaning",
-            "Sealant replacement and curtain wall joint repair",
-            "Building envelope inspection and leak detection",
-            "Installation and maintenance of high-level signage",
-            "Cleaning and recoating of exposed concrete surfaces"
+            "Cleaning glass and ACP/composite panels",
+            "Replacing and re-sealing glazing and façade joints",
+            "Façade repair and repainting",
+            "Treating leaks and waterproofing external walls",
+            "Cleaning gutters, canopies, and skylights",
+            "Visual façade inspection with photo records"
           ]
         },
         {
           "icon": "building",
-          "title": "Industries we serve",
-          "items": ["Commercial Property", "Hotels & Hospitality", "Hospitals", "Apartments & Condominiums"]
+          "title": "Assets & sectors",
+          "items": [
+            "Office buildings",
+            "Apartments and hotels",
+            "Malls and commercial buildings",
+            "Hospitals and campuses",
+            "Multi-storey factories and warehouses"
+          ]
         },
         {
           "icon": "check-circle",
           "title": "What you receive",
           "items": [
-            "An annual maintenance schedule you can budget against",
-            "A façade condition report with defects marked up by location",
-            "Insurance certificates and HSE documentation for building management",
-            "Schedule coordination that keeps disruption to tenants minimal"
+            "A written quotation and schedule",
+            "Risk assessment and method statement",
+            "Before-and-after photo records",
+            "A recommended planned maintenance schedule"
           ]
+        }
+      ]
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "How we work",
+      "title": "Four steps from survey to report",
+      "items": [
+        {
+          "title": "1. Survey & quotation",
+          "text": "We review the site or your photos and drawings, then send the scope, method, schedule, and a written quotation.",
+          "bullets": []
+        },
+        {
+          "title": "2. Work plan & permits",
+          "text": "A risk assessment, method statement, and rescue plan are prepared before work starts; permits are arranged with the site manager.",
+          "bullets": []
+        },
+        {
+          "title": "3. Delivery",
+          "text": "A team of Kemnaker-certified technicians works with a supervisor on site; the area below the work zone is secured.",
+          "bullets": []
+        },
+        {
+          "title": "4. Report & handover",
+          "text": "Before-and-after photos and a work report are handed over with recommendations for the next maintenance cycle.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "How often should building glass be cleaned?",
+          "a": "Typically every 3–6 months, depending on location, pollution, and glass type. Buildings near main roads or industrial areas usually need it more often. We can recommend a schedule after seeing the building."
+        },
+        {
+          "q": "Is rope access as safe as a gondola?",
+          "a": "Rope access uses two independent rope systems — a working line and a safety line — so the failure of one does not result in a fall. With certified technicians, a rescue plan, and equipment checked every day, it is a very safe method for façade work."
+        },
+        {
+          "q": "Does the area below have to be closed?",
+          "a": "The area directly below the work zone is cordoned off while work is under way. The cordon moves with the team, so the building stays accessible."
+        },
+        {
+          "q": "Can you work outside office hours?",
+          "a": "Yes. For busy buildings, work can be scheduled early in the morning, at weekends, or outside operating hours, as long as weather and light are safe."
         }
       ]
     },
     {
       "type": "cta",
       "title": "Tell us about the job",
-      "text": "Send the location, the type of asset, and your target dates. We prepare an initial risk assessment and a written quotation, usually the same working day.",
+      "text": "Send the location, the type of building or asset, and your target dates. We reply with a written quotation, usually the same working day.",
       "button": {
         "label": "Discuss on WhatsApp",
         "href": "#whatsapp"

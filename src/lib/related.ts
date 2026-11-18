@@ -57,7 +57,7 @@ export function parentKeyOf(route: PageRoute): string | undefined {
   return d.template === 'service' ? 'services' : d.template === 'course' ? 'training' : undefined;
 }
 
-/** Panjang awalan kunci yang sama, mis. "course-irata-l1" vs "course-irata-l2" → 14. */
+/** Panjang awalan kunci yang sama, mis. "course-tkpk-1" vs "course-tkpk-2" → 12. */
 const prefix = (a: string, b: string) => {
   let i = 0;
   while (i < a.length && a[i] === b[i]) i++;
@@ -66,7 +66,7 @@ const prefix = (a: string, b: string) => {
 
 /**
  * Blok "Layanan Terkait": induk, anak langsung (halaman hub menautkan semua anaknya), lalu halaman
- * saudara dengan induk sama — yang kuncinya paling mirip dulu (mis. IRATA Level 1 ke Level 2).
+ * saudara dengan induk sama — yang kuncinya paling mirip dulu (mis. TKPK Tingkat 1 ke Tingkat 2).
  */
 export function siblingPages(route: PageRoute, all: Route[], limit = 8): PageRoute[] {
   const pages = all.filter((r): r is PageRoute => r.kind === 'page' && r.locale === route.locale && r.path !== route.path);

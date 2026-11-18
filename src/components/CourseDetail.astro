@@ -11,8 +11,8 @@ interface Props {
 const { course: c, locale } = Astro.props;
 const L = (id: string, en: string) => (locale === 'id' ? id : en);
 const facts = [
-  { icon: 'certificate', label: L('Skema', 'Scheme'), value: `${c.scheme} · ${c.level}` },
-  { icon: 'clock', label: L('Durasi', 'Duration'), value: c.duration },
+  { icon: 'certificate', label: L('Sertifikasi', 'Certification'), value: `Kemnaker RI · ${c.level}` },
+  { icon: 'clock', label: L('Durasi', 'Duration'), value: c.duration ?? L('Dikonfirmasi saat pendaftaran', 'Confirmed on enrolment') },
   { icon: 'clipboard', label: L('Kode', 'Code'), value: c.code },
   { icon: 'briefcase', label: L('Biaya', 'Fee'), value: c.price },
 ];

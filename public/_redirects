@@ -4,3 +4,19 @@
 /sitemap.xml        /sitemap_index.xml 301
 /rss.xml            /feed.xml          301
 /en/rss.xml         /en/feed.xml       301
+
+# Program lama (IRATA/BNSP) & halaman audit diganti program Kemnaker (2026-11-19).
+/pelatihan-irata-level-1/          /pelatihan-tkpk-tingkat-1/        301
+/pelatihan-irata-level-2/          /pelatihan-tkpk-tingkat-2/        301
+/pelatihan-irata-level-3/          /pelatihan-tkpk-tingkat-3/        301
+/sertifikasi-bnsp-tkpk/            /sertifikasi/                     301
+/refresher-revalidasi-irata/       /pelatihan/                       301
+/pelatihan-in-house/               /pelatihan/                       301
+/konsultasi-audit-k3/              /jasa-standby-rescue/             301
+/en/irata-level-1-training/        /en/tkpk-level-1-training/        301
+/en/irata-level-2-training/        /en/tkpk-level-2-training/        301
+/en/irata-level-3-training/        /en/tkpk-level-3-training/        301
+/en/bnsp-tkpk-certification/       /en/certification/                301
+/en/irata-refresher-revalidation/  /en/training/                     301
+/en/in-house-training/             /en/training/                     301
+/en/hse-audit-consulting/          /en/standby-rescue-services/      301

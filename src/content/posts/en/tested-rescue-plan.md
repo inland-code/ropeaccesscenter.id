@@ -20,7 +20,7 @@ sources:
     publisher: "ISO"
     url: https://www.iso.org/standard/35155.html
 ---
-In every work-at-height [audit](/en/hse-audit-consulting/) we run, we ask one identical question: *When was this [rescue plan](/en/standby-rescue-services/) last executed?* At most facilities, the answer is never.
+In every work-at-height [audit](/en/standby-rescue-services/) we run, we ask one identical question: *When was this [rescue plan](/en/standby-rescue-services/) last executed?* At most facilities, the answer is never.
 
 ## Why time is decisive
 
@@ -34,7 +34,7 @@ That number sets a hard standard: if your team cannot get a casualty down within
 
 **Second, dependence on outside help.** Some plans name the fire brigade as the primary rescue step. Across Indonesian industrial estates, external unit response times are rarely under thirty minutes — far too slow for suspension trauma.
 
-**Third, a single competent person.** A plan that only [one particular supervisor](/en/irata-level-3-training/) can execute will fail on the day that supervisor is on leave, off sick, or is themselves the casualty.
+**Third, a single competent person.** A plan that only [one particular supervisor](/en/tkpk-level-3-training/) can execute will fail on the day that supervisor is on leave, off sick, or is themselves the casualty.
 
 ## How to test properly
 

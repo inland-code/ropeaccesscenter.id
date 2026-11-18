@@ -4,13 +4,13 @@
   "template": "service",
   "contentStatus": "review",
   "seo": {
-    "title": "Inspeksi & Pengujian Tak Merusak (NDT) | Rope Access Center",
-    "description": "Teknisi bersertifikat ganda — akses tali dan NDT — menjangkau titik inspeksi tanpa perancah, tanpa crane, dan tanpa menghentikan produksi."
+    "title": "Jasa Inspeksi Visual & NDT dengan Rope Access | RAC",
+    "description": "Inspeksi visual jarak dekat dan NDT (ketebalan ultrasonik, las) pada struktur, tangki, menara, dan cerobong dengan akses tali — tanpa perancah, data siap diaudit."
   },
   "hero": {
     "eyebrow": "Layanan Industri",
-    "title": "Inspeksi & Pengujian Tak Merusak (NDT)",
-    "body": "Teknisi bersertifikat ganda — akses tali dan NDT — menjangkau titik inspeksi tanpa perancah, tanpa crane, dan tanpa menghentikan produksi.",
+    "title": "Jasa Inspeksi Visual & NDT dengan Akses Tali",
+    "body": "Inspeksi visual jarak dekat dan pengujian tak merusak (NDT) pada struktur, tangki, menara, dan cerobong — menjangkau titik inspeksi tanpa perancah, dengan dokumentasi yang siap diaudit.",
     "ctas": [
       {
         "label": "Minta penawaran",
@@ -26,12 +26,12 @@
   },
   "card": {
     "icon": "search",
-    "summary": "Teknisi bersertifikat ganda — akses tali dan NDT — menjangkau titik inspeksi tanpa perancah, tanpa crane, dan tanpa menghentikan produksi."
+    "summary": "Inspeksi visual jarak dekat dan pengujian tak merusak (NDT) pada struktur, tangki, menara, dan cerobong — menjangkau titik inspeksi tanpa perancah, dengan dokumentasi yang siap diaudit."
   },
   "sections": [
     {
       "type": "prose",
-      "body": "## Mengapa akses tali untuk inspeksi\n\nMembangun perancah pada satu flare stack dapat memakan waktu dua minggu dan menghentikan sebagian operasi. Tim akses tali kami tiba pagi hari, memasang sistem dalam hitungan jam, dan menyerahkan data pada hari yang sama.\n\nPerbedaannya bukan hanya kecepatan. Setiap jam perancah berdiri adalah jam paparan risiko tambahan bagi pekerja lain di sekitarnya.\n\n## Kompetensi ganda, bukan dua tim\n\nKami tidak menurunkan teknisi tali untuk menggendong inspektur. Personel kami memegang sertifikat IRATA sekaligus kualifikasi NDT Level II — orang yang menggantung di tali adalah orang yang membaca alat."
+      "body": "## Mengapa akses tali untuk inspeksi\n\nInspeksi sering hanya membutuhkan waktu singkat di setiap titik, tetapi titiknya tersebar di ketinggian. Membangun perancah untuk itu memakan waktu dan biaya yang tidak sebanding. Tim akses tali menjangkau titik demi titik dalam satu hari kerja dan menyerahkan data pada hari yang sama atau berikutnya.\n\n## Siapa yang melakukan pengujian\n\nInspeksi visual dilakukan oleh teknisi akses tali yang terlatih membaca kondisi struktur. Untuk metode NDT seperti pengukuran ketebalan ultrasonik (UT), magnetic particle (MPI), atau penetrant (PT), pengujian dilakukan oleh personel yang memiliki kualifikasi untuk metode tersebut, dengan teknisi akses tali menyiapkan akses dan keselamatannya.\n\n## Data yang dapat dipakai\n\nSetiap temuan dicatat dengan lokasi, foto, dan hasil pengukuran, sehingga laporan dapat dipakai untuk keputusan perawatan, audit, maupun perbandingan inspeksi berikutnya."
     },
     {
       "type": "lists",
@@ -42,34 +42,87 @@
           "icon": "clipboard",
           "title": "Lingkup pekerjaan",
           "items": [
-            "Pengukuran ketebalan ultrasonik (UT) pada bejana tekan, tangki, dan perpipaan",
-            "Inspeksi visual jarak dekat (CVI) struktur baja dan sambungan las",
-            "Magnetic Particle Inspection (MPI) dan Dye Penetrant Testing (PT)",
-            "Pemetaan korosi dan penilaian sisa umur pakai aset",
-            "Dokumentasi foto dan video resolusi tinggi per titik inspeksi"
+            "Inspeksi visual jarak dekat struktur baja dan beton",
+            "Pengukuran ketebalan ultrasonik (UT) pada tangki, pipa, dan cerobong",
+            "Inspeksi las dengan MPI atau PT oleh personel berkualifikasi",
+            "Pemetaan korosi dan retak",
+            "Inspeksi fasad dan elemen gedung",
+            "Dokumentasi foto dan video per titik"
           ]
         },
         {
           "icon": "building",
-          "title": "Industri yang kami layani",
-          "items": ["Minyak & Gas", "Petrokimia", "Pembangkit Listrik", "Pelabuhan & Maritim", "Pertambangan"]
+          "title": "Aset & sektor",
+          "items": [
+            "Tangki penyimpanan dan bejana",
+            "Cerobong dan flare stack",
+            "Menara dan struktur baja",
+            "Jembatan dan dermaga",
+            "Fasad dan struktur gedung"
+          ]
         },
         {
           "icon": "check-circle",
           "title": "Yang Anda terima",
           "items": [
-            "Laporan inspeksi bertanda tangan inspektur bersertifikat",
-            "Data mentah pengukuran dalam format yang dapat diaudit",
-            "Rekomendasi tindakan perbaikan dengan skala prioritas",
-            "Berkas foto-video terindeks per lokasi"
+            "Laporan inspeksi dengan foto per temuan",
+            "Data pengukuran dalam format yang dapat diaudit",
+            "Rekomendasi tindakan dengan skala prioritas",
+            "Arsip foto dan video terindeks"
           ]
+        }
+      ]
+    },
+    {
+      "type": "value-cards",
+      "eyebrow": "Cara kerja",
+      "title": "Empat langkah dari survei sampai laporan",
+      "items": [
+        {
+          "title": "1. Survei & penawaran",
+          "text": "Kami meninjau lokasi atau foto/gambar kerja, lalu mengirim lingkup, metode, jadwal, dan penawaran tertulis.",
+          "bullets": []
+        },
+        {
+          "title": "2. Rencana kerja & izin",
+          "text": "Penilaian risiko, metode kerja, dan rencana penyelamatan disusun sebelum pekerjaan; izin kerja diurus bersama pengelola lokasi.",
+          "bullets": []
+        },
+        {
+          "title": "3. Pelaksanaan",
+          "text": "Tim teknisi bersertifikat Kemnaker bekerja dengan pengawas di lokasi; area di bawah titik kerja diamankan.",
+          "bullets": []
+        },
+        {
+          "title": "4. Laporan & serah terima",
+          "text": "Dokumentasi foto sebelum–sesudah dan laporan pekerjaan diserahkan bersama rekomendasi perawatan berikutnya.",
+          "bullets": []
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang sering diajukan",
+      "items": [
+        {
+          "q": "Apakah hasil inspeksi bisa dipakai untuk audit?",
+          "a": "Ya. Laporan mencantumkan lokasi, metode, foto, dan hasil pengukuran setiap titik, sehingga dapat ditelusuri dan dibandingkan dengan inspeksi berikutnya."
+        },
+        {
+          "q": "Berapa lama inspeksi berlangsung?",
+          "a": "Tergantung jumlah titik dan ketinggian. Sebagai gambaran, pemasangan sistem akses tali biasanya hanya beberapa jam, sehingga sebagian besar waktu dipakai untuk inspeksi itu sendiri."
+        },
+        {
+          "q": "Apakah perlu shutdown?",
+          "a": "Inspeksi visual dan sebagian besar NDT dapat dilakukan saat aset beroperasi, selama izin kerja dan kondisi keselamatan terpenuhi."
         }
       ]
     },
     {
       "type": "cta",
       "title": "Ceritakan pekerjaan Anda",
-      "text": "Kirim lokasi, jenis aset, dan target waktu. Kami siapkan penilaian risiko awal dan penawaran tertulis, umumnya pada hari kerja yang sama.",
+      "text": "Kirim lokasi, jenis bangunan atau aset, dan target waktu. Kami balas dengan penawaran tertulis, umumnya pada hari kerja yang sama.",
       "button": {
         "label": "Diskusikan via WhatsApp",
         "href": "#whatsapp"

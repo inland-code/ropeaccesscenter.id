@@ -20,13 +20,13 @@ sources:
     publisher: "ISO"
     url: https://www.iso.org/standard/35155.html
 ---
-Dalam setiap [audit](/konsultasi-audit-k3/) K3 ketinggian yang kami lakukan, kami mengajukan satu pertanyaan yang sama: *Kapan terakhir kali [rencana penyelamatan](/jasa-standby-rescue/) ini dijalankan?* Pada mayoritas fasilitas, jawabannya adalah tidak pernah.
+Dalam setiap [audit](/jasa-standby-rescue/) K3 ketinggian yang kami lakukan, kami mengajukan satu pertanyaan yang sama: *Kapan terakhir kali [rencana penyelamatan](/jasa-standby-rescue/) ini dijalankan?* Pada mayoritas fasilitas, jawabannya adalah tidak pernah.
 
 ## Mengapa waktu sangat menentukan
 
 Ketika seorang pekerja tergantung tidak sadarkan diri pada harness, aliran darah dari tungkai ke jantung terhambat oleh tekanan tali pada paha. Kondisi ini dikenal sebagai suspension trauma, dan pada sebagian orang dapat menjadi kritis dalam waktu kurang dari dua puluh menit.
 
-Angka itu menetapkan standar yang keras: jika tim Anda tidak dapat [menurunkan korban](/pelatihan-irata-level-2/) dalam belasan menit sejak alarm, rencana Anda perlu ditulis ulang.
+Angka itu menetapkan standar yang keras: jika tim Anda tidak dapat [menurunkan korban](/pelatihan-tkpk-tingkat-2/) dalam belasan menit sejak alarm, rencana Anda perlu ditulis ulang.
 
 ## Tiga kegagalan yang paling sering kami temukan
 
@@ -34,7 +34,7 @@ Angka itu menetapkan standar yang keras: jika tim Anda tidak dapat [menurunkan k
 
 **Kedua, ketergantungan pada pihak luar.** Beberapa rencana menyebutkan pemanggilan pemadam kebakaran sebagai langkah penyelamatan utama. Di kawasan industri Indonesia, waktu respons unit eksternal jarang berada di bawah tiga puluh menit — terlalu lambat untuk suspension trauma.
 
-**Ketiga, satu orang tunggal yang kompeten.** Rencana yang hanya dapat dijalankan oleh [satu supervisor tertentu](/pelatihan-irata-level-3/) akan gagal pada hari supervisor itu cuti, sakit, atau justru menjadi korbannya.
+**Ketiga, satu orang tunggal yang kompeten.** Rencana yang hanya dapat dijalankan oleh [satu supervisor tertentu](/pelatihan-tkpk-tingkat-3/) akan gagal pada hari supervisor itu cuti, sakit, atau justru menjadi korbannya.
 
 ## Cara menguji dengan benar
 

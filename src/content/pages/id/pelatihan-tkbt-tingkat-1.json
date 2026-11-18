@@ -1,0 +1,117 @@
+{
+  "translationKey": "course-tkbt-1",
+  "slug": "pelatihan-tkbt-tingkat-1",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "Pelatihan TKBT Tingkat 1 Bangunan Tinggi Kemnaker | RAC",
+    "description": "Pelatihan TKBT Tingkat 1 Kemnaker RI untuk pekerja menara, rangka baja, dan perancah: APD penahan jatuh, teknik memanjat 100% tie-off, dan penyelamatan."
+  },
+  "hero": {
+    "eyebrow": "Kemnaker RI · TKBT Tingkat 1",
+    "title": "Pelatihan TKBT Tingkat 1 — Tenaga Kerja Bangunan Tinggi",
+    "body": "Untuk pekerja yang naik dan bekerja pada struktur — menara, rangka baja, perancah, tiang — dengan sistem penahan jatuh: teknik memanjat aman, APD, dan penyelamatan dasar.",
+    "ctas": [
+      {
+        "label": "Daftar via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "Lihat jadwal kelas",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "building",
+    "summary": "Untuk pekerja yang naik dan bekerja pada struktur — menara, rangka baja, perancah, tiang — dengan sistem penahan jatuh: teknik memanjat aman, APD, dan penyelamatan dasar."
+  },
+  "course": {
+    "code": "TKBT-1",
+    "scheme": "KEMNAKER",
+    "level": "TKBT Tingkat 1",
+    "order": 4,
+    "featured": true,
+    "summary": "Untuk pekerja yang naik dan bekerja pada struktur — menara, rangka baja, perancah, tiang — dengan sistem penahan jatuh: teknik memanjat aman, APD, dan penyelamatan dasar.",
+    "price": "Hubungi kami untuk penawaran (perorangan & perusahaan)",
+    "prerequisites": [
+      "Usia minimal 18 tahun",
+      "Sehat jasmani dan rohani untuk bekerja di ketinggian, dibuktikan surat keterangan sehat dari dokter",
+      "Tidak diperlukan pengalaman sebelumnya",
+      "Persyaratan administrasi final mengikuti ketentuan Kemnaker yang berlaku — kami bantu memeriksanya saat pendaftaran"
+    ],
+    "outcomes": [
+      "Memahami dasar hukum K3 pekerjaan pada ketinggian (Permenaker No. 9 Tahun 2016)",
+      "Memakai dan memeriksa full body harness, lanyard ganda, dan alat penahan jatuh",
+      "Memanjat dan berpindah pada struktur dengan prinsip selalu terkait (100% tie-off)",
+      "Bekerja aman di platform, perancah, dan struktur rangka",
+      "Melakukan penyelamatan dasar dan pertolongan pertama"
+    ],
+    "syllabus": [
+      {
+        "title": "Regulasi & manajemen risiko",
+        "detail": "Permenaker No. 9 Tahun 2016, hierarki pengendalian risiko, izin kerja, dan tanggung jawab setiap tingkat kompetensi."
+      },
+      {
+        "title": "APD penahan jatuh",
+        "detail": "Full body harness, lanyard ganda, peredam kejut, dan pemeriksaan sebelum pakai."
+      },
+      {
+        "title": "Teknik memanjat",
+        "detail": "Memanjat tangga dan struktur, berpindah titik tambat, dan prinsip 100% tie-off."
+      },
+      {
+        "title": "Titik tambat pada struktur",
+        "detail": "Memilih titik tambat yang layak dan menghitung jarak jatuh."
+      },
+      {
+        "title": "Penyelamatan & P3K",
+        "detail": "Penanganan korban tergantung dan pertolongan pertama."
+      },
+      {
+        "title": "Uji kompetensi",
+        "detail": "Ujian teori dan praktik sesuai ketentuan Kemnaker RI sebagai dasar penerbitan sertifikat dan lisensi K3."
+      }
+    ],
+    "certificate": "Sertifikat kompetensi dan lisensi K3 TKBT Tingkat 1 dari Kementerian Ketenagakerjaan RI, ditambah sertifikat penyelesaian pelatihan dari RAC. Masa berlaku dan perpanjangan mengikuti ketentuan Kemnaker."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Untuk siapa program ini\n\nProgram ini untuk teknisi menara telekomunikasi, pekerja konstruksi baja dan perancah, teknisi listrik, serta siapa pun yang bekerja dengan memanjat struktur.\n\n## Mengapa sertifikat Kemnaker\n\n[Permenaker No. 9 Tahun 2016](https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016) mewajibkan pekerjaan pada ketinggian dilakukan oleh tenaga kerja yang kompeten. Sertifikat dan lisensi K3 dari Kementerian Ketenagakerjaan RI adalah bukti kompetensi yang diakui secara nasional dan diperiksa oleh pengawas ketenagakerjaan, kontraktor, maupun pengelola gedung. Pelajari [skema TKPK dan TKBT](/sertifikasi/) selengkapnya.\n\n## Cara kami melatih\n\nTeori dan praktik dijalankan berdampingan: setiap materi langsung dipraktikkan di ketinggian dengan pengawasan instruktur, lalu diulang sampai benar. Peralatan latihan disediakan; peserta cukup membawa sepatu keselamatan dan pakaian kerja.\n\n## Setelah lulus\n\nSetelah mengumpulkan pengalaman kerja yang cukup, langkah berikutnya adalah [TKBT Tingkat 2](/pelatihan-tkbt-tingkat-2/)."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Jadwal",
+      "title": "Kelas terbuka berikutnya",
+      "course": "course-tkbt-1",
+      "cta": {
+        "label": "Lihat semua jadwal",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan seputar pelatihan",
+      "groups": ["training", "certification"],
+      "limit": 5,
+      "cta": {
+        "label": "Lihat semua FAQ",
+        "href": "faq"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Daftar atau tanya jadwal kelas berikutnya",
+      "text": "Kirim nama, jumlah peserta, dan bulan yang Anda incar. Untuk kelompok dari satu perusahaan, kelas dapat diadakan di lokasi Anda.",
+      "button": {
+        "label": "Tanya via WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

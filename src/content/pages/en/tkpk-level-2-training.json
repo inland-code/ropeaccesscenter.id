@@ -1,0 +1,118 @@
+{
+  "translationKey": "course-tkpk-2",
+  "slug": "tkpk-level-2-training",
+  "template": "course",
+  "contentStatus": "review",
+  "seo": {
+    "title": "TKPK Level 2 Rope Access Training (Kemnaker) | RAC",
+    "description": "For TKPK Level 1 holders ready to rig their own anchor systems, handle loads with pulley systems, perform advanced rescues, and supervise Level 1 technicians."
+  },
+  "hero": {
+    "eyebrow": "Kemnaker RI · TKPK Level 2",
+    "title": "TKPK Level 2 Training — Advanced Rope Access Technician",
+    "body": "For TKPK Level 1 holders ready to rig their own anchor systems, handle loads with pulley systems, perform advanced rescues, and supervise Level 1 technicians.",
+    "ctas": [
+      {
+        "label": "Enrol via WhatsApp",
+        "href": "#whatsapp",
+        "variant": "whatsapp"
+      },
+      {
+        "label": "See course dates",
+        "href": "schedule",
+        "variant": "outline"
+      }
+    ]
+  },
+  "card": {
+    "icon": "helmet",
+    "summary": "For TKPK Level 1 holders ready to rig their own anchor systems, handle loads with pulley systems, perform advanced rescues, and supervise Level 1 technicians."
+  },
+  "course": {
+    "code": "TKPK-2",
+    "scheme": "KEMNAKER",
+    "level": "TKPK Level 2",
+    "order": 2,
+    "featured": true,
+    "summary": "For TKPK Level 1 holders ready to rig their own anchor systems, handle loads with pulley systems, perform advanced rescues, and supervise Level 1 technicians.",
+    "price": "Contact us for a quotation (individuals & companies)",
+    "prerequisites": [
+      "Hold a TKPK Level 1 certificate and K3 licence",
+      "Minimum junior secondary education (SLTP) or equivalent",
+      "Documented rope access working experience (typically at least 500 hours)",
+      "Medically fit for work at height, supported by a doctor’s statement",
+      "Final administrative requirements follow current Kemnaker rules — we check them with you on enrolment"
+    ],
+    "outcomes": [
+      "Select, rig, and check anchors and two-rope systems independently",
+      "Raise and lower loads with pulley systems",
+      "Perform advanced rescues: from ascent, past knots, and across edges",
+      "Supervise TKPK Level 1 technicians on site",
+      "Carry out periodic equipment inspection and keep work records"
+    ],
+    "syllabus": [
+      {
+        "title": "Regulation & risk management",
+        "detail": "Ministry of Manpower Regulation 9/2016, the hierarchy of control, permits to work, and the responsibilities of each competence level."
+      },
+      {
+        "title": "Rigging & anchors",
+        "detail": "Anchor selection, load sharing, deviations, and re-anchors."
+      },
+      {
+        "title": "Pulleys & loads",
+        "detail": "Hauling and lowering systems and basic force calculations."
+      },
+      {
+        "title": "Advanced rescue",
+        "detail": "Rescue from ascent, passing knots, and lowering a casualty to the ground."
+      },
+      {
+        "title": "Supervision & inspection",
+        "detail": "Team briefings, permits to work, periodic equipment inspection, and records."
+      },
+      {
+        "title": "Competency test",
+        "detail": "Written and practical examination under Kemnaker RI rules, the basis for issuing the certificate and K3 licence."
+      }
+    ],
+    "certificate": "A TKPK Level 2 competency certificate and K3 licence issued by Indonesia’s Ministry of Manpower, plus an RAC training completion certificate. Validity and renewal follow Kemnaker rules."
+  },
+  "sections": [
+    {
+      "type": "prose",
+      "body": "## Who this programme is for\n\nThis programme is for TKPK Level 1 technicians who already work on rope regularly and are taking on rigging and responsibility for a teammate’s safety.\n\n## Why a Kemnaker certificate\n\n[Ministry of Manpower Regulation 9/2016](https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016) requires work at height to be carried out by competent workers. The certificate and K3 licence issued by Indonesia’s Ministry of Manpower (Kemnaker RI) are nationally recognised proof of competence, checked by labour inspectors, contractors, and building managers alike. Read more about the [TKPK and TKBT schemes](/en/certification/).\n\n## How we teach\n\nTheory and practice run side by side: every topic is practised at height under instructor supervision and repeated until it is right. Training equipment is provided; trainees only need safety boots and work clothing.\n\n## After you qualify\n\nOnce you have built up enough working experience, the next step is [TKPK Level 3](/en/tkpk-level-3-training/)."
+    },
+    {
+      "type": "schedule",
+      "eyebrow": "Dates",
+      "title": "Next open courses",
+      "course": "course-tkpk-2",
+      "cta": {
+        "label": "See all course dates",
+        "href": "schedule"
+      }
+    },
+    {
+      "type": "faq-group",
+      "eyebrow": "FAQ",
+      "title": "Training questions",
+      "groups": ["training", "certification"],
+      "limit": 5,
+      "cta": {
+        "label": "See all FAQs",
+        "href": "faq"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Enrol or ask about the next course",
+      "text": "Send your name, the number of participants, and the month you are aiming for. For a group from one company, the course can run at your site.",
+      "button": {
+        "label": "Ask on WhatsApp",
+        "href": "#whatsapp"
+      },
+      "tone": "brand"
+    }
+  ]
+}

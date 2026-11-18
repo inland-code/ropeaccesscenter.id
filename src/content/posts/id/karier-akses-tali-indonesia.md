@@ -1,47 +1,47 @@
 ---
 translationKey: post-career-map
 slug: karier-akses-tali-indonesia
-title: "Peta Karier Teknisi Akses Tali di Indonesia"
+title: "Jenjang Karier Teknisi Akses Tali di Indonesia: dari TKPK 1 ke TKPK 3"
 seo:
-  title: "Peta Karier Teknisi Akses Tali di Indonesia"
-  description: "Panduan jalur karier akses tali di Indonesia: syarat jam kerja tiap level IRATA, kompetensi tambahan bernilai tinggi, dan pilihan spesialisasi."
-excerpt: "Dari Level 1 hingga supervisor dan instruktur: berapa lama setiap tahap, keterampilan apa yang benar-benar dihargai pasar, dan di mana jalannya bercabang."
+  title: "Jenjang Karier Teknisi Akses Tali: TKPK 1 sampai TKPK 3"
+  description: "Peta karier teknisi akses tali di Indonesia: tingkat sertifikasi Kemnaker TKPK, jam kerja yang perlu dikumpulkan, peran di lapangan, dan keahlian tambahan."
+excerpt: "Dari teknisi pemula hingga supervisor: tingkat sertifikasi, pengalaman yang perlu dikumpulkan, dan keahlian tambahan yang membuat teknisi akses tali dicari."
 category: karier
 publishedAt: 2026-05-21
-author: Tim Rope Access Center
+updatedAt: 2026-11-19
+author: "Tim Rope Access Center"
 sources:
-  - title: "What is Rope Access"
-    publisher: "IRATA International"
-    url: https://irata.org/page/what-is-rope-access
-  - title: "SPRAT Certification"
-    publisher: "Society of Professional Rope Access Technicians"
-    url: https://sprat.org/certification/
-  - title: "Badan Nasional Sertifikasi Profesi"
-    publisher: "BNSP"
-    url: https://bnsp.go.id/
+  - title: "Permenaker No. 9 Tahun 2016 tentang K3 dalam Pekerjaan pada Ketinggian"
+    publisher: "JDIH Kementerian Ketenagakerjaan"
+    url: https://jdih.kemnaker.go.id/peraturan/detail/1210/peraturan-menteri-ketenagakerjaan-nomor-9-tahun-2016
+  - title: "Permenaker No. 9 Tahun 2016 (teks lengkap)"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+faq:
+  - q: "Berapa lama dari TKPK 1 ke TKPK 3?"
+    a: "Tergantung seberapa cepat Anda mengumpulkan pengalaman kerja yang terdokumentasi. Persyaratan yang umum dipakai adalah sekitar 500 jam untuk TKPK 2 dan 1.000 jam untuk TKPK 3, sehingga jenjang ini biasanya ditempuh dalam beberapa tahun kerja aktif."
 ---
-Akses tali adalah salah satu dari sedikit bidang yang jenjang kariernya bersifat objektif: jam kerja tercatat, asesmen independen, dan tidak ada jalan pintas. Struktur itu adalah kekuatannya.
 
-## Tahun pertama: Level 1
+Kebutuhan teknisi akses tali di Indonesia terus tumbuh — gedung bertingkat bertambah, industri butuh inspeksi tanpa perancah, dan regulasi K3 ketinggian makin ditegakkan. Bagi yang ingin berkarier di bidang ini, jalurnya cukup jelas.
 
-Anda bekerja di bawah pengawasan langsung. Tugas Anda bukan menjadi cepat, melainkan menjadi konsisten. Kumpulkan jam kerja, isi logbook dengan jujur, dan minta [Level 3](/pelatihan-irata-level-3/) menandatanganinya secara berkala — bukan sekaligus menjelang asesmen.
+## Tingkat 1: masuk ke industri
 
-Untuk naik ke [Level 2](/pelatihan-irata-level-2/), Anda memerlukan minimum 1.000 jam kerja tercatat dan minimum dua belas bulan sejak sertifikasi.
+[TKPK Tingkat 1](/pelatihan-tkpk-tingkat-1/) adalah pintu masuknya. Tidak dibutuhkan pengalaman sebelumnya; syarat utamanya usia minimal 18 tahun dan sehat untuk bekerja di ketinggian. Pemegang Tingkat 1 bekerja di bawah pengawasan teknisi Tingkat 2 atau 3.
 
-## Tahun kedua hingga keempat: Level 2
+Pekerjaan pertama biasanya di [perawatan fasad dan pembersihan kaca gedung](/jasa-perawatan-fasad-gedung/), pengecatan, atau membantu tim inspeksi. Fokus pada satu hal di tahun pertama: bekerja rapi dan mencatat setiap jam kerja.
 
-Di sinilah pendapatan mulai naik nyata, karena Anda dapat memasang sistem. Tetapi lompatan pendapatan terbesar pada tahap ini bukan berasal dari level tali — melainkan dari kompetensi kedua.
+## Tingkat 2: memasang sistem dan menjaga rekan
 
-Yang paling dicari pasar Indonesia saat ini: [NDT](/jasa-inspeksi-ndt/) Level II, pengelasan bersertifikat, aplikasi pelapisan dengan kualifikasi NACE atau setara, dan inspeksi struktur. Teknisi dengan kombinasi IRATA Level 2 dan NDT Level II hampir tidak pernah menganggur.
+[TKPK Tingkat 2](/pelatihan-tkpk-tingkat-2/) mensyaratkan sertifikat Tingkat 1 dan pengalaman kerja yang terdokumentasi — umumnya minimal 500 jam. Di tingkat ini Anda memasang sistem tambat sendiri, menangani beban dengan sistem katrol, melakukan penyelamatan yang lebih kompleks, dan mengawasi teknisi Tingkat 1.
 
-## Tahun kelima ke atas: Level 3 dan percabangan
+## Tingkat 3: supervisor
 
-Level 3 menuntut 1.000 jam berikutnya dan tanggung jawab yang berbeda jenisnya, bukan sekadar lebih besar. Anda menandatangani [rencana penyelamatan](/jasa-standby-rescue/); nama Anda ada di dokumen itu.
+[TKPK Tingkat 3](/pelatihan-tkpk-tingkat-3/) mensyaratkan Tingkat 1 dan 2, pendidikan minimal SLTA, usia minimal 22 tahun, pengalaman kerja umumnya minimal 1.000 jam, serta sertifikat P3K. Supervisor merencanakan pekerjaan, menyusun rencana penyelamatan, dan bertanggung jawab atas keselamatan seluruh tim.
 
-Dari sini, jalannya bercabang tiga. **Jalur lapangan**: supervisor proyek besar, kemudian manajer operasi. **Jalur [pelatihan](/pelatihan/)**: menjadi instruktur, yang menuntut kesabaran berbeda dari kemampuan teknis. **Jalur HSE**: banyak Level 3 yang beralih menjadi HSE lead karena mereka memahami risiko ketinggian lebih dalam dibandingkan dengan lulusan K3 pada umumnya.
+## Catat jam kerja sejak hari pertama
 
-## Yang menghentikan karier orang
+Pengalaman yang tidak tercatat sulit dibuktikan. Simpan catatan sederhana untuk setiap pekerjaan: tanggal, lokasi, jenis pekerjaan, jumlah jam di tali, dan nama pengawas yang dapat mengonfirmasi. Catatan ini menjadi bukti saat Anda mendaftar tingkat berikutnya.
 
-Dua hal, dan keduanya dapat dicegah. Pertama, logbook yang diisi seadanya sehingga tidak diterima asesor. Kedua, membiarkan sertifikat kedaluwarsa lebih dari enam bulan sehingga harus mengulang dari level sebelumnya.
+## Keahlian tambahan yang membuat Anda dicari
 
-Keduanya adalah kerugian administratif, bukan kegagalan kemampuan — dan justru karena itu terasa jauh lebih menyakitkan.
+Teknisi akses tali paling dicari ketika membawa keahlian kedua: pengecatan dan perbaikan fasad, sealant, kelistrikan, pengelasan, atau inspeksi. Untuk pekerjaan di menara dan rangka baja, sertifikat [TKBT](/pelatihan-tkbt-tingkat-1/) melengkapi TKPK. Bagi perusahaan, teknisi seperti ini bisa diandalkan untuk lebih dari satu jenis pekerjaan — itulah sebabnya kami juga menyalurkan mereka lewat layanan [penyediaan teknisi](/penyediaan-teknisi-akses-tali/).
