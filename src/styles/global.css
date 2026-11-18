@@ -1,0 +1,419 @@
+@import 'tailwindcss';
+
+/* ==========================================================================
+   RAC — Rope Access Center · Design tokens
+   Derived from the official brand guidelines sheet (see docs/brand-guidelines.webp)
+   ========================================================================== */
+
+@theme {
+  /* --- Brand ------------------------------------------------------------ */
+  --color-navy-50:  #eef2f7;
+  --color-navy-100: #d6dfeb;
+  --color-navy-200: #adbfd6;
+  --color-navy-300: #7b95b8;
+  --color-navy-400: #4a6a94;
+  --color-navy-500: #2a4467;
+  --color-navy-600: #1a2f4d;
+  --color-navy-700: #12233b;
+  --color-navy-800: #0d1b2a; /* NAVY — primary */
+  --color-navy-900: #091320;
+  --color-navy-950: #050b13;
+
+  --color-brand-50:  #fef2f3;
+  --color-brand-100: #fde3e5;
+  --color-brand-200: #fbccd0;
+  --color-brand-300: #f7a3aa;
+  --color-brand-400: #f16b78;
+  --color-brand-500: #e63c4c;
+  --color-brand-600: #e30613; /* RED — accent */
+  --color-brand-700: #bf0510;
+  --color-brand-800: #9d0812;
+  --color-brand-900: #820d15;
+
+  --color-charcoal: #222529;
+
+  /* Merah RAC di atas navy hanya mencapai rasio 3,56:1 — lolos ambang teks
+     besar, tetapi terasa gelap karena luminansi merah rendah. Versi ini
+     mempertahankan rona dan saturasi yang sama persis (356°, 95%) namun
+     mencapai 4,73:1, sehingga lolos untuk teks berukuran normal sekalipun.
+     Dipakai lewat --brand-ink, bukan langsung. */
+  --color-brand-lift: #fa3844;
+
+  --color-steel-50:  #f2f4f7;
+  --color-steel-100: #e6e9ef;
+  --color-steel-200: #d1d5db;
+  --color-steel-300: #9ca3af;
+  --color-steel-400: #6b7177;
+  --color-steel-500: #4b4f56;
+  --color-steel-600: #3a3e44;
+
+  /* --- Typography ------------------------------------------------------- */
+  --font-display: 'Archivo', 'Arial Black', 'Segoe UI', system-ui, sans-serif;
+  --font-sans: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* --- Motion ----------------------------------------------------------- */
+  --ease-out-brand: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* --- Permukaan semantik ------------------------------------------------
+     Nilai terang didefinisikan di sini; padanan gelapnya menimpa variabel
+     yang sama di bawah. Semua komponen memakai token ini, bukan warna
+     harfiah, sehingga satu tema baru cukup mengganti nilainya. */
+  --color-surface: #ffffff;      /* latar halaman                        */
+  --color-surface-alt: #f2f4f7;  /* seksi berselang-seling               */
+  --color-card: #ffffff;         /* kartu, tabel, kolom isian            */
+  --color-ink: #222529;          /* teks utama dan judul                 */
+  --color-muted: #4b4f56;        /* teks tubuh sekunder                  */
+  --color-soft: #6b7177;         /* keterangan, label, metadata          */
+  --color-line: #e6e9ef;         /* garis pemisah dan tepi               */
+
+  /* --- Layout ----------------------------------------------------------- */
+  --spacing-gutter: 1.25rem;
+}
+
+/* ==========================================================================
+   Self-hosted variable fonts (no third-party requests — keeps CSP tight)
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100% 125%;
+  font-display: swap;
+  src: url('/fonts/archivo-latin-var.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/montserrat-latin-var.woff2') format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+@layer base {
+  :root {
+    --header-h: 4.5rem;
+    color-scheme: light;
+    /* Merah untuk teks dan ikon. Di permukaan terang memakai merah merek
+       apa adanya; di permukaan gelap ditinggikan oleh .on-navy atau oleh
+       tema gelap. Warna isian tombol tetap --color-brand-600, karena teks
+       putih di atasnya justru kehilangan kontras bila merahnya ditinggikan. */
+    --brand-ink: var(--color-brand-600);
+  }
+
+  /* Seksi bermuatan navy pada tema terang: merahnya perlu ditinggikan. */
+  .on-navy {
+    --brand-ink: var(--color-brand-lift);
+  }
+
+  /* Tema gelap — pilihan eksplisit pembaca. */
+  [data-theme='dark'] {
+    color-scheme: dark;
+    --color-surface: #080d14;
+    --color-surface-alt: #0d1b2a;
+    --color-card: #101c2e;
+    --color-ink: #e6edf5;
+    --color-muted: #b6c6d8;
+    --color-soft: #8fa5bd;
+    --color-line: #1d2f45;
+    --brand-ink: var(--color-brand-lift);
+  }
+
+  /* Tema bawaan situs ini adalah terang, terlepas dari setelan sistem
+     pembaca. Tema gelap hanya berlaku bila pembaca memilihnya sendiri lewat
+     tombol pengalih, yang menyetel [data-theme='dark'] di atas. Itulah
+     sebabnya di sini tidak ada blok @media (prefers-color-scheme: dark):
+     menambahkannya akan membuat sebagian pengunjung mendarat di tema gelap
+     tanpa pernah memintanya. */
+
+  * {
+    min-width: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-h) + 1rem);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-synthesis-weight: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    font-stretch: 118%;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+
+  p, li {
+    text-wrap: pretty;
+  }
+
+  /* Visible, brand-coloured focus ring for keyboard users */
+  :focus-visible {
+    outline: 3px solid var(--color-brand-600);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-600);
+    color: #fff;
+  }
+
+  img, svg, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Prevent CLS while lazily-loaded media resolves */
+  img[width][height] {
+    height: auto;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+
+@layer components {
+  .container-rac {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--spacing-gutter);
+    max-width: 80rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-rac { --spacing-gutter: 2rem; }
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-display);
+    font-stretch: 112%;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--brand-ink);
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 1.5rem;
+    height: 3px;
+    background-color: var(--brand-ink);
+    flex: none;
+  }
+
+  .eyebrow-center::before { display: none; }
+
+  .rule-accent {
+    width: 3.5rem;
+    height: 4px;
+    background-color: var(--brand-ink);
+  }
+
+  /* --- Buttons ---------------------------------------------------------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.875rem 1.5rem;
+    font-family: var(--font-display);
+    font-stretch: 112%;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 1;
+    border: 2px solid transparent;
+    transition: background-color 0.2s var(--ease-out-brand),
+                color 0.2s var(--ease-out-brand),
+                border-color 0.2s var(--ease-out-brand),
+                transform 0.2s var(--ease-out-brand);
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .btn:active { transform: translateY(1px); }
+  .btn svg { flex: none; transition: transform 0.25s var(--ease-out-brand); }
+  .btn:hover svg { transform: translateX(3px); }
+
+  .btn-primary {
+    background-color: var(--color-brand-600);
+    color: #fff;
+    border-color: var(--color-brand-600);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-brand-700);
+    border-color: var(--color-brand-700);
+  }
+
+  .btn-ghost-light {
+    background-color: transparent;
+    color: #fff;
+    border-color: rgb(255 255 255 / 0.35);
+  }
+  .btn-ghost-light:hover {
+    background-color: #fff;
+    color: var(--color-navy-800);
+    border-color: #fff;
+  }
+
+  .btn-ghost-dark {
+    background-color: transparent;
+    color: var(--color-ink);
+    border-color: var(--color-line);
+  }
+  .btn-ghost-dark:hover {
+    background-color: var(--color-ink);
+    color: var(--color-surface);
+    border-color: var(--color-ink);
+  }
+
+  .btn-whatsapp {
+    background-color: #1faa53;
+    color: #fff;
+    border-color: #1faa53;
+  }
+  .btn-whatsapp:hover {
+    background-color: #179044;
+    border-color: #179044;
+  }
+
+  .btn-sm { padding: 0.625rem 1.125rem; font-size: 0.75rem; }
+  .btn-block { width: 100%; }
+
+  /* --- Cards ------------------------------------------------------------ */
+  .card {
+    background-color: var(--color-card);
+    border: 1px solid var(--color-line);
+    transition: border-color 0.25s var(--ease-out-brand),
+                box-shadow 0.25s var(--ease-out-brand),
+                transform 0.25s var(--ease-out-brand);
+  }
+  .card-hover:hover {
+    border-color: color-mix(in srgb, var(--brand-ink) 45%, var(--color-line));
+    box-shadow: 0 18px 40px -24px rgb(13 27 42 / 0.35);
+    transform: translateY(-3px);
+  }
+
+  /* --- Rich text (CMS output) ------------------------------------------- */
+  .prose-rac { font-size: 1rem; line-height: 1.75; color: var(--color-muted); }
+  .prose-rac > * + * { margin-top: 1.1em; }
+  .prose-rac h2 {
+    font-size: 1.5rem;
+    color: var(--color-ink);
+    margin-top: 2.25em;
+    margin-bottom: 0.6em;
+  }
+  .prose-rac h3 {
+    font-size: 1.175rem;
+    color: var(--color-ink);
+    margin-top: 1.9em;
+    margin-bottom: 0.5em;
+  }
+  .prose-rac a {
+    color: var(--brand-ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .prose-rac a:hover { color: var(--color-brand-500); }
+  .prose-rac strong { color: var(--color-ink); font-weight: 600; }
+  .prose-rac ul, .prose-rac ol { padding-left: 1.4em; }
+  .prose-rac ul { list-style: disc; }
+  .prose-rac ol { list-style: decimal; }
+  .prose-rac li + li { margin-top: 0.45em; }
+  .prose-rac li::marker { color: var(--brand-ink); }
+  .prose-rac blockquote {
+    border-left: 4px solid var(--brand-ink);
+    padding-left: 1.25rem;
+    font-style: italic;
+    color: var(--color-ink);
+  }
+  .prose-rac img { margin-block: 1.75em; width: 100%; }
+  .prose-rac table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+  .prose-rac th, .prose-rac td {
+    border: 1px solid var(--color-line);
+    padding: 0.625rem 0.875rem;
+    text-align: left;
+  }
+  .prose-rac th { background-color: var(--color-surface-alt); color: var(--color-ink); }
+
+  /* --- Utility ---------------------------------------------------------- */
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -100%;
+    z-index: 100;
+    background: var(--color-brand-600);
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    transition: top 0.2s;
+  }
+  .skip-link:focus { top: 1rem; }
+}
+
+@layer utilities {
+  /* Merah untuk teks dan ikon yang menyesuaikan terang-gelapnya permukaan. */
+  .text-brand-ink { color: var(--brand-ink); }
+  .bg-brand-ink { background-color: var(--brand-ink); }
+
+  .text-shadow-hero { text-shadow: 0 2px 24px rgb(5 11 19 / 0.55); }
+
+  .grid-noise {
+    background-image:
+      linear-gradient(rgb(255 255 255 / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(255 255 255 / 0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s var(--ease-out-brand), transform 0.7s var(--ease-out-brand);
+  }
+  .reveal.is-visible { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; }
+  }
+}

@@ -1,0 +1,339 @@
+# Panduan Penyiapan — dari repositori kosong ke situs langsung
+
+Panduan ini membawa Anda dari *clone* pertama sampai situs tayang di domain
+sendiri. Seluruh langkah berada di dalam **paket gratis** Cloudflare dan GitHub.
+
+Perkiraan waktu: 20–30 menit.
+
+---
+
+## 0. Prasyarat
+
+- Node.js 20 atau lebih baru
+- Akun Cloudflare (gratis)
+- Akun GitHub (gratis)
+- Nama domain (opsional — Cloudflare menyediakan subdomain `*.workers.dev` gratis)
+
+---
+
+## 1. Jalankan secara lokal
+
+```bash
+git clone <url-repositori-anda>
+cd RAC
+npm install
+```
+
+Buat kredensial dashboard:
+
+```bash
+npm run admin:hash -- "sandi-yang-kuat-dan-panjang"
+```
+
+Salin *hash* yang dihasilkan, lalu buat berkas `.dev.vars`:
+
+```bash
+cp .dev.vars.example .dev.vars
+```
+
+Isi ketiga nilainya:
+
+```ini
+ADMIN_EMAIL="admin@ropeaccesscenter.id"
+ADMIN_PASSWORD_HASH="pbkdf2$210000$…"   # hasil perintah di atas
+SESSION_SECRET="…"                       # openssl rand -hex 32
+```
+
+Siapkan basis data lokal, lalu jalankan:
+
+```bash
+npm run db:migrate:local
+npm run dev
+```
+
+Buka `http://localhost:4321` untuk situs, dan `http://localhost:4321/admin`
+untuk dashboard.
+
+> Situs sudah tayang lengkap bahkan sebelum ada basis data. D1, KV, dan R2
+> hanya dibutuhkan agar hasil edit dari dashboard tersimpan.
+
+---
+
+## 2. Layanan Cloudflare
+
+D1 dan KV **sudah dibuat** dan ID-nya sudah tertulis di `wrangler.toml`:
+
+| Layanan | Nama | Status |
+|---|---|---|
+| D1 | `rac-db` | dibuat di region APAC, migrasi sudah dijalankan |
+| KV | `rac-cache` | dibuat, dipakai untuk cache dan rate limit |
+| R2 | `rac-media` | **belum** — perlu diaktifkan lebih dulu (lihat 2c) |
+
+Anda tidak perlu mengulang langkah 2a dan 2b kecuali membangun ulang dari nol.
+
+### 2a. D1 — basis data konten (sudah ada)
+
+```bash
+npx wrangler d1 create rac-db
+```
+
+Perintah ini mencetak `database_id`; tempel ke `wrangler.toml` di bawah
+`[[d1_databases]]`.
+
+*Batas paket gratis: 5 GB penyimpanan, 5 juta baris dibaca per hari.*
+
+### 2b. KV — cache dan pembatas laju (sudah ada)
+
+```bash
+npx wrangler kv namespace create rac-cache
+```
+
+Salin `id` yang dicetak ke **kedua** blok `kv_namespaces` di `wrangler.toml`
+(`CACHE` dan `SESSION` menunjuk namespace yang sama).
+
+*Batas paket gratis: 100.000 baca dan 1.000 tulis per hari.*
+
+### 2c. R2 — pustaka media (opsional, belum aktif)
+
+> **R2 harus diaktifkan lewat Dashboard lebih dulu.** Berbeda dari D1 dan KV,
+> R2 tidak bisa dinyalakan lewat API atau CLI. Selama belum aktif, `wrangler`
+> akan menolak seluruh *deploy* bila binding-nya tidak dinonaktifkan — itulah
+> sebabnya blok `[[r2_buckets]]` di `wrangler.toml` sengaja dikomentari.
+
+Situs berjalan normal tanpa R2. Yang belum tersedia hanyalah unggah berkas di
+menu **Media**; halaman tersebut menampilkan pemberitahuan yang jelas, dan
+kolom gambar tetap menerima URL dari sumber lain.
+
+Untuk mengaktifkannya:
+
+1. Cloudflare Dashboard → **R2** → **Enable** (paket gratis, tanpa kartu).
+2. Buat bucket-nya:
+   ```bash
+   npx wrangler r2 bucket create rac-media
+   ```
+3. Hapus tanda `#` pada tiga baris `[[r2_buckets]]` di `wrangler.toml`.
+4. *Deploy* ulang: `npm run deploy`.
+
+*Batas paket gratis: 10 GB penyimpanan, tanpa biaya keluar (egress).*
+
+## 3. Setel *secret* produksi
+
+Satu perintah mengurus ketiganya — membuat sandi, menurunkan hash-nya,
+membuat kunci penanda sesi, lalu mengunggah semuanya ke Cloudflare:
+
+```bash
+npx wrangler login      # sekali saja
+npm run admin:setup
+```
+
+Sandinya dicetak sekali di akhir. **Simpan ke pengelola kata sandi Anda sebelum
+menutup terminal** — sandi itu tidak ditulis ke berkas mana pun dan tidak dapat
+ditampilkan ulang.
+
+Ingin menentukan sandi sendiri, atau memakai e-mail lain:
+
+```bash
+npm run admin:setup -- "sandi-pilihan-anda"
+ADMIN_EMAIL="anda@perusahaan.com" npm run admin:setup
+```
+
+Untuk mengganti sandi di kemudian hari, jalankan perintah yang sama lagi.
+
+<details>
+<summary>Cara manual, bila lebih suka satu per satu</summary>
+
+```bash
+npm run admin:hash -- "sandi-anda"       # salin barisnya
+npx wrangler secret put ADMIN_EMAIL
+npx wrangler secret put ADMIN_PASSWORD_HASH
+npx wrangler secret put SESSION_SECRET    # openssl rand -hex 32
+```
+
+</details>
+
+### Opsional — Cloudflare Turnstile (anti-spam formulir)
+
+1. Buka Cloudflare Dashboard → **Turnstile** → **Add site**.
+2. Salin *site key* ke `wrangler.toml` di bawah `[vars]`:
+   ```toml
+   PUBLIC_TURNSTILE_SITE_KEY = "0x4AAA…"
+   ```
+3. Setel *secret key*-nya:
+   ```bash
+   npx wrangler secret put TURNSTILE_SECRET_KEY
+   ```
+
+Bila dilewati, formulir tetap terlindungi *honeypot*, token bertanda tangan,
+dan pembatasan laju.
+
+---
+
+## 4. Terapkan migrasi dan *deploy*
+
+Migrasi `0001_init.sql` **sudah dijalankan** pada `rac-db`, jadi perintah di
+bawah akan melaporkan "no migrations to apply". Tetap jalankan — perintah ini
+aman diulang dan menjadi kebiasaan yang benar untuk migrasi berikutnya.
+
+```bash
+npx wrangler d1 migrations apply rac-db --remote
+npm run deploy
+```
+
+Wrangler akan mencetak URL `*.workers.dev`. Buka `/admin` di URL tersebut dan
+masuk memakai kredensial dari langkah 3.
+
+---
+
+## 5. Hubungkan domain Anda
+
+1. Tambahkan domain ke Cloudflare (Dashboard → **Add a site**) dan arahkan
+   *nameserver*-nya sesuai instruksi.
+2. Buka **Workers & Pages → rac-website → Settings → Domains & Routes**.
+3. Klik **Add** → **Custom domain** → masukkan `ropeaccesscenter.id`.
+4. Ulangi untuk `www.ropeaccesscenter.id` bila diperlukan.
+
+Perbarui URL kanonik di `wrangler.toml`:
+
+```toml
+[vars]
+PUBLIC_SITE_URL = "https://ropeaccesscenter.id"
+```
+
+Lalu *deploy* ulang: `npm run deploy`.
+
+> Nilai ini menentukan seluruh URL kanonik, `hreflang`, sitemap, dan data
+> terstruktur. Pastikan benar sebelum situs diindeks.
+
+---
+
+## 6. Deploy otomatis (Cloudflare Workers Builds)
+
+Repositori ini **sudah terhubung** ke Cloudflare Workers Builds. Setiap dorongan
+ke `main` memicu build dan deploy otomatis ke Worker bernama `rac`. Tidak ada
+*secret* GitHub yang perlu disetel — Cloudflare mengakses repo lewat integrasi
+Git-nya sendiri.
+
+Setelan build yang benar (Dashboard → **Workers & Pages** → `rac` →
+**Settings** → **Build**):
+
+| Kolom | Nilai |
+|---|---|
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+| Root directory | `/` |
+| Branch | `main` |
+
+> **Migrasi database tidak ikut otomatis.** Workers Builds hanya membangun dan
+> men-*deploy*. Setiap kali Anda menambah berkas baru di `migrations/`,
+> jalankan sekali dari mesin Anda:
+>
+> ```bash
+> npx wrangler d1 migrations apply rac-db --remote
+> ```
+
+Pemeriksaan tipe dan build tetap berjalan di GitHub Actions
+(`.github/workflows/ci.yml`) pada setiap pull request, sehingga kesalahan
+tertangkap sebelum Cloudflare mencoba men-*deploy*.
+
+### Catatan penting soal `dist/.assetsignore`
+
+`wrangler.toml` mengarahkan pengunggah aset statis ke seluruh `dist/`, yang juga
+berisi bundel server terkompilasi di `dist/_worker.js/`. Tanpa daftar
+pengecualian, Wrangler **menolak men-*deploy* sama sekali** — dan seandainya
+dipaksa, seluruh kode server Anda akan dapat diunduh dari internet publik.
+
+Berkas `public/.assetsignore` mengurus hal ini. Astro menyalin isi `public/`
+apa adanya ke `dist/`, sehingga berkas tersebut mendarat di
+`dist/.assetsignore` tempat Wrangler mencarinya. **Jangan hapus berkas itu.**
+
+## 7. Kirim situs ke mesin pencari
+
+1. **Google Search Console** → tambahkan properti domain → verifikasi lewat DNS.
+   Kirimkan `https://ropeaccesscenter.id/sitemap.xml`.
+2. **Bing Webmaster Tools** → impor langsung dari Search Console.
+3. Periksa data terstruktur di
+   [Rich Results Test](https://search.google.com/test/rich-results).
+
+Berkas berikut sudah tersedia otomatis dan tidak perlu disiapkan manual:
+
+- `/sitemap.xml` — seluruh URL dua bahasa beserta `hreflang`
+- `/robots.txt` — termasuk izin bagi perayap mesin penjawab (AI)
+- `/llms.txt` — ringkasan kurasi untuk model bahasa
+- `/api/content.json` — seluruh konten publik dalam JSON
+- `/rss.xml` dan `/en/rss.xml` — umpan artikel
+
+---
+
+## Penggunaan sehari-hari
+
+### Mengubah konten
+
+Masuk ke `/admin`. Setiap koleksi — program pelatihan, layanan, artikel,
+jadwal, FAQ, testimoni, tim, akreditasi, halaman, dan pengaturan situs — dapat
+diubah dari sana, dengan kolom Indonesia dan Inggris berdampingan.
+
+Menyimpan akan membersihkan cache secara otomatis; perubahan tampil di situs
+dalam hitungan detik.
+
+### Mengunggah gambar
+
+Buka **Media**, unggah berkas, lalu salin URL-nya. Tempelkan URL itu ke kolom
+gambar mana pun. Berkas disajikan dari domain situs sendiri dengan cache satu
+tahun.
+
+Format yang diterima: WebP, JPEG, PNG, AVIF, SVG, PDF (maksimum 8 MB).
+**WebP sangat disarankan** — ukurannya jauh lebih kecil pada mutu yang setara.
+
+### Membalas pesan masuk
+
+Buka **Pesan Masuk**. Setiap pengiriman formulir memiliki tombol balas cepat
+lewat WhatsApp dengan pesan yang sudah terisi, serta penanda status
+(*new* → *contacted* → *quoted* → *won* / *lost*).
+
+### Mengembalikan konten ke versi asli
+
+Pada halaman penyuntingan mana pun, tekan **Kembalikan ke Bawaan**. Item akan
+kembali ke versi yang tersimpan di repositori.
+
+---
+
+## Pemecahan masalah
+
+**Dashboard menolak masuk dengan "dashboard not configured"**
+Ketiga *secret* belum terpasang. Jalankan `npm run admin:setup`, atau periksa
+apa yang sudah ada dengan `npx wrangler secret list`.
+
+**Situs tayang di dua alamat (workers.dev dan domain sendiri)**
+Itu memang bawaan Workers. Alamat `workers.dev` otomatis dikirimi header
+`X-Robots-Tag: noindex` dan `robots.txt` berisi `Disallow: /`, sehingga tidak
+akan terindeks dan tidak menjadi konten duplikat. Pengunjung tetap dapat
+membukanya seperti biasa. Bila kelak ingin menutup alamat itu sepenuhnya,
+setel `workers_dev = false` di `wrangler.toml`.
+
+**Menyimpan gagal dengan "no database is bound"**
+`database_id` di `wrangler.toml` masih berisi teks contoh, atau migrasi belum
+dijalankan. Jalankan `npx wrangler d1 migrations apply rac-db --remote`.
+
+**Unggahan media gagal / halaman Media bilang "Bucket R2 belum terhubung"**
+R2 belum diaktifkan untuk akun ini. Ikuti langkah 2c — aktifkan R2 lewat
+Dashboard, buat bucket-nya, lalu hapus komentar pada blok `[[r2_buckets]]`.
+
+**Deploy gagal: "Uploading a Pages _worker.js directory as an asset"**
+Berkas `public/.assetsignore` hilang atau tidak lagi memuat `_worker.js`.
+Kembalikan isinya, lalu `npm run build` ulang.
+
+**Deploy gagal dengan pesan soal binding atau UUID tidak valid**
+Salah satu binding di `wrangler.toml` menunjuk sumber daya yang tidak ada.
+Cocokkan `database_id`, `id` KV, dan `bucket_name` dengan apa yang benar-benar
+ada di akun Anda (`npx wrangler d1 list`, `npx wrangler kv namespace list`).
+Binding yang tidak dapat diselesaikan akan menggagalkan seluruh *deploy*, bukan
+hanya fitur yang memakainya.
+
+**Perubahan tidak muncul di situs**
+Tekan **Bersihkan Cache** pada halaman Ringkasan dashboard. Bila memakai
+Cloudflare *proxy*, bersihkan juga cache zona untuk URL terkait.
+
+**Halaman menampilkan konten bawaan padahal sudah diedit**
+Berarti D1 tidak terjangkau dan situs kembali memakai konten repositori — ini
+perilaku yang disengaja agar situs tidak pernah mati. Periksa *binding* dan
+status D1 di panel Cloudflare.

@@ -1,0 +1,68 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "rac"
+main = "./dist/_worker.js/index.js"
+compatibility_date = "2025-05-05"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+[observability]
+enabled = true
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+[vars]
+PUBLIC_SITE_URL = "https://ropeaccesscenter.id"
+PUBLIC_DEFAULT_LOCALE = "id"
+
+# ---------------------------------------------------------------------------
+# D1 — content database (free tier: 5 GB storage, 5M reads/day)
+# Provisioned in APAC. Recreate with `npx wrangler d1 create rac-db` and paste
+# the new database_id here if this ever needs to be rebuilt.
+# ---------------------------------------------------------------------------
+[[d1_databases]]
+binding = "DB"
+database_name = "rac-db"
+database_id = "bc2b2fe5-ed65-4190-bbcd-fb2b08605817"
+migrations_dir = "migrations"
+
+# ---------------------------------------------------------------------------
+# KV — edge cache for rendered content + rate limiting
+# Recreate with `npx wrangler kv namespace create rac-cache` if needed.
+# ---------------------------------------------------------------------------
+[[kv_namespaces]]
+binding = "CACHE"
+id = "fc2792c1d78f486389ad159046db769c"
+
+# Astro's built-in session store looks for a binding named SESSION. The site
+# uses its own signed-cookie sessions and never writes here, but declaring it
+# (pointing at the same namespace) keeps the adapter quiet at build time.
+[[kv_namespaces]]
+binding = "SESSION"
+id = "fc2792c1d78f486389ad159046db769c"
+
+# ---------------------------------------------------------------------------
+# R2 — media library (free tier: 10 GB storage, zero egress fees)
+#
+# Disabled by default: R2 must be switched on for the account before any
+# bucket can be created, and a binding that cannot resolve fails the entire
+# deploy. The dashboard's media library shows a clear "not bound" notice until
+# this is enabled, and nothing else on the site depends on it.
+#
+# To turn it on:
+#   1. Cloudflare Dashboard -> R2 -> Enable (free tier, no card required)
+#   2. npx wrangler r2 bucket create rac-media
+#   3. Uncomment the three lines below and redeploy
+# ---------------------------------------------------------------------------
+# [[r2_buckets]]
+# binding = "MEDIA"
+# bucket_name = "rac-media"
+
+# ---------------------------------------------------------------------------
+# Secrets (never commit these — set with `npx wrangler secret put <NAME>`)
+#   ADMIN_EMAIL           e.g. admin@ropeaccesscenter.id
+#   ADMIN_PASSWORD_HASH   output of `npm run admin:hash -- "your-password"`
+#   SESSION_SECRET        random 64-char hex, `openssl rand -hex 32`
+#   TURNSTILE_SECRET_KEY  optional, Cloudflare Turnstile
+# ---------------------------------------------------------------------------
