@@ -171,8 +171,15 @@ Rencana awal fase ini:
 - ✅ Kode: section sisa Inland (`service-cards`, `banner`) & string UI tak terpakai dihapus; header COOP;
   GitHub Actions checkout v7, setup-node v7, cache v6 (menggantikan PR Dependabot #2–#4). TypeScript 7 (PR #5) ditunda.
 - ✅ Lighthouse mobile (produksi, Brotli lokal): 100/100/100/100 di program, layanan, dan artikel baru.
-- Catatan: halaman fasad/kaca RAC dan halaman pembersihan kaca Inland menyasar kata kunci serupa — pertimbangkan
-  saling menautkan atau membedakan fokus (Inland: gedung & renovasi; RAC: pekerjaan di ketinggian & industri).
+- Halaman fasad/kaca RAC dan halaman pembersihan kaca Inland menyasar kata kunci serupa — pemilik setuju keduanya
+  boleh bersaing; fokus dibedakan (Inland: gedung & renovasi; RAC: pelatihan Kemnaker & pekerjaan di ketinggian/industri).
+
+## Grup Inland × RAC (2026-11-19)
+
+- ✅ Saling menautkan: halaman perawatan fasad & perawatan di ketinggian (ID/EN) menautkan jasa Inland; CTA ke Inland di
+  hub Layanan; artikel "Apa itu Rope Access" menautkan artikel rope access Inland. Inland menautkan balik dari footer,
+  halaman jasa rope access, pembersihan kaca, tentang Inland, dan artikel rope access (repo `inland-code/inland.co.id`).
+- ✅ JSON-LD: RAC `parentOrganization` Inland; Inland `subOrganization` RAC.
 
 ## Data pemilik
 
