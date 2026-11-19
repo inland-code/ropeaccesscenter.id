@@ -46,6 +46,16 @@
     },
     {
       "type": "cta",
+      "tone": "light",
+      "title": "Renovasi, desain, atau pembangunan gedung?",
+      "text": "Serahkan kepada Inland, perusahaan jasa arsitek, kontraktor, dan perawatan gedung dalam satu grup dengan RAC.",
+      "button": {
+        "label": "Kunjungi Inland",
+        "href": "https://inland.co.id/layanan-kami/"
+      }
+    },
+    {
+      "type": "cta",
       "title": "Minta penawaran tertulis",
       "text": "Kirim lokasi, jenis aset, dan target waktu. Penilaian risiko awal dan penawaran umumnya kami kirim pada hari kerja yang sama.",
       "button": {

@@ -50,6 +50,8 @@ Pekerjaan pada ketinggian diatur dalam Permenaker No. 9 Tahun 2016, yang mewajib
 
 Kompetensi pekerja akses tali dibuktikan dengan sertifikat dan lisensi K3 dari Kemnaker untuk skema **TKPK** (Tenaga Kerja pada Ketinggian), yang memiliki tiga tingkat — dari [TKPK Tingkat 1](/pelatihan-tkpk-tingkat-1/) untuk pemula hingga [TKPK Tingkat 3](/pelatihan-tkpk-tingkat-3/) untuk supervisor. Untuk pekerjaan memanjat struktur seperti menara dan rangka baja, skemanya adalah **TKBT**. Penjelasan lengkapnya ada di halaman [sertifikasi](/sertifikasi/).
 
+Contoh penerapannya pada gedung — pembersihan kaca, sealant, dan perawatan fasad — juga dibahas di artikel grup kami, [rope access adalah](https://inland.co.id/rope-access-adalah/) di situs Inland.
+
 ## Keselamatan bukan hanya soal alat
 
 Peralatan yang baik hanya separuh jawaban. Setiap pekerjaan rope access membutuhkan penilaian risiko, pengawas yang kompeten di lokasi, dan [rencana penyelamatan yang sudah diuji](/rencana-penyelamatan-yang-teruji/). Tanpa itu, sistem dua tali yang paling canggih pun tidak menjamin semua orang pulang dengan selamat.
