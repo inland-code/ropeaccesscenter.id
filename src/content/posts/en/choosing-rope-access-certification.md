@@ -63,3 +63,5 @@ For rope access teams, make sure a competent supervisor is on every site. For hi
 ## A certificate is not the end
 
 Any [certificate](/en/certification/) only states that someone met a standard on the day of the test. What keeps people safe is daily habit: pre-use equipment checks, a rescue plan that has actually been tested, and a culture in which anyone may stop the work.
+
+**Read also:** [how to choose a training provider](/en/choosing-rope-access-training-provider/) · [IRATA vs Kemnaker TKPK](/en/irata-vs-tkpk-kemnaker/)

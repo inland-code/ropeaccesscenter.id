@@ -47,3 +47,5 @@ Catat waktunya. Jika melampaui target, ubah rencananya — bukan targetnya.
 ## Frekuensi yang kami sarankan
 
 Uji ulang setiap enam bulan, dan setiap kali terjadi salah satu dari tiga hal berikut: perubahan struktur atau tata letak lokasi, pergantian personel kunci, atau perubahan [peralatan penyelamat](/memeriksa-apd-akses-tali/). Simpan catatan waktu setiap latihan — tren yang memburuk adalah peringatan dini yang berharga.
+
+**Baca juga:** [titik angkur rope access](/titik-angkur-rope-access/) · [fall arrest vs fall restraint](/fall-arrest-vs-fall-restraint/)

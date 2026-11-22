@@ -63,3 +63,5 @@ Untuk tim akses tali, pastikan ada pengawas yang kompeten di setiap lokasi. Untu
 ## Sertifikat bukan akhir
 
 [Sertifikat](/sertifikasi/) apa pun hanya menyatakan bahwa seseorang memenuhi standar pada hari uji. Yang menjaga orang tetap selamat adalah kebiasaan kerja harian: pemeriksaan alat sebelum dipakai, rencana penyelamatan yang benar-benar diuji, dan budaya yang membolehkan siapa pun menghentikan pekerjaan.
+
+**Baca juga:** [cara memilih tempat pelatihan rope access](/cara-memilih-tempat-pelatihan-rope-access/) · [IRATA vs TKPK Kemnaker](/sertifikat-irata-vs-tkpk-kemnaker/)

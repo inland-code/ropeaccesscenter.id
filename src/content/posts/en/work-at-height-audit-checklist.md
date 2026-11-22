@@ -50,3 +50,5 @@ Client audits rarely fail because of poor field practice. Far more often, they f
 ## How to close the gaps quickly
 
 All three can be fixed in weeks rather than months. Schedule one rescue plan test and record the result. Commission an anchor survey by a competent party and publish the register. Start the PPE history from today, noting honestly that data before that date is unavailable — auditors value candour paired with corrective action far more highly than a record back-filled to look complete.
+
+**Read also:** [Regulation 9/2016 explained](/en/permenaker-9-2016-work-at-height/) · [fall arrest vs fall restraint](/en/fall-arrest-vs-fall-restraint/)

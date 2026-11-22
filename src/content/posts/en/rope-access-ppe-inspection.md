@@ -43,3 +43,5 @@ Four non-negotiable reasons: it has arrested a fall, it has suffered chemical or
 Paper logbooks get lost. Spreadsheets branch into five versions. What survives is a system with three properties: every item carries a unique serial physically marked on it, every entry names who inspected it, and the records live in the same place as the rest of your HSE documentation.
 
 When the auditor asks, you should not be searching — you should be opening.
+
+**Read also:** [rope access equipment list](/en/rope-access-equipment-list/) · [how to wear a full body harness](/en/how-to-wear-full-body-harness/) · [rope access anchor points](/en/rope-access-anchor-points/)

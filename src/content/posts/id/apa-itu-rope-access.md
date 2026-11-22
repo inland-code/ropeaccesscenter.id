@@ -57,3 +57,5 @@ Contoh penerapannya pada gedung — pembersihan kaca, sealant, dan perawatan fas
 ## Keselamatan bukan hanya soal alat
 
 Peralatan yang baik hanya separuh jawaban. Setiap pekerjaan rope access membutuhkan penilaian risiko, pengawas yang kompeten di lokasi, dan [rencana penyelamatan yang sudah diuji](/rencana-penyelamatan-yang-teruji/). Tanpa itu, sistem dua tali yang paling canggih pun tidak menjamin semua orang pulang dengan selamat.
+
+**Baca juga:** [peralatan rope access dan fungsinya](/peralatan-rope-access-dan-fungsinya/) · [ringkasan Permenaker 9 Tahun 2016](/permenaker-9-tahun-2016-k3-ketinggian/) · [rope access vs gondola](/rope-access-vs-gondola/)

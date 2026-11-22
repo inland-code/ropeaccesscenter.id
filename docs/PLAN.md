@@ -214,3 +214,13 @@ RAC adalah brand dari grup Inland, jadi kontak memakai data Inland (2026-11-19):
 - ✅ 9 ilustrasi merek RAC (vektor, 1600×1200, `src/assets/images/artikel/<slug-id>.jpg`), satu per artikel, dipakai
   versi ID & EN dengan teks alternatif per bahasa. Label di gambar netral bahasa (TKPK, TKBT, APD · PPE, dll.).
   Bisa diganti foto asli kapan saja lewat dashboard (field **Gambar utama** artikel).
+
+## Artikel baru berbasis riset kata kunci (2026-11-22)
+
+- ✅ 9 artikel baru (ID & EN, total 18 artikel per bahasa), masing-masing dengan ilustrasi merek, FAQ (rich result),
+  referensi sumber, dan tautan internal ke halaman pelatihan/layanan:
+  Permenaker 9/2016 · peralatan rope access · cara memakai full body harness · gaji teknisi rope access ·
+  IRATA vs TKPK · rope access vs gondola · titik angkur · memilih tempat pelatihan · fall arrest vs fall restraint.
+- ✅ Artikel lama diberi tautan "Baca juga" ke artikel baru yang relevan.
+- Kata kunci dipilih dari topik yang belum dibahas situs dan sering dicari calon peserta/klien (informasional → komersial).
+  Angka gaji berasal dari sampel lowongan publik 2026 (dicantumkan sumbernya) — perbarui setahun sekali.

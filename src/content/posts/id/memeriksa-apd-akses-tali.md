@@ -43,3 +43,5 @@ Empat alasan yang tidak dapat dinegosiasikan: pernah menahan jatuh, mengalami ke
 Buku catatan kertas hilang. Berkas lembar kerja bercabang menjadi lima versi. Yang bertahan adalah sistem dengan tiga sifat: setiap alat memiliki nomor seri unik yang tertera fisik, setiap catatan mencantumkan siapa yang memeriksa, dan catatan disimpan di tempat yang sama dengan dokumen K3 lain.
 
 Ketika auditor bertanya, Anda tidak sedang mencari — Anda sedang membuka.
+
+**Baca juga:** [peralatan rope access dan fungsinya](/peralatan-rope-access-dan-fungsinya/) · [cara memakai full body harness](/cara-memakai-full-body-harness/) · [titik angkur rope access](/titik-angkur-rope-access/)

@@ -50,3 +50,5 @@ sources:
 ## Cara menutup celah dengan cepat
 
 Ketiganya dapat diperbaiki dalam hitungan minggu, bukan bulan. Jadwalkan satu pengujian rencana penyelamatan dan catat hasilnya. Minta survei titik tambat oleh pihak kompeten dan terbitkan register. Mulai riwayat APD dari hari ini, dengan catatan jujur bahwa data sebelum tanggal tersebut tidak tersedia — auditor menghargai kejujuran yang disertai perbaikan jauh lebih tinggi daripada catatan yang direkayasa mundur.
+
+**Baca juga:** [ringkasan Permenaker 9 Tahun 2016](/permenaker-9-tahun-2016-k3-ketinggian/) · [fall arrest vs fall restraint](/fall-arrest-vs-fall-restraint/)

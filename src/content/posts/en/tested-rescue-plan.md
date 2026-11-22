@@ -47,3 +47,5 @@ Record the time. If it exceeds the target, change the plan — not the target.
 ## The frequency we recommend
 
 Re-test every six months, and after any of three events: a change to site structure or layout, turnover of key personnel, or a change of [rescue equipment](/en/rope-access-ppe-inspection/). Keep the timing record for every drill — a worsening trend is a valuable early warning.
+
+**Read also:** [rope access anchor points](/en/rope-access-anchor-points/) · [fall arrest vs fall restraint](/en/fall-arrest-vs-fall-restraint/)
