@@ -47,3 +47,5 @@ Experience that is not recorded is hard to prove. Keep a simple record of every 
 ## Extra skills that make you sought after
 
 Rope access technicians are most in demand when they bring a second skill: façade painting and repair, sealant, electrical work, welding, or inspection. For towers and steel frames, a [TKBT](/en/tkbt-level-1-training/) certificate complements TKPK. Companies can rely on technicians like this for more than one kind of job — which is why we also place them through our [technician supply](/en/rope-access-technician-supply/) service.
+
+**Read also:** [rope access technician salary in Indonesia](/en/rope-access-technician-salary-indonesia/) · [IRATA vs Kemnaker TKPK](/en/irata-vs-tkpk-kemnaker/)

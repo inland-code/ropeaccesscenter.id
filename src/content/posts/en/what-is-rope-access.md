@@ -57,3 +57,5 @@ For building examples — glass cleaning, sealant, and façade care — see our 
 ## Safety is more than equipment
 
 Good equipment is only half the answer. Every rope access job needs a risk assessment, a competent supervisor on site, and a [rescue plan that has been tested](/en/tested-rescue-plan/). Without them, even the best two-rope system cannot guarantee that everyone goes home safely.
+
+**Read also:** [rope access equipment list](/en/rope-access-equipment-list/) · [Regulation 9/2016 explained](/en/permenaker-9-2016-work-at-height/) · [rope access vs gondola](/en/rope-access-vs-gondola/)

@@ -47,3 +47,5 @@ Pengalaman yang tidak tercatat sulit dibuktikan. Simpan catatan sederhana untuk 
 ## Keahlian tambahan yang membuat Anda dicari
 
 Teknisi akses tali paling dicari ketika membawa keahlian kedua: pengecatan dan perbaikan fasad, sealant, kelistrikan, pengelasan, atau inspeksi. Untuk pekerjaan di menara dan rangka baja, sertifikat [TKBT](/pelatihan-tkbt-tingkat-1/) melengkapi TKPK. Bagi perusahaan, teknisi seperti ini bisa diandalkan untuk lebih dari satu jenis pekerjaan — itulah sebabnya kami juga menyalurkan mereka lewat layanan [penyediaan teknisi](/penyediaan-teknisi-akses-tali/).
+
+**Baca juga:** [gaji teknisi rope access di Indonesia](/gaji-teknisi-rope-access/) · [IRATA vs TKPK Kemnaker](/sertifikat-irata-vs-tkpk-kemnaker/)
