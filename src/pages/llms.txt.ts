@@ -18,6 +18,7 @@ export const GET: APIRoute = async () => {
     `> ${site.description.en}`,
     '',
     `Kontak: ${site.phoneDisplay} (WhatsApp) · ${site.email} · ${site.address.street}, ${site.address.locality} ${site.address.postalCode}`,
+    ...(Object.values(site.social).some(Boolean) ? [`Media sosial: ${Object.values(site.social).filter(Boolean).join(' · ')}`] : []),
     '',
     '## Halaman (Bahasa Indonesia)',
     ...routes.filter((r) => r.kind === 'page' && r.locale === 'id').map(line),

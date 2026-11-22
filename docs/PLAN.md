@@ -181,6 +181,11 @@ Rencana awal fase ini:
   halaman jasa rope access, pembersihan kaca, tentang Inland, dan artikel rope access (repo `inland-code/inland.co.id`).
 - ✅ JSON-LD: RAC `parentOrganization` Inland; Inland `subOrganization` RAC.
 
+## Media sosial (2026-11-22)
+
+- ✅ Instagram, Facebook, Threads `@ropeaccesscenter` tertaut di footer, halaman Kontak, JSON-LD `sameAs`, dan `llms.txt`.
+  Field `threads` ditambahkan ke skema Data Bisnis. Panduan optimasi profil: [`docs/SOSMED.md`](SOSMED.md).
+
 ## Data pemilik
 
 RAC adalah brand dari grup Inland, jadi kontak memakai data Inland (2026-11-19):
