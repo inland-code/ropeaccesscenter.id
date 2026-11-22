@@ -7,6 +7,8 @@ seo:
   description: "A practical guide to rope access PPE inspection: daily checks, six-monthly inspections, retirement criteria, and keeping an equipment history."
 excerpt: "The pre-use check is only half the job. The other half is the history that tells you when a piece of kit must retire."
 category: peralatan
+image: artikel/memeriksa-apd-akses-tali.jpg
+imageAlt: "Illustration of rope access PPE inspection: helmet, carabiners, and rope"
 publishedAt: 2026-06-09
 author: Tim Rope Access Center
 sources:

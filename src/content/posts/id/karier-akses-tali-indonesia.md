@@ -7,6 +7,8 @@ seo:
   description: "Peta karier teknisi akses tali di Indonesia: tingkat sertifikasi Kemnaker TKPK, jam kerja yang perlu dikumpulkan, peran di lapangan, dan keahlian tambahan."
 excerpt: "Dari teknisi pemula hingga supervisor: tingkat sertifikasi, pengalaman yang perlu dikumpulkan, dan keahlian tambahan yang membuat teknisi akses tali dicari."
 category: karier
+image: artikel/karier-akses-tali-indonesia.jpg
+imageAlt: "Ilustrasi jenjang karier teknisi akses tali dari TKPK 1 ke TKPK 3"
 publishedAt: 2026-05-21
 updatedAt: 2026-11-19
 author: "Tim Rope Access Center"

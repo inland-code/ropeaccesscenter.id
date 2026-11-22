@@ -7,6 +7,8 @@ seo:
   description: "Why rescue plans must be proven on the real site, how to measure response time, and the three failures found most often during audits."
 excerpt: "Suspension trauma can turn fatal within tens of minutes. Yet most rescue plan documents are never run once before a real incident."
 category: keselamatan
+image: artikel/rencana-penyelamatan-yang-teruji.jpg
+imageAlt: "Illustration of a rope access rescue drill at height"
 publishedAt: 2026-06-30
 author: Tim Rope Access Center
 sources:

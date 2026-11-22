@@ -7,6 +7,8 @@ seo:
   description: "Daftar simak dokumen K3 pekerjaan ketinggian untuk menghadapi audit klien maupun inspeksi Disnaker, lengkap dengan temuan yang paling sering muncul."
 excerpt: "Sembilan berkas yang hampir selalu diminta, dan tiga di antaranya yang paling sering tidak siap."
 category: kepatuhan
+image: artikel/kesiapan-audit-k3-ketinggian.jpg
+imageAlt: "Ilustrasi daftar periksa audit K3 pekerjaan di ketinggian"
 publishedAt: 2026-04-28
 author: Tim Rope Access Center
 sources:

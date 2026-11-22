@@ -7,6 +7,8 @@ seo:
   description: "A career map for rope access technicians in Indonesia: Kemnaker TKPK certification levels, the hours to log, roles on site, and the extra skills employers look for."
 excerpt: "From beginner to supervisor: certification levels, the experience to build up, and the extra skills that make a rope access technician in demand."
 category: karier
+image: artikel/karier-akses-tali-indonesia.jpg
+imageAlt: "Illustration of the rope access career ladder from TKPK 1 to TKPK 3"
 publishedAt: 2026-05-21
 updatedAt: 2026-11-19
 author: "Tim Rope Access Center"

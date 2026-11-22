@@ -7,6 +7,8 @@ seo:
   description: "Perbedaan sertifikasi Kemnaker TKPK (akses tali) dan TKBT (bangunan tinggi): jenis pekerjaan, tingkat, prasyarat, dan cara memilih untuk teknisi maupun perusahaan."
 excerpt: "Dua skema Kemnaker untuk kerja di ketinggian, dua cara kerja yang berbeda. Panduan praktis untuk teknisi dan manajer HSE yang harus memilih sertifikasi yang benar-benar dibutuhkan."
 category: sertifikasi
+image: artikel/memilih-sertifikasi-akses-tali.jpg
+imageAlt: "Ilustrasi pilihan sertifikat Kemnaker TKPK atau TKBT"
 publishedAt: 2026-08-04
 updatedAt: 2026-11-19
 author: "Tim Rope Access Center"

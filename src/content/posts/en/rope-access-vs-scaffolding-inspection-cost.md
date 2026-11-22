@@ -7,6 +7,8 @@ seo:
   description: "A cost analysis of rope access versus scaffolding for inspection, covering downtime, risk exposure, and erection time that comparisons usually miss."
 excerpt: "An honest cost comparison does not stop at the scaffold hire rate. Three cost lines are almost always left out of the calculation."
 category: layanan
+image: artikel/inspeksi-tanpa-perancah.jpg
+imageAlt: "Illustration comparing the cost of scaffolding and rope access for building inspection"
 publishedAt: 2026-07-18
 author: Tim Rope Access Center
 sources:

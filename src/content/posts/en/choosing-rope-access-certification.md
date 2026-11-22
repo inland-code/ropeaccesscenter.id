@@ -7,6 +7,8 @@ seo:
   description: "How Kemnaker TKPK (rope access) and TKBT (high structures) certification differ: type of work, levels, prerequisites, and how to choose."
 excerpt: "Two Kemnaker schemes for work at height, two different ways of working. A practical guide for technicians and HSE managers choosing the certification they actually need."
 category: sertifikasi
+image: artikel/memilih-sertifikasi-akses-tali.jpg
+imageAlt: "Illustration of choosing between Kemnaker TKPK and TKBT certificates"
 publishedAt: 2026-08-04
 updatedAt: 2026-11-19
 author: "Tim Rope Access Center"

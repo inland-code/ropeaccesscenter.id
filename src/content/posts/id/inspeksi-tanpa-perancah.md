@@ -7,6 +7,8 @@ seo:
   description: "Analisis biaya inspeksi akses tali versus perancah, termasuk biaya waktu henti, paparan risiko, dan waktu pemasangan yang sering terlewat."
 excerpt: "Perbandingan biaya yang jujur tidak berhenti pada harga sewa perancah. Ada tiga pos biaya yang hampir selalu terlewat dalam perhitungan."
 category: layanan
+image: artikel/inspeksi-tanpa-perancah.jpg
+imageAlt: "Ilustrasi perbandingan biaya perancah dan akses tali untuk inspeksi gedung"
 publishedAt: 2026-07-18
 author: Tim Rope Access Center
 sources:

@@ -7,6 +7,8 @@ seo:
   description: "Perbedaan sertifikat dan lisensi K3 Kemnaker dengan sertifikat kompetensi BNSP untuk kerja di ketinggian: penerbit, dasar aturan, dan mana yang diminta di lapangan."
 excerpt: "Dua jalur sertifikasi yang sering tertukar. Siapa penerbitnya, apa dasar aturannya, dan cara memastikan sertifikat yang Anda pegang sesuai permintaan pemberi kerja."
 category: kepatuhan
+image: artikel/sertifikasi-k3-kemnaker-vs-bnsp.jpg
+imageAlt: "Ilustrasi perbandingan sertifikat K3 Kemnaker dan BNSP"
 publishedAt: 2026-11-19
 author: "Tim Rope Access Center"
 sources:
