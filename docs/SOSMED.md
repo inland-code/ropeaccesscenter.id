@@ -24,7 +24,7 @@ Nama dan isi profil sebaiknya **sama di semua platform** (konsisten = sinyal kua
 - **Nama tampilan:** `Rope Access Center (RAC)` — Facebook: kategori _Pusat Pelatihan_ / _Sekolah_.
 - **Bio (≤150 karakter), contoh:**
   > Pelatihan rope access & K3 ketinggian bersertifikat Kemnaker RI (TKPK 1–3, TKBT 1–2) · Jasa akses tali gedung & industri · Grup Inland
-- **Link di bio / Situs web:** `https://ropeaccesscenter.id/` (atau halaman jadwal `https://ropeaccesscenter.id/jadwal/` saat ada kelas). Satu link utama, jangan layanan pemendek link pihak ketiga bila tidak perlu.
+- **Link di bio / Situs web:** `https://ropeaccesscenter.id/` (atau halaman jadwal `https://ropeaccesscenter.id/jadwal-pelatihan/` saat ada kelas). Satu link utama, jangan layanan pemendek link pihak ketiga bila tidak perlu.
 - **Kontak:** WhatsApp `+62 856 770 0883`, email `info@inland.co.id`, alamat Pamulang, Tangerang Selatan — sama persis dengan situs & Google Business Profile.
 - **Facebook:** isi tab _Tentang_ (deskripsi, jam buka, alamat, situs web), tombol aksi **Kirim WhatsApp**, foto profil logo RAC, sampul foto pelatihan.
 - **Instagram:** akun Bisnis/Kreator, kategori _Pendidikan_, tombol kontak WhatsApp, Sorotan (Highlights): Jadwal · Pelatihan · Sertifikat · Proyek · Testimoni.
