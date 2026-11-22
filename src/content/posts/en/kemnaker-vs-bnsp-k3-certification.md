@@ -7,6 +7,8 @@ seo:
   description: "How a Kemnaker K3 certificate and licence differs from a BNSP competency certificate for work at height in Indonesia: issuer, legal basis, and what sites ask for."
 excerpt: "Two certification routes that are often confused. Who issues them, what rules they rest on, and how to make sure your certificate matches what the employer asks for."
 category: kepatuhan
+image: artikel/sertifikasi-k3-kemnaker-vs-bnsp.jpg
+imageAlt: "Illustration comparing Kemnaker and BNSP OHS certificates"
 publishedAt: 2026-11-19
 author: "Tim Rope Access Center"
 sources:

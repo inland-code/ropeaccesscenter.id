@@ -7,6 +7,8 @@ seo:
   description: "Panduan praktis pemeriksaan APD akses tali: pemeriksaan harian, inspeksi enam bulanan, kriteria pensiun alat, dan sistem pencatatan riwayat."
 excerpt: "Pemeriksaan sebelum pakai hanya separuh pekerjaan. Separuh lainnya adalah riwayat yang membuat Anda tahu kapan sebuah alat harus pensiun."
 category: peralatan
+image: artikel/memeriksa-apd-akses-tali.jpg
+imageAlt: "Ilustrasi pemeriksaan APD akses tali: helm, karabiner, dan tali"
 publishedAt: 2026-06-09
 author: Tim Rope Access Center
 sources:

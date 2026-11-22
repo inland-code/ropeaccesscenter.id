@@ -208,3 +208,9 @@ RAC adalah brand dari grup Inland, jadi kontak memakai data Inland (2026-11-19):
 - Perubahan `PUBLIC_SITE_ENV` (Cloudflare → Settings → Builds → Variables) baru berlaku setelah build ulang (Retry build).
 - Build pratinjau untuk branch non-`main` dimatikan (tab Previews Base); hanya `main` yang di-build & di-deploy.
 - PR otomatis Dependabot (update paket) dicek dulu sebelum di-merge — versi mayor (mis. TypeScript 7) bisa gagal CI.
+
+## Gambar artikel (2026-11-22)
+
+- ✅ 9 ilustrasi merek RAC (vektor, 1600×1200, `src/assets/images/artikel/<slug-id>.jpg`), satu per artikel, dipakai
+  versi ID & EN dengan teks alternatif per bahasa. Label di gambar netral bahasa (TKPK, TKBT, APD · PPE, dll.).
+  Bisa diganti foto asli kapan saja lewat dashboard (field **Gambar utama** artikel).

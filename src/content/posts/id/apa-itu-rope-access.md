@@ -7,6 +7,8 @@ seo:
   description: "Pengertian rope access (akses tali), cara kerja sistem dua tali, kapan dipakai dibanding gondola atau perancah, dan regulasi K3 ketinggian di Indonesia."
 excerpt: "Metode kerja di ketinggian dengan dua sistem tali independen. Ini cara kerjanya, kapan metode ini dipilih, dan aturan yang berlaku di Indonesia."
 category: keselamatan
+image: artikel/apa-itu-rope-access.jpg
+imageAlt: "Ilustrasi teknisi rope access menggantung pada dua tali (tali kerja dan tali pengaman) di fasad gedung"
 publishedAt: 2026-11-19
 author: "Tim Rope Access Center"
 sources:

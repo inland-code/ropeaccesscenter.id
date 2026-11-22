@@ -7,6 +7,8 @@ seo:
   description: "What rope access means, how the two-rope system works, when it beats a gondola or scaffolding, and the work-at-height safety rules that apply in Indonesia."
 excerpt: "A method of working at height with two independent rope systems. How it works, when it is the right choice, and the rules that apply in Indonesia."
 category: keselamatan
+image: artikel/apa-itu-rope-access.jpg
+imageAlt: "Illustration of a rope access technician hanging on two ropes (working and safety line) on a building facade"
 publishedAt: 2026-11-19
 author: "Tim Rope Access Center"
 sources:

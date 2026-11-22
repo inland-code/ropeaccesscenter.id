@@ -7,6 +7,8 @@ seo:
   description: "Mengapa rencana penyelamatan harus diuji di lokasi nyata, cara mengukur waktu respons, dan tiga kesalahan yang paling sering ditemukan saat audit."
 excerpt: "Suspension trauma dapat menjadi fatal dalam belasan menit. Namun sebagian besar dokumen rencana penyelamatan tidak pernah dijalankan sekali pun sebelum insiden nyata."
 category: keselamatan
+image: artikel/rencana-penyelamatan-yang-teruji.jpg
+imageAlt: "Ilustrasi latihan penyelamatan di ketinggian dengan akses tali"
 publishedAt: 2026-06-30
 author: Tim Rope Access Center
 sources:

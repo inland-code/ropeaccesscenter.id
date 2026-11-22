@@ -7,6 +7,8 @@ seo:
   description: "How Kemnaker TKBT Level 1 and Level 2 certification for high-structure workers differ: roles on site, requirements, course content, and when to step up."
 excerpt: "Two Kemnaker certification grades for workers who climb towers, steel frames, and scaffolds. How they differ, and when it is time to move up to Level 2."
 category: sertifikasi
+image: artikel/perbedaan-tkbt-1-dan-tkbt-2.jpg
+imageAlt: "Illustration of TKBT level 1 and level 2 workers on a steel lattice tower"
 publishedAt: 2026-11-19
 author: "Tim Rope Access Center"
 sources:

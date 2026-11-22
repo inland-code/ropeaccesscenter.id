@@ -7,6 +7,8 @@ seo:
   description: "Perbedaan sertifikasi Kemnaker TKBT Tingkat 1 dan Tingkat 2 untuk pekerja bangunan tinggi: peran di lapangan, persyaratan, materi pelatihan, dan kapan naik tingkat."
 excerpt: "Dua tingkat sertifikasi Kemnaker untuk pekerja yang memanjat menara, rangka baja, dan perancah. Apa bedanya, dan kapan saatnya naik ke Tingkat 2."
 category: sertifikasi
+image: artikel/perbedaan-tkbt-1-dan-tkbt-2.jpg
+imageAlt: "Ilustrasi pekerja TKBT 1 dan TKBT 2 di menara rangka baja"
 publishedAt: 2026-11-19
 author: "Tim Rope Access Center"
 sources:

@@ -7,6 +7,8 @@ seo:
   description: "A work-at-height HSE document checklist for client audits and labour inspections, with the findings that come up most often."
 excerpt: "Nine documents that are almost always requested, and the three that are most often not ready."
 category: kepatuhan
+image: artikel/kesiapan-audit-k3-ketinggian.jpg
+imageAlt: "Illustration of a work-at-height OHS audit checklist"
 publishedAt: 2026-04-28
 author: Tim Rope Access Center
 sources:
