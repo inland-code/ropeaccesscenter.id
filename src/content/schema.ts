@@ -516,6 +516,7 @@ export const siteSchema = z.object({
     .object({
       facebook: s('Facebook URL'),
       instagram: s('Instagram URL'),
+      threads: s('Threads URL').default(''),
       linkedin: s('LinkedIn URL'),
       youtube: s('YouTube URL'),
       tiktok: s('TikTok URL'),
