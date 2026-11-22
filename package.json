@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "node scripts/content-cache.mjs && astro dev",
-    "build": "node scripts/content-cache.mjs && astro build && node scripts/postbuild.mjs && node scripts/verify-urls.mjs && node scripts/seo-audit.mjs",
+    "build": "node scripts/content-cache.mjs && astro build && node scripts/postbuild.mjs && node scripts/indexnow-manifest.mjs && node scripts/verify-urls.mjs && node scripts/seo-audit.mjs",
     "preview": "wrangler dev --port 8788",
     "check": "astro check && tsc -p worker",
     "verify:urls": "node scripts/verify-urls.mjs",

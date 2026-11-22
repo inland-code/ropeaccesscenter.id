@@ -33,4 +33,6 @@
     },
   ],
   "observability": { "enabled": true },
+  // IndexNow otomatis tiap jam: kirim URL baru/berubah (worker/indexnow.ts).
+  "triggers": { "crons": ["23 * * * *"] },
 }
