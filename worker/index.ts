@@ -6,11 +6,13 @@
  *   Bekerja tanpa JavaScript di browser (form HTML biasa).
  * - /api/auth/*  : login dashboard dengan GitHub (lihat worker/auth.ts).
  * - /api/admin/* : API dashboard (lihat worker/admin.ts).
+ * - Cron terjadwal: IndexNow otomatis (lihat worker/indexnow.ts).
  */
 
 import type { Env } from './env';
 import { handleAdmin } from './admin';
 import { handleAuth } from './auth';
+import { runIndexNow } from './indexnow';
 
 const LIMITS = { name: 80, phone: 20, service: 60, message: 1000, page: 200 } as const;
 
@@ -117,5 +119,9 @@ export default {
     if (url.pathname.startsWith('/api/admin/')) return handleAdmin(request, env, url);
     if (url.pathname.startsWith('/api/')) return new Response('Not Found', { status: 404 });
     return env.ASSETS.fetch(request);
+  },
+  /** Cron (wrangler.jsonc): kirim URL baru/berubah ke IndexNow. */
+  async scheduled(_event, env, ctx): Promise<void> {
+    ctx.waitUntil(runIndexNow(env).then(() => undefined));
   },
 } satisfies ExportedHandler<Env>;

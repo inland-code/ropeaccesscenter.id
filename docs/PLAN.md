@@ -224,3 +224,13 @@ RAC adalah brand dari grup Inland, jadi kontak memakai data Inland (2026-11-19):
 - ✅ Artikel lama diberi tautan "Baca juga" ke artikel baru yang relevan.
 - Kata kunci dipilih dari topik yang belum dibahas situs dan sering dicari calon peserta/klien (informasional → komersial).
   Angka gaji berasal dari sampel lowongan publik 2026 (dicantumkan sumbernya) — perbarui setahun sekali.
+
+## IndexNow otomatis (2026-11-22)
+
+- ✅ Kunci publik `public/977ee4bdce39acc613cdd94d099ef4c3.txt`. Saat build, `scripts/indexnow-manifest.mjs` menulis
+  `dist/indexnow-manifest.json` (hash isi `<main>` tiap URL di sitemap; hanya build produksi yang ditandai `production: true`).
+- ✅ Cron Worker tiap jam (menit ke-23, `wrangler.jsonc` → `triggers.crons`) membandingkan manifest dengan tabel D1
+  `indexnow_urls`, lalu mengirim **hanya URL baru/berubah** ke `api.indexnow.org` (Bing, Yandex, Seznam, Naver, dll.).
+  Kiriman pertama berisi semua URL. Tabel dibuat otomatis oleh Worker (`migrations/0002_indexnow.sql` untuk catatan).
+- Google tidak memakai IndexNow; Google tetap membaca `sitemap_index.xml`.
+- Cek hasil: Cloudflare → Workers → ropeaccesscenter-id → **Logs** (cari `[indexnow]`), atau Bing Webmaster Tools → IndexNow.
