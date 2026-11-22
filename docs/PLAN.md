@@ -224,3 +224,8 @@ RAC adalah brand dari grup Inland, jadi kontak memakai data Inland (2026-11-19):
 - ✅ Artikel lama diberi tautan "Baca juga" ke artikel baru yang relevan.
 - Kata kunci dipilih dari topik yang belum dibahas situs dan sering dicari calon peserta/klien (informasional → komersial).
   Angka gaji berasal dari sampel lowongan publik 2026 (dicantumkan sumbernya) — perbarui setahun sekali.
+
+## Backlink & direktori (2026-11-22)
+
+- ✅ Panduan pendaftaran direktori dan backlink: [`docs/BACKLINK.md`](BACKLINK.md). Isinya paket data NAP siap salin
+  (ID/EN), 19 situs urut prioritas, sumber backlink non-direktori, dan tabel pelacak. Pendaftaran dilakukan manual oleh pemilik.
